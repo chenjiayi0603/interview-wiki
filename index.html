@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>面试知识库</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, 'Segoe UI', sans-serif; display: flex; height: 100vh; background: #f5f5f5; }
+    .sidebar { width: 320px; background: #fff; border-right: 1px solid #eee; display: flex; flex-direction: column; }
+    .main { flex: 1; padding: 24px 40px; overflow-y: auto; background: #fff; margin: 8px; border-radius: 8px; }
+    input { width: 100%; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin: 12px; }
+    .file-list { flex: 1; overflow-y: auto; padding: 0 12px 12px; }
+    .file-item { padding: 8px 12px; cursor: pointer; border-radius: 6px; font-size: 13px; color: #333; }
+    .file-item:hover { background: #f0f0f0; }
+    .file-item.active { background: #e3f2fd; color: #1565c0; }
+    .file-item .path { font-size: 11px; color: #999; }
+    .markdown { line-height: 1.8; color: #333; max-width: 800px; }
+    .markdown h1 { font-size: 24px; margin: 20px 0 12px; border-bottom: 2px solid #1565c0; padding-bottom: 8px; }
+    .markdown h2 { font-size: 20px; margin: 16px 0 8px; }
+    .markdown h3 { font-size: 16px; margin: 12px 0 6px; }
+    .markdown p { margin: 8px 0; }
+    .markdown code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    .markdown pre { background: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; overflow-x: auto; }
+    .markdown table { border-collapse: collapse; margin: 12px 0; }
+    .markdown th, .markdown td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+    .markdown th { background: #f8f8f8; }
+    .markdown ul, .markdown ol { padding-left: 20px; }
+    .result-count { padding: 8px 12px; font-size: 12px; color: #999; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <input type="text" id="searchInput" placeholder="搜索知识点..." autofocus>
+    <div id="resultCount" class="result-count"></div>
+    <div class="file-list" id="fileList"></div>
+  </div>
+  <div class="main" id="content">
+    <div class="markdown" style="text-align:center;padding-top:100px;color:#999;">
+      <h2>📚 面试知识库</h2>
+      <p>544 个知识点 · 全文搜索</p>
+      <p>左侧搜索框输入关键词</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const files = [];
+    let currentFile = '';
+
+    async function loadFileList() {
+      try {
+        const resp = await fetch('concepts/index.json');
+        if (resp.ok) {
+          const list = await resp.json();
+          files.push(...list);
+          renderFiles(files);
+          return;
+        }
+      } catch(e) {}
+
+      // 如果 index.json 不存在，用硬编码列表（由后台生成）
+      const resp = await fetch('concepts/index.json?' + Date.now());
+      if (resp.ok) {
+        const list = await resp.json();
+        files.push(...list);
+      }
+      renderFiles(files);
+    }
+
+    function renderFiles(list) {
+      const el = document.getElementById('fileList');
+      if (list.length === 0) {
+        el.innerHTML = '<div style="padding:12px;color:#999;">无匹配结果</div>';
+        return;
+      }
+      el.innerHTML = list.map(f => 
+        `<div class="file-item" onclick="loadFile('${f.path}')">
+          <div>${f.title || f.name}</div>
+          <div class="path">${f.path}</div>
+        </div>`
+      ).join('');
+      document.getElementById('resultCount').textContent = `${list.length} 个文件`;
+    }
+
+    async function loadFile(path) {
+      currentFile = path;
+      document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
+      event?.target?.closest('.file-item')?.classList.add('active');
+      
+      try {
+        const resp = await fetch('concepts/' + path);
+        const text = await resp.text();
+        const html = marked.parse(text);
+        document.getElementById('content').innerHTML = '<div class="markdown">' + html + '</div>';
+        document.getElementById('content').scrollTop = 0;
+      } catch(e) {
+        document.getElementById('content').innerHTML = '<div class="markdown"><p style="color:red">加载失败: ' + e.message + '</p></div>';
+      }
+    }
+
+    // 搜索（简单在前端做）
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const q = e.target.value.toLowerCase();
+      if (!q) { renderFiles(files); return; }
+      const filtered = files.filter(f => 
+        f.name.toLowerCase().includes(q) || 
+        (f.title && f.title.toLowerCase().includes(q)) ||
+        f.path.toLowerCase().includes(q)
+      );
+      renderFiles(filtered);
+    });
+
+    loadFileList();
+  </script>
+</body>
+</html>
