@@ -42,6 +42,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/BPF_eBPF内核追踪.md",
+    "name": "BPF/eBPF内核追踪",
+    "title": "BPF/eBPF内核追踪",
+    "category": "interview"
+  },
+  {
     "path": "interview/C++17并行算法.md",
     "name": "C++17 并行算法",
     "title": "C++17 并行算法",
@@ -516,6 +522,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/Coolify.md",
+    "name": "Coolify",
+    "title": "Coolify",
+    "category": "interview"
+  },
+  {
     "path": "interview/Cpp_Wasm_开发.md",
     "name": "Cpp Wasm 开发",
     "title": "Cpp Wasm 开发",
@@ -948,6 +960,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/HashiCorp Nomad.md",
+    "name": "HashiCorp Nomad",
+    "title": "HashiCorp Nomad",
+    "category": "interview"
+  },
+  {
     "path": "interview/HTTPS_TLS握手与TCP优化.md",
     "name": "HTTPS / TLS 握手与 TCP 优化",
     "title": "HTTPS / TLS 握手与 TCP 优化",
@@ -999,6 +1017,12 @@
     "path": "interview/IM数据库与缓存设计.md",
     "name": "IM数据库与缓存设计",
     "title": "IM数据库与缓存设计",
+    "category": "interview"
+  },
+  {
+    "path": "interview/IM未读数设计方案.md",
+    "name": "IM 未读数设计方案",
+    "title": "IM 未读数设计方案",
     "category": "interview"
   },
   {
@@ -1812,6 +1836,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/Sanitizer工具详解.md",
+    "name": "Sanitizer 工具详解",
+    "title": "Sanitizer 工具详解",
+    "category": "interview"
+  },
+  {
     "path": "interview/ShmRingQueue.md",
     "name": "ShmRingQueue",
     "title": "ShmRingQueue",
@@ -1992,6 +2022,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/tcpdump_Wireshark网络分析.md",
+    "name": "tcpdump/Wireshark网络分析",
+    "title": "tcpdump/Wireshark网络分析",
+    "category": "interview"
+  },
+  {
     "path": "interview/TCP与UDP速查.md",
     "name": "TCP 与 UDP 速查",
     "title": "TCP 与 UDP 速查",
@@ -2139,6 +2175,12 @@
     "path": "interview/Wasm自适应熔断算法.md",
     "name": "Wasm自适应熔断算法",
     "title": "Wasm自适应熔断算法",
+    "category": "interview"
+  },
+  {
+    "path": "interview/weak_ptr_lock_implementation.md",
+    "name": "weak_ptr::lock() 的实现原理",
+    "title": "weak_ptr::lock() 的实现原理",
     "category": "interview"
   },
   {
@@ -2346,6 +2388,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/同步问题与解决方案.md",
+    "name": "同步问题与解决方案",
+    "title": "同步问题与解决方案",
+    "category": "interview"
+  },
+  {
     "path": "interview/哈希快速记位.md",
     "name": "哈希快速记位",
     "title": "哈希快速记位",
@@ -2448,6 +2496,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/性能优化-定位套路（按症状）.md",
+    "name": "性能优化-定位套路（按症状）",
+    "title": "性能优化-定位套路（按症状）",
+    "category": "interview"
+  },
+  {
     "path": "interview/性能优化-配置与部署.md",
     "name": "性能优化：配置与部署",
     "title": "性能优化：配置与部署",
@@ -2463,6 +2517,12 @@
     "path": "interview/性能优化清单.md",
     "name": "性能优化清单（执行顺序建议）",
     "title": "性能优化清单（执行顺序建议）",
+    "category": "interview"
+  },
+  {
+    "path": "interview/性能分析实战案例.md",
+    "name": "性能分析实战案例",
+    "title": "性能分析实战案例",
     "category": "interview"
   },
   {
@@ -2652,6 +2712,12 @@
     "category": "interview"
   },
   {
+    "path": "interview/算法速刷策略.md",
+    "name": "算法速刷策略",
+    "title": "算法速刷策略",
+    "category": "interview"
+  },
+  {
     "path": "interview/系统内存指标.md",
     "name": "系统内存指标",
     "title": "系统内存指标",
@@ -2823,6 +2889,12 @@
     "path": "interview/进程地址空间布局.md",
     "name": "进程地址空间布局",
     "title": "进程地址空间布局",
+    "category": "interview"
+  },
+  {
+    "path": "interview/远程调用问题-五层防线.md",
+    "name": "远程调用问题（面试高频 — \"第三方不可控\"怎么处理）",
+    "title": "远程调用问题（面试高频 — \"第三方不可控\"怎么处理）",
     "category": "interview"
   },
   {
@@ -3189,6 +3261,12 @@
     "path": "work/单机百万长连接内核调优.md",
     "name": "单机百万长连接内核调优",
     "title": "单机百万长连接内核调优",
+    "category": "work"
+  },
+  {
+    "path": "work/工程项目常规DP.md",
+    "name": "工程项目常规 DP",
+    "title": "工程项目常规 DP",
     "category": "work"
   },
   {
