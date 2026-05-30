@@ -6,109 +6,364 @@
   <title>面试知识库</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, 'Segoe UI', sans-serif; display: flex; height: 100vh; background: #f5f5f5; }
-    .sidebar { width: 320px; background: #fff; border-right: 1px solid #eee; display: flex; flex-direction: column; }
-    .main { flex: 1; padding: 24px 40px; overflow-y: auto; background: #fff; margin: 8px; border-radius: 8px; }
-    input { width: 100%; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin: 12px; }
-    .file-list { flex: 1; overflow-y: auto; padding: 0 12px 12px; }
-    .file-item { padding: 8px 12px; cursor: pointer; border-radius: 6px; font-size: 13px; color: #333; }
-    .file-item:hover { background: #f0f0f0; }
-    .file-item.active { background: #e3f2fd; color: #1565c0; }
-    .file-item .path { font-size: 11px; color: #999; }
-    .markdown { line-height: 1.8; color: #333; max-width: 800px; }
-    .markdown h1 { font-size: 24px; margin: 20px 0 12px; border-bottom: 2px solid #1565c0; padding-bottom: 8px; }
-    .markdown h2 { font-size: 20px; margin: 16px 0 8px; }
-    .markdown h3 { font-size: 16px; margin: 12px 0 6px; }
-    .markdown p { margin: 8px 0; }
-    .markdown code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
-    .markdown pre { background: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; overflow-x: auto; }
-    .markdown table { border-collapse: collapse; margin: 12px 0; }
-    .markdown th, .markdown td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
-    .markdown th { background: #f8f8f8; }
-    .markdown ul, .markdown ol { padding-left: 20px; }
-    .result-count { padding: 8px 12px; font-size: 12px; color: #999; }
+    :root {
+      --sidebar-bg: #1a1a2e;
+      --sidebar-hover: #16213e;
+      --sidebar-active: #0f3460;
+      --accent: #e94560;
+      --accent2: #533483;
+      --text-light: #e0e0e0;
+      --text-dim: #8892b0;
+      --main-bg: #f8f9fc;
+      --card-bg: #ffffff;
+      --border: #e8e8ec;
+      --heading: #1a1a2e;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      display: flex; height: 100vh; background: var(--main-bg);
+    }
+
+    /* ===== 侧边栏 ===== */
+    .sidebar {
+      width: 340px; min-width: 340px;
+      background: var(--sidebar-bg);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .sidebar-header {
+      padding: 20px 16px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .sidebar-header h1 {
+      font-size: 18px; font-weight: 700;
+      color: #fff; letter-spacing: 0.5px;
+    }
+    .sidebar-header h1 span { color: var(--accent); }
+    .sidebar-header p {
+      font-size: 12px; color: var(--text-dim);
+      margin-top: 4px;
+    }
+    .sidebar-search {
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .sidebar-search input {
+      width: 100%; padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px; font-size: 13px;
+      background: rgba(255,255,255,0.06);
+      color: #fff; outline: none;
+      transition: all 0.2s;
+    }
+    .sidebar-search input::placeholder { color: var(--text-dim); }
+    .sidebar-search input:focus {
+      border-color: var(--accent);
+      background: rgba(255,255,255,0.1);
+    }
+    .sidebar-stats {
+      display: flex; justify-content: space-between;
+      padding: 8px 16px;
+      font-size: 12px; color: var(--text-dim);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .file-list {
+      flex: 1; overflow-y: auto;
+      padding: 4px 0 12px;
+    }
+    .file-list::-webkit-scrollbar { width: 4px; }
+    .file-list::-webkit-scrollbar-track { background: transparent; }
+    .file-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+    .file-item {
+      padding: 10px 16px; cursor: pointer;
+      border-left: 3px solid transparent;
+      transition: all 0.15s;
+    }
+    .file-item:hover { background: rgba(255,255,255,0.05); }
+    .file-item.active {
+      background: rgba(233,69,96,0.1);
+      border-left-color: var(--accent);
+    }
+    .file-item .title {
+      font-size: 13px; color: var(--text-light);
+      line-height: 1.4;
+    }
+    .file-item.active .title { color: #fff; font-weight: 500; }
+    .file-item .path {
+      font-size: 11px; color: var(--text-dim);
+      margin-top: 2px; overflow: hidden;
+      text-overflow: ellipsis; white-space: nowrap;
+    }
+    .file-item.empty {
+      color: var(--text-dim); font-size: 13px;
+      padding: 24px 16px; text-align: center;
+    }
+
+    /* ===== 主内容区 ===== */
+    .main {
+      flex: 1; overflow-y: auto;
+      padding: 0;
+      background: var(--main-bg);
+    }
+    .markdown {
+      max-width: 880px; margin: 0 auto;
+      padding: 40px 48px 60px;
+      line-height: 1.8; color: #333;
+    }
+    /* 欢迎页 */
+    .welcome {
+      text-align: center; padding-top: 120px;
+    }
+    .welcome .logo {
+      font-size: 48px; margin-bottom: 16px;
+    }
+    .welcome h2 {
+      font-size: 28px; color: var(--heading);
+      margin-bottom: 8px; border: none;
+    }
+    .welcome p {
+      color: #888; font-size: 15px;
+      margin: 8px 0;
+    }
+    .welcome .tags {
+      margin-top: 32px; display: flex;
+      flex-wrap: wrap; justify-content: center; gap: 8px;
+      max-width: 500px; margin-left: auto; margin-right: auto;
+    }
+    .welcome .tags span {
+      background: #eef0f5; color: #555;
+      padding: 6px 14px; border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* ===== Markdown 内容样式 ===== */
+    .markdown h1 {
+      font-size: 26px; margin: 0 0 16px;
+      color: var(--heading);
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 10px;
+    }
+    .markdown h2 {
+      font-size: 20px; margin: 28px 0 12px;
+      color: var(--heading);
+    }
+    .markdown h3 {
+      font-size: 16px; margin: 20px 0 8px;
+      color: #444;
+    }
+    .markdown p { margin: 10px 0; }
+    .markdown ul, .markdown ol { padding-left: 22px; margin: 8px 0; }
+    .markdown li { margin: 4px 0; }
+    .markdown strong { color: var(--heading); }
+
+    /* 表格 */
+    .markdown table {
+      border-collapse: collapse; margin: 16px 0;
+      width: 100%; font-size: 14px;
+    }
+    .markdown th {
+      background: #f0f2f5; color: var(--heading);
+      font-weight: 600; border: 1px solid #ddd;
+      padding: 10px 14px; text-align: left;
+    }
+    .markdown td {
+      border: 1px solid #ddd;
+      padding: 8px 14px;
+    }
+    .markdown tr:nth-child(even) { background: #f8f9fc; }
+
+    /* 行内代码 */
+    .markdown code:not(pre code) {
+      background: #eef0f5; color: #e94560;
+      padding: 2px 7px; border-radius: 4px;
+      font-size: 13px; font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    }
+    /* 代码块 - 暗色主题 */
+    .markdown pre {
+      background: #1e1e2e; color: #cdd6f4;
+      padding: 18px 20px; border-radius: 10px;
+      overflow-x: auto; margin: 16px 0;
+      font-size: 13.5px; line-height: 1.6;
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    }
+    .markdown pre code {
+      background: none; color: inherit;
+      padding: 0; border-radius: 0;
+      font-size: inherit;
+    }
+
+    /* 引用 */
+    .markdown blockquote {
+      border-left: 4px solid var(--accent);
+      margin: 16px 0; padding: 12px 20px;
+      background: #f8f9fc; color: #555;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* 水平线 */
+    .markdown hr {
+      border: none; border-top: 1px solid #e0e0e0;
+      margin: 24px 0;
+    }
+
+    /* 加载动画 */
+    .loading {
+      display: flex; align-items: center; justify-content: center;
+      height: 200px; color: var(--text-dim); font-size: 14px;
+    }
+    .loading::after {
+      content: ''; width: 20px; height: 20px;
+      border: 2px solid #e0e0e0; border-top-color: var(--accent);
+      border-radius: 50%; animation: spin 0.6s linear infinite;
+      margin-left: 10px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 768px) {
+      .sidebar { width: 260px; min-width: 260px; }
+      .markdown { padding: 24px 20px 40px; }
+    }
   </style>
 </head>
 <body>
+  <!-- 侧边栏 -->
   <div class="sidebar">
-    <input type="text" id="searchInput" placeholder="搜索知识点..." autofocus>
-    <div id="resultCount" class="result-count"></div>
-    <div class="file-list" id="fileList"></div>
+    <div class="sidebar-header">
+      <h1>📚 面试<span>知识库</span></h1>
+      <p id="totalCount">544 个知识点 · 客户端搜索</p>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="searchInput" placeholder="搜索知识点（中文/英文）..." autofocus>
+    </div>
+    <div class="sidebar-stats">
+      <span id="resultCount">全部</span>
+      <span id="resultNumber"></span>
+    </div>
+    <div class="file-list" id="fileList">
+      <div class="loading">加载中</div>
+    </div>
   </div>
+
+  <!-- 主内容 -->
   <div class="main" id="content">
-    <div class="markdown" style="text-align:center;padding-top:100px;color:#999;">
-      <h2>📚 面试知识库</h2>
-      <p>544 个知识点 · 全文搜索</p>
-      <p>左侧搜索框输入关键词</p>
+    <div class="markdown welcome" id="welcome">
+      <div class="logo">📚</div>
+      <h2>面试知识库</h2>
+      <p>544 个知识点 · 零服务器成本 · 全文搜索</p>
+      <p style="font-size:13px;color:#aaa;">左侧搜索框输入关键词过滤，点击文件名查看详情</p>
+      <div class="tags">
+        <span>C++</span> <span>Go</span> <span>MySQL</span> <span>Redis</span>
+        <span>RocksDB</span> <span>网络协议</span> <span>性能优化</span>
+        <span>系统设计</span> <span>AI</span> <span>项目经验</span>
+        <span>面试准备</span> <span>简历</span>
+      </div>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     const files = [];
-    let currentFile = '';
+    let currentPath = '';
 
+    // ===== 加载文件列表 =====
     async function loadFileList() {
+      const el = document.getElementById('fileList');
       try {
         const resp = await fetch('concepts/index.json');
-        if (resp.ok) {
-          const list = await resp.json();
-          files.push(...list);
-          renderFiles(files);
-          return;
-        }
-      } catch(e) {}
-
-      // 如果 index.json 不存在，用硬编码列表（由后台生成）
-      const resp = await fetch('concepts/index.json?' + Date.now());
-      if (resp.ok) {
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const list = await resp.json();
         files.push(...list);
+        renderFiles(files);
+      } catch(e) {
+        el.innerHTML = '<div class="file-item empty">加载失败，请刷新重试</div>';
       }
-      renderFiles(files);
     }
 
+    // ===== 渲染文件列表 =====
     function renderFiles(list) {
       const el = document.getElementById('fileList');
       if (list.length === 0) {
-        el.innerHTML = '<div style="padding:12px;color:#999;">无匹配结果</div>';
+        el.innerHTML = '<div class="file-item empty">无匹配结果</div>';
+        document.getElementById('resultNumber').textContent = '0 / ' + files.length;
         return;
       }
-      el.innerHTML = list.map(f => 
-        `<div class="file-item" onclick="loadFile('${f.path}')">
-          <div>${f.title || f.name}</div>
+      el.innerHTML = list.map(f => {
+        const active = f.path === currentPath ? ' active' : '';
+        return `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
+          <div class="title">${f.title || f.name}</div>
           <div class="path">${f.path}</div>
-        </div>`
-      ).join('');
-      document.getElementById('resultCount').textContent = `${list.length} 个文件`;
+        </div>`;
+      }).join('');
+      document.getElementById('resultCount').textContent =
+        list.length === files.length ? '全部' : '筛选';
+      document.getElementById('resultNumber').textContent =
+        list.length + ' / ' + files.length;
     }
 
+    // ===== 加载文件内容 =====
     async function loadFile(path) {
-      currentFile = path;
+      currentPath = path;
+      // 高亮当前项
       document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
-      event?.target?.closest('.file-item')?.classList.add('active');
-      
+      // 通过 path 匹配
+      document.querySelectorAll('.file-item').forEach(el => {
+        const pathEl = el.querySelector('.path');
+        if (pathEl && pathEl.textContent === path) {
+          el.classList.add('active');
+          el.scrollIntoView({ block: 'nearest' });
+        }
+      });
+
+      const main = document.getElementById('content');
+      main.innerHTML = '<div class="loading">加载中</div>';
+
       try {
-        const resp = await fetch('concepts/' + path);
+        const resp = await fetch('concepts/' + encodeURI(path));
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const text = await resp.text();
+
+        // 配置 marked
+        marked.setOptions({
+          breaks: true,
+          gfm: true,
+        });
+
         const html = marked.parse(text);
-        document.getElementById('content').innerHTML = '<div class="markdown">' + html + '</div>';
-        document.getElementById('content').scrollTop = 0;
+        main.innerHTML = '<div class="markdown">' + html + '</div>';
+        main.scrollTop = 0;
       } catch(e) {
-        document.getElementById('content').innerHTML = '<div class="markdown"><p style="color:red">加载失败: ' + e.message + '</p></div>';
+        main.innerHTML = '<div class="markdown"><p style="color:#e94560;padding:40px;">❌ 加载失败: ' + e.message + '</p></div>';
       }
     }
 
-    // 搜索（简单在前端做）
+    // ===== 搜索 =====
     document.getElementById('searchInput').addEventListener('input', function(e) {
-      const q = e.target.value.toLowerCase();
+      const q = e.target.value.toLowerCase().trim();
       if (!q) { renderFiles(files); return; }
-      const filtered = files.filter(f => 
-        f.name.toLowerCase().includes(q) || 
+      const filtered = files.filter(f =>
+        (f.name && f.name.toLowerCase().includes(q)) ||
         (f.title && f.title.toLowerCase().includes(q)) ||
-        f.path.toLowerCase().includes(q)
+        (f.path && f.path.toLowerCase().includes(q))
       );
       renderFiles(filtered);
+    });
+
+    // ===== 键盘快捷键 =====
+    document.addEventListener('keydown', function(e) {
+      // Ctrl+F / Cmd+F 聚焦搜索框
+      if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+        e.preventDefault();
+        document.getElementById('searchInput').focus();
+      }
+      // Escape 清空搜索
+      if (e.key === 'Escape') {
+        const input = document.getElementById('searchInput');
+        if (input === document.activeElement) {
+          input.value = '';
+          renderFiles(files);
+          input.blur();
+        }
+      }
     });
 
     loadFileList();
