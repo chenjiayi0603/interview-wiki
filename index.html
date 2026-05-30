@@ -224,6 +224,12 @@
       .markdown { padding: 24px 20px 40px; }
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/dist/vis-network.min.css">
+  <style>
+    #graphContainer { width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: none; z-index: 10; }
+    #graphContainer.active { display: block; }
+  </style>
 </head>
 <body>
   <!-- 侧边栏 -->
@@ -231,9 +237,14 @@
     <div class="sidebar-header">
       <h1>📚 面试<span>知识库</span></h1>
       <p id="totalCount">544 个知识点 · 客户端搜索</p>
-    </div>
+      <div id="graphContainer"></div>
+  </div>
     <div class="sidebar-search">
       <input type="text" id="searchInput" placeholder="搜索知识点（中文/英文）..." autofocus>
+    </div>
+    <div class="view-toggle">
+      <button id="listViewBtn" class="active" onclick="switchView('list')">📋 列表</button>
+      <button id="graphViewBtn" onclick="switchView('graph')">🕸️ 图谱</button>
     </div>
     <div class="sidebar-stats">
       <span id="resultCount">全部</span>
@@ -245,7 +256,7 @@
   </div>
 
   <!-- 主内容 -->
-  <div class="main" id="content">
+  <div class="main" id="content" style="position:relative;">
     <div class="markdown welcome" id="welcome">
       <div class="logo">📚</div>
       <h2>面试知识库</h2>
@@ -261,8 +272,110 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/dist/vis-network.min.js"></script>
   <script>
     const files = [];
+    
+    let graphInitialized = false;
+    let network = null;
+
+    function switchView(view) {
+      currentView = view;
+      document.getElementById('listViewBtn').className = view === 'list' ? 'active' : '';
+      document.getElementById('graphViewBtn').className = view === 'graph' ? 'active' : '';
+      document.getElementById('fileList').style.display = view === 'list' ? '' : 'none';
+      document.getElementById('searchInput').disabled = view === 'graph';
+      document.getElementById('searchInput').placeholder = view === 'graph' ? '图谱模式' : '搜索知识点...';
+      const gc = document.getElementById('graphContainer');
+      gc.className = view === 'graph' ? 'active' : '';
+      if (view === 'graph') {
+        document.getElementById('content').style.overflow = 'hidden';
+        if (!graphInitialized) initGraph();
+      } else {
+        document.getElementById('content').style.overflow = '';
+      }
+    }
+
+    async function initGraph() {
+      graphInitialized = true;
+      const gc = document.getElementById('graphContainer');
+      gc.innerHTML = '<div class="loading">加载图谱数据</div>';
+      try {
+        const resp = await fetch('concepts/graph.json');
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        const gd = await resp.json();
+
+        function getGroup(name) {
+          const n = name.toLowerCase();
+          if (n.startsWith('c++') || n.includes('c++')) return 'cpp';
+          if (n.startsWith('go') || n.includes('go')) return 'go';
+          if (n.startsWith('mysql')) return 'mysql';
+          if (n.startsWith('redis')) return 'redis';
+          if (n.includes('rocksdb')) return 'rocksdb';
+          if (n.includes('tcp') || n.includes('http') || n.includes('网络') || n.includes('websocket')) return 'network';
+          if (n.includes('cpu') || n.includes('内存') || n.includes('性能') || n.includes('优化')) return 'perf';
+          if (n.includes('设计') || n.includes('架构') || n.includes('系统')) return 'design';
+          if (n.includes('ai') || n.includes('模型')) return 'ai';
+          if (n.includes('面试') || n.includes('简历') || n.includes('话术')) return 'interview';
+          if (n.includes('thunder') || n.includes('keydb') || n.includes('项目')) return 'project';
+          return 'other';
+        }
+
+        const colors = {
+          cpp:'#e06c75', go:'#61afef', mysql:'#98c379', redis:'#d19a66',
+          rocksdb:'#c678dd', network:'#56b6c2', perf:'#e5c07b',
+          design:'#7ec8e3', ai:'#f4a261', interview:'#a29bfe',
+          project:'#ff6b6b', other:'#636d83'
+        };
+
+        const conn = {};
+        for (const e of gd.edges) {
+          conn[e.source] = (conn[e.source] || 0) + 1;
+          conn[e.target] = (conn[e.target] || 0) + 1;
+        }
+        const maxC = Math.max(1, ...Object.values(conn));
+
+        const nodes = gd.nodes.map(n => {
+          const g = getGroup(n.name);
+          const c = conn[n.id] || 0;
+          return {
+            id: n.id,
+            label: n.title.length > 15 ? n.title.substr(0,15) + '...' : n.title,
+            title: '<b>' + n.title + '</b><br>' + n.path + '<br>连接: ' + c,
+            color: { background: colors[g] || colors.other, border: '#fff' },
+            size: Math.max(8, Math.min(8 + (c / maxC) * 22, 30)),
+            font: { color: '#ddd', size: 10 },
+            path: n.path,
+          };
+        });
+
+        const edges = gd.edges.map(e => ({
+          from: e.source, to: e.target,
+          color: { color: 'rgba(255,255,255,0.08)', hover: '#e94560' },
+          width: 0.5
+        }));
+
+        gc.innerHTML = '';
+        const vdata = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+        const opts = {
+          nodes: { shape: 'dot' },
+          physics: { stabilization: { iterations: 200 }, solver: 'forceAtlas2Based',
+            forceAtlas2Based: { gravitationalConstant: -80, centralGravity: 0.005, springLength: 180, springConstant: 0.02, damping: 0.4 } },
+          interaction: { hover: true, tooltipDelay: 200, navigationButtons: true, keyboard: true },
+        };
+        network = new vis.Network(gc, vdata, opts);
+        network.on('click', function(params) {
+          if (params.nodes.length > 0) {
+            const node = nodes.find(n => n.id === params.nodes[0]);
+            if (node && node.path) { switchView('list'); setTimeout(function() { loadFile(node.path); }, 100); }
+          }
+        });
+      } catch(e) {
+        gc.innerHTML = '<div class="file-item empty" style="padding:40px;">图谱加载失败: ' + e.message + '</div>';
+      }
+    }
+
     let currentPath = '';
 
     // ===== 加载文件列表 =====
@@ -326,6 +439,13 @@
         marked.setOptions({
           breaks: true,
           gfm: true,
+          highlight: function(code, lang) {
+            if (lang && hljs.getLanguage(lang)) {
+              try { return hljs.highlight(code, { language: lang }).value; } catch(e) {}
+            }
+            try { return hljs.highlightAuto(code).value; } catch(e) {}
+            return code;
+          }
         });
 
         const html = marked.parse(text);
