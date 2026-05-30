@@ -138,12 +138,6 @@
     "category": "interview"
   },
   {
-    "path": "work/C++代码层性能调优最佳实践.md",
-    "name": "C++代码层性能调优最佳实践",
-    "title": "C++ 代码层性能调优最佳实践",
-    "category": "work"
-  },
-  {
     "path": "interview/C++位运算.md",
     "name": "C++位运算",
     "title": "C++ 位运算",
@@ -300,12 +294,6 @@
     "category": "interview"
   },
   {
-    "path": "ref/C++引用与引用折叠.md",
-    "name": "C++引用与引用折叠",
-    "title": "C++引用与引用折叠",
-    "category": "ref"
-  },
-  {
     "path": "interview/C++归并排序（两两合并）.md",
     "name": "C++归并排序（两两合并）",
     "title": "C++ 归并排序（两两合并）",
@@ -334,18 +322,6 @@
     "name": "C++性能分析常见问题与技巧",
     "title": "C++ 性能分析常见问题与技巧",
     "category": "interview"
-  },
-  {
-    "path": "work/C++性能调优关键指标.md",
-    "name": "C++性能调优关键指标",
-    "title": "C++ 性能调优关键指标",
-    "category": "work"
-  },
-  {
-    "path": "work/C++性能调优流程（闭环）.md",
-    "name": "C++性能调优流程（闭环）",
-    "title": "C++ 性能调优流程（闭环）",
-    "category": "work"
   },
   {
     "path": "interview/C++手写代码模板.md",
@@ -502,12 +478,6 @@
     "name": "C++面向对象",
     "title": "C++面向对象",
     "category": "interview"
-  },
-  {
-    "path": "work/C++项目深挖问题.md",
-    "name": "C++项目深挖问题",
-    "title": "C++项目深挖问题",
-    "category": "work"
   },
   {
     "path": "interview/C++高频面试问题.md",
@@ -930,12 +900,6 @@
     "category": "interview"
   },
   {
-    "path": "work/Go项目深挖问题.md",
-    "name": "Go项目深挖问题",
-    "title": "Go项目深挖问题",
-    "category": "work"
-  },
-  {
     "path": "interview/Go高频面试问题.md",
     "name": "Go高频面试问题",
     "title": "Go高频面试问题",
@@ -1086,40 +1050,10 @@
     "category": "interview"
   },
   {
-    "path": "work/IM项目MongoDB分片集群.md",
-    "name": "IM项目MongoDB分片集群",
-    "title": "IM 项目 MongoDB 分片集群图",
-    "category": "work"
-  },
-  {
     "path": "interview/Intel_TBB.md",
     "name": "Intel_TBB",
     "title": "Intel TBB",
     "category": "interview"
-  },
-  {
-    "path": "work/InterviewPro-AI面试-整体架构概览.md",
-    "name": "InterviewPro-AI面试-整体架构概览",
-    "title": "InterviewPro-AI面试 - 整体架构概览",
-    "category": "work"
-  },
-  {
-    "path": "work/InterviewPro-AI面试-核心类组织关系.md",
-    "name": "InterviewPro-AI面试-核心类组织关系",
-    "title": "InterviewPro-AI面试 核心类组织关系",
-    "category": "work"
-  },
-  {
-    "path": "work/InterviewPro-AI面试-设计模式详解.md",
-    "name": "InterviewPro-AI面试-设计模式详解",
-    "title": "InterviewPro-AI面试 设计模式详解",
-    "category": "work"
-  },
-  {
-    "path": "work/InterviewPro-AI面试App.md",
-    "name": "InterviewPro-AI面试App",
-    "title": "InterviewPro AI 面试 App",
-    "category": "work"
   },
   {
     "path": "interview/IPC进程间通信.md",
@@ -1206,48 +1140,6 @@
     "category": "interview"
   },
   {
-    "path": "work/KeyDB与RocksDB.md",
-    "name": "KeyDB与RocksDB",
-    "title": "KeyDB与RocksDB",
-    "category": "work"
-  },
-  {
-    "path": "work/KeyDB多线程架构设计.md",
-    "name": "KeyDB多线程架构设计",
-    "title": "KeyDB 多线程架构设计",
-    "category": "work"
-  },
-  {
-    "path": "work/KeyDB存算分离项目.md",
-    "name": "KeyDB存算分离项目",
-    "title": "KeyDB 存算分离项目",
-    "category": "work"
-  },
-  {
-    "path": "work/KeyDB性能优势总结.md",
-    "name": "KeyDB性能优势总结",
-    "title": "KeyDB 性能优势总结",
-    "category": "work"
-  },
-  {
-    "path": "work/KeyDB性能分析.md",
-    "name": "KeyDB性能分析",
-    "title": "KeyDB 性能分析",
-    "category": "work"
-  },
-  {
-    "path": "work/KeyDB性能测试数据.md",
-    "name": "KeyDB性能测试数据",
-    "title": "KeyDB 性能测试数据",
-    "category": "work"
-  },
-  {
-    "path": "work/KeyDB源码设计分析.md",
-    "name": "KeyDB源码设计分析",
-    "title": "KeyDB 源码层面的关键设计分析",
-    "category": "work"
-  },
-  {
     "path": "interview/KMP算法.md",
     "name": "KMP算法",
     "title": "KMP 算法",
@@ -1318,12 +1210,6 @@
     "name": "Linux文件系统与路径操作",
     "title": "Linux 文件系统与路径操作",
     "category": "interview"
-  },
-  {
-    "path": "work/Linux系统IO调优.md",
-    "name": "Linux系统IO调优",
-    "title": "Linux 系统 IO 调优",
-    "category": "work"
   },
   {
     "path": "interview/Linux系统调用-内存管理.md",
@@ -1572,12 +1458,6 @@
     "category": "interview"
   },
   {
-    "path": "work/OBS对接RocksDB性能分析.md",
-    "name": "OBS对接RocksDB性能分析",
-    "title": "OBS 对接 RocksDB 性能分析",
-    "category": "work"
-  },
-  {
     "path": "interview/OBS对象存储.md",
     "name": "OBS对象存储",
     "title": "OBS 对象存储",
@@ -1806,12 +1686,6 @@
     "category": "interview"
   },
   {
-    "path": "work/Redis可观测性项目.md",
-    "name": "Redis可观测性项目",
-    "title": "Redis 可观测性项目",
-    "category": "work"
-  },
-  {
     "path": "interview/Redis存储型方案性能对比.md",
     "name": "Redis存储型方案性能对比",
     "title": "Redis 存储型方案性能对比",
@@ -1866,22 +1740,10 @@
     "category": "interview"
   },
   {
-    "path": "work/RocksDB_WAL写入机制.md",
-    "name": "RocksDB_WAL写入机制",
-    "title": "RocksDB WAL 写入机制",
-    "category": "work"
-  },
-  {
     "path": "interview/RocksDB三大放大.md",
     "name": "RocksDB三大放大",
     "title": "RocksDB 三大放大问题分析",
     "category": "interview"
-  },
-  {
-    "path": "work/RocksDB与KeyDB串行化对比.md",
-    "name": "RocksDB与KeyDB串行化对比",
-    "title": "RocksDB 与 KeyDB 串行化对比",
-    "category": "work"
   },
   {
     "path": "interview/RocksDB与LSM树.md",
@@ -1890,46 +1752,10 @@
     "category": "interview"
   },
   {
-    "path": "work/RocksDB内存和缓存配置测试.md",
-    "name": "RocksDB内存和缓存配置测试",
-    "title": "RocksDB 内存和缓存配置测试",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB写入流程.md",
-    "name": "RocksDB写入流程",
-    "title": "RocksDB 写入流程",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB写路径串行化瓶颈.md",
-    "name": "RocksDB写路径串行化瓶颈",
-    "title": "RocksDB 写路径串行化瓶颈",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB前台线程（用户线程）.md",
-    "name": "RocksDB前台线程（用户线程）",
-    "title": "RocksDB 前台线程（用户线程）",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB后台线程池.md",
-    "name": "RocksDB后台线程池",
-    "title": "RocksDB 后台线程池",
-    "category": "work"
-  },
-  {
     "path": "interview/RocksDB基础.md",
     "name": "RocksDB基础",
     "title": "RocksDB 基础",
     "category": "interview"
-  },
-  {
-    "path": "work/RocksDB大值存储性能测试.md",
-    "name": "RocksDB大值存储性能测试",
-    "title": "RocksDB 大值存储性能测试",
-    "category": "work"
   },
   {
     "path": "interview/RocksDB存储介质对比测试.md",
@@ -1944,60 +1770,6 @@
     "category": "interview"
   },
   {
-    "path": "work/RocksDB常见问题与调优.md",
-    "name": "RocksDB常见问题与调优",
-    "title": "RocksDB 常见问题与调优",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB性能优化最佳实践.md",
-    "name": "RocksDB性能优化最佳实践",
-    "title": "RocksDB 性能优化最佳实践",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB性能分析-写优化.md",
-    "name": "RocksDB性能分析-写优化",
-    "title": "RocksDB 性能分析 - 写优化",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB性能分析与瓶颈.md",
-    "name": "RocksDB性能分析与瓶颈",
-    "title": "RocksDB 性能分析与瓶颈",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB性能测试数据与硬件配置.md",
-    "name": "RocksDB性能测试数据与硬件配置",
-    "title": "RocksDB 性能测试数据与硬件配置",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB性能调优.md",
-    "name": "RocksDB性能调优",
-    "title": "RocksDB 性能调优",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB批量操作性能测试.md",
-    "name": "RocksDB批量操作性能测试",
-    "title": "RocksDB 批量操作性能测试",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB故障场景与恢复测试.md",
-    "name": "RocksDB故障场景与恢复测试",
-    "title": "RocksDB 故障场景与恢复测试",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB文件体系.md",
-    "name": "RocksDB文件体系",
-    "title": "RocksDB 文件体系",
-    "category": "work"
-  },
-  {
     "path": "interview/RocksDB概述.md",
     "name": "RocksDB概述",
     "title": "RocksDB 概述",
@@ -2010,36 +1782,6 @@
     "category": "interview"
   },
   {
-    "path": "work/RocksDB线程模型.md",
-    "name": "RocksDB线程模型",
-    "title": "RocksDB 线程模型",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB线程配置最佳实践.md",
-    "name": "RocksDB线程配置最佳实践",
-    "title": "RocksDB 线程配置最佳实践",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB范围查询性能测试.md",
-    "name": "RocksDB范围查询性能测试",
-    "title": "RocksDB 范围查询性能测试",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB读取流程.md",
-    "name": "RocksDB读取流程",
-    "title": "RocksDB 读取流程",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB配置参数性能测试.md",
-    "name": "RocksDB配置参数性能测试",
-    "title": "RocksDB 配置参数性能测试",
-    "category": "work"
-  },
-  {
     "path": "interview/RocksDB长尾延迟优化测试.md",
     "name": "RocksDB长尾延迟优化测试",
     "title": "RocksDB 长尾延迟优化测试",
@@ -2050,18 +1792,6 @@
     "name": "RocksDB面试高频问题",
     "title": "RocksDB面试高频问题",
     "category": "interview"
-  },
-  {
-    "path": "work/RocksDB顺序写入性能测试.md",
-    "name": "RocksDB顺序写入性能测试",
-    "title": "RocksDB 顺序写入性能测试",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB高并发写入压力测试.md",
-    "name": "RocksDB高并发写入压力测试",
-    "title": "RocksDB 高并发写入压力测试",
-    "category": "work"
   },
   {
     "path": "interview/RPC与网络延迟速查.md",
@@ -2286,12 +2016,6 @@
     "category": "interview"
   },
   {
-    "path": "work/TCP参数调优详解.md",
-    "name": "TCP参数调优详解",
-    "title": "TCP参数调优详解",
-    "category": "work"
-  },
-  {
     "path": "interview/TCP可靠性分析.md",
     "name": "TCP可靠性分析",
     "title": "TCP可靠性分析",
@@ -2310,22 +2034,10 @@
     "category": "interview"
   },
   {
-    "path": "work/TCP调优参数.md",
-    "name": "TCP调优参数",
-    "title": "TCP 调优参数",
-    "category": "work"
-  },
-  {
     "path": "interview/TCP连接队列.md",
     "name": "TCP连接队列",
     "title": "TCP 连接队列",
     "category": "interview"
-  },
-  {
-    "path": "work/Thunder分布式异步集群框架.md",
-    "name": "Thunder分布式异步集群框架",
-    "title": "Thunder 分布式异步集群框架",
-    "category": "work"
   },
   {
     "path": "interview/timerfd.md",
@@ -2622,12 +2334,6 @@
     "category": "interview"
   },
   {
-    "path": "work/单机百万长连接内核调优.md",
-    "name": "单机百万长连接内核调优",
-    "title": "单机百万长连接内核调优",
-    "category": "work"
-  },
-  {
     "path": "interview/压力测试与稳定性.md",
     "name": "压力测试与稳定性",
     "title": "压力测试与稳定性",
@@ -2764,12 +2470,6 @@
     "name": "性能分析总结速查",
     "title": "性能分析总结速查",
     "category": "interview"
-  },
-  {
-    "path": "work/性能测量与调优.md",
-    "name": "性能测量与调优",
-    "title": "性能测量与调优",
-    "category": "work"
   },
   {
     "path": "interview/拥塞控制.md",
@@ -2922,24 +2622,6 @@
     "category": "interview"
   },
   {
-    "path": "work/生产环境故障排查-面试话术模板.md",
-    "name": "生产环境故障排查-面试话术模板",
-    "title": "生产环境故障排查-面试话术模板",
-    "category": "work"
-  },
-  {
-    "path": "work/生产问题全景分类.md",
-    "name": "生产问题全景分类",
-    "title": "生产问题全景分类（面试官问\"你遇到过什么线上问题\"时的展开框架）",
-    "category": "work"
-  },
-  {
-    "path": "work/磁盘问题排查.md",
-    "name": "磁盘问题排查",
-    "title": "磁盘问题排查",
-    "category": "work"
-  },
-  {
     "path": "interview/社交IM系统-你我金融-性能数据分析.md",
     "name": "社交IM系统-你我金融-性能数据分析",
     "title": "社交 IM 系统 — 你我金融（千万级用户）",
@@ -2964,24 +2646,6 @@
     "category": "interview"
   },
   {
-    "path": "work/简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）.md",
-    "name": "简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）",
-    "title": "R1：同步记录 Key 访问统计（主线程 <1μs）",
-    "category": "work"
-  },
-  {
-    "path": "work/简历论证-InterviewPro.md",
-    "name": "简历论证-InterviewPro",
-    "title": "简历论证-InterviewPro",
-    "category": "work"
-  },
-  {
-    "path": "work/简历论证-Thunder.md",
-    "name": "简历论证-Thunder",
-    "title": "简历论证-Thunder",
-    "category": "work"
-  },
-  {
     "path": "interview/算法与数据结构优化.md",
     "name": "算法与数据结构优化",
     "title": "算法与数据结构优化",
@@ -2998,12 +2662,6 @@
     "name": "系统化排障方法论",
     "title": "系统化排障方法论",
     "category": "interview"
-  },
-  {
-    "path": "work/系统调优与性能优化.md",
-    "name": "系统调优与性能优化",
-    "title": "系统调优与性能优化",
-    "category": "work"
   },
   {
     "path": "interview/线程同步.md",
@@ -3082,12 +2740,6 @@
     "name": "网络编程与协议优化",
     "title": "网络编程与协议优化",
     "category": "interview"
-  },
-  {
-    "path": "work/网络问题排查.md",
-    "name": "网络问题排查",
-    "title": "网络问题排查",
-    "category": "work"
   },
   {
     "path": "interview/群消息扇出聚合.md",
@@ -3210,34 +2862,10 @@
     "category": "interview"
   },
   {
-    "path": "ref/静态链接.md",
-    "name": "静态链接",
-    "title": "静态链接",
-    "category": "ref"
-  },
-  {
     "path": "interview/面试策略与必背数据.md",
     "name": "面试策略与必背数据",
     "title": "面试策略与必背数据",
     "category": "interview"
-  },
-  {
-    "path": "work/项目深挖-KeyDB-Redis.md",
-    "name": "项目深挖-KeyDB-Redis",
-    "title": "项目深挖：KeyDB/Redis 开发",
-    "category": "work"
-  },
-  {
-    "path": "work/项目深挖-分布式IM系统.md",
-    "name": "项目深挖-分布式IM系统",
-    "title": "项目深挖：分布式IM系统",
-    "category": "work"
-  },
-  {
-    "path": "work/项目深挖-服务网格-Istio.md",
-    "name": "项目深挖-服务网格-Istio",
-    "title": "项目深挖：服务网格（Istio）",
-    "category": "work"
   },
   {
     "path": "interview/高频交易实时系统调度配置模板.md",
@@ -3258,9 +2886,381 @@
     "category": "interview"
   },
   {
+    "path": "ref/C++引用与引用折叠.md",
+    "name": "C++引用与引用折叠",
+    "title": "C++引用与引用折叠",
+    "category": "ref"
+  },
+  {
     "path": "ref/rocksdb性能分析-参考资料.md",
     "name": "rocksdb性能分析-参考资料",
     "title": "RocksDB 性能分析参考资料",
     "category": "ref"
+  },
+  {
+    "path": "ref/静态链接.md",
+    "name": "静态链接",
+    "title": "静态链接",
+    "category": "ref"
+  },
+  {
+    "path": "work/C++代码层性能调优最佳实践.md",
+    "name": "C++代码层性能调优最佳实践",
+    "title": "C++ 代码层性能调优最佳实践",
+    "category": "work"
+  },
+  {
+    "path": "work/C++性能调优关键指标.md",
+    "name": "C++性能调优关键指标",
+    "title": "C++ 性能调优关键指标",
+    "category": "work"
+  },
+  {
+    "path": "work/C++性能调优流程（闭环）.md",
+    "name": "C++性能调优流程（闭环）",
+    "title": "C++ 性能调优流程（闭环）",
+    "category": "work"
+  },
+  {
+    "path": "work/C++项目深挖问题.md",
+    "name": "C++项目深挖问题",
+    "title": "C++项目深挖问题",
+    "category": "work"
+  },
+  {
+    "path": "work/Go项目深挖问题.md",
+    "name": "Go项目深挖问题",
+    "title": "Go项目深挖问题",
+    "category": "work"
+  },
+  {
+    "path": "work/IM项目MongoDB分片集群.md",
+    "name": "IM项目MongoDB分片集群",
+    "title": "IM 项目 MongoDB 分片集群图",
+    "category": "work"
+  },
+  {
+    "path": "work/InterviewPro-AI面试-整体架构概览.md",
+    "name": "InterviewPro-AI面试-整体架构概览",
+    "title": "InterviewPro-AI面试 - 整体架构概览",
+    "category": "work"
+  },
+  {
+    "path": "work/InterviewPro-AI面试-核心类组织关系.md",
+    "name": "InterviewPro-AI面试-核心类组织关系",
+    "title": "InterviewPro-AI面试 核心类组织关系",
+    "category": "work"
+  },
+  {
+    "path": "work/InterviewPro-AI面试-设计模式详解.md",
+    "name": "InterviewPro-AI面试-设计模式详解",
+    "title": "InterviewPro-AI面试 设计模式详解",
+    "category": "work"
+  },
+  {
+    "path": "work/InterviewPro-AI面试App.md",
+    "name": "InterviewPro-AI面试App",
+    "title": "InterviewPro AI 面试 App",
+    "category": "work"
+  },
+  {
+    "path": "work/KeyDB与RocksDB.md",
+    "name": "KeyDB与RocksDB",
+    "title": "KeyDB与RocksDB",
+    "category": "work"
+  },
+  {
+    "path": "work/KeyDB多线程架构设计.md",
+    "name": "KeyDB多线程架构设计",
+    "title": "KeyDB 多线程架构设计",
+    "category": "work"
+  },
+  {
+    "path": "work/KeyDB存算分离项目.md",
+    "name": "KeyDB存算分离项目",
+    "title": "KeyDB 存算分离项目",
+    "category": "work"
+  },
+  {
+    "path": "work/KeyDB性能优势总结.md",
+    "name": "KeyDB性能优势总结",
+    "title": "KeyDB 性能优势总结",
+    "category": "work"
+  },
+  {
+    "path": "work/KeyDB性能分析.md",
+    "name": "KeyDB性能分析",
+    "title": "KeyDB 性能分析",
+    "category": "work"
+  },
+  {
+    "path": "work/KeyDB性能测试数据.md",
+    "name": "KeyDB性能测试数据",
+    "title": "KeyDB 性能测试数据",
+    "category": "work"
+  },
+  {
+    "path": "work/KeyDB源码设计分析.md",
+    "name": "KeyDB源码设计分析",
+    "title": "KeyDB 源码层面的关键设计分析",
+    "category": "work"
+  },
+  {
+    "path": "work/Linux系统IO调优.md",
+    "name": "Linux系统IO调优",
+    "title": "Linux 系统 IO 调优",
+    "category": "work"
+  },
+  {
+    "path": "work/OBS对接RocksDB性能分析.md",
+    "name": "OBS对接RocksDB性能分析",
+    "title": "OBS 对接 RocksDB 性能分析",
+    "category": "work"
+  },
+  {
+    "path": "work/Redis可观测性项目.md",
+    "name": "Redis可观测性项目",
+    "title": "Redis 可观测性项目",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB_WAL写入机制.md",
+    "name": "RocksDB_WAL写入机制",
+    "title": "RocksDB WAL 写入机制",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB与KeyDB串行化对比.md",
+    "name": "RocksDB与KeyDB串行化对比",
+    "title": "RocksDB 与 KeyDB 串行化对比",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB内存和缓存配置测试.md",
+    "name": "RocksDB内存和缓存配置测试",
+    "title": "RocksDB 内存和缓存配置测试",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB写入流程.md",
+    "name": "RocksDB写入流程",
+    "title": "RocksDB 写入流程",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB写路径串行化瓶颈.md",
+    "name": "RocksDB写路径串行化瓶颈",
+    "title": "RocksDB 写路径串行化瓶颈",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB前台线程（用户线程）.md",
+    "name": "RocksDB前台线程（用户线程）",
+    "title": "RocksDB 前台线程（用户线程）",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB后台线程池.md",
+    "name": "RocksDB后台线程池",
+    "title": "RocksDB 后台线程池",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB大值存储性能测试.md",
+    "name": "RocksDB大值存储性能测试",
+    "title": "RocksDB 大值存储性能测试",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB常见问题与调优.md",
+    "name": "RocksDB常见问题与调优",
+    "title": "RocksDB 常见问题与调优",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB性能优化最佳实践.md",
+    "name": "RocksDB性能优化最佳实践",
+    "title": "RocksDB 性能优化最佳实践",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB性能分析-写优化.md",
+    "name": "RocksDB性能分析-写优化",
+    "title": "RocksDB 性能分析 - 写优化",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB性能分析与瓶颈.md",
+    "name": "RocksDB性能分析与瓶颈",
+    "title": "RocksDB 性能分析与瓶颈",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB性能测试数据与硬件配置.md",
+    "name": "RocksDB性能测试数据与硬件配置",
+    "title": "RocksDB 性能测试数据与硬件配置",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB性能调优.md",
+    "name": "RocksDB性能调优",
+    "title": "RocksDB 性能调优",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB批量操作性能测试.md",
+    "name": "RocksDB批量操作性能测试",
+    "title": "RocksDB 批量操作性能测试",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB故障场景与恢复测试.md",
+    "name": "RocksDB故障场景与恢复测试",
+    "title": "RocksDB 故障场景与恢复测试",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB文件体系.md",
+    "name": "RocksDB文件体系",
+    "title": "RocksDB 文件体系",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB线程模型.md",
+    "name": "RocksDB线程模型",
+    "title": "RocksDB 线程模型",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB线程配置最佳实践.md",
+    "name": "RocksDB线程配置最佳实践",
+    "title": "RocksDB 线程配置最佳实践",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB范围查询性能测试.md",
+    "name": "RocksDB范围查询性能测试",
+    "title": "RocksDB 范围查询性能测试",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB读取流程.md",
+    "name": "RocksDB读取流程",
+    "title": "RocksDB 读取流程",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB配置参数性能测试.md",
+    "name": "RocksDB配置参数性能测试",
+    "title": "RocksDB 配置参数性能测试",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB顺序写入性能测试.md",
+    "name": "RocksDB顺序写入性能测试",
+    "title": "RocksDB 顺序写入性能测试",
+    "category": "work"
+  },
+  {
+    "path": "work/RocksDB高并发写入压力测试.md",
+    "name": "RocksDB高并发写入压力测试",
+    "title": "RocksDB 高并发写入压力测试",
+    "category": "work"
+  },
+  {
+    "path": "work/TCP参数调优详解.md",
+    "name": "TCP参数调优详解",
+    "title": "TCP参数调优详解",
+    "category": "work"
+  },
+  {
+    "path": "work/TCP调优参数.md",
+    "name": "TCP调优参数",
+    "title": "TCP 调优参数",
+    "category": "work"
+  },
+  {
+    "path": "work/Thunder分布式异步集群框架.md",
+    "name": "Thunder分布式异步集群框架",
+    "title": "Thunder 分布式异步集群框架",
+    "category": "work"
+  },
+  {
+    "path": "work/单机百万长连接内核调优.md",
+    "name": "单机百万长连接内核调优",
+    "title": "单机百万长连接内核调优",
+    "category": "work"
+  },
+  {
+    "path": "work/性能测量与调优.md",
+    "name": "性能测量与调优",
+    "title": "性能测量与调优",
+    "category": "work"
+  },
+  {
+    "path": "work/生产环境故障排查-面试话术模板.md",
+    "name": "生产环境故障排查-面试话术模板",
+    "title": "生产环境故障排查-面试话术模板",
+    "category": "work"
+  },
+  {
+    "path": "work/生产问题全景分类.md",
+    "name": "生产问题全景分类",
+    "title": "生产问题全景分类（面试官问\"你遇到过什么线上问题\"时的展开框架）",
+    "category": "work"
+  },
+  {
+    "path": "work/磁盘问题排查.md",
+    "name": "磁盘问题排查",
+    "title": "磁盘问题排查",
+    "category": "work"
+  },
+  {
+    "path": "work/简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）.md",
+    "name": "简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）",
+    "title": "R1：同步记录 Key 访问统计（主线程 <1μs）",
+    "category": "work"
+  },
+  {
+    "path": "work/简历论证-InterviewPro.md",
+    "name": "简历论证-InterviewPro",
+    "title": "简历论证-InterviewPro",
+    "category": "work"
+  },
+  {
+    "path": "work/简历论证-Thunder.md",
+    "name": "简历论证-Thunder",
+    "title": "简历论证-Thunder",
+    "category": "work"
+  },
+  {
+    "path": "work/系统调优与性能优化.md",
+    "name": "系统调优与性能优化",
+    "title": "系统调优与性能优化",
+    "category": "work"
+  },
+  {
+    "path": "work/网络问题排查.md",
+    "name": "网络问题排查",
+    "title": "网络问题排查",
+    "category": "work"
+  },
+  {
+    "path": "work/项目深挖-KeyDB-Redis.md",
+    "name": "项目深挖-KeyDB-Redis",
+    "title": "项目深挖：KeyDB/Redis 开发",
+    "category": "work"
+  },
+  {
+    "path": "work/项目深挖-分布式IM系统.md",
+    "name": "项目深挖-分布式IM系统",
+    "title": "项目深挖：分布式IM系统",
+    "category": "work"
+  },
+  {
+    "path": "work/项目深挖-服务网格-Istio.md",
+    "name": "项目深挖-服务网格-Istio",
+    "title": "项目深挖：服务网格（Istio）",
+    "category": "work"
   }
 ]
