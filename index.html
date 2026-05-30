@@ -6,109 +6,554 @@
   <title>面试知识库</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, 'Segoe UI', sans-serif; display: flex; height: 100vh; background: #f5f5f5; }
-    .sidebar { width: 320px; background: #fff; border-right: 1px solid #eee; display: flex; flex-direction: column; }
-    .main { flex: 1; padding: 24px 40px; overflow-y: auto; background: #fff; margin: 8px; border-radius: 8px; }
-    input { width: 100%; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin: 12px; }
-    .file-list { flex: 1; overflow-y: auto; padding: 0 12px 12px; }
-    .file-item { padding: 8px 12px; cursor: pointer; border-radius: 6px; font-size: 13px; color: #333; }
-    .file-item:hover { background: #f0f0f0; }
-    .file-item.active { background: #e3f2fd; color: #1565c0; }
-    .file-item .path { font-size: 11px; color: #999; }
-    .markdown { line-height: 1.8; color: #333; max-width: 800px; }
-    .markdown h1 { font-size: 24px; margin: 20px 0 12px; border-bottom: 2px solid #1565c0; padding-bottom: 8px; }
-    .markdown h2 { font-size: 20px; margin: 16px 0 8px; }
-    .markdown h3 { font-size: 16px; margin: 12px 0 6px; }
-    .markdown p { margin: 8px 0; }
-    .markdown code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
-    .markdown pre { background: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; overflow-x: auto; }
-    .markdown table { border-collapse: collapse; margin: 12px 0; }
-    .markdown th, .markdown td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
-    .markdown th { background: #f8f8f8; }
-    .markdown ul, .markdown ol { padding-left: 20px; }
-    .result-count { padding: 8px 12px; font-size: 12px; color: #999; }
+    :root {
+      --sidebar-bg: #1a1a2e;
+      --sidebar-hover: #16213e;
+      --sidebar-active: #0f3460;
+      --accent: #e94560;
+      --accent2: #533483;
+      --text-light: #e0e0e0;
+      --text-dim: #8892b0;
+      --main-bg: #f8f9fc;
+      --card-bg: #ffffff;
+      --border: #e8e8ec;
+      --heading: #1a1a2e;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      display: flex; height: 100vh; background: var(--main-bg);
+    }
+
+    /* ===== 侧边栏 ===== */
+    .sidebar {
+      width: 340px; min-width: 340px;
+      background: var(--sidebar-bg);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .sidebar-header {
+      padding: 20px 16px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .sidebar-header h1 {
+      font-size: 18px; font-weight: 700;
+      color: #fff; letter-spacing: 0.5px;
+    }
+    .sidebar-header h1 span { color: var(--accent); }
+    .sidebar-header p {
+      font-size: 12px; color: var(--text-dim);
+      margin-top: 4px;
+    }
+    .sidebar-header .sub-info {
+      font-size: 11px; color: var(--text-dim);
+      margin-top: 2px; display: flex; gap: 8px;
+    }
+    .sidebar-header .sub-info .cat-dot {
+      display: inline-block; width: 6px; height: 6px;
+      border-radius: 50%; vertical-align: middle; margin-right: 3px;
+    }
+    .sidebar-search {
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .sidebar-search input {
+      width: 100%; padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px; font-size: 13px;
+      background: rgba(255,255,255,0.06);
+      color: #fff; outline: none;
+      transition: all 0.2s;
+    }
+    .sidebar-search input::placeholder { color: var(--text-dim); }
+    .sidebar-search input:focus {
+      border-color: var(--accent);
+      background: rgba(255,255,255,0.1);
+    }
+    .category-tabs {
+      display: flex; padding: 8px 16px; gap: 5px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap;
+    }
+    .cat-btn {
+      padding: 3px 11px; border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px; background: transparent;
+      color: var(--text-dim); font-size: 11.5px; cursor: pointer;
+      transition: all 0.2s; white-space: nowrap;
+    }
+    .cat-btn:hover { border-color: var(--accent); color: var(--text-light); }
+    .cat-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .cat-btn .count {
+      display: inline-block; margin-left: 3px;
+      font-size: 10px; opacity: 0.7;
+    }
+    .cat-btn.active .count { opacity: 0.9; }
+    .sidebar-stats {
+      display: flex; justify-content: space-between;
+      padding: 8px 16px;
+      font-size: 12px; color: var(--text-dim);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .file-list {
+      flex: 1; overflow-y: auto;
+      padding: 4px 0 12px;
+    }
+    .file-list::-webkit-scrollbar { width: 4px; }
+    .file-list::-webkit-scrollbar-track { background: transparent; }
+    .file-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+    .file-item {
+      padding: 10px 16px; cursor: pointer;
+      border-left: 3px solid transparent;
+      transition: all 0.15s;
+    }
+    .file-item:hover { background: rgba(255,255,255,0.05); }
+    .file-item.active {
+      background: rgba(233,69,96,0.1);
+      border-left-color: var(--accent);
+    }
+    .file-item .title {
+      font-size: 13px; color: var(--text-light);
+      line-height: 1.4;
+    }
+    .file-item.active .title { color: #fff; font-weight: 500; }
+    .file-item .path {
+      font-size: 11px; color: var(--text-dim);
+      margin-top: 2px; overflow: hidden;
+      text-overflow: ellipsis; white-space: nowrap;
+    }
+    .file-item.empty {
+      color: var(--text-dim); font-size: 13px;
+      padding: 24px 16px; text-align: center;
+    }
+
+    /* ===== 主内容区 ===== */
+    .main {
+      flex: 1; overflow-y: auto;
+      padding: 0;
+      background: var(--main-bg);
+    }
+    .markdown {
+      max-width: 880px; margin: 0 auto;
+      padding: 40px 48px 60px;
+      line-height: 1.8; color: #333;
+    }
+    /* 欢迎页 */
+    .welcome {
+      text-align: center; padding-top: 120px;
+    }
+    .welcome .logo {
+      font-size: 48px; margin-bottom: 16px;
+    }
+    .welcome h2 {
+      font-size: 28px; color: var(--heading);
+      margin-bottom: 8px; border: none;
+    }
+    .welcome p {
+      color: #888; font-size: 15px;
+      margin: 8px 0;
+    }
+    .welcome .tags {
+      margin-top: 32px; display: flex;
+      flex-wrap: wrap; justify-content: center; gap: 8px;
+      max-width: 500px; margin-left: auto; margin-right: auto;
+    }
+    .welcome .tags span {
+      background: #eef0f5; color: #555;
+      padding: 6px 14px; border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* ===== Markdown 内容样式 ===== */
+    .markdown h1 {
+      font-size: 26px; margin: 0 0 16px;
+      color: var(--heading);
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 10px;
+    }
+    .markdown h2 {
+      font-size: 20px; margin: 28px 0 12px;
+      color: var(--heading);
+    }
+    .markdown h3 {
+      font-size: 16px; margin: 20px 0 8px;
+      color: #444;
+    }
+    .markdown p { margin: 10px 0; }
+    .markdown ul, .markdown ol { padding-left: 22px; margin: 8px 0; }
+    .markdown li { margin: 4px 0; }
+    .markdown strong { color: var(--heading); }
+
+    /* 表格 */
+    .markdown table {
+      border-collapse: collapse; margin: 16px 0;
+      width: 100%; font-size: 14px;
+    }
+    .markdown th {
+      background: #f0f2f5; color: var(--heading);
+      font-weight: 600; border: 1px solid #ddd;
+      padding: 10px 14px; text-align: left;
+    }
+    .markdown td {
+      border: 1px solid #ddd;
+      padding: 8px 14px;
+    }
+    .markdown tr:nth-child(even) { background: #f8f9fc; }
+
+    /* 行内代码 */
+    .markdown code:not(pre code) {
+      background: #eef0f5; color: #e94560;
+      padding: 2px 7px; border-radius: 4px;
+      font-size: 13px; font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    }
+    /* 代码块 - 暗色主题 */
+    .markdown pre {
+      background: #1e1e2e; color: #cdd6f4;
+      padding: 18px 20px; border-radius: 10px;
+      overflow-x: auto; margin: 16px 0;
+      font-size: 13.5px; line-height: 1.6;
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    }
+    .markdown pre code {
+      background: none; color: inherit;
+      padding: 0; border-radius: 0;
+      font-size: inherit;
+    }
+
+    /* 引用 */
+    .markdown blockquote {
+      border-left: 4px solid var(--accent);
+      margin: 16px 0; padding: 12px 20px;
+      background: #f8f9fc; color: #555;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* 水平线 */
+    .markdown hr {
+      border: none; border-top: 1px solid #e0e0e0;
+      margin: 24px 0;
+    }
+
+    /* 加载动画 */
+    .loading {
+      display: flex; align-items: center; justify-content: center;
+      height: 200px; color: var(--text-dim); font-size: 14px;
+    }
+    .loading::after {
+      content: ''; width: 20px; height: 20px;
+      border: 2px solid #e0e0e0; border-top-color: var(--accent);
+      border-radius: 50%; animation: spin 0.6s linear infinite;
+      margin-left: 10px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 768px) {
+      .sidebar { width: 260px; min-width: 260px; }
+      .markdown { padding: 24px 20px 40px; }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/dist/vis-network.min.css">
+  <style>
+    #graphContainer { position: fixed; top: 0; left: 340px; right: 0; bottom: 0; visibility: hidden; z-index: 10; background: #1a1a2e; }
+    #graphContainer.active { visibility: visible; }
   </style>
 </head>
 <body>
+  <!-- 侧边栏 -->
   <div class="sidebar">
-    <input type="text" id="searchInput" placeholder="搜索知识点..." autofocus>
-    <div id="resultCount" class="result-count"></div>
-    <div class="file-list" id="fileList"></div>
-  </div>
-  <div class="main" id="content">
-    <div class="markdown" style="text-align:center;padding-top:100px;color:#999;">
-      <h2>📚 面试知识库</h2>
-      <p>544 个知识点 · 全文搜索</p>
-      <p>左侧搜索框输入关键词</p>
+    <div class="sidebar-header">
+      <h1>📚 面试<span>知识库</span></h1>
+      <p id="totalCount">544 个知识点 · 客户端搜索</p>
+      <div class="sub-info">
+        <span><span class="cat-dot" style="background:#e94560;"></span>面试高频</span>
+        <span><span class="cat-dot" style="background:#61afef;"></span>工作深挖</span>
+        <span><span class="cat-dot" style="background:#98c379;"></span>参考资料</span>
+      </div>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="searchInput" placeholder="搜索知识点（中文/英文）..." autofocus>
+    </div>
+    <div class="category-tabs">
+      <button class="cat-btn active" data-cat="all">全部 <span class="count" id="catAllCount">544</span></button>
+      <button class="cat-btn" data-cat="interview">🎯 面试高频 <span class="count" id="catInterviewCount"></span></button>
+      <button class="cat-btn" data-cat="work">🔧 工作深挖 <span class="count" id="catWorkCount"></span></button>
+      <button class="cat-btn" data-cat="ref">📖 参考资料 <span class="count" id="catRefCount"></span></button>
+    </div>
+    <div class="view-toggle">
+      <button id="listViewBtn" class="active" onclick="switchView('list')">📋 列表</button>
+      <button id="graphViewBtn" onclick="switchView('graph')">🕸️ 图谱</button>
+    </div>
+    <div class="sidebar-stats">
+      <span id="resultCount">全部</span>
+      <span id="resultNumber"></span>
+    </div>
+    <div class="file-list" id="fileList">
+      <div class="loading">加载中</div>
     </div>
   </div>
 
+  <!-- 主内容 -->
+  <div class="main" id="content" style="position:relative;">
+    <div class="markdown welcome" id="welcome">
+      <div class="logo">📚</div>
+      <h2>面试知识库</h2>
+      <p>544 个知识点 · 零服务器成本 · 全文搜索</p>
+      <p style="font-size:13px;color:#aaa;">左侧搜索框输入关键词过滤，点击文件名查看详情</p>
+      <div class="tags">
+        <span>C++</span> <span>Go</span> <span>MySQL</span> <span>Redis</span>
+        <span>RocksDB</span> <span>网络协议</span> <span>性能优化</span>
+        <span>系统设计</span> <span>AI</span> <span>项目经验</span>
+        <span>面试准备</span> <span>简历</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="graphContainer"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/dist/vis-network.min.js"></script>
   <script>
     const files = [];
-    let currentFile = '';
+    
+    let graphInitialized = false;
+    let network = null;
 
-    async function loadFileList() {
-      try {
-        const resp = await fetch('concepts/index.json');
-        if (resp.ok) {
-          const list = await resp.json();
-          files.push(...list);
-          renderFiles(files);
-          return;
-        }
-      } catch(e) {}
+    let currentCategory = 'all';
 
-      // 如果 index.json 不存在，用硬编码列表（由后台生成）
-      const resp = await fetch('concepts/index.json?' + Date.now());
-      if (resp.ok) {
-        const list = await resp.json();
-        files.push(...list);
-      }
-      renderFiles(files);
+    function updateCategoryCounts() {
+      const cats = { interview: 0, work: 0, ref: 0 };
+      for (const f of files) { if (cats[f.category] !== undefined) cats[f.category]++; }
+      document.getElementById('catInterviewCount').textContent = cats.interview;
+      document.getElementById('catWorkCount').textContent = cats.work;
+      document.getElementById('catRefCount').textContent = cats.ref;
     }
 
+    function getFilteredFiles() {
+      const q = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+      let result = files;
+      if (currentCategory !== 'all') {
+        result = result.filter(f => f.category === currentCategory);
+      }
+      if (q) {
+        result = result.filter(f =>
+          (f.name && f.name.toLowerCase().includes(q)) ||
+          (f.title && f.title.toLowerCase().includes(q)) ||
+          (f.path && f.path.toLowerCase().includes(q))
+        );
+      }
+      return result;
+    }
+
+    function switchView(view) {
+      currentView = view;
+      document.getElementById('listViewBtn').className = view === 'list' ? 'active' : '';
+      document.getElementById('graphViewBtn').className = view === 'graph' ? 'active' : '';
+      document.getElementById('fileList').style.display = view === 'list' ? '' : 'none';
+      document.getElementById('searchInput').disabled = view === 'graph';
+      document.getElementById('searchInput').placeholder = view === 'graph' ? '图谱模式' : '搜索知识点...';
+      const gc = document.getElementById('graphContainer');
+      gc.className = view === 'graph' ? 'active' : '';
+      if (view === 'graph') {
+        document.body.style.overflow = 'hidden';
+        if (!graphInitialized) initGraph();
+      } else {
+        document.body.style.overflow = '';
+      }
+    }
+
+    async function initGraph() {
+      graphInitialized = true;
+      const gc = document.getElementById('graphContainer');
+      gc.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#8892b0;font-size:16px;flex-direction:column;gap:12px;"><div style="width:32px;height:32px;border:3px solid rgba(255,255,255,0.1);border-top-color:#e94560;border-radius:50%;animation:spin 0.6s linear infinite;"></div><span>加载中 (544个节点, 1083条连接)</span></div>';
+      try {
+        const resp = await fetch('concepts/graph.json');
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        const gd = await resp.json();
+
+        function getGroup(name) {
+          const n = name.toLowerCase();
+          if (n.startsWith('c++') || n.includes('c++')) return 'cpp';
+          if (n.startsWith('go') || n.includes('go')) return 'go';
+          if (n.startsWith('mysql')) return 'mysql';
+          if (n.startsWith('redis')) return 'redis';
+          if (n.includes('rocksdb')) return 'rocksdb';
+          if (n.includes('tcp') || n.includes('http') || n.includes('网络') || n.includes('websocket')) return 'network';
+          if (n.includes('cpu') || n.includes('内存') || n.includes('性能') || n.includes('优化')) return 'perf';
+          if (n.includes('设计') || n.includes('架构') || n.includes('系统')) return 'design';
+          if (n.includes('ai') || n.includes('模型')) return 'ai';
+          if (n.includes('面试') || n.includes('简历') || n.includes('话术')) return 'interview';
+          if (n.includes('thunder') || n.includes('keydb') || n.includes('项目')) return 'project';
+          return 'other';
+        }
+
+        const colors = {
+          cpp:'#e06c75', go:'#61afef', mysql:'#98c379', redis:'#d19a66',
+          rocksdb:'#c678dd', network:'#56b6c2', perf:'#e5c07b',
+          design:'#7ec8e3', ai:'#f4a261', interview:'#a29bfe',
+          project:'#ff6b6b', other:'#636d83'
+        };
+
+        const conn = {};
+        for (const e of gd.edges) {
+          conn[e.source] = (conn[e.source] || 0) + 1;
+          conn[e.target] = (conn[e.target] || 0) + 1;
+        }
+        const maxC = Math.max(1, ...Object.values(conn));
+
+        const nodes = gd.nodes.map(n => {
+          const g = getGroup(n.name);
+          const c = conn[n.id] || 0;
+          return {
+            id: n.id,
+            label: n.title.length > 15 ? n.title.substr(0,15) + '...' : n.title,
+            title: '<b>' + n.title + '</b><br>' + n.path + '<br>连接: ' + c,
+            color: { background: colors[g] || colors.other, border: '#fff' },
+            size: Math.max(12, Math.min(12 + (c / maxC) * 18, 32)),
+            font: { color: '#fff', size: 12, strokeWidth: 0 },
+            path: n.path,
+          };
+        });
+
+        const edges = gd.edges.map(e => ({
+          from: e.source, to: e.target,
+          color: { color: 'rgba(255,255,255,0.15)', hover: '#e94560' },
+          width: 0.5
+        }));
+
+        setTimeout(function() {
+          gc.innerHTML = '';
+          const vdata = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+          const opts = {
+            nodes: { shape: 'dot' },
+            physics: { stabilization: { iterations: 50 }, solver: 'barnesHut',
+              barnesHut: { gravitationalConstant: -3000, centralGravity: 0.3, springLength: 120, springConstant: 0.04, damping: 0.5 } },
+            interaction: { hover: true, tooltipDelay: 200, navigationButtons: true, keyboard: true },
+          };
+          network = new vis.Network(gc, vdata, opts);
+          network.fit();
+          network.on('click', function(params) {
+            if (params.nodes.length > 0) {
+              const node = nodes.find(n => n.id === params.nodes[0]);
+              if (node && node.path) { switchView('list'); setTimeout(function() { loadFile(node.path); }, 100); }
+            }
+          });
+        }, 100);
+      } catch(e) {
+        gc.innerHTML = '<div class="file-item empty" style="padding:40px;">图谱加载失败: ' + e.message + '</div>';
+      }
+    }
+
+    let currentPath = '';
+    let currentView = 'list'
+
+    // ===== 加载文件列表 =====
+    async function loadFileList() {
+      const el = document.getElementById('fileList');
+      try {
+        const resp = await fetch('concepts/index.json');
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        const list = await resp.json();
+        files.push(...list);
+        updateCategoryCounts();
+        renderFiles(files);
+      } catch(e) {
+        el.innerHTML = '<div class="file-item empty">加载失败，请刷新重试</div>';
+      }
+    }
+
+    // ===== 渲染文件列表 =====
     function renderFiles(list) {
       const el = document.getElementById('fileList');
       if (list.length === 0) {
-        el.innerHTML = '<div style="padding:12px;color:#999;">无匹配结果</div>';
+        el.innerHTML = '<div class="file-item empty">无匹配结果</div>';
+        document.getElementById('resultNumber').textContent = '0 / ' + files.length;
         return;
       }
-      el.innerHTML = list.map(f => 
-        `<div class="file-item" onclick="loadFile('${f.path}')">
-          <div>${f.title || f.name}</div>
+      el.innerHTML = list.map(f => {
+        const active = f.path === currentPath ? ' active' : '';
+        return `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
+          <div class="title">${f.title || f.name}</div>
           <div class="path">${f.path}</div>
-        </div>`
-      ).join('');
-      document.getElementById('resultCount').textContent = `${list.length} 个文件`;
+        </div>`;
+      }).join('');
+      document.getElementById('resultCount').textContent =
+        list.length === files.length ? '全部' : '筛选';
+      document.getElementById('resultNumber').textContent =
+        list.length + ' / ' + files.length;
     }
 
+    // ===== 加载文件内容 =====
     async function loadFile(path) {
-      currentFile = path;
+      currentPath = path;
+      // 高亮当前项
       document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
-      event?.target?.closest('.file-item')?.classList.add('active');
-      
+      // 通过 path 匹配
+      document.querySelectorAll('.file-item').forEach(el => {
+        const pathEl = el.querySelector('.path');
+        if (pathEl && pathEl.textContent === path) {
+          el.classList.add('active');
+          el.scrollIntoView({ block: 'nearest' });
+        }
+      });
+
+      const main = document.getElementById('content');
+      main.innerHTML = '<div class="loading">加载中</div>';
+
       try {
-        const resp = await fetch('concepts/' + path);
+        const resp = await fetch('concepts/' + encodeURI(path));
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const text = await resp.text();
+
+        // 配置 marked
+        marked.setOptions({
+          breaks: true,
+          gfm: true,
+          highlight: function(code, lang) {
+            if (lang && hljs.getLanguage(lang)) {
+              try { return hljs.highlight(code, { language: lang }).value; } catch(e) {}
+            }
+            try { return hljs.highlightAuto(code).value; } catch(e) {}
+            return code;
+          }
+        });
+
         const html = marked.parse(text);
-        document.getElementById('content').innerHTML = '<div class="markdown">' + html + '</div>';
-        document.getElementById('content').scrollTop = 0;
+        main.innerHTML = '<div class="markdown">' + html + '</div>';
+        main.scrollTop = 0;
       } catch(e) {
-        document.getElementById('content').innerHTML = '<div class="markdown"><p style="color:red">加载失败: ' + e.message + '</p></div>';
+        main.innerHTML = '<div class="markdown"><p style="color:#e94560;padding:40px;">❌ 加载失败: ' + e.message + '</p></div>';
       }
     }
 
-    // 搜索（简单在前端做）
-    document.getElementById('searchInput').addEventListener('input', function(e) {
-      const q = e.target.value.toLowerCase();
-      if (!q) { renderFiles(files); return; }
-      const filtered = files.filter(f => 
-        f.name.toLowerCase().includes(q) || 
-        (f.title && f.title.toLowerCase().includes(q)) ||
-        f.path.toLowerCase().includes(q)
-      );
-      renderFiles(filtered);
+    // ===== 搜索和分类筛选 =====
+    document.getElementById('searchInput').addEventListener('input', function() {
+      renderFiles(getFilteredFiles());
+    });
+
+    document.querySelectorAll('.cat-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentCategory = btn.getAttribute('data-cat');
+        renderFiles(getFilteredFiles());
+      });
+    });
+
+    // ===== 键盘快捷键 =====
+    document.addEventListener('keydown', function(e) {
+      // Ctrl+F / Cmd+F 聚焦搜索框
+      if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+        e.preventDefault();
+        document.getElementById('searchInput').focus();
+      }
+      // Escape 清空搜索
+      if (e.key === 'Escape') {
+        const input = document.getElementById('searchInput');
+        if (input === document.activeElement) {
+          input.value = '';
+          renderFiles(files);
+          input.blur();
+        }
+      }
     });
 
     loadFileList();
