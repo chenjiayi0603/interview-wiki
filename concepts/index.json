@@ -1,31 +1,31 @@
 [
   {
     "path": "interview/Access网关握手协议.md",
-    "name": "Access网关握手协议",
+    "name": "Access 网关握手协议",
     "title": "Access 网关握手协议",
     "category": "interview"
   },
   {
     "path": "interview/AddressSanitizer.md",
-    "name": "AddressSanitizer",
+    "name": "AddressSanitizer - 内存错误检测",
     "title": "AddressSanitizer - 内存错误检测",
     "category": "interview"
   },
   {
     "path": "interview/Asio-Cobalt协程场景示例.md",
-    "name": "Asio-Cobalt协程场景示例",
+    "name": "Asio / Cobalt 协程场景示例",
     "title": "Asio / Cobalt 协程场景示例",
     "category": "interview"
   },
   {
     "path": "interview/Asio-epoll-与协程异步模型.md",
-    "name": "Asio-epoll-与协程异步模型",
+    "name": "Asio、epoll 与协程异步模型",
     "title": "Asio、epoll 与协程异步模型",
     "category": "interview"
   },
   {
     "path": "interview/B+Tree与B-Tree对比.md",
-    "name": "B+Tree与B-Tree对比",
+    "name": "B+Tree 与 B-Tree 对比",
     "title": "B+Tree 与 B-Tree 对比",
     "category": "interview"
   },
@@ -43,145 +43,145 @@
   },
   {
     "path": "interview/C++17并行算法.md",
-    "name": "C++17并行算法",
+    "name": "C++17 并行算法",
     "title": "C++17 并行算法",
     "category": "interview"
   },
   {
     "path": "interview/C++20协程.md",
-    "name": "C++20协程",
+    "name": "C++20 协程",
     "title": "C++20 协程",
     "category": "interview"
   },
   {
     "path": "interview/C++DFS回溯.md",
-    "name": "C++DFS回溯",
+    "name": "C++ DFS / 回溯",
     "title": "C++ DFS / 回溯",
     "category": "interview"
   },
   {
     "path": "interview/C++I_O优化.md",
-    "name": "C++I_O优化",
+    "name": "C++ I/O 优化",
     "title": "C++ I/O 优化",
     "category": "interview"
   },
   {
     "path": "interview/C++POSIX文件操作.md",
-    "name": "C++POSIX文件操作",
+    "name": "C++ POSIX 文件操作",
     "title": "C++ POSIX 文件操作",
     "category": "interview"
   },
   {
     "path": "interview/C++STL内存管理.md",
-    "name": "C++STL内存管理",
+    "name": "C++ STL 内存管理",
     "title": "C++ STL 内存管理",
     "category": "interview"
   },
   {
     "path": "interview/C++TBB最佳实践.md",
-    "name": "C++TBB最佳实践",
+    "name": "C++ TBB 最佳实践",
     "title": "C++ TBB 最佳实践",
     "category": "interview"
   },
   {
     "path": "interview/C++_CPU优化最佳实践.md",
-    "name": "C++_CPU优化最佳实践",
+    "name": "C++ CPU优化最佳实践",
     "title": "C++ CPU优化最佳实践",
     "category": "interview"
   },
   {
     "path": "interview/c++_协程、线程、进程的占用资源分析.md",
-    "name": "c++_协程、线程、进程的占用资源分析",
+    "name": "C++ 协程、线程、进程的占用资源分析",
     "title": "C++ 协程、线程、进程的占用资源分析",
     "category": "interview"
   },
   {
     "path": "interview/C++两数组二分查找.md",
-    "name": "C++两数组二分查找",
+    "name": "C++ 两数组二分查找",
     "title": "C++ 两数组二分查找",
     "category": "interview"
   },
   {
     "path": "interview/C++买卖股票的最佳时机II.md",
-    "name": "C++买卖股票的最佳时机II",
+    "name": "C++ 买卖股票的最佳时机 II",
     "title": "C++ 买卖股票的最佳时机 II",
     "category": "interview"
   },
   {
     "path": "interview/C++二分查找.md",
-    "name": "C++二分查找",
+    "name": "C++ 二分查找",
     "title": "C++ 二分查找",
     "category": "interview"
   },
   {
     "path": "interview/C++二叉树BFS应用.md",
-    "name": "C++二叉树BFS应用",
+    "name": "C++ 二叉树 BFS 应用",
     "title": "C++ 二叉树 BFS 应用",
     "category": "interview"
   },
   {
     "path": "interview/C++二叉树LCA与路径.md",
-    "name": "C++二叉树LCA与路径",
+    "name": "C++ 二叉树 LCA 与路径",
     "title": "C++ 二叉树 LCA 与路径",
     "category": "interview"
   },
   {
     "path": "interview/C++二叉树前序遍历.md",
-    "name": "C++二叉树前序遍历",
+    "name": "C++ 二叉树前序遍历",
     "title": "C++ 二叉树前序遍历",
     "category": "interview"
   },
   {
     "path": "interview/C++二叉树遍历.md",
-    "name": "C++二叉树遍历",
+    "name": "C++ 二叉树遍历",
     "title": "C++ 二叉树遍历",
     "category": "interview"
   },
   {
     "path": "interview/C++位运算.md",
-    "name": "C++位运算",
+    "name": "C++ 位运算",
     "title": "C++ 位运算",
     "category": "interview"
   },
   {
     "path": "interview/C++内存优化.md",
-    "name": "C++内存优化",
+    "name": "C++ 内存优化",
     "title": "C++ 内存优化",
     "category": "interview"
   },
   {
     "path": "interview/C++内存优化实战案例.md",
-    "name": "C++内存优化实战案例",
+    "name": "C++ 内存优化实战案例",
     "title": "C++ 内存优化实战案例",
     "category": "interview"
   },
   {
     "path": "interview/C++内存优化最佳实践.md",
-    "name": "C++内存优化最佳实践",
+    "name": "C++ 内存优化最佳实践",
     "title": "C++ 内存优化最佳实践",
     "category": "interview"
   },
   {
     "path": "interview/C++内存分析工具.md",
-    "name": "C++内存分析工具",
+    "name": "C++ 内存分析工具",
     "title": "C++ 内存分析工具",
     "category": "interview"
   },
   {
     "path": "interview/C++内存分析工具实际应用场景.md",
-    "name": "C++内存分析工具实际应用场景",
+    "name": "C++ 内存分析工具实际应用场景",
     "title": "C++ 内存分析工具实际应用场景",
     "category": "interview"
   },
   {
     "path": "interview/C++内存分析工具常见问题与解决方案.md",
-    "name": "C++内存分析工具常见问题与解决方案",
+    "name": "C++ 内存分析工具常见问题与解决方案",
     "title": "C++ 内存分析工具常见问题与解决方案",
     "category": "interview"
   },
   {
     "path": "interview/C++内存对齐优化.md",
-    "name": "C++内存对齐优化",
+    "name": "C++ 内存对齐优化",
     "title": "C++ 内存对齐优化",
     "category": "interview"
   },
@@ -205,31 +205,31 @@
   },
   {
     "path": "interview/C++动态规划.md",
-    "name": "C++动态规划",
+    "name": "C++ 动态规划",
     "title": "C++ 动态规划",
     "category": "interview"
   },
   {
     "path": "interview/C++协程库对比-Folly-Asio-Cobalt-libgo.md",
-    "name": "C++协程库对比-Folly-Asio-Cobalt-libgo",
+    "name": "C++协程库对比：Folly / Asio+Cobalt / libgo",
     "title": "C++协程库对比：Folly / Asio+Cobalt / libgo",
     "category": "interview"
   },
   {
     "path": "interview/C++双指针.md",
-    "name": "C++双指针",
+    "name": "C++ 双指针",
     "title": "C++ 双指针",
     "category": "interview"
   },
   {
     "path": "interview/C++双遍历一维数组.md",
-    "name": "C++双遍历一维数组",
+    "name": "C++ 双遍历一维数组",
     "title": "C++ 双遍历一维数组",
     "category": "interview"
   },
   {
     "path": "interview/C++双遍历二维数组(状态数组).md",
-    "name": "C++双遍历二维数组(状态数组)",
+    "name": "C++ 双遍历二维数组（状态数组）",
     "title": "C++ 双遍历二维数组（状态数组）",
     "category": "interview"
   },
@@ -241,85 +241,85 @@
   },
   {
     "path": "interview/C++后台性能优化-调度与实时性优化.md",
-    "name": "C++后台性能优化-调度与实时性优化",
+    "name": "C++ 后台性能优化 - 调度与实时性优化",
     "title": "C++ 后台性能优化 - 调度与实时性优化",
     "category": "interview"
   },
   {
     "path": "interview/C++图论.md",
-    "name": "C++图论",
+    "name": "C++ 图论",
     "title": "C++ 图论",
     "category": "interview"
   },
   {
     "path": "interview/C++在实时系统中的挑战.md",
-    "name": "C++在实时系统中的挑战",
+    "name": "C++ 在实时系统中的挑战",
     "title": "C++ 在实时系统中的挑战",
     "category": "interview"
   },
   {
     "path": "interview/C++堆与TopK.md",
-    "name": "C++堆与TopK",
+    "name": "C++ 堆与 TopK",
     "title": "C++ 堆与 TopK",
     "category": "interview"
   },
   {
     "path": "interview/C++多线程与并发.md",
-    "name": "C++多线程与并发",
+    "name": "C++ 多线程与并发",
     "title": "C++ 多线程与并发",
     "category": "interview"
   },
   {
     "path": "interview/C++字符串算法.md",
-    "name": "C++字符串算法",
+    "name": "C++ 字符串算法",
     "title": "C++ 字符串算法",
     "category": "interview"
   },
   {
     "path": "interview/C++对象内存布局.md",
-    "name": "C++对象内存布局",
+    "name": "C++ 对象内存布局",
     "title": "C++ 对象内存布局",
     "category": "interview"
   },
   {
     "path": "interview/C++并发性能优化.md",
-    "name": "C++并发性能优化",
+    "name": "C++ 并发性能优化",
     "title": "C++ 并发性能优化",
     "category": "interview"
   },
   {
     "path": "interview/C++并行算法.md",
-    "name": "C++并行算法",
+    "name": "C++ 并行算法",
     "title": "C++ 并行算法",
     "category": "interview"
   },
   {
     "path": "interview/C++归并排序（两两合并）.md",
-    "name": "C++归并排序（两两合并）",
+    "name": "C++ 归并排序（两两合并）",
     "title": "C++ 归并排序（两两合并）",
     "category": "interview"
   },
   {
     "path": "interview/C++微服务集群-epoll异步网关-业务逻辑层-存储代理层.md",
-    "name": "C++微服务集群-epoll异步网关-业务逻辑层-存储代理层",
+    "name": "C++ 微服务集群（epoll 异步网关 + 业务逻辑层 + 存储代理层）",
     "title": "C++ 微服务集群（epoll 异步网关 + 业务逻辑层 + 存储代理层）",
     "category": "interview"
   },
   {
     "path": "interview/C++性能优化大厂考点-总结优化清单.md",
-    "name": "C++性能优化大厂考点-总结优化清单",
+    "name": "C++ 性能优化大厂考点 - 总结优化清单",
     "title": "C++ 性能优化大厂考点 - 总结优化清单",
     "category": "interview"
   },
   {
     "path": "interview/C++性能优化大厂考点.md",
-    "name": "C++性能优化大厂考点",
+    "name": "C++ 性能优化大厂考点",
     "title": "C++ 性能优化大厂考点",
     "category": "interview"
   },
   {
     "path": "interview/C++性能分析常见问题与技巧.md",
-    "name": "C++性能分析常见问题与技巧",
+    "name": "C++ 性能分析常见问题与技巧",
     "title": "C++ 性能分析常见问题与技巧",
     "category": "interview"
   },
@@ -331,49 +331,49 @@
   },
   {
     "path": "interview/C++指针体系.md",
-    "name": "C++指针体系",
+    "name": "C++ 指针体系",
     "title": "C++ 指针体系",
     "category": "interview"
   },
   {
     "path": "interview/C++排序算法.md",
-    "name": "C++排序算法",
+    "name": "C++ 排序算法",
     "title": "C++ 排序算法",
     "category": "interview"
   },
   {
     "path": "interview/C++数字运算二分.md",
-    "name": "C++数字运算二分",
+    "name": "C++ 数字运算有关的二分",
     "title": "C++ 数字运算有关的二分",
     "category": "interview"
   },
   {
     "path": "interview/C++数组二分查找.md",
-    "name": "C++数组二分查找",
+    "name": "C++ 数组二分查找",
     "title": "C++ 数组二分查找",
     "category": "interview"
   },
   {
     "path": "interview/C++数组从两边往中间收拢.md",
-    "name": "C++数组从两边往中间收拢",
+    "name": "C++ 数组从两边往中间收拢",
     "title": "C++ 数组从两边往中间收拢",
     "category": "interview"
   },
   {
     "path": "interview/C++最长回文子串.md",
-    "name": "C++最长回文子串",
+    "name": "C++ 最长回文子串",
     "title": "C++ 最长回文子串",
     "category": "interview"
   },
   {
     "path": "interview/C++条件递归.md",
-    "name": "C++条件递归",
+    "name": "C++ 条件递归",
     "title": "C++ 条件递归",
     "category": "interview"
   },
   {
     "path": "interview/C++构建常见问题与技巧.md",
-    "name": "C++构建常见问题与技巧",
+    "name": "C++ 构建常见问题与技巧",
     "title": "C++ 构建常见问题与技巧",
     "category": "interview"
   },
@@ -385,13 +385,13 @@
   },
   {
     "path": "interview/C++核心必背20题.md",
-    "name": "C++核心必背20题",
+    "name": "C++ 核心必背（20题）",
     "title": "C++ 核心必背（20题）",
     "category": "interview"
   },
   {
     "path": "interview/C++游标交换复制.md",
-    "name": "C++游标交换复制",
+    "name": "C++ 游标交换复制",
     "title": "C++ 游标交换复制",
     "category": "interview"
   },
@@ -403,13 +403,13 @@
   },
   {
     "path": "interview/C++猜数字大小II.md",
-    "name": "C++猜数字大小II",
+    "name": "C++ 猜数字大小 II",
     "title": "C++ 猜数字大小 II",
     "category": "interview"
   },
   {
     "path": "interview/C++第三方库手册.md",
-    "name": "C++第三方库手册",
+    "name": "C++ 常用依赖库手册（后台服务器方向）",
     "title": "C++ 常用依赖库手册（后台服务器方向）",
     "category": "interview"
   },
@@ -421,7 +421,7 @@
   },
   {
     "path": "interview/C++编程优化.md",
-    "name": "C++编程优化",
+    "name": "C++ 编程优化",
     "title": "C++ 编程优化",
     "category": "interview"
   },
@@ -439,19 +439,19 @@
   },
   {
     "path": "interview/C++课程表II.md",
-    "name": "C++课程表II",
+    "name": "C++ 课程表 II",
     "title": "C++ 课程表 II",
     "category": "interview"
   },
   {
     "path": "interview/C++调试.md",
-    "name": "C++调试",
+    "name": "C++ 调试",
     "title": "C++ 调试",
     "category": "interview"
   },
   {
     "path": "interview/C++进程创建与管理.md",
-    "name": "C++进程创建与管理",
+    "name": "C++ 进程创建与管理",
     "title": "C++ 进程创建与管理",
     "category": "interview"
   },
@@ -463,13 +463,13 @@
   },
   {
     "path": "interview/C++链表.md",
-    "name": "C++链表",
+    "name": "C++ 链表",
     "title": "C++ 链表",
     "category": "interview"
   },
   {
     "path": "interview/C++链表相交与环形链表.md",
-    "name": "C++链表相交与环形链表",
+    "name": "C++ 链表相交与环形链表",
     "title": "C++ 链表相交与环形链表",
     "category": "interview"
   },
@@ -493,13 +493,13 @@
   },
   {
     "path": "interview/Checkpoint机制.md",
-    "name": "Checkpoint机制",
+    "name": "Checkpoint 机制",
     "title": "Checkpoint 机制",
     "category": "interview"
   },
   {
     "path": "interview/CI-CD最佳实践.md",
-    "name": "CI-CD最佳实践",
+    "name": "CI/CD 最佳实践",
     "title": "CI/CD 最佳实践",
     "category": "interview"
   },
@@ -511,25 +511,25 @@
   },
   {
     "path": "interview/Compaction_rate_limiter_WAL_L0_留本地_SSD.md",
-    "name": "Compaction_rate_limiter_WAL_L0_留本地_SSD",
+    "name": "Compaction rate_limiter + WAL/L0 留本地 SSD",
     "title": "Compaction rate_limiter + WAL/L0 留本地 SSD",
     "category": "interview"
   },
   {
     "path": "interview/Cpp_Wasm_开发.md",
-    "name": "Cpp_Wasm_开发",
+    "name": "Cpp Wasm 开发",
     "title": "Cpp Wasm 开发",
     "category": "interview"
   },
   {
     "path": "interview/CPU亲和性.md",
-    "name": "CPU亲和性",
+    "name": "CPU 亲和性（CPU Affinity）",
     "title": "CPU 亲和性（CPU Affinity）",
     "category": "interview"
   },
   {
     "path": "interview/CPU亲和性与调度.md",
-    "name": "CPU亲和性与调度",
+    "name": "CPU 亲和性与调度 (sched)",
     "title": "CPU 亲和性与调度 (sched)",
     "category": "interview"
   },
@@ -547,7 +547,7 @@
   },
   {
     "path": "interview/CPU高但业务量低.md",
-    "name": "CPU高但业务量低",
+    "name": "CPU 高但业务量低",
     "title": "CPU 高但业务量低",
     "category": "interview"
   },
@@ -559,19 +559,19 @@
   },
   {
     "path": "interview/Docker Compose vs 纯 Shell 脚本管理容器.md",
-    "name": "Docker Compose vs 纯 Shell 脚本管理容器",
+    "name": "Docker Compose vs 纯 Shell 脚本管理容器 —— 全面对比",
     "title": "Docker Compose vs 纯 Shell 脚本管理容器 —— 全面对比",
     "category": "interview"
   },
   {
     "path": "interview/Docker Compose 单机方案.md",
-    "name": "Docker Compose 单机方案",
+    "name": "Docker Compose 单机方案（1-5人团队）",
     "title": "Docker Compose 单机方案（1-5人团队）",
     "category": "interview"
   },
   {
     "path": "interview/ECDH登录与通信流程图.md",
-    "name": "ECDH登录与通信流程图",
+    "name": "ECDH 登录与通信流程图",
     "title": "ECDH 登录与通信流程图",
     "category": "interview"
   },
@@ -601,7 +601,7 @@
   },
   {
     "path": "interview/epoll.md",
-    "name": "epoll",
+    "name": "epoll — 高性能 I/O 多路复用",
     "title": "epoll — 高性能 I/O 多路复用",
     "category": "interview"
   },
@@ -613,175 +613,175 @@
   },
   {
     "path": "interview/eventfd.md",
-    "name": "eventfd",
+    "name": "eventfd — 事件通知",
     "title": "eventfd — 事件通知",
     "category": "interview"
   },
   {
     "path": "interview/FastDFS逻辑架构.md",
-    "name": "FastDFS逻辑架构",
+    "name": "FastDFS 逻辑架构图",
     "title": "FastDFS 逻辑架构图",
     "category": "interview"
   },
   {
     "path": "interview/futex.md",
-    "name": "futex",
+    "name": "futex — 快速用户空间互斥",
     "title": "futex — 快速用户空间互斥",
     "category": "interview"
   },
   {
     "path": "interview/Gin Web框架深度分析.md",
-    "name": "Gin Web框架深度分析",
+    "name": "Gin Web 框架深度分析",
     "title": "Gin Web 框架深度分析",
     "category": "interview"
   },
   {
     "path": "interview/Go-Zero微服务框架.md",
-    "name": "Go-Zero微服务框架",
+    "name": "Go-Zero 微服务框架",
     "title": "Go-Zero 微服务框架",
     "category": "interview"
   },
   {
     "path": "interview/GoContext机制.md",
-    "name": "GoContext机制",
+    "name": "Go Context机制",
     "title": "Go Context机制",
     "category": "interview"
   },
   {
     "path": "interview/Goroutine调度.md",
-    "name": "Goroutine调度",
+    "name": "Goroutine 调度",
     "title": "Goroutine 调度",
     "category": "interview"
   },
   {
     "path": "interview/Go_Atomic.md",
-    "name": "Go_Atomic",
+    "name": "Go Atomic（原子操作）",
     "title": "Go Atomic（原子操作）",
     "category": "interview"
   },
   {
     "path": "interview/Go_Cond.md",
-    "name": "Go_Cond",
+    "name": "Go Cond（条件变量）",
     "title": "Go Cond（条件变量）",
     "category": "interview"
   },
   {
     "path": "interview/Go_Context.md",
-    "name": "Go_Context",
+    "name": "Go Context（上下文）",
     "title": "Go Context（上下文）",
     "category": "interview"
   },
   {
     "path": "interview/Go_GLS与libgo_CLS.md",
-    "name": "Go_GLS与libgo_CLS",
+    "name": "Go GLS 与 libgo CLS",
     "title": "Go GLS 与 libgo CLS",
     "category": "interview"
   },
   {
     "path": "interview/Go_gRPC_客户端.md",
-    "name": "Go_gRPC_客户端",
+    "name": "Go gRPC 客户端",
     "title": "Go gRPC 客户端",
     "category": "interview"
   },
   {
     "path": "interview/Go_gRPC_拦截器与错误处理.md",
-    "name": "Go_gRPC_拦截器与错误处理",
+    "name": "Go gRPC 拦截器与错误处理",
     "title": "Go gRPC 拦截器与错误处理",
     "category": "interview"
   },
   {
     "path": "interview/Go_gRPC_服务端.md",
-    "name": "Go_gRPC_服务端",
+    "name": "Go gRPC 服务端",
     "title": "Go gRPC 服务端",
     "category": "interview"
   },
   {
     "path": "interview/Go_LeetCode技巧-条件递归.md",
-    "name": "Go_LeetCode技巧-条件递归",
+    "name": "Go LeetCode 技巧：条件递归",
     "title": "Go LeetCode 技巧：条件递归",
     "category": "interview"
   },
   {
     "path": "interview/Go_LeetCode技巧.md",
-    "name": "Go_LeetCode技巧",
+    "name": "Go LeetCode 技巧",
     "title": "Go LeetCode 技巧",
     "category": "interview"
   },
   {
     "path": "interview/Go_LeetCode技巧_简单的二分循环.md",
-    "name": "Go_LeetCode技巧_简单的二分循环",
+    "name": "Go LeetCode 技巧：简单的二分循环",
     "title": "Go LeetCode 技巧：简单的二分循环",
     "category": "interview"
   },
   {
     "path": "interview/Go_LeetCode技巧_贪心靠近.md",
-    "name": "Go_LeetCode技巧_贪心靠近",
+    "name": "Go LeetCode 技巧：贪心靠近",
     "title": "Go LeetCode 技巧：贪心靠近",
     "category": "interview"
   },
   {
     "path": "interview/Go_LeetCode技巧_遍历递归.md",
-    "name": "Go_LeetCode技巧_遍历递归",
+    "name": "Go LeetCode 技巧：遍历递归",
     "title": "Go LeetCode 技巧：遍历递归",
     "category": "interview"
   },
   {
     "path": "interview/Go_Mutex.md",
-    "name": "Go_Mutex",
+    "name": "Go Mutex（互斥锁）",
     "title": "Go Mutex（互斥锁）",
     "category": "interview"
   },
   {
     "path": "interview/Go_Once.md",
-    "name": "Go_Once",
+    "name": "Go Once（只执行一次）",
     "title": "Go Once（只执行一次）",
     "category": "interview"
   },
   {
     "path": "interview/Go_RWMutex.md",
-    "name": "Go_RWMutex",
+    "name": "Go RWMutex（读写锁）",
     "title": "Go RWMutex（读写锁）",
     "category": "interview"
   },
   {
     "path": "interview/Go_Select.md",
-    "name": "Go_Select",
+    "name": "Go Select 多路复用",
     "title": "Go Select 多路复用",
     "category": "interview"
   },
   {
     "path": "interview/Go_Wasm_SDK_API.md",
-    "name": "Go_Wasm_SDK_API",
+    "name": "Go Wasm SDK API",
     "title": "Go Wasm SDK API",
     "category": "interview"
   },
   {
     "path": "interview/Go_Wasm_vs_Cpp_Wasm_对比.md",
-    "name": "Go_Wasm_vs_Cpp_Wasm_对比",
+    "name": "Go Wasm vs Cpp Wasm 对比",
     "title": "Go Wasm vs Cpp Wasm 对比",
     "category": "interview"
   },
   {
     "path": "interview/Go与libgo代码示例对比.md",
-    "name": "Go与libgo代码示例对比",
+    "name": "Go 与 libgo 代码示例对比",
     "title": "Go 与 libgo 代码示例对比",
     "category": "interview"
   },
   {
     "path": "interview/Go依赖常见问题.md",
-    "name": "Go依赖常见问题",
+    "name": "Go 依赖常见问题",
     "title": "Go 依赖常见问题",
     "category": "interview"
   },
   {
     "path": "interview/Go依赖管理最佳实践.md",
-    "name": "Go依赖管理最佳实践",
+    "name": "Go 依赖管理最佳实践",
     "title": "Go 依赖管理最佳实践",
     "category": "interview"
   },
   {
     "path": "interview/Go依赖管理详解.md",
-    "name": "Go依赖管理详解",
+    "name": "Go 依赖管理详解",
     "title": "Go 依赖管理详解",
     "category": "interview"
   },
@@ -793,37 +793,37 @@
   },
   {
     "path": "interview/Go包导入和使用.md",
-    "name": "Go包导入和使用",
+    "name": "Go 包导入和使用",
     "title": "Go 包导入和使用",
     "category": "interview"
   },
   {
     "path": "interview/Go同步常见问题和陷阱.md",
-    "name": "Go同步常见问题和陷阱",
+    "name": "Go 同步常见问题和陷阱",
     "title": "Go 同步常见问题和陷阱",
     "category": "interview"
   },
   {
     "path": "interview/Go同步性能优化.md",
-    "name": "Go同步性能优化",
+    "name": "Go 同步性能优化",
     "title": "Go 同步性能优化",
     "category": "interview"
   },
   {
     "path": "interview/Go同步面试考点总结.md",
-    "name": "Go同步面试考点总结",
+    "name": "Go 同步面试考点总结",
     "title": "Go 同步面试考点总结",
     "category": "interview"
   },
   {
     "path": "interview/Go常用库分类和使用.md",
-    "name": "Go常用库分类和使用",
+    "name": "Go 常用库分类和使用",
     "title": "Go 常用库分类和使用",
     "category": "interview"
   },
   {
     "path": "interview/Go常用数据结构.md",
-    "name": "Go常用数据结构",
+    "name": "Go 常用数据结构",
     "title": "Go 常用数据结构",
     "category": "interview"
   },
@@ -847,19 +847,19 @@
   },
   {
     "path": "interview/Go方法接收者.md",
-    "name": "Go方法接收者",
+    "name": "Go 方法接收者",
     "title": "Go 方法接收者",
     "category": "interview"
   },
   {
     "path": "interview/Go构建和编译.md",
-    "name": "Go构建和编译",
+    "name": "Go 构建和编译",
     "title": "Go 构建和编译",
     "category": "interview"
   },
   {
     "path": "interview/Go核心必背15题.md",
-    "name": "Go核心必背15题",
+    "name": "Go 核心必背（15题）",
     "title": "Go 核心必背（15题）",
     "category": "interview"
   },
@@ -871,19 +871,19 @@
   },
   {
     "path": "interview/Go第三方库总结.md",
-    "name": "Go第三方库总结",
+    "name": "Go 第三方库总结",
     "title": "Go 第三方库总结",
     "category": "interview"
   },
   {
     "path": "interview/Go第三方库手册.md",
-    "name": "Go第三方库手册",
+    "name": "Go 常用开源库手册",
     "title": "Go 常用开源库手册",
     "category": "interview"
   },
   {
     "path": "interview/Go网络编程.md",
-    "name": "Go网络编程",
+    "name": "Go 网络编程",
     "title": "Go 网络编程",
     "category": "interview"
   },
@@ -895,7 +895,7 @@
   },
   {
     "path": "interview/Go语言语法快速入门.md",
-    "name": "Go语言语法快速入门",
+    "name": "Go 语言语法快速入门",
     "title": "Go 语言语法快速入门",
     "category": "interview"
   },
@@ -907,73 +907,73 @@
   },
   {
     "path": "interview/gprof.md",
-    "name": "gprof",
+    "name": "gprof（GNU性能分析器）",
     "title": "gprof（GNU性能分析器）",
     "category": "interview"
   },
   {
     "path": "interview/gRPC_C++_网络过程.md",
-    "name": "gRPC_C++_网络过程",
+    "name": "gRPC C++ 网络过程",
     "title": "gRPC C++ 网络过程",
     "category": "interview"
   },
   {
     "path": "interview/gRPC_Protocol_Buffers.md",
-    "name": "gRPC_Protocol_Buffers",
+    "name": "gRPC Protocol Buffers",
     "title": "gRPC Protocol Buffers",
     "category": "interview"
   },
   {
     "path": "interview/gRPC_vs_libev+pb_对比.md",
-    "name": "gRPC_vs_libev+pb_对比",
+    "name": "gRPC vs libev+pb 对比",
     "title": "gRPC vs libev+pb 对比",
     "category": "interview"
   },
   {
     "path": "interview/gRPC与Gin网关模式.md",
-    "name": "gRPC与Gin网关模式",
+    "name": "gRPC 与 Gin 网关模式",
     "title": "gRPC 与 Gin 网关模式",
     "category": "interview"
   },
   {
     "path": "interview/gRPC架构与RPC类型.md",
-    "name": "gRPC架构与RPC类型",
+    "name": "gRPC 架构与 RPC 类型",
     "title": "gRPC 架构与 RPC 类型",
     "category": "interview"
   },
   {
     "path": "interview/gRPC概述.md",
-    "name": "gRPC概述",
+    "name": "gRPC 概述",
     "title": "gRPC 概述",
     "category": "interview"
   },
   {
     "path": "interview/HTTPS_TLS握手与TCP优化.md",
-    "name": "HTTPS_TLS握手与TCP优化",
+    "name": "HTTPS / TLS 握手与 TCP 优化",
     "title": "HTTPS / TLS 握手与 TCP 优化",
     "category": "interview"
   },
   {
     "path": "interview/IMAWSCodis架构.md",
-    "name": "IMAWSCodis架构",
+    "name": "IM AWS Codis 架构",
     "title": "IM AWS Codis 架构",
     "category": "interview"
   },
   {
     "path": "interview/IMAWSMongoDB分片集群.md",
-    "name": "IMAWSMongoDB分片集群",
+    "name": "IM AWS MongoDB 分片集群",
     "title": "IM AWS MongoDB 分片集群",
     "category": "interview"
   },
   {
     "path": "interview/IMAWSMySQLMGR高可用架构.md",
-    "name": "IMAWSMySQLMGR高可用架构",
+    "name": "IM AWS MySQL 高可用架构",
     "title": "IM AWS MySQL 高可用架构",
     "category": "interview"
   },
   {
     "path": "interview/IM_MongoDB表设计.md",
-    "name": "IM_MongoDB表设计",
+    "name": "IM MongoDB表设计",
     "title": "IM MongoDB表设计",
     "category": "interview"
   },
@@ -991,7 +991,7 @@
   },
   {
     "path": "interview/IM客户端与微服务通知协议约定.md",
-    "name": "IM客户端与微服务通知协议约定",
+    "name": "客户端与微服务通知协议约定",
     "title": "客户端与微服务通知协议约定",
     "category": "interview"
   },
@@ -1027,7 +1027,7 @@
   },
   {
     "path": "interview/IM登录与加密通道设计.md",
-    "name": "IM登录与加密通道设计",
+    "name": "IM 登录与加密通道设计",
     "title": "IM 登录与加密通道设计",
     "category": "interview"
   },
@@ -1051,13 +1051,13 @@
   },
   {
     "path": "interview/Intel_TBB.md",
-    "name": "Intel_TBB",
+    "name": "Intel TBB",
     "title": "Intel TBB",
     "category": "interview"
   },
   {
     "path": "interview/IPC进程间通信.md",
-    "name": "IPC进程间通信",
+    "name": "IPC 进程间通信",
     "title": "IPC 进程间通信",
     "category": "interview"
   },
@@ -1069,43 +1069,43 @@
   },
   {
     "path": "interview/jemalloc内存Profiling.md",
-    "name": "jemalloc内存Profiling",
+    "name": "jemalloc 内存 Profiling",
     "title": "jemalloc 内存 Profiling",
     "category": "interview"
   },
   {
     "path": "interview/jemalloc常见问题与技巧.md",
-    "name": "jemalloc常见问题与技巧",
+    "name": "jemalloc 常见问题与技巧",
     "title": "jemalloc 常见问题与技巧",
     "category": "interview"
   },
   {
     "path": "interview/jemalloc统计信息与监控.md",
-    "name": "jemalloc统计信息与监控",
+    "name": "jemalloc 统计信息与监控",
     "title": "jemalloc 统计信息与监控",
     "category": "interview"
   },
   {
     "path": "interview/K3s与K8s典型部署场景.md",
-    "name": "K3s与K8s典型部署场景",
+    "name": "K3s 与 K8s 典型部署场景",
     "title": "K3s 与 K8s 典型部署场景",
     "category": "interview"
   },
   {
     "path": "interview/K3s与K8s功能完整性对比.md",
-    "name": "K3s与K8s功能完整性对比",
+    "name": "K3s 与 K8s 功能完整性对比",
     "title": "K3s 与 K8s 功能完整性对比",
     "category": "interview"
   },
   {
     "path": "interview/K3s与K8s启动速度与性能对比.md",
-    "name": "K3s与K8s启动速度与性能对比",
+    "name": "K3s 与 K8s 启动速度与性能对比",
     "title": "K3s 与 K8s 启动速度与性能对比",
     "category": "interview"
   },
   {
     "path": "interview/K3s与K8s多节点扩展能力.md",
-    "name": "K3s与K8s多节点扩展能力",
+    "name": "K3s 与 K8s 多节点扩展能力",
     "title": "K3s 与 K8s 多节点扩展能力",
     "category": "interview"
   },
@@ -1117,19 +1117,19 @@
   },
   {
     "path": "interview/K3s与K8s架构对比.md",
-    "name": "K3s与K8s架构对比",
+    "name": "K3s 与 K8s 架构对比",
     "title": "K3s 与 K8s 架构对比",
     "category": "interview"
   },
   {
     "path": "interview/K3s与K8s组件详细对比.md",
-    "name": "K3s与K8s组件详细对比",
+    "name": "K3s 与 K8s 组件详细对比",
     "title": "K3s 与 K8s 组件详细对比",
     "category": "interview"
   },
   {
     "path": "interview/K3s与K8s资源占用对比.md",
-    "name": "K3s与K8s资源占用对比",
+    "name": "K3s 与 K8s 资源占用对比",
     "title": "K3s 与 K8s 资源占用对比",
     "category": "interview"
   },
@@ -1141,7 +1141,7 @@
   },
   {
     "path": "interview/KMP算法.md",
-    "name": "KMP算法",
+    "name": "KMP 算法",
     "title": "KMP 算法",
     "category": "interview"
   },
@@ -1165,79 +1165,79 @@
   },
   {
     "path": "interview/Libev异步网络框架.md",
-    "name": "Libev异步网络框架",
+    "name": "Libev C++ 异步网络框架（事件驱动 + 多进程 Worker）",
     "title": "Libev C++ 异步网络框架（事件驱动 + 多进程 Worker）",
     "category": "interview"
   },
   {
     "path": "interview/libgo_Hook.md",
-    "name": "libgo_Hook",
+    "name": "libgo Hook 机制",
     "title": "libgo Hook 机制",
     "category": "interview"
   },
   {
     "path": "interview/libgo与Go性能对比.md",
-    "name": "libgo与Go性能对比",
+    "name": "libgo 与 Go 性能对比",
     "title": "libgo 与 Go 性能对比",
     "category": "interview"
   },
   {
     "path": "interview/libgo与Go核心特性对比.md",
-    "name": "libgo与Go核心特性对比",
+    "name": "libgo 与 Go 核心特性对比",
     "title": "libgo 与 Go 核心特性对比",
     "category": "interview"
   },
   {
     "path": "interview/Linux_IO.md",
-    "name": "Linux_IO",
+    "name": "Linux IO",
     "title": "Linux IO",
     "category": "interview"
   },
   {
     "path": "interview/Linux内核与系统调用.md",
-    "name": "Linux内核与系统调用",
+    "name": "Linux 内核与系统调用",
     "title": "Linux 内核与系统调用",
     "category": "interview"
   },
   {
     "path": "interview/Linux安全与沙箱.md",
-    "name": "Linux安全与沙箱",
+    "name": "Linux 安全与沙箱",
     "title": "Linux 安全与沙箱",
     "category": "interview"
   },
   {
     "path": "interview/Linux文件系统与路径操作.md",
-    "name": "Linux文件系统与路径操作",
+    "name": "Linux 文件系统与路径操作",
     "title": "Linux 文件系统与路径操作",
     "category": "interview"
   },
   {
     "path": "interview/Linux系统调用-内存管理.md",
-    "name": "Linux系统调用-内存管理",
+    "name": "Linux 系统调用 - 内存管理",
     "title": "Linux 系统调用 - 内存管理",
     "category": "interview"
   },
   {
     "path": "interview/Linux系统调用-文件IO.md",
-    "name": "Linux系统调用-文件IO",
+    "name": "Linux 系统调用 - 文件与 I/O 操作",
     "title": "Linux 系统调用 - 文件与 I/O 操作",
     "category": "interview"
   },
   {
     "path": "interview/Linux线程调度.md",
-    "name": "Linux线程调度",
+    "name": "Linux 线程调度",
     "title": "Linux 线程调度",
     "category": "interview"
   },
   {
     "path": "interview/Linux进程与文件描述符扩展.md",
-    "name": "Linux进程与文件描述符扩展",
+    "name": "Linux 进程与文件描述符扩展",
     "title": "Linux 进程与文件描述符扩展",
     "category": "interview"
   },
   {
     "path": "interview/LRU冷热分层（访问频次×时间衰减）.md",
-    "name": "LRU冷热分层（访问频次×时间衰减）",
+    "name": "LRU 冷热分层（访问频次 × 时间衰减）",
     "title": "LRU 冷热分层（访问频次 × 时间衰减）",
     "category": "interview"
   },
@@ -1255,37 +1255,37 @@
   },
   {
     "path": "interview/map_set高效用法.md",
-    "name": "map_set高效用法",
+    "name": "map / set 高效用法",
     "title": "map / set 高效用法",
     "category": "interview"
   },
   {
     "path": "interview/membarrier.md",
-    "name": "membarrier",
+    "name": "membarrier — 内存屏障",
     "title": "membarrier — 内存屏障",
     "category": "interview"
   },
   {
     "path": "interview/MHA集群部署.md",
-    "name": "MHA集群部署",
+    "name": "MHA 集群部署",
     "title": "MHA 集群部署",
     "category": "interview"
   },
   {
     "path": "interview/MongoDB分片集群通用架构.md",
-    "name": "MongoDB分片集群通用架构",
+    "name": "MongoDB 分片集群分布图（通用）",
     "title": "MongoDB 分片集群分布图（通用）",
     "category": "interview"
   },
   {
     "path": "interview/MongoDB成本对比.md",
-    "name": "MongoDB成本对比",
+    "name": "MongoDB 与 MySQL 成本对比",
     "title": "MongoDB 与 MySQL 成本对比",
     "category": "interview"
   },
   {
     "path": "interview/MPMC环形无锁队列-Vyukov.md",
-    "name": "MPMC环形无锁队列-Vyukov",
+    "name": "MPMC 环形无锁队列（Vyukov）",
     "title": "MPMC 环形无锁队列（Vyukov）",
     "category": "interview"
   },
@@ -1297,13 +1297,13 @@
   },
   {
     "path": "interview/MySQL SQL优化.md",
-    "name": "MySQL SQL优化",
+    "name": "MySQL SQL 优化",
     "title": "MySQL SQL 优化",
     "category": "interview"
   },
   {
     "path": "interview/MySQL主从复制.md",
-    "name": "MySQL主从复制",
+    "name": "MySQL 主从复制",
     "title": "MySQL 主从复制",
     "category": "interview"
   },
@@ -1327,19 +1327,19 @@
   },
   {
     "path": "interview/MySQL事务提交与两阶段提交.md",
-    "name": "MySQL事务提交与两阶段提交",
+    "name": "MySQL 事务提交与两阶段提交",
     "title": "MySQL 事务提交与两阶段提交",
     "category": "interview"
   },
   {
     "path": "interview/MySQL写入流程DML修改.md",
-    "name": "MySQL写入流程DML修改",
+    "name": "MySQL 写入流程（DML 修改）",
     "title": "MySQL 写入流程（DML 修改）",
     "category": "interview"
   },
   {
     "path": "interview/MySQL写入流程组件协同.md",
-    "name": "MySQL写入流程组件协同",
+    "name": "MySQL 写入流程组件协同",
     "title": "MySQL 写入流程组件协同",
     "category": "interview"
   },
@@ -1363,13 +1363,13 @@
   },
   {
     "path": "interview/MySQL架构与存储引擎.md",
-    "name": "MySQL架构与存储引擎",
+    "name": "MySQL 架构与存储引擎",
     "title": "MySQL 架构与存储引擎",
     "category": "interview"
   },
   {
     "path": "interview/MySQL死锁.md",
-    "name": "MySQL死锁",
+    "name": "MySQL 死锁",
     "title": "MySQL 死锁",
     "category": "interview"
   },
@@ -1387,19 +1387,19 @@
   },
   {
     "path": "interview/MySQL读写流程详解.md",
-    "name": "MySQL读写流程详解",
+    "name": "MySQL 读写流程详解",
     "title": "MySQL 读写流程详解",
     "category": "interview"
   },
   {
     "path": "interview/MySQL读写流程面试高频问题.md",
-    "name": "MySQL读写流程面试高频问题",
+    "name": "MySQL 读写流程面试高频问题",
     "title": "MySQL 读写流程面试高频问题",
     "category": "interview"
   },
   {
     "path": "interview/MySQL连接详解.md",
-    "name": "MySQL连接详解",
+    "name": "MySQL 连接详解",
     "title": "MySQL 连接详解",
     "category": "interview"
   },
@@ -1411,61 +1411,61 @@
   },
   {
     "path": "interview/MySQL集群与高可用.md",
-    "name": "MySQL集群与高可用",
+    "name": "MySQL 集群与高可用",
     "title": "MySQL 集群与高可用",
     "category": "interview"
   },
   {
     "path": "interview/MySQL集群性能举例.md",
-    "name": "MySQL集群性能举例",
+    "name": "MySQL 集群性能举例",
     "title": "MySQL 集群性能举例",
     "category": "interview"
   },
   {
     "path": "interview/MySQL高并发集群设计.md",
-    "name": "MySQL高并发集群设计",
+    "name": "MySQL 高并发集群设计",
     "title": "MySQL 高并发集群设计",
     "category": "interview"
   },
   {
     "path": "interview/new操作符.md",
-    "name": "new操作符",
+    "name": "new 操作符",
     "title": "new 操作符",
     "category": "interview"
   },
   {
     "path": "interview/Nginx配置-WebSocket反向代理.md",
-    "name": "Nginx配置-WebSocket反向代理",
+    "name": "Nginx 配置 - WebSocket 反向代理",
     "title": "Nginx 配置 - WebSocket 反向代理",
     "category": "interview"
   },
   {
     "path": "interview/nullptr与NULL对比.md",
-    "name": "nullptr与NULL对比",
+    "name": "nullptr 与 NULL 对比",
     "title": "nullptr 与 NULL 对比",
     "category": "interview"
   },
   {
     "path": "interview/NUMA优化.md",
-    "name": "NUMA优化",
+    "name": "NUMA 优化",
     "title": "NUMA 优化",
     "category": "interview"
   },
   {
     "path": "interview/NUMA架构.md",
-    "name": "NUMA架构",
+    "name": "NUMA 架构",
     "title": "NUMA 架构",
     "category": "interview"
   },
   {
     "path": "interview/OBS对象存储.md",
-    "name": "OBS对象存储",
+    "name": "OBS 对象存储",
     "title": "OBS 对象存储",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP-vs-线程池.md",
-    "name": "OpenMP-vs-线程池",
+    "name": "OpenMP vs 线程池",
     "title": "OpenMP vs 线程池",
     "category": "interview"
   },
@@ -1477,49 +1477,49 @@
   },
   {
     "path": "interview/OpenMP同步机制.md",
-    "name": "OpenMP同步机制",
+    "name": "OpenMP 同步机制",
     "title": "OpenMP 同步机制",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP实战案例分析.md",
-    "name": "OpenMP实战案例分析",
+    "name": "OpenMP 实战案例分析",
     "title": "OpenMP 实战案例分析",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP工作共享结构.md",
-    "name": "OpenMP工作共享结构",
+    "name": "OpenMP 工作共享结构",
     "title": "OpenMP 工作共享结构",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP常见问题与调试.md",
-    "name": "OpenMP常见问题与调试",
+    "name": "OpenMP 常见问题与调试",
     "title": "OpenMP 常见问题与调试",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP性能优化技巧.md",
-    "name": "OpenMP性能优化技巧",
+    "name": "OpenMP 性能优化技巧",
     "title": "OpenMP 性能优化技巧",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP数据共享属性.md",
-    "name": "OpenMP数据共享属性",
+    "name": "OpenMP 数据共享属性",
     "title": "OpenMP 数据共享属性",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP概述.md",
-    "name": "OpenMP概述",
+    "name": "OpenMP 概述",
     "title": "OpenMP 概述",
     "category": "interview"
   },
   {
     "path": "interview/OpenMP调度策略.md",
-    "name": "OpenMP调度策略",
+    "name": "OpenMP 调度策略",
     "title": "OpenMP 调度策略",
     "category": "interview"
   },
@@ -1531,103 +1531,103 @@
   },
   {
     "path": "interview/perf_Linux性能分析工具.md",
-    "name": "perf_Linux性能分析工具",
+    "name": "perf - Linux 性能分析工具",
     "title": "perf - Linux 性能分析工具",
     "category": "interview"
   },
   {
     "path": "interview/perf性能指标解读.md",
-    "name": "perf性能指标解读",
+    "name": "perf 性能指标解读",
     "title": "perf 性能指标解读",
     "category": "interview"
   },
   {
     "path": "interview/perf核心命令详解.md",
-    "name": "perf核心命令详解",
+    "name": "perf 核心命令详解",
     "title": "perf 核心命令详解",
     "category": "interview"
   },
   {
     "path": "interview/perf核心要点速览.md",
-    "name": "perf核心要点速览",
+    "name": "perf性能分析工具大厂考点复习文档",
     "title": "perf性能分析工具大厂考点复习文档",
     "category": "interview"
   },
   {
     "path": "interview/pmap.md",
-    "name": "pmap",
+    "name": "pmap（进程内存映射）",
     "title": "pmap（进程内存映射）",
     "category": "interview"
   },
   {
     "path": "interview/poll-select-pselect-ppoll.md",
-    "name": "poll-select-pselect-ppoll",
+    "name": "poll / select / pselect / ppoll",
     "title": "poll / select / pselect / ppoll",
     "category": "interview"
   },
   {
     "path": "interview/POSIX信号处理.md",
-    "name": "POSIX信号处理",
+    "name": "POSIX 信号处理",
     "title": "POSIX 信号处理",
     "category": "interview"
   },
   {
     "path": "interview/POSIX信号量.md",
-    "name": "POSIX信号量",
+    "name": "POSIX 信号量",
     "title": "POSIX 信号量",
     "category": "interview"
   },
   {
     "path": "interview/POSIX共享内存.md",
-    "name": "POSIX共享内存",
+    "name": "POSIX 共享内存",
     "title": "POSIX 共享内存",
     "category": "interview"
   },
   {
     "path": "interview/POSIX定时器与时钟.md",
-    "name": "POSIX定时器与时钟",
+    "name": "POSIX 定时器与时钟",
     "title": "POSIX 定时器与时钟",
     "category": "interview"
   },
   {
     "path": "interview/POSIX消息队列.md",
-    "name": "POSIX消息队列",
+    "name": "POSIX 消息队列",
     "title": "POSIX 消息队列",
     "category": "interview"
   },
   {
     "path": "interview/POSIX用户组与环境.md",
-    "name": "POSIX用户组与环境",
+    "name": "POSIX 用户/组与环境",
     "title": "POSIX 用户/组与环境",
     "category": "interview"
   },
   {
     "path": "interview/POSIX线程管理.md",
-    "name": "POSIX线程管理",
+    "name": "POSIX 线程管理 (pthread)",
     "title": "POSIX 线程管理 (pthread)",
     "category": "interview"
   },
   {
     "path": "interview/POSIX终端IO.md",
-    "name": "POSIX终端IO",
+    "name": "POSIX 终端 I/O (termios)",
     "title": "POSIX 终端 I/O (termios)",
     "category": "interview"
   },
   {
     "path": "interview/POSIX网络编程.md",
-    "name": "POSIX网络编程",
+    "name": "POSIX 网络编程 (Socket)",
     "title": "POSIX 网络编程 (Socket)",
     "category": "interview"
   },
   {
     "path": "interview/POSIX进程控制.md",
-    "name": "POSIX进程控制",
+    "name": "POSIX 进程控制",
     "title": "POSIX 进程控制",
     "category": "interview"
   },
   {
     "path": "interview/POSIX进程派生.md",
-    "name": "POSIX进程派生",
+    "name": "POSIX 进程派生 (posix_spawn)",
     "title": "POSIX 进程派生 (posix_spawn)",
     "category": "interview"
   },
@@ -1639,79 +1639,79 @@
   },
   {
     "path": "interview/proc_pid_maps.md",
-    "name": "proc_pid_maps",
+    "name": "/proc/pid/maps（进程地址空间）",
     "title": "/proc/pid/maps（进程地址空间）",
     "category": "interview"
   },
   {
     "path": "interview/proc_pid_statm.md",
-    "name": "proc_pid_statm",
+    "name": "/proc/pid/statm（内存页统计）",
     "title": "/proc/pid/statm（内存页统计）",
     "category": "interview"
   },
   {
     "path": "interview/proc_pid_status.md",
-    "name": "proc_pid_status",
+    "name": "/proc/pid/status（进程状态）",
     "title": "/proc/pid/status（进程状态）",
     "category": "interview"
   },
   {
     "path": "interview/Profile-Guided-Optimization-(PGO).md",
-    "name": "Profile-Guided-Optimization-(PGO)",
+    "name": "Profile-Guided Optimization (PGO)",
     "title": "Profile-Guided Optimization (PGO)",
     "category": "interview"
   },
   {
     "path": "interview/QPS上不去（CPU满）.md",
-    "name": "QPS上不去（CPU满）",
+    "name": "QPS 上不去（CPU 满）",
     "title": "QPS 上不去（CPU 满）",
     "category": "interview"
   },
   {
     "path": "interview/QUIC协议.md",
-    "name": "QUIC协议",
+    "name": "QUIC 协议",
     "title": "QUIC 协议",
     "category": "interview"
   },
   {
     "path": "interview/Redis内存问题-面试考点.md",
-    "name": "Redis内存问题-面试考点",
+    "name": "Redis 内存问题（面试考点）",
     "title": "Redis 内存问题（面试考点）",
     "category": "interview"
   },
   {
     "path": "interview/Redis内存问题.md",
-    "name": "Redis内存问题",
+    "name": "Redis 内存问题（OOM）",
     "title": "Redis 内存问题（OOM）",
     "category": "interview"
   },
   {
     "path": "interview/Redis存储型方案性能对比.md",
-    "name": "Redis存储型方案性能对比",
+    "name": "Redis 存储型方案性能对比",
     "title": "Redis 存储型方案性能对比",
     "category": "interview"
   },
   {
     "path": "interview/Redis性能问题.md",
-    "name": "Redis性能问题",
+    "name": "Redis 性能问题（延迟高）",
     "title": "Redis 性能问题（延迟高）",
     "category": "interview"
   },
   {
     "path": "interview/Redis持久化问题.md",
-    "name": "Redis持久化问题",
+    "name": "Redis 持久化问题",
     "title": "Redis 持久化问题",
     "category": "interview"
   },
   {
     "path": "interview/Redis数据不一致.md",
-    "name": "Redis数据不一致",
+    "name": "Redis 数据不一致",
     "title": "Redis 数据不一致",
     "category": "interview"
   },
   {
     "path": "interview/Redis连接问题.md",
-    "name": "Redis连接问题",
+    "name": "Redis 连接问题",
     "title": "Redis 连接问题",
     "category": "interview"
   },
@@ -1723,7 +1723,7 @@
   },
   {
     "path": "interview/RocksDB Env插件.md",
-    "name": "RocksDB Env插件",
+    "name": "RocksDB Env 插件",
     "title": "RocksDB Env 插件",
     "category": "interview"
   },
@@ -1741,7 +1741,7 @@
   },
   {
     "path": "interview/RocksDB三大放大.md",
-    "name": "RocksDB三大放大",
+    "name": "RocksDB 三大放大问题分析",
     "title": "RocksDB 三大放大问题分析",
     "category": "interview"
   },
@@ -1753,37 +1753,37 @@
   },
   {
     "path": "interview/RocksDB基础.md",
-    "name": "RocksDB基础",
+    "name": "RocksDB 基础",
     "title": "RocksDB 基础",
     "category": "interview"
   },
   {
     "path": "interview/RocksDB存储介质对比测试.md",
-    "name": "RocksDB存储介质对比测试",
+    "name": "RocksDB 存储介质对比测试",
     "title": "RocksDB 存储介质对比测试",
     "category": "interview"
   },
   {
     "path": "interview/RocksDB官方对串行化瓶颈的优化方案.md",
-    "name": "RocksDB官方对串行化瓶颈的优化方案",
+    "name": "RocksDB 官方对串行化瓶颈的优化方案",
     "title": "RocksDB 官方对串行化瓶颈的优化方案",
     "category": "interview"
   },
   {
     "path": "interview/RocksDB概述.md",
-    "name": "RocksDB概述",
+    "name": "RocksDB 概述",
     "title": "RocksDB 概述",
     "category": "interview"
   },
   {
     "path": "interview/RocksDB版本演进.md",
-    "name": "RocksDB版本演进",
+    "name": "RocksDB 版本演进",
     "title": "RocksDB 版本演进",
     "category": "interview"
   },
   {
     "path": "interview/RocksDB长尾延迟优化测试.md",
-    "name": "RocksDB长尾延迟优化测试",
+    "name": "RocksDB 长尾延迟优化测试",
     "title": "RocksDB 长尾延迟优化测试",
     "category": "interview"
   },
@@ -1795,19 +1795,19 @@
   },
   {
     "path": "interview/RPC与网络延迟速查.md",
-    "name": "RPC与网络延迟速查",
+    "name": "RPC 与网络延迟速查",
     "title": "RPC 与网络延迟速查",
     "category": "interview"
   },
   {
     "path": "interview/rseq.md",
-    "name": "rseq",
+    "name": "rseq — 可重启序列",
     "title": "rseq — 可重启序列",
     "category": "interview"
   },
   {
     "path": "interview/SACK.md",
-    "name": "SACK",
+    "name": "SACK (Selective Acknowledgment)",
     "title": "SACK (Selective Acknowledgment)",
     "category": "interview"
   },
@@ -1819,19 +1819,19 @@
   },
   {
     "path": "interview/ShmRingQueue集成方案.md",
-    "name": "ShmRingQueue集成方案",
+    "name": "ShmRingQueue 集成方案（实际实现）",
     "title": "ShmRingQueue 集成方案（实际实现）",
     "category": "interview"
   },
   {
     "path": "interview/signalfd.md",
-    "name": "signalfd",
+    "name": "signalfd — 信号文件描述符",
     "title": "signalfd — 信号文件描述符",
     "category": "interview"
   },
   {
     "path": "interview/SIMD指令优化.md",
-    "name": "SIMD指令优化",
+    "name": "SIMD 指令优化",
     "title": "SIMD 指令优化",
     "category": "interview"
   },
@@ -1843,7 +1843,7 @@
   },
   {
     "path": "interview/smem.md",
-    "name": "smem",
+    "name": "smem（内存使用统计）",
     "title": "smem（内存使用统计）",
     "category": "interview"
   },
@@ -1855,61 +1855,61 @@
   },
   {
     "path": "interview/SPMC无锁队列.md",
-    "name": "SPMC无锁队列",
+    "name": "SPMC 无锁队列（std::atomic CAS，单生产者多消费者）",
     "title": "SPMC 无锁队列（std::atomic CAS，单生产者多消费者）",
     "category": "interview"
   },
   {
     "path": "interview/SPSC无锁队列.md",
-    "name": "SPSC无锁队列",
+    "name": "SPSC 无锁队列（std::atomic，单生产者单消费者）",
     "title": "SPSC 无锁队列（std::atomic，单生产者单消费者）",
     "category": "interview"
   },
   {
     "path": "interview/SQL基础查询.md",
-    "name": "SQL基础查询",
+    "name": "SQL 基础查询",
     "title": "SQL 基础查询",
     "category": "interview"
   },
   {
     "path": "interview/SQL子查询与窗口函数.md",
-    "name": "SQL子查询与窗口函数",
+    "name": "SQL 子查询与窗口函数",
     "title": "SQL 子查询与窗口函数",
     "category": "interview"
   },
   {
     "path": "interview/SQL数据修改与删除.md",
-    "name": "SQL数据修改与删除",
+    "name": "SQL 数据修改与删除",
     "title": "SQL 数据修改与删除",
     "category": "interview"
   },
   {
     "path": "interview/SQL聚合查询与面试题.md",
-    "name": "SQL聚合查询与面试题",
+    "name": "SQL 聚合查询与面试题",
     "title": "SQL 聚合查询与面试题",
     "category": "interview"
   },
   {
     "path": "interview/SQL连接与集合操作.md",
-    "name": "SQL连接与集合操作",
+    "name": "SQL 连接与集合操作",
     "title": "SQL 连接与集合操作",
     "category": "interview"
   },
   {
     "path": "interview/SQL高级DML.md",
-    "name": "SQL高级DML",
+    "name": "SQL 高级 DML",
     "title": "SQL 高级 DML",
     "category": "interview"
   },
   {
     "path": "interview/STL容器与算法.md",
-    "name": "STL容器与算法",
+    "name": "STL 容器与算法",
     "title": "STL 容器与算法",
     "category": "interview"
   },
   {
     "path": "interview/STL智能指针面试考点.md",
-    "name": "STL智能指针面试考点",
+    "name": "STL 智能指针面试考点",
     "title": "STL 智能指针面试考点",
     "category": "interview"
   },
@@ -1921,91 +1921,91 @@
   },
   {
     "path": "interview/STL算法高效用法.md",
-    "name": "STL算法高效用法",
+    "name": "STL 算法高效用法",
     "title": "STL 算法高效用法",
     "category": "interview"
   },
   {
     "path": "interview/STL自定义内存分配器.md",
-    "name": "STL自定义内存分配器",
+    "name": "STL 容器的自定义内存分配器",
     "title": "STL 容器的自定义内存分配器",
     "category": "interview"
   },
   {
     "path": "interview/STL高效使用细节与示例-十、其他细节与陷阱.md",
-    "name": "STL高效使用细节与示例-十、其他细节与陷阱",
+    "name": "STL 高效使用细节与示例 - 十、其他细节与陷阱",
     "title": "STL 高效使用细节与示例 - 十、其他细节与陷阱",
     "category": "interview"
   },
   {
     "path": "interview/strace_系统调用跟踪.md",
-    "name": "strace_系统调用跟踪",
+    "name": "strace - 系统调用跟踪",
     "title": "strace - 系统调用跟踪",
     "category": "interview"
   },
   {
     "path": "interview/string高效用法.md",
-    "name": "string高效用法",
+    "name": "string 高效用法",
     "title": "string 高效用法",
     "category": "interview"
   },
   {
     "path": "interview/SystemV_IPC.md",
-    "name": "SystemV_IPC",
+    "name": "System V IPC",
     "title": "System V IPC",
     "category": "interview"
   },
   {
     "path": "interview/TBB.md",
-    "name": "TBB",
+    "name": "Intel TBB 库分析",
     "title": "Intel TBB 库分析",
     "category": "interview"
   },
   {
     "path": "interview/TBB实际应用场景.md",
-    "name": "TBB实际应用场景",
+    "name": "TBB 实际应用场景",
     "title": "TBB 实际应用场景",
     "category": "interview"
   },
   {
     "path": "interview/TBB常见问题与解决方案.md",
-    "name": "TBB常见问题与解决方案",
+    "name": "TBB 常见问题与解决方案",
     "title": "TBB 常见问题与解决方案",
     "category": "interview"
   },
   {
     "path": "interview/TBB性能优化技巧.md",
-    "name": "TBB性能优化技巧",
+    "name": "TBB 性能优化技巧",
     "title": "TBB 性能优化技巧",
     "category": "interview"
   },
   {
     "path": "interview/TBB最佳实践.md",
-    "name": "TBB最佳实践",
+    "name": "TBB 最佳实践",
     "title": "TBB 最佳实践",
     "category": "interview"
   },
   {
     "path": "interview/TBB高级特性.md",
-    "name": "TBB高级特性",
+    "name": "TBB 高级特性",
     "title": "TBB 高级特性",
     "category": "interview"
   },
   {
     "path": "interview/TCP与UDP速查.md",
-    "name": "TCP与UDP速查",
+    "name": "TCP 与 UDP 速查",
     "title": "TCP 与 UDP 速查",
     "category": "interview"
   },
   {
     "path": "interview/tcp优化-tcp选项.md",
-    "name": "tcp优化-tcp选项",
+    "name": "TCP 选项",
     "title": "TCP 选项",
     "category": "interview"
   },
   {
     "path": "interview/TCP协议.md",
-    "name": "TCP协议",
+    "name": "TCP 协议",
     "title": "TCP 协议",
     "category": "interview"
   },
@@ -2029,37 +2029,37 @@
   },
   {
     "path": "interview/TCP快速重传.md",
-    "name": "TCP快速重传",
+    "name": "TCP 快速重传（Fast Retransmit）",
     "title": "TCP 快速重传（Fast Retransmit）",
     "category": "interview"
   },
   {
     "path": "interview/TCP连接队列.md",
-    "name": "TCP连接队列",
+    "name": "TCP 连接队列",
     "title": "TCP 连接队列",
     "category": "interview"
   },
   {
     "path": "interview/timerfd.md",
-    "name": "timerfd",
+    "name": "timerfd — 定时器文件描述符",
     "title": "timerfd — 定时器文件描述符",
     "category": "interview"
   },
   {
     "path": "interview/top_htop.md",
-    "name": "top_htop",
+    "name": "top/htop（实时监控）",
     "title": "top/htop（实时监控）",
     "category": "interview"
   },
   {
     "path": "interview/UDP协议.md",
-    "name": "UDP协议",
+    "name": "UDP 协议",
     "title": "UDP 协议",
     "category": "interview"
   },
   {
     "path": "interview/userfaultfd.md",
-    "name": "userfaultfd",
+    "name": "userfaultfd — 用户空间缺页处理",
     "title": "userfaultfd — 用户空间缺页处理",
     "category": "interview"
   },
@@ -2077,55 +2077,55 @@
   },
   {
     "path": "interview/Valgrind其他工具.md",
-    "name": "Valgrind其他工具",
+    "name": "Valgrind 其他工具",
     "title": "Valgrind 其他工具",
     "category": "interview"
   },
   {
     "path": "interview/Valgrind大厂考点总结.md",
-    "name": "Valgrind大厂考点总结",
+    "name": "Valgrind 大厂考点总结",
     "title": "Valgrind 大厂考点总结",
     "category": "interview"
   },
   {
     "path": "interview/Valgrind工具详解.md",
-    "name": "Valgrind工具详解",
+    "name": "Valgrind（内存和性能分析）",
     "title": "Valgrind（内存和性能分析）",
     "category": "interview"
   },
   {
     "path": "interview/Valgrind工具速查.md",
-    "name": "Valgrind工具速查",
+    "name": "Valgrind 工具速查",
     "title": "Valgrind 工具速查",
     "category": "interview"
   },
   {
     "path": "interview/valgrind性能分析.md",
-    "name": "valgrind性能分析",
+    "name": "valgrind 性能分析",
     "title": "valgrind 性能分析",
     "category": "interview"
   },
   {
     "path": "interview/vector扩容与noexcept移动构造.md",
-    "name": "vector扩容与noexcept移动构造",
+    "name": "vector 扩容与 noexcept 移动构造",
     "title": "vector 扩容与 noexcept 移动构造",
     "category": "interview"
   },
   {
     "path": "interview/vector高效用法.md",
-    "name": "vector高效用法",
+    "name": "vector 高效用法",
     "title": "vector 高效用法",
     "category": "interview"
   },
   {
     "path": "interview/VTune简介与使用.md",
-    "name": "VTune简介与使用",
+    "name": "VTune 简介与使用",
     "title": "VTune 简介与使用",
     "category": "interview"
   },
   {
     "path": "interview/Wasm自适应熔断-Z2.md",
-    "name": "Wasm自适应熔断-Z2",
+    "name": "Wasm 自适应熔断插件（Z2）",
     "title": "Wasm 自适应熔断插件（Z2）",
     "category": "interview"
   },
@@ -2149,19 +2149,19 @@
   },
   {
     "path": "interview/WebSocket网关设计总结-系统架构.md",
-    "name": "WebSocket网关设计总结-系统架构",
+    "name": "WebSocket 网关设计总结",
     "title": "WebSocket 网关设计总结",
     "category": "interview"
   },
   {
     "path": "interview/WSS协议转换原理.md",
-    "name": "WSS协议转换原理",
+    "name": "WSS 协议转换原理",
     "title": "WSS 协议转换原理",
     "category": "interview"
   },
   {
     "path": "interview/zg_sdk.md",
-    "name": "zg_sdk",
+    "name": "Zego 服务网格 SDK (zg_sdk)",
     "title": "Zego 服务网格 SDK (zg_sdk)",
     "category": "interview"
   },
@@ -2191,7 +2191,7 @@
   },
   {
     "path": "interview/中断线程化与IRQ亲和性.md",
-    "name": "中断线程化与IRQ亲和性",
+    "name": "中断线程化与 IRQ 亲和性",
     "title": "中断线程化与 IRQ 亲和性",
     "category": "interview"
   },
@@ -2209,19 +2209,19 @@
   },
   {
     "path": "interview/低延迟C++实时性保障.md",
-    "name": "低延迟C++实时性保障",
+    "name": "低延迟 C++ 实时性保障",
     "title": "低延迟 C++ 实时性保障",
     "category": "interview"
   },
   {
     "path": "interview/低延迟C++性能测量与监控.md",
-    "name": "低延迟C++性能测量与监控",
+    "name": "低延迟 C++ 性能测量与监控",
     "title": "低延迟 C++ 性能测量与监控",
     "category": "interview"
   },
   {
     "path": "interview/低延迟C++系统优化案例与最佳实践.md",
-    "name": "低延迟C++系统优化案例与最佳实践",
+    "name": "低延迟 C++ 系统优化案例与最佳实践",
     "title": "低延迟 C++ 系统优化案例与最佳实践",
     "category": "interview"
   },
@@ -2233,7 +2233,7 @@
   },
   {
     "path": "interview/低延迟Linux实时系统调试验证面试要点.md",
-    "name": "低延迟Linux实时系统调试验证面试要点",
+    "name": "低延迟 Linux 实时系统调试、验证与面试要点",
     "title": "低延迟 Linux 实时系统调试、验证与面试要点",
     "category": "interview"
   },
@@ -2251,7 +2251,7 @@
   },
   {
     "path": "interview/共享内存IPC.md",
-    "name": "共享内存IPC",
+    "name": "共享内存 IPC",
     "title": "共享内存 IPC",
     "category": "interview"
   },
@@ -2281,7 +2281,7 @@
   },
   {
     "path": "interview/内存映射mmap.md",
-    "name": "内存映射mmap",
+    "name": "内存映射（mmap）",
     "title": "内存映射（mmap）",
     "category": "interview"
   },
@@ -2293,7 +2293,7 @@
   },
   {
     "path": "interview/内存涨-碎片.md",
-    "name": "内存涨-碎片",
+    "name": "内存涨 / 碎片",
     "title": "内存涨 / 碎片",
     "category": "interview"
   },
@@ -2311,7 +2311,7 @@
   },
   {
     "path": "interview/分布式IM消息系统-雷漫-性能数据分析.md",
-    "name": "分布式IM消息系统-雷漫-性能数据分析",
+    "name": "分布式 IM 消息系统 — 雷漫网络（性能数据分析）",
     "title": "分布式 IM 消息系统 — 雷漫网络（性能数据分析）",
     "category": "interview"
   },
@@ -2365,7 +2365,7 @@
   },
   {
     "path": "interview/多租户隔离（进程-OBS-路径-cgroup）.md",
-    "name": "多租户隔离（进程-OBS-路径-cgroup）",
+    "name": "多租户隔离（进程 + OBS 路径 + cgroup）",
     "title": "多租户隔离（进程 + OBS 路径 + cgroup）",
     "category": "interview"
   },
@@ -2377,13 +2377,13 @@
   },
   {
     "path": "interview/存储成本降低70%+.md",
-    "name": "存储成本降低70%+",
+    "name": "存储成本降低 70%+",
     "title": "存储成本降低 70%+",
     "category": "interview"
   },
   {
     "path": "interview/实时安全C++编程实践.md",
-    "name": "实时安全C++编程实践",
+    "name": "实时安全 C++ 编程实践",
     "title": "实时安全 C++ 编程实践",
     "category": "interview"
   },
@@ -2395,7 +2395,7 @@
   },
   {
     "path": "interview/实时调度策略（SCHED_FIFO---SCHED_RR---SCHED_DEADLINE）.md",
-    "name": "实时调度策略（SCHED_FIFO---SCHED_RR---SCHED_DEADLINE）",
+    "name": "实时调度策略（SCHED_FIFO / SCHED_RR / SCHED_DEADLINE）",
     "title": "实时调度策略（SCHED_FIFO / SCHED_RR / SCHED_DEADLINE）",
     "category": "interview"
   },
@@ -2413,7 +2413,7 @@
   },
   {
     "path": "interview/布隆过滤器预筛（FPR-1%，100万-Key-→-1.2MB）.md",
-    "name": "布隆过滤器预筛（FPR-1%，100万-Key-→-1.2MB）",
+    "name": "布隆过滤器预筛（FPR 1%，100万 Key → 1.2MB）",
     "title": "布隆过滤器预筛（FPR 1%，100万 Key → 1.2MB）",
     "category": "interview"
   },
@@ -2437,7 +2437,7 @@
   },
   {
     "path": "interview/忙等待与睡眠等待.md",
-    "name": "忙等待与睡眠等待",
+    "name": "忙等待 vs 睡眠等待",
     "title": "忙等待 vs 睡眠等待",
     "category": "interview"
   },
@@ -2449,7 +2449,7 @@
   },
   {
     "path": "interview/性能优化-配置与部署.md",
-    "name": "性能优化-配置与部署",
+    "name": "性能优化：配置与部署",
     "title": "性能优化：配置与部署",
     "category": "interview"
   },
@@ -2461,7 +2461,7 @@
   },
   {
     "path": "interview/性能优化清单.md",
-    "name": "性能优化清单",
+    "name": "性能优化清单（执行顺序建议）",
     "title": "性能优化清单（执行顺序建议）",
     "category": "interview"
   },
@@ -2491,7 +2491,7 @@
   },
   {
     "path": "interview/敏感词过滤（Trie与多模式匹配）.md",
-    "name": "敏感词过滤（Trie与多模式匹配）",
+    "name": "敏感词过滤（Trie / 多模式匹配）",
     "title": "敏感词过滤（Trie / 多模式匹配）",
     "category": "interview"
   },
@@ -2509,7 +2509,7 @@
   },
   {
     "path": "interview/数据库语言分类.md",
-    "name": "数据库语言分类",
+    "name": "数据库语言分类（SQL 四大子语言）",
     "title": "数据库语言分类（SQL 四大子语言）",
     "category": "interview"
   },
@@ -2539,7 +2539,7 @@
   },
   {
     "path": "interview/替代在线阻塞式redis-cli-bigkeys.md",
-    "name": "替代在线阻塞式redis-cli-bigkeys",
+    "name": "替代在线阻塞式 redis-cli --bigkeys",
     "title": "替代在线阻塞式 redis-cli --bigkeys",
     "category": "interview"
   },
@@ -2557,7 +2557,7 @@
   },
   {
     "path": "interview/服务网格平台-即构.md",
-    "name": "服务网格平台-即构",
+    "name": "服务网格平台 — 即构科技（K8s + Istio + Envoy）",
     "title": "服务网格平台 — 即构科技（K8s + Istio + Envoy）",
     "category": "interview"
   },
@@ -2617,19 +2617,19 @@
   },
   {
     "path": "interview/现代C++特性按版本划分.md",
-    "name": "现代C++特性按版本划分",
+    "name": "现代 C++ 特性按版本划分",
     "title": "现代 C++ 特性按版本划分",
     "category": "interview"
   },
   {
     "path": "interview/社交IM系统-你我金融-性能数据分析.md",
-    "name": "社交IM系统-你我金融-性能数据分析",
+    "name": "社交 IM 系统 — 你我金融（千万级用户）",
     "title": "社交 IM 系统 — 你我金融（千万级用户）",
     "category": "interview"
   },
   {
     "path": "interview/社交IM系统-你我金融.md",
-    "name": "社交IM系统-你我金融",
+    "name": "社交IM系统 — 你我金融",
     "title": "社交IM系统 — 你我金融",
     "category": "interview"
   },
@@ -2755,13 +2755,13 @@
   },
   {
     "path": "interview/观察者模式详解-4.-解决方案：使用-weak_ptr.md",
-    "name": "观察者模式详解-4.-解决方案：使用-weak_ptr",
+    "name": "4. 解决方案：使用 weak_ptr",
     "title": "4. 解决方案：使用 weak_ptr",
     "category": "interview"
   },
   {
     "path": "interview/观察者模式详解-多个被观察者的管理.md",
-    "name": "观察者模式详解-多个被观察者的管理",
+    "name": "观察者模式详解 - 多个被观察者的管理",
     "title": "观察者模式详解 - 多个被观察者的管理",
     "category": "interview"
   },
@@ -2839,7 +2839,7 @@
   },
   {
     "path": "interview/避免CPU频率缩放.md",
-    "name": "避免CPU频率缩放",
+    "name": "避免 CPU 频率缩放",
     "title": "避免 CPU 频率缩放",
     "category": "interview"
   },
@@ -2851,7 +2851,7 @@
   },
   {
     "path": "interview/零拷贝与异步IO.md",
-    "name": "零拷贝与异步IO",
+    "name": "零拷贝与异步 I/O",
     "title": "零拷贝与异步 I/O",
     "category": "interview"
   },
@@ -2869,7 +2869,7 @@
   },
   {
     "path": "interview/高频交易实时系统调度配置模板.md",
-    "name": "高频交易实时系统调度配置模板",
+    "name": "高频交易 / 实时系统的调度配置模板",
     "title": "高频交易 / 实时系统的调度配置模板",
     "category": "interview"
   },
@@ -2893,7 +2893,7 @@
   },
   {
     "path": "ref/rocksdb性能分析-参考资料.md",
-    "name": "rocksdb性能分析-参考资料",
+    "name": "RocksDB 性能分析参考资料",
     "title": "RocksDB 性能分析参考资料",
     "category": "ref"
   },
@@ -2905,19 +2905,19 @@
   },
   {
     "path": "work/C++代码层性能调优最佳实践.md",
-    "name": "C++代码层性能调优最佳实践",
+    "name": "C++ 代码层性能调优最佳实践",
     "title": "C++ 代码层性能调优最佳实践",
     "category": "work"
   },
   {
     "path": "work/C++性能调优关键指标.md",
-    "name": "C++性能调优关键指标",
+    "name": "C++ 性能调优关键指标",
     "title": "C++ 性能调优关键指标",
     "category": "work"
   },
   {
     "path": "work/C++性能调优流程（闭环）.md",
-    "name": "C++性能调优流程（闭环）",
+    "name": "C++ 性能调优流程（闭环）",
     "title": "C++ 性能调优流程（闭环）",
     "category": "work"
   },
@@ -2935,31 +2935,31 @@
   },
   {
     "path": "work/IM项目MongoDB分片集群.md",
-    "name": "IM项目MongoDB分片集群",
+    "name": "IM 项目 MongoDB 分片集群图",
     "title": "IM 项目 MongoDB 分片集群图",
     "category": "work"
   },
   {
     "path": "work/InterviewPro-AI面试-整体架构概览.md",
-    "name": "InterviewPro-AI面试-整体架构概览",
+    "name": "InterviewPro-AI面试 - 整体架构概览",
     "title": "InterviewPro-AI面试 - 整体架构概览",
     "category": "work"
   },
   {
     "path": "work/InterviewPro-AI面试-核心类组织关系.md",
-    "name": "InterviewPro-AI面试-核心类组织关系",
+    "name": "InterviewPro-AI面试 核心类组织关系",
     "title": "InterviewPro-AI面试 核心类组织关系",
     "category": "work"
   },
   {
     "path": "work/InterviewPro-AI面试-设计模式详解.md",
-    "name": "InterviewPro-AI面试-设计模式详解",
+    "name": "InterviewPro-AI面试 设计模式详解",
     "title": "InterviewPro-AI面试 设计模式详解",
     "category": "work"
   },
   {
     "path": "work/InterviewPro-AI面试App.md",
-    "name": "InterviewPro-AI面试App",
+    "name": "InterviewPro AI 面试 App",
     "title": "InterviewPro AI 面试 App",
     "category": "work"
   },
@@ -2971,199 +2971,199 @@
   },
   {
     "path": "work/KeyDB多线程架构设计.md",
-    "name": "KeyDB多线程架构设计",
+    "name": "KeyDB 多线程架构设计",
     "title": "KeyDB 多线程架构设计",
     "category": "work"
   },
   {
     "path": "work/KeyDB存算分离项目.md",
-    "name": "KeyDB存算分离项目",
+    "name": "KeyDB 存算分离项目",
     "title": "KeyDB 存算分离项目",
     "category": "work"
   },
   {
     "path": "work/KeyDB性能优势总结.md",
-    "name": "KeyDB性能优势总结",
+    "name": "KeyDB 性能优势总结",
     "title": "KeyDB 性能优势总结",
     "category": "work"
   },
   {
     "path": "work/KeyDB性能分析.md",
-    "name": "KeyDB性能分析",
+    "name": "KeyDB 性能分析",
     "title": "KeyDB 性能分析",
     "category": "work"
   },
   {
     "path": "work/KeyDB性能测试数据.md",
-    "name": "KeyDB性能测试数据",
+    "name": "KeyDB 性能测试数据",
     "title": "KeyDB 性能测试数据",
     "category": "work"
   },
   {
     "path": "work/KeyDB源码设计分析.md",
-    "name": "KeyDB源码设计分析",
+    "name": "KeyDB 源码层面的关键设计分析",
     "title": "KeyDB 源码层面的关键设计分析",
     "category": "work"
   },
   {
     "path": "work/Linux系统IO调优.md",
-    "name": "Linux系统IO调优",
+    "name": "Linux 系统 IO 调优",
     "title": "Linux 系统 IO 调优",
     "category": "work"
   },
   {
     "path": "work/OBS对接RocksDB性能分析.md",
-    "name": "OBS对接RocksDB性能分析",
+    "name": "OBS 对接 RocksDB 性能分析",
     "title": "OBS 对接 RocksDB 性能分析",
     "category": "work"
   },
   {
     "path": "work/Redis可观测性项目.md",
-    "name": "Redis可观测性项目",
+    "name": "Redis 可观测性项目",
     "title": "Redis 可观测性项目",
     "category": "work"
   },
   {
     "path": "work/RocksDB_WAL写入机制.md",
-    "name": "RocksDB_WAL写入机制",
+    "name": "RocksDB WAL 写入机制",
     "title": "RocksDB WAL 写入机制",
     "category": "work"
   },
   {
     "path": "work/RocksDB与KeyDB串行化对比.md",
-    "name": "RocksDB与KeyDB串行化对比",
+    "name": "RocksDB 与 KeyDB 串行化对比",
     "title": "RocksDB 与 KeyDB 串行化对比",
     "category": "work"
   },
   {
     "path": "work/RocksDB内存和缓存配置测试.md",
-    "name": "RocksDB内存和缓存配置测试",
+    "name": "RocksDB 内存和缓存配置测试",
     "title": "RocksDB 内存和缓存配置测试",
     "category": "work"
   },
   {
     "path": "work/RocksDB写入流程.md",
-    "name": "RocksDB写入流程",
+    "name": "RocksDB 写入流程",
     "title": "RocksDB 写入流程",
     "category": "work"
   },
   {
     "path": "work/RocksDB写路径串行化瓶颈.md",
-    "name": "RocksDB写路径串行化瓶颈",
+    "name": "RocksDB 写路径串行化瓶颈",
     "title": "RocksDB 写路径串行化瓶颈",
     "category": "work"
   },
   {
     "path": "work/RocksDB前台线程（用户线程）.md",
-    "name": "RocksDB前台线程（用户线程）",
+    "name": "RocksDB 前台线程（用户线程）",
     "title": "RocksDB 前台线程（用户线程）",
     "category": "work"
   },
   {
     "path": "work/RocksDB后台线程池.md",
-    "name": "RocksDB后台线程池",
+    "name": "RocksDB 后台线程池",
     "title": "RocksDB 后台线程池",
     "category": "work"
   },
   {
     "path": "work/RocksDB大值存储性能测试.md",
-    "name": "RocksDB大值存储性能测试",
+    "name": "RocksDB 大值存储性能测试",
     "title": "RocksDB 大值存储性能测试",
     "category": "work"
   },
   {
     "path": "work/RocksDB常见问题与调优.md",
-    "name": "RocksDB常见问题与调优",
+    "name": "RocksDB 常见问题与调优",
     "title": "RocksDB 常见问题与调优",
     "category": "work"
   },
   {
     "path": "work/RocksDB性能优化最佳实践.md",
-    "name": "RocksDB性能优化最佳实践",
+    "name": "RocksDB 性能优化最佳实践",
     "title": "RocksDB 性能优化最佳实践",
     "category": "work"
   },
   {
     "path": "work/RocksDB性能分析-写优化.md",
-    "name": "RocksDB性能分析-写优化",
+    "name": "RocksDB 性能分析 - 写优化",
     "title": "RocksDB 性能分析 - 写优化",
     "category": "work"
   },
   {
     "path": "work/RocksDB性能分析与瓶颈.md",
-    "name": "RocksDB性能分析与瓶颈",
+    "name": "RocksDB 性能分析与瓶颈",
     "title": "RocksDB 性能分析与瓶颈",
     "category": "work"
   },
   {
     "path": "work/RocksDB性能测试数据与硬件配置.md",
-    "name": "RocksDB性能测试数据与硬件配置",
+    "name": "RocksDB 性能测试数据与硬件配置",
     "title": "RocksDB 性能测试数据与硬件配置",
     "category": "work"
   },
   {
     "path": "work/RocksDB性能调优.md",
-    "name": "RocksDB性能调优",
+    "name": "RocksDB 性能调优",
     "title": "RocksDB 性能调优",
     "category": "work"
   },
   {
     "path": "work/RocksDB批量操作性能测试.md",
-    "name": "RocksDB批量操作性能测试",
+    "name": "RocksDB 批量操作性能测试",
     "title": "RocksDB 批量操作性能测试",
     "category": "work"
   },
   {
     "path": "work/RocksDB故障场景与恢复测试.md",
-    "name": "RocksDB故障场景与恢复测试",
+    "name": "RocksDB 故障场景与恢复测试",
     "title": "RocksDB 故障场景与恢复测试",
     "category": "work"
   },
   {
     "path": "work/RocksDB文件体系.md",
-    "name": "RocksDB文件体系",
+    "name": "RocksDB 文件体系",
     "title": "RocksDB 文件体系",
     "category": "work"
   },
   {
     "path": "work/RocksDB线程模型.md",
-    "name": "RocksDB线程模型",
+    "name": "RocksDB 线程模型",
     "title": "RocksDB 线程模型",
     "category": "work"
   },
   {
     "path": "work/RocksDB线程配置最佳实践.md",
-    "name": "RocksDB线程配置最佳实践",
+    "name": "RocksDB 线程配置最佳实践",
     "title": "RocksDB 线程配置最佳实践",
     "category": "work"
   },
   {
     "path": "work/RocksDB范围查询性能测试.md",
-    "name": "RocksDB范围查询性能测试",
+    "name": "RocksDB 范围查询性能测试",
     "title": "RocksDB 范围查询性能测试",
     "category": "work"
   },
   {
     "path": "work/RocksDB读取流程.md",
-    "name": "RocksDB读取流程",
+    "name": "RocksDB 读取流程",
     "title": "RocksDB 读取流程",
     "category": "work"
   },
   {
     "path": "work/RocksDB配置参数性能测试.md",
-    "name": "RocksDB配置参数性能测试",
+    "name": "RocksDB 配置参数性能测试",
     "title": "RocksDB 配置参数性能测试",
     "category": "work"
   },
   {
     "path": "work/RocksDB顺序写入性能测试.md",
-    "name": "RocksDB顺序写入性能测试",
+    "name": "RocksDB 顺序写入性能测试",
     "title": "RocksDB 顺序写入性能测试",
     "category": "work"
   },
   {
     "path": "work/RocksDB高并发写入压力测试.md",
-    "name": "RocksDB高并发写入压力测试",
+    "name": "RocksDB 高并发写入压力测试",
     "title": "RocksDB 高并发写入压力测试",
     "category": "work"
   },
@@ -3175,13 +3175,13 @@
   },
   {
     "path": "work/TCP调优参数.md",
-    "name": "TCP调优参数",
+    "name": "TCP 调优参数",
     "title": "TCP 调优参数",
     "category": "work"
   },
   {
     "path": "work/Thunder分布式异步集群框架.md",
-    "name": "Thunder分布式异步集群框架",
+    "name": "Thunder 分布式异步集群框架",
     "title": "Thunder 分布式异步集群框架",
     "category": "work"
   },
@@ -3205,7 +3205,7 @@
   },
   {
     "path": "work/生产问题全景分类.md",
-    "name": "生产问题全景分类",
+    "name": "生产问题全景分类（面试官问\"你遇到过什么线上问题\"时的展开框架）",
     "title": "生产问题全景分类（面试官问\"你遇到过什么线上问题\"时的展开框架）",
     "category": "work"
   },
@@ -3217,7 +3217,7 @@
   },
   {
     "path": "work/简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）.md",
-    "name": "简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）",
+    "name": "R1：同步记录 Key 访问统计（主线程 <1μs）",
     "title": "R1：同步记录 Key 访问统计（主线程 <1μs）",
     "category": "work"
   },
@@ -3247,19 +3247,19 @@
   },
   {
     "path": "work/项目深挖-KeyDB-Redis.md",
-    "name": "项目深挖-KeyDB-Redis",
+    "name": "项目深挖：KeyDB/Redis 开发",
     "title": "项目深挖：KeyDB/Redis 开发",
     "category": "work"
   },
   {
     "path": "work/项目深挖-分布式IM系统.md",
-    "name": "项目深挖-分布式IM系统",
+    "name": "项目深挖：分布式IM系统",
     "title": "项目深挖：分布式IM系统",
     "category": "work"
   },
   {
     "path": "work/项目深挖-服务网格-Istio.md",
-    "name": "项目深挖-服务网格-Istio",
+    "name": "项目深挖：服务网格（Istio）",
     "title": "项目深挖：服务网格（Istio）",
     "category": "work"
   }
