@@ -277,9 +277,30 @@
       .markdown { padding: 24px 20px 40px; }
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/dist/vis-network.min.css">
   <style>
+    /* VS Code Dark+ 语法高亮（覆盖 highlight.js 默认样式） */
+    .markdown pre code .hljs { color: #d4d4d4; background: transparent; }
+    .hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-type { color: #569cd6; }
+    .hljs-string, .hljs-doctag { color: #ce9178; }
+    .hljs-comment, .hljs-quote { color: #6a9955; font-style: italic; }
+    .hljs-number, .hljs-literal { color: #b5cea8; }
+    .hljs-built_in { color: #4ec9b0; }
+    .hljs-title, .hljs-title.class_, .hljs-title.function_ { color: #dcdcaa; }
+    .hljs-title.class_.inherited__ { color: #4ec9b0; }
+    .hljs-attr, .hljs-attribute, .hljs-variable, .hljs-template-variable { color: #9cdcfe; }
+    .hljs-params { color: #9cdcfe; }
+    .hljs-meta, .hljs-selector-id { color: #d7ba7d; }
+    .hljs-selector-class, .hljs-selector-attr { color: #d7ba7d; }
+    .hljs-meta .hljs-keyword { color: #569cd6; }
+    .hljs-meta .hljs-string { color: #ce9178; }
+    .hljs-regexp, .hljs-link { color: #d16969; }
+    .hljs-symbol, .hljs-bullet { color: #dcdcaa; }
+    .hljs-section, .hljs-name { color: #569cd6; }
+    .hljs-tag { color: #569cd6; }
+    .hljs-deletion { color: #d16969; }
+    .hljs-addition { color: #6a9955; }
+    .hljs-subst { color: #d4d4d4; }
     #graphContainer { position: fixed; top: 0; left: 340px; right: 0; bottom: 0; visibility: hidden; z-index: 10; background: #1a1a2e; }
     #graphContainer.active { visibility: visible; }
   </style>
