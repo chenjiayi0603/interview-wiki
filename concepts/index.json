@@ -1,3344 +1,4139 @@
 [
   {
-    "path": "interview/Access网关握手协议.md",
-    "name": "Access 网关握手协议",
-    "title": "Access 网关握手协议",
-    "category": "interview"
+    "path": "AI/Agent架构与实践/Agent开发岗简历高分写法.md",
+    "name": "Agent开发岗简历高分写法",
+    "title": "Agent 开发岗简历高分写法",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
   },
   {
-    "path": "interview/AddressSanitizer.md",
-    "name": "AddressSanitizer - 内存错误检测",
-    "title": "AddressSanitizer - 内存错误检测",
-    "category": "interview"
+    "path": "AI/Agent架构与实践/AI_Agent面试题精选.md",
+    "name": "AI_Agent面试题精选",
+    "title": "AI大模型Agent面试精选：15道高频题助你轻松通关",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
   },
   {
-    "path": "interview/Asio-Cobalt协程场景示例.md",
-    "name": "Asio / Cobalt 协程场景示例",
-    "title": "Asio / Cobalt 协程场景示例",
-    "category": "interview"
+    "path": "AI/Agent架构与实践/企业级AI_Agent编排平台AgentFlow项目详解.md",
+    "name": "企业级AI_Agent编排平台AgentFlow项目详解",
+    "title": "企业级AI Agent编排平台 AgentFlow 项目详解",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
   },
   {
-    "path": "interview/Asio-epoll-与协程异步模型.md",
-    "name": "Asio、epoll 与协程异步模型",
-    "title": "Asio、epoll 与协程异步模型",
-    "category": "interview"
+    "path": "AI/Agent架构与实践/企业级AI_Agent编排平台架构指南.md",
+    "name": "企业级AI_Agent编排平台架构指南",
+    "title": "企业级 AI Agent 编排平台架构指南",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
   },
   {
-    "path": "interview/B+Tree与B-Tree对比.md",
-    "name": "B+Tree 与 B-Tree 对比",
-    "title": "B+Tree 与 B-Tree 对比",
-    "category": "interview"
+    "path": "AI/Agent架构与实践/多Agent面试-三阶段学习路径.md",
+    "name": "多Agent面试-三阶段学习路径",
+    "title": "Multi-Agent 学习路径（三阶段 · 纯展开）",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
   },
   {
-    "path": "interview/Boost.Asio.md",
+    "path": "AI/Agent架构与实践/多Agent面试-学习资料.md",
+    "name": "多Agent面试-学习资料",
+    "title": "Multi-Agent 面试系统学习资料",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
+  },
+  {
+    "path": "AI/Agent架构与实践/多Agent面试-阶段一详细路径.md",
+    "name": "多Agent面试-阶段一详细路径",
+    "title": "Multi-Agent 面试准备：阶段一「基础入门」详细路径",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
+  },
+  {
+    "path": "AI/AI智能系统/ai智能系统InterviewPro.md",
+    "name": "ai智能系统InterviewPro",
+    "title": "ai智能系统InterviewPro",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro-AI面试-整体架构概览.md",
+    "name": "InterviewPro-AI面试-整体架构概览",
+    "title": "InterviewPro-AI面试 - 整体架构概览",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro-AI面试-核心类组织关系.md",
+    "name": "InterviewPro-AI面试-核心类组织关系",
+    "title": "InterviewPro-AI面试 核心类组织关系",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro-AI面试App.md",
+    "name": "InterviewPro-AI面试App",
+    "title": "InterviewPro AI 面试 App",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro代码分析.md",
+    "name": "InterviewPro代码分析",
+    "title": "InterviewPro 改用 Eino 编排 Agent",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro四Agent提示词系统设计.md",
+    "name": "InterviewPro四Agent提示词系统设计",
+    "title": "Interview Pro 四Agent提示词系统设计",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro技术栈详解.md",
+    "name": "InterviewPro技术栈详解",
+    "title": "InterviewPro 技术栈详解",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro核心技术选型与落地.md",
+    "name": "InterviewPro核心技术选型与落地",
+    "title": "Interview Pro 核心技术选型与落地",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/AI智能系统/InterviewPro英语面试分层反馈技术实现方案.md",
+    "name": "InterviewPro英语面试分层反馈技术实现方案",
+    "title": "Interview Pro 英语面试分层反馈技术实现方案",
+    "category": "AI",
+    "subcategory": "AI智能系统"
+  },
+  {
+    "path": "AI/Go+AI/Go微服务架构_学习资料.md",
+    "name": "Go微服务架构_学习资料",
+    "title": "Go 微服务架构学习资料",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/Go+AI/OpenIM技术栈与架构设计.md",
+    "name": "OpenIM技术栈与架构设计",
+    "title": "OpenIM 技术栈与架构设计文档",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/Go+AI/Shopify后端Golang面试实录.md",
+    "name": "Shopify后端Golang面试实录",
+    "title": "Shopify后端Golang面试实录",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/产品案例/Vibe_Coding_AI心理治疗系统_CBT_Discover解析.md",
+    "name": "Vibe_Coding_AI心理治疗系统_CBT_Discover解析",
+    "title": "Vibe Coding AI心理治疗系统（CBT-Discover.skill）深度解析",
+    "category": "AI",
+    "subcategory": "产品案例"
+  },
+  {
+    "path": "AI/产品案例/雅思陪跑团队Skill3.0可视化学习系统分析.md",
+    "name": "雅思陪跑团队Skill3.0可视化学习系统分析",
+    "title": "雅思陪跑团队 Skill 3.0 可视化学习系统分析",
+    "category": "AI",
+    "subcategory": "产品案例"
+  },
+  {
+    "path": "AI/基础知识/AI底层技术名词拆解.md",
+    "name": "AI底层技术名词拆解",
+    "title": "AI 底层技术名词拆解手册",
+    "category": "AI",
+    "subcategory": "基础知识"
+  },
+  {
+    "path": "AI/基础知识/AI技术栈分层与C++系统层定位.md",
+    "name": "AI技术栈分层与C++系统层定位",
+    "title": "AI技术栈分层与C++系统层定位",
+    "category": "AI",
+    "subcategory": "基础知识"
+  },
+  {
+    "path": "AI/基础知识/LLM_Token全面解析.md",
+    "name": "LLM_Token全面解析",
+    "title": "LLM Token 全面解析",
+    "category": "AI",
+    "subcategory": "基础知识"
+  },
+  {
+    "path": "AI/学习路线/AI工程师学习大纲.md",
+    "name": "AI工程师学习大纲",
+    "title": "AI工程师学习大纲 —— 从14年后端老兵到AI Agent工程师的实战路线图",
+    "category": "AI",
+    "subcategory": "学习路线"
+  },
+  {
+    "path": "AI/学习路线/程序员AI大模型转型指南.md",
+    "name": "程序员AI大模型转型指南",
+    "title": "程序员AI大模型转型指南",
+    "category": "AI",
+    "subcategory": "学习路线"
+  },
+  {
+    "path": "AI/推理与部署/ds4.c与InterviewPro推理服务分析.md",
+    "name": "ds4.c与InterviewPro推理服务分析",
+    "title": "ds4.c专用推理引擎为什么更好，以及能否用于InterviewPro的推理服务",
+    "category": "AI",
+    "subcategory": "推理与部署"
+  },
+  {
+    "path": "AI/推理与部署/ds4.c专用推理引擎详解.md",
+    "name": "ds4.c专用推理引擎详解",
+    "title": "ds4.c 专用推理引擎技术详解",
+    "category": "AI",
+    "subcategory": "推理与部署"
+  },
+  {
+    "path": "AI/框架与工具/Eino框架技术文档.md",
+    "name": "Eino框架技术文档",
+    "title": "Eino 框架技术文档",
+    "category": "AI",
+    "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/框架与工具/Eino调研与LangGraph对比分析.md",
+    "name": "Eino调研与LangGraph对比分析",
+    "title": "Eino 深度调研与 LangGraph 对比分析",
+    "category": "AI",
+    "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/框架与工具/Harness_Engineering详解.md",
+    "name": "Harness_Engineering详解",
+    "title": "Harness Engineering 详解",
+    "category": "AI",
+    "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/框架与工具/LangGraph框架技术文档.md",
+    "name": "LangGraph框架技术文档",
+    "title": "LangGraph 框架技术文档",
+    "category": "AI",
+    "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/框架与工具/RAG召回优化_学习资料.md",
+    "name": "RAG召回优化_学习资料",
+    "title": "RAG 召回优化学习资料",
+    "category": "AI",
+    "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/框架与工具/RAG检索排序技术详解.md",
+    "name": "RAG检索排序技术详解",
+    "title": "RAG 检索排序技术详解",
+    "category": "AI",
+    "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/框架与工具/Skill-Refiner与Agent-Skills治理详解.md",
+    "name": "Skill-Refiner与Agent-Skills治理详解",
+    "title": "Skill Refiner 与 Agent Skills 治理体系：技术深度解析",
+    "category": "AI",
+    "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/面试真题/字节AI应用开发二面（偏工程）面试实录.md",
+    "name": "字节AI应用开发二面（偏工程）面试实录",
+    "title": "字节AI应用开发二面（偏工程）面试实录",
+    "category": "AI",
+    "subcategory": "面试真题"
+  },
+  {
+    "path": "AI/面试真题/字节二面-推送系统设计题解.md",
+    "name": "字节二面-推送系统设计题解",
+    "title": "字节二面系统设计题：周杰伦发新歌，如何秒级通知2000万粉丝？",
+    "category": "AI",
+    "subcategory": "面试真题"
+  },
+  {
+    "path": "AI/面试真题/腾讯CSIG-AI应用开发一面-题解.md",
+    "name": "腾讯CSIG-AI应用开发一面-题解",
+    "title": "腾讯CSIG（元宝）AI应用开发一面 - 题解",
+    "category": "AI",
+    "subcategory": "面试真题"
+  },
+  {
+    "path": "基础知识/C++/Boost.Asio.md",
     "name": "Boost.Asio",
     "title": "Boost.Asio",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/Boost.Cobalt.md",
+    "path": "基础知识/C++/Boost.Cobalt.md",
     "name": "Boost.Cobalt",
     "title": "Boost.Cobalt",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/BPF_eBPF内核追踪.md",
-    "name": "BPF/eBPF内核追踪",
-    "title": "BPF/eBPF内核追踪",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++17并行算法.md",
-    "name": "C++17 并行算法",
+    "path": "基础知识/C++/C++17并行算法.md",
+    "name": "C++17并行算法",
     "title": "C++17 并行算法",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++20协程.md",
-    "name": "C++20 协程",
+    "path": "基础知识/C++/C++20协程.md",
+    "name": "C++20协程",
     "title": "C++20 协程",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++DFS回溯.md",
-    "name": "C++ DFS / 回溯",
+    "path": "基础知识/C++/C++DFS回溯.md",
+    "name": "C++DFS回溯",
     "title": "C++ DFS / 回溯",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++I_O优化.md",
-    "name": "C++ I/O 优化",
+    "path": "基础知识/C++/C++I_O优化.md",
+    "name": "C++I_O优化",
     "title": "C++ I/O 优化",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++POSIX文件操作.md",
-    "name": "C++ POSIX 文件操作",
+    "path": "基础知识/C++/C++POSIX文件操作.md",
+    "name": "C++POSIX文件操作",
     "title": "C++ POSIX 文件操作",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++STL内存管理.md",
-    "name": "C++ STL 内存管理",
+    "path": "基础知识/C++/C++STL内存管理.md",
+    "name": "C++STL内存管理",
     "title": "C++ STL 内存管理",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++TBB最佳实践.md",
-    "name": "C++ TBB 最佳实践",
+    "path": "基础知识/C++/C++TBB最佳实践.md",
+    "name": "C++TBB最佳实践",
     "title": "C++ TBB 最佳实践",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++_CPU优化最佳实践.md",
-    "name": "C++ CPU优化最佳实践",
+    "path": "基础知识/C++/C++_CPU优化最佳实践.md",
+    "name": "C++_CPU优化最佳实践",
     "title": "C++ CPU优化最佳实践",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/c++_协程、线程、进程的占用资源分析.md",
-    "name": "C++ 协程、线程、进程的占用资源分析",
+    "path": "基础知识/C++/c++_协程、线程、进程的占用资源分析.md",
+    "name": "c++_协程、线程、进程的占用资源分析",
     "title": "C++ 协程、线程、进程的占用资源分析",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++两数组二分查找.md",
-    "name": "C++ 两数组二分查找",
+    "path": "基础知识/C++/C++两数组二分查找.md",
+    "name": "C++两数组二分查找",
     "title": "C++ 两数组二分查找",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++买卖股票的最佳时机II.md",
-    "name": "C++ 买卖股票的最佳时机 II",
+    "path": "基础知识/C++/C++买卖股票的最佳时机II.md",
+    "name": "C++买卖股票的最佳时机II",
     "title": "C++ 买卖股票的最佳时机 II",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++二分查找.md",
-    "name": "C++ 二分查找",
+    "path": "基础知识/C++/C++二分查找.md",
+    "name": "C++二分查找",
     "title": "C++ 二分查找",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++二叉树BFS应用.md",
-    "name": "C++ 二叉树 BFS 应用",
+    "path": "基础知识/C++/C++二叉树BFS应用.md",
+    "name": "C++二叉树BFS应用",
     "title": "C++ 二叉树 BFS 应用",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++二叉树LCA与路径.md",
-    "name": "C++ 二叉树 LCA 与路径",
+    "path": "基础知识/C++/C++二叉树LCA与路径.md",
+    "name": "C++二叉树LCA与路径",
     "title": "C++ 二叉树 LCA 与路径",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++二叉树前序遍历.md",
-    "name": "C++ 二叉树前序遍历",
+    "path": "基础知识/C++/C++二叉树前序遍历.md",
+    "name": "C++二叉树前序遍历",
     "title": "C++ 二叉树前序遍历",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++二叉树遍历.md",
-    "name": "C++ 二叉树遍历",
+    "path": "基础知识/C++/C++二叉树遍历.md",
+    "name": "C++二叉树遍历",
     "title": "C++ 二叉树遍历",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++位运算.md",
-    "name": "C++ 位运算",
+    "path": "基础知识/C++/C++代码层性能调优最佳实践.md",
+    "name": "C++代码层性能调优最佳实践",
+    "title": "C++ 代码层性能调优最佳实践",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++位运算.md",
+    "name": "C++位运算",
     "title": "C++ 位运算",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存优化.md",
-    "name": "C++ 内存优化",
+    "path": "基础知识/C++/C++内存优化.md",
+    "name": "C++内存优化",
     "title": "C++ 内存优化",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存优化实战案例.md",
-    "name": "C++ 内存优化实战案例",
+    "path": "基础知识/C++/C++内存优化实战案例.md",
+    "name": "C++内存优化实战案例",
     "title": "C++ 内存优化实战案例",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存优化最佳实践.md",
-    "name": "C++ 内存优化最佳实践",
+    "path": "基础知识/C++/C++内存优化最佳实践.md",
+    "name": "C++内存优化最佳实践",
     "title": "C++ 内存优化最佳实践",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存分析工具.md",
-    "name": "C++ 内存分析工具",
+    "path": "基础知识/C++/C++内存分析工具.md",
+    "name": "C++内存分析工具",
     "title": "C++ 内存分析工具",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存分析工具实际应用场景.md",
-    "name": "C++ 内存分析工具实际应用场景",
+    "path": "基础知识/C++/C++内存分析工具实际应用场景.md",
+    "name": "C++内存分析工具实际应用场景",
     "title": "C++ 内存分析工具实际应用场景",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存分析工具常见问题与解决方案.md",
-    "name": "C++ 内存分析工具常见问题与解决方案",
+    "path": "基础知识/C++/C++内存分析工具常见问题与解决方案.md",
+    "name": "C++内存分析工具常见问题与解决方案",
     "title": "C++ 内存分析工具常见问题与解决方案",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存对齐优化.md",
-    "name": "C++ 内存对齐优化",
+    "path": "基础知识/C++/C++内存对齐优化.md",
+    "name": "C++内存对齐优化",
     "title": "C++ 内存对齐优化",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存模型.md",
+    "path": "基础知识/C++/C++内存模型.md",
     "name": "C++内存模型",
     "title": "C++内存模型",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内存溢出与栈溢出.md",
+    "path": "基础知识/C++/C++内存溢出与栈溢出.md",
     "name": "C++内存溢出与栈溢出",
     "title": "C++内存溢出与栈溢出",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++内联汇编.md",
+    "path": "基础知识/C++/C++内联汇编.md",
     "name": "C++内联汇编",
     "title": "C++内联汇编",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++动态规划.md",
-    "name": "C++ 动态规划",
+    "path": "基础知识/C++/C++动态规划.md",
+    "name": "C++动态规划",
     "title": "C++ 动态规划",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++协程库对比-Folly-Asio-Cobalt-libgo.md",
-    "name": "C++协程库对比：Folly / Asio+Cobalt / libgo",
+    "path": "基础知识/C++/C++协程库对比-Folly-Asio-Cobalt-libgo.md",
+    "name": "C++协程库对比-Folly-Asio-Cobalt-libgo",
     "title": "C++协程库对比：Folly / Asio+Cobalt / libgo",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++双指针.md",
-    "name": "C++ 双指针",
+    "path": "基础知识/C++/C++双指针.md",
+    "name": "C++双指针",
     "title": "C++ 双指针",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++双遍历一维数组.md",
-    "name": "C++ 双遍历一维数组",
+    "path": "基础知识/C++/C++双遍历一维数组.md",
+    "name": "C++双遍历一维数组",
     "title": "C++ 双遍历一维数组",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++双遍历二维数组(状态数组).md",
-    "name": "C++ 双遍历二维数组（状态数组）",
+    "path": "基础知识/C++/C++双遍历二维数组(状态数组).md",
+    "name": "C++双遍历二维数组(状态数组)",
     "title": "C++ 双遍历二维数组（状态数组）",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++可变参数函数.md",
+    "path": "基础知识/C++/C++可变参数函数.md",
     "name": "C++可变参数函数",
     "title": "C++可变参数函数",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++后台性能优化-调度与实时性优化.md",
-    "name": "C++ 后台性能优化 - 调度与实时性优化",
+    "path": "基础知识/C++/C++后台性能优化-调度与实时性优化.md",
+    "name": "C++后台性能优化-调度与实时性优化",
     "title": "C++ 后台性能优化 - 调度与实时性优化",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++图论.md",
-    "name": "C++ 图论",
+    "path": "基础知识/C++/C++图论.md",
+    "name": "C++图论",
     "title": "C++ 图论",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++在实时系统中的挑战.md",
-    "name": "C++ 在实时系统中的挑战",
+    "path": "基础知识/C++/C++在实时系统中的挑战.md",
+    "name": "C++在实时系统中的挑战",
     "title": "C++ 在实时系统中的挑战",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++堆与TopK.md",
-    "name": "C++ 堆与 TopK",
+    "path": "基础知识/C++/C++堆与TopK.md",
+    "name": "C++堆与TopK",
     "title": "C++ 堆与 TopK",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++多线程与并发.md",
-    "name": "C++ 多线程与并发",
+    "path": "基础知识/C++/C++多线程与并发.md",
+    "name": "C++多线程与并发",
     "title": "C++ 多线程与并发",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++字符串算法.md",
-    "name": "C++ 字符串算法",
+    "path": "基础知识/C++/C++字符串算法.md",
+    "name": "C++字符串算法",
     "title": "C++ 字符串算法",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++对象内存布局.md",
-    "name": "C++ 对象内存布局",
+    "path": "基础知识/C++/C++对象内存布局.md",
+    "name": "C++对象内存布局",
     "title": "C++ 对象内存布局",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++并发性能优化.md",
-    "name": "C++ 并发性能优化",
+    "path": "基础知识/C++/C++并发性能优化.md",
+    "name": "C++并发性能优化",
     "title": "C++ 并发性能优化",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++并行算法.md",
-    "name": "C++ 并行算法",
+    "path": "基础知识/C++/C++并行算法.md",
+    "name": "C++并行算法",
     "title": "C++ 并行算法",
-    "category": "interview"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "interview/C++归并排序（两两合并）.md",
-    "name": "C++ 归并排序（两两合并）",
-    "title": "C++ 归并排序（两两合并）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++微服务集群-epoll异步网关-业务逻辑层-存储代理层.md",
-    "name": "C++ 微服务集群（epoll 异步网关 + 业务逻辑层 + 存储代理层）",
-    "title": "C++ 微服务集群（epoll 异步网关 + 业务逻辑层 + 存储代理层）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++性能优化大厂考点-总结优化清单.md",
-    "name": "C++ 性能优化大厂考点 - 总结优化清单",
-    "title": "C++ 性能优化大厂考点 - 总结优化清单",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++性能优化大厂考点.md",
-    "name": "C++ 性能优化大厂考点",
-    "title": "C++ 性能优化大厂考点",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++性能分析常见问题与技巧.md",
-    "name": "C++ 性能分析常见问题与技巧",
-    "title": "C++ 性能分析常见问题与技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++手写代码模板.md",
-    "name": "C++手写代码模板",
-    "title": "C++手写代码模板",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++指针体系.md",
-    "name": "C++ 指针体系",
-    "title": "C++ 指针体系",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++排序算法.md",
-    "name": "C++ 排序算法",
-    "title": "C++ 排序算法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++数字运算二分.md",
-    "name": "C++ 数字运算有关的二分",
-    "title": "C++ 数字运算有关的二分",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++数组二分查找.md",
-    "name": "C++ 数组二分查找",
-    "title": "C++ 数组二分查找",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++数组从两边往中间收拢.md",
-    "name": "C++ 数组从两边往中间收拢",
-    "title": "C++ 数组从两边往中间收拢",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++最长回文子串.md",
-    "name": "C++ 最长回文子串",
-    "title": "C++ 最长回文子串",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++条件递归.md",
-    "name": "C++ 条件递归",
-    "title": "C++ 条件递归",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++构建常见问题与技巧.md",
-    "name": "C++ 构建常见问题与技巧",
-    "title": "C++ 构建常见问题与技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++标准库同步原语.md",
-    "name": "C++标准库同步原语",
-    "title": "C++标准库同步原语",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++核心必背20题.md",
-    "name": "C++ 核心必背（20题）",
-    "title": "C++ 核心必背（20题）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++游标交换复制.md",
-    "name": "C++ 游标交换复制",
-    "title": "C++ 游标交换复制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++特有面向对象特性.md",
-    "name": "C++特有面向对象特性",
-    "title": "C++特有面向对象特性",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++猜数字大小II.md",
-    "name": "C++ 猜数字大小 II",
-    "title": "C++ 猜数字大小 II",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++第三方库手册.md",
-    "name": "C++ 常用依赖库手册（后台服务器方向）",
-    "title": "C++ 常用依赖库手册（后台服务器方向）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++类型转换.md",
-    "name": "C++类型转换",
-    "title": "C++类型转换",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++编程优化.md",
-    "name": "C++ 编程优化",
-    "title": "C++ 编程优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++网络编程.md",
-    "name": "C++网络编程",
-    "title": "C++网络编程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++语言特性.md",
-    "name": "C++语言特性",
-    "title": "C++语言特性",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++课程表II.md",
-    "name": "C++ 课程表 II",
-    "title": "C++ 课程表 II",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++调试.md",
-    "name": "C++ 调试",
-    "title": "C++ 调试",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++进程创建与管理.md",
-    "name": "C++ 进程创建与管理",
-    "title": "C++ 进程创建与管理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++进阶知识点.md",
-    "name": "C++进阶知识点",
-    "title": "C++进阶知识点",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++链表.md",
-    "name": "C++ 链表",
-    "title": "C++ 链表",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++链表相交与环形链表.md",
-    "name": "C++ 链表相交与环形链表",
-    "title": "C++ 链表相交与环形链表",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++面向对象.md",
-    "name": "C++面向对象",
-    "title": "C++面向对象",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C++高频面试问题.md",
-    "name": "C++高频面试问题",
-    "title": "C++高频面试问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Channel.md",
-    "name": "Channel",
-    "title": "Channel",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Checkpoint机制.md",
-    "name": "Checkpoint 机制",
-    "title": "Checkpoint 机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/CI-CD最佳实践.md",
-    "name": "CI/CD 最佳实践",
-    "title": "CI/CD 最佳实践",
-    "category": "interview"
-  },
-  {
-    "path": "interview/CMake.md",
-    "name": "CMake",
-    "title": "CMake",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Compaction_rate_limiter_WAL_L0_留本地_SSD.md",
-    "name": "Compaction rate_limiter + WAL/L0 留本地 SSD",
-    "title": "Compaction rate_limiter + WAL/L0 留本地 SSD",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Coolify.md",
-    "name": "Coolify",
-    "title": "Coolify",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Cpp_Wasm_开发.md",
-    "name": "Cpp Wasm 开发",
-    "title": "Cpp Wasm 开发",
-    "category": "interview"
-  },
-  {
-    "path": "interview/CPU亲和性.md",
-    "name": "CPU 亲和性（CPU Affinity）",
-    "title": "CPU 亲和性（CPU Affinity）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/CPU亲和性与调度.md",
-    "name": "CPU 亲和性与调度 (sched)",
-    "title": "CPU 亲和性与调度 (sched)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/CPU优化.md",
-    "name": "CPU优化",
-    "title": "CPU优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/CPU性能分析.md",
-    "name": "CPU性能分析",
-    "title": "CPU性能分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/CPU高但业务量低.md",
-    "name": "CPU 高但业务量低",
-    "title": "CPU 高但业务量低",
-    "category": "interview"
-  },
-  {
-    "path": "interview/C标准库实现.md",
-    "name": "C标准库实现",
-    "title": "C标准库实现",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Docker Compose vs 纯 Shell 脚本管理容器.md",
-    "name": "Docker Compose vs 纯 Shell 脚本管理容器 —— 全面对比",
-    "title": "Docker Compose vs 纯 Shell 脚本管理容器 —— 全面对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Docker Compose 单机方案.md",
-    "name": "Docker Compose 单机方案（1-5人团队）",
-    "title": "Docker Compose 单机方案（1-5人团队）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/ECDH登录与通信流程图.md",
-    "name": "ECDH 登录与通信流程图",
-    "title": "ECDH 登录与通信流程图",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Envoy Sidecar性能.md",
-    "name": "Envoy Sidecar性能",
-    "title": "Envoy Sidecar性能",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Envoy-Wasm插件.md",
-    "name": "Envoy-Wasm插件",
-    "title": "Envoy-Wasm插件",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Envoy核心概念.md",
-    "name": "Envoy核心概念",
-    "title": "Envoy核心概念",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Envoy配置.md",
-    "name": "Envoy配置",
-    "title": "Envoy配置",
-    "category": "interview"
-  },
-  {
-    "path": "interview/epoll.md",
-    "name": "epoll — 高性能 I/O 多路复用",
-    "title": "epoll — 高性能 I/O 多路复用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/ER图.md",
-    "name": "ER图",
-    "title": "ER图",
-    "category": "interview"
-  },
-  {
-    "path": "interview/eventfd.md",
-    "name": "eventfd — 事件通知",
-    "title": "eventfd — 事件通知",
-    "category": "interview"
-  },
-  {
-    "path": "interview/FastDFS逻辑架构.md",
-    "name": "FastDFS 逻辑架构图",
-    "title": "FastDFS 逻辑架构图",
-    "category": "interview"
-  },
-  {
-    "path": "interview/futex.md",
-    "name": "futex — 快速用户空间互斥",
-    "title": "futex — 快速用户空间互斥",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Gin Web框架深度分析.md",
-    "name": "Gin Web 框架深度分析",
-    "title": "Gin Web 框架深度分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go-Zero微服务框架.md",
-    "name": "Go-Zero 微服务框架",
-    "title": "Go-Zero 微服务框架",
-    "category": "interview"
-  },
-  {
-    "path": "interview/GoContext机制.md",
-    "name": "Go Context机制",
-    "title": "Go Context机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Goroutine调度.md",
-    "name": "Goroutine 调度",
-    "title": "Goroutine 调度",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Atomic.md",
-    "name": "Go Atomic（原子操作）",
-    "title": "Go Atomic（原子操作）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Cond.md",
-    "name": "Go Cond（条件变量）",
-    "title": "Go Cond（条件变量）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Context.md",
-    "name": "Go Context（上下文）",
-    "title": "Go Context（上下文）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_GLS与libgo_CLS.md",
-    "name": "Go GLS 与 libgo CLS",
-    "title": "Go GLS 与 libgo CLS",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_gRPC_客户端.md",
-    "name": "Go gRPC 客户端",
-    "title": "Go gRPC 客户端",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_gRPC_拦截器与错误处理.md",
-    "name": "Go gRPC 拦截器与错误处理",
-    "title": "Go gRPC 拦截器与错误处理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_gRPC_服务端.md",
-    "name": "Go gRPC 服务端",
-    "title": "Go gRPC 服务端",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_LeetCode技巧-条件递归.md",
-    "name": "Go LeetCode 技巧：条件递归",
-    "title": "Go LeetCode 技巧：条件递归",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_LeetCode技巧.md",
-    "name": "Go LeetCode 技巧",
-    "title": "Go LeetCode 技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_LeetCode技巧_简单的二分循环.md",
-    "name": "Go LeetCode 技巧：简单的二分循环",
-    "title": "Go LeetCode 技巧：简单的二分循环",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_LeetCode技巧_贪心靠近.md",
-    "name": "Go LeetCode 技巧：贪心靠近",
-    "title": "Go LeetCode 技巧：贪心靠近",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_LeetCode技巧_遍历递归.md",
-    "name": "Go LeetCode 技巧：遍历递归",
-    "title": "Go LeetCode 技巧：遍历递归",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Mutex.md",
-    "name": "Go Mutex（互斥锁）",
-    "title": "Go Mutex（互斥锁）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Once.md",
-    "name": "Go Once（只执行一次）",
-    "title": "Go Once（只执行一次）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_RWMutex.md",
-    "name": "Go RWMutex（读写锁）",
-    "title": "Go RWMutex（读写锁）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Select.md",
-    "name": "Go Select 多路复用",
-    "title": "Go Select 多路复用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Wasm_SDK_API.md",
-    "name": "Go Wasm SDK API",
-    "title": "Go Wasm SDK API",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go_Wasm_vs_Cpp_Wasm_对比.md",
-    "name": "Go Wasm vs Cpp Wasm 对比",
-    "title": "Go Wasm vs Cpp Wasm 对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go与libgo代码示例对比.md",
-    "name": "Go 与 libgo 代码示例对比",
-    "title": "Go 与 libgo 代码示例对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go依赖常见问题.md",
-    "name": "Go 依赖常见问题",
-    "title": "Go 依赖常见问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go依赖管理最佳实践.md",
-    "name": "Go 依赖管理最佳实践",
-    "title": "Go 依赖管理最佳实践",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go依赖管理详解.md",
-    "name": "Go 依赖管理详解",
-    "title": "Go 依赖管理详解",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go内存管理.md",
-    "name": "Go内存管理",
-    "title": "Go内存管理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go包导入和使用.md",
-    "name": "Go 包导入和使用",
-    "title": "Go 包导入和使用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go同步常见问题和陷阱.md",
-    "name": "Go 同步常见问题和陷阱",
-    "title": "Go 同步常见问题和陷阱",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go同步性能优化.md",
-    "name": "Go 同步性能优化",
-    "title": "Go 同步性能优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go同步面试考点总结.md",
-    "name": "Go 同步面试考点总结",
-    "title": "Go 同步面试考点总结",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go常用库分类和使用.md",
-    "name": "Go 常用库分类和使用",
-    "title": "Go 常用库分类和使用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go常用数据结构.md",
-    "name": "Go 常用数据结构",
-    "title": "Go 常用数据结构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go并发安全.md",
-    "name": "Go并发安全",
-    "title": "Go并发安全",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go手写代码模板.md",
-    "name": "Go手写代码模板",
-    "title": "Go手写代码模板",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go接口.md",
-    "name": "Go接口",
-    "title": "Go接口",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go方法接收者.md",
-    "name": "Go 方法接收者",
-    "title": "Go 方法接收者",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go构建和编译.md",
-    "name": "Go 构建和编译",
-    "title": "Go 构建和编译",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go核心必背15题.md",
-    "name": "Go 核心必背（15题）",
-    "title": "Go 核心必背（15题）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go框架与工具.md",
-    "name": "Go框架与工具",
-    "title": "Go框架与工具",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go第三方库总结.md",
-    "name": "Go 第三方库总结",
-    "title": "Go 第三方库总结",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go第三方库手册.md",
-    "name": "Go 常用开源库手册",
-    "title": "Go 常用开源库手册",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go网络编程.md",
-    "name": "Go 网络编程",
-    "title": "Go 网络编程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go语言基础.md",
-    "name": "Go语言基础",
-    "title": "Go语言基础",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go语言语法快速入门.md",
-    "name": "Go 语言语法快速入门",
-    "title": "Go 语言语法快速入门",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Go高频面试问题.md",
-    "name": "Go高频面试问题",
-    "title": "Go高频面试问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/gprof.md",
-    "name": "gprof（GNU性能分析器）",
-    "title": "gprof（GNU性能分析器）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/gRPC_C++_网络过程.md",
-    "name": "gRPC C++ 网络过程",
-    "title": "gRPC C++ 网络过程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/gRPC_Protocol_Buffers.md",
-    "name": "gRPC Protocol Buffers",
-    "title": "gRPC Protocol Buffers",
-    "category": "interview"
-  },
-  {
-    "path": "interview/gRPC_vs_libev+pb_对比.md",
-    "name": "gRPC vs libev+pb 对比",
-    "title": "gRPC vs libev+pb 对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/gRPC与Gin网关模式.md",
-    "name": "gRPC 与 Gin 网关模式",
-    "title": "gRPC 与 Gin 网关模式",
-    "category": "interview"
-  },
-  {
-    "path": "interview/gRPC架构与RPC类型.md",
-    "name": "gRPC 架构与 RPC 类型",
-    "title": "gRPC 架构与 RPC 类型",
-    "category": "interview"
-  },
-  {
-    "path": "interview/gRPC概述.md",
-    "name": "gRPC 概述",
-    "title": "gRPC 概述",
-    "category": "interview"
-  },
-  {
-    "path": "interview/HashiCorp Nomad.md",
-    "name": "HashiCorp Nomad",
-    "title": "HashiCorp Nomad",
-    "category": "interview"
-  },
-  {
-    "path": "interview/HTTPS_TLS握手与TCP优化.md",
-    "name": "HTTPS / TLS 握手与 TCP 优化",
-    "title": "HTTPS / TLS 握手与 TCP 优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IMAWSCodis架构.md",
-    "name": "IM AWS Codis 架构",
-    "title": "IM AWS Codis 架构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IMAWSMongoDB分片集群.md",
-    "name": "IM AWS MongoDB 分片集群",
-    "title": "IM AWS MongoDB 分片集群",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IMAWSMySQLMGR高可用架构.md",
-    "name": "IM AWS MySQL 高可用架构",
-    "title": "IM AWS MySQL 高可用架构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM_MongoDB表设计.md",
-    "name": "IM MongoDB表设计",
-    "title": "IM MongoDB表设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM单聊消息发送流程.md",
-    "name": "IM单聊消息发送流程",
-    "title": "IM单聊消息发送流程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM单聊消息流程.md",
-    "name": "IM单聊消息流程",
-    "title": "IM单聊消息流程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM客户端与微服务通知协议约定.md",
-    "name": "客户端与微服务通知协议约定",
-    "title": "客户端与微服务通知协议约定",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM数据库与缓存设计.md",
-    "name": "IM数据库与缓存设计",
-    "title": "IM数据库与缓存设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM未读数设计方案.md",
-    "name": "IM 未读数设计方案",
-    "title": "IM 未读数设计方案",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM消息协议定义.md",
-    "name": "IM消息协议定义",
-    "title": "IM消息协议定义",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM消息推送设计.md",
-    "name": "IM消息推送设计",
-    "title": "IM消息推送设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM用户Login缓存(hash).md",
-    "name": "IM用户Login缓存(hash)",
-    "title": "IM用户Login缓存(hash)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM用户属性.md",
-    "name": "IM用户属性",
-    "title": "IM用户属性",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM登录与加密通道设计.md",
-    "name": "IM 登录与加密通道设计",
-    "title": "IM 登录与加密通道设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM端到端加密与长连接认证.md",
-    "name": "IM端到端加密与长连接认证",
-    "title": "IM端到端加密与长连接认证",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM群消息协议定义.md",
-    "name": "IM群消息协议定义",
-    "title": "IM群消息协议定义",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IM通知类型定义.md",
-    "name": "IM通知类型定义",
-    "title": "IM通知类型定义",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Intel_TBB.md",
-    "name": "Intel TBB",
-    "title": "Intel TBB",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IPC进程间通信.md",
-    "name": "IPC 进程间通信",
-    "title": "IPC 进程间通信",
-    "category": "interview"
-  },
-  {
-    "path": "interview/IP头部.md",
-    "name": "IP头部",
-    "title": "IP头部",
-    "category": "interview"
-  },
-  {
-    "path": "interview/jemalloc内存Profiling.md",
-    "name": "jemalloc 内存 Profiling",
-    "title": "jemalloc 内存 Profiling",
-    "category": "interview"
-  },
-  {
-    "path": "interview/jemalloc常见问题与技巧.md",
-    "name": "jemalloc 常见问题与技巧",
-    "title": "jemalloc 常见问题与技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/jemalloc统计信息与监控.md",
-    "name": "jemalloc 统计信息与监控",
-    "title": "jemalloc 统计信息与监控",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s典型部署场景.md",
-    "name": "K3s 与 K8s 典型部署场景",
-    "title": "K3s 与 K8s 典型部署场景",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s功能完整性对比.md",
-    "name": "K3s 与 K8s 功能完整性对比",
-    "title": "K3s 与 K8s 功能完整性对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s启动速度与性能对比.md",
-    "name": "K3s 与 K8s 启动速度与性能对比",
-    "title": "K3s 与 K8s 启动速度与性能对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s多节点扩展能力.md",
-    "name": "K3s 与 K8s 多节点扩展能力",
-    "title": "K3s 与 K8s 多节点扩展能力",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s学习曲线与运维复杂度对比.md",
-    "name": "K3s与K8s学习曲线与运维复杂度对比",
-    "title": "K3s与K8s学习曲线与运维复杂度对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s架构对比.md",
-    "name": "K3s 与 K8s 架构对比",
-    "title": "K3s 与 K8s 架构对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s组件详细对比.md",
-    "name": "K3s 与 K8s 组件详细对比",
-    "title": "K3s 与 K8s 组件详细对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s资源占用对比.md",
-    "name": "K3s 与 K8s 资源占用对比",
-    "title": "K3s 与 K8s 资源占用对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/K3s与K8s选型决策指南.md",
-    "name": "K3s与K8s选型决策指南",
-    "title": "K3s与K8s选型决策指南",
-    "category": "interview"
-  },
-  {
-    "path": "interview/KMP算法.md",
-    "name": "KMP 算法",
-    "title": "KMP 算法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Kubernetes基础.md",
-    "name": "Kubernetes基础",
-    "title": "Kubernetes基础",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Leiman IM系统架构概述.md",
-    "name": "Leiman IM系统架构概述",
-    "title": "Leiman IM系统架构概述",
-    "category": "interview"
-  },
-  {
-    "path": "interview/libev.md",
-    "name": "libev",
-    "title": "libev",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Libev异步网络框架.md",
-    "name": "Libev C++ 异步网络框架（事件驱动 + 多进程 Worker）",
-    "title": "Libev C++ 异步网络框架（事件驱动 + 多进程 Worker）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/libgo_Hook.md",
-    "name": "libgo Hook 机制",
-    "title": "libgo Hook 机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/libgo与Go性能对比.md",
-    "name": "libgo 与 Go 性能对比",
-    "title": "libgo 与 Go 性能对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/libgo与Go核心特性对比.md",
-    "name": "libgo 与 Go 核心特性对比",
-    "title": "libgo 与 Go 核心特性对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux_IO.md",
-    "name": "Linux IO",
-    "title": "Linux IO",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux内核与系统调用.md",
-    "name": "Linux 内核与系统调用",
-    "title": "Linux 内核与系统调用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux安全与沙箱.md",
-    "name": "Linux 安全与沙箱",
-    "title": "Linux 安全与沙箱",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux文件系统与路径操作.md",
-    "name": "Linux 文件系统与路径操作",
-    "title": "Linux 文件系统与路径操作",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux系统调用-内存管理.md",
-    "name": "Linux 系统调用 - 内存管理",
-    "title": "Linux 系统调用 - 内存管理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux系统调用-文件IO.md",
-    "name": "Linux 系统调用 - 文件与 I/O 操作",
-    "title": "Linux 系统调用 - 文件与 I/O 操作",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux线程调度.md",
-    "name": "Linux 线程调度",
-    "title": "Linux 线程调度",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Linux进程与文件描述符扩展.md",
-    "name": "Linux 进程与文件描述符扩展",
-    "title": "Linux 进程与文件描述符扩展",
-    "category": "interview"
-  },
-  {
-    "path": "interview/LRU冷热分层（访问频次×时间衰减）.md",
-    "name": "LRU 冷热分层（访问频次 × 时间衰减）",
-    "title": "LRU 冷热分层（访问频次 × 时间衰减）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/LRU缓存机制.md",
-    "name": "LRU缓存机制",
-    "title": "LRU缓存机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Makefile.md",
-    "name": "Makefile",
-    "title": "Makefile",
-    "category": "interview"
-  },
-  {
-    "path": "interview/map_set高效用法.md",
-    "name": "map / set 高效用法",
-    "title": "map / set 高效用法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/membarrier.md",
-    "name": "membarrier — 内存屏障",
-    "title": "membarrier — 内存屏障",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MHA集群部署.md",
-    "name": "MHA 集群部署",
-    "title": "MHA 集群部署",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MongoDB分片集群通用架构.md",
-    "name": "MongoDB 分片集群分布图（通用）",
-    "title": "MongoDB 分片集群分布图（通用）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MongoDB成本对比.md",
-    "name": "MongoDB 与 MySQL 成本对比",
-    "title": "MongoDB 与 MySQL 成本对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MPMC环形无锁队列-Vyukov.md",
-    "name": "MPMC 环形无锁队列（Vyukov）",
-    "title": "MPMC 环形无锁队列（Vyukov）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MVCC多版本并发控制.md",
-    "name": "MVCC多版本并发控制",
-    "title": "MVCC多版本并发控制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL SQL优化.md",
-    "name": "MySQL SQL 优化",
-    "title": "MySQL SQL 优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL主从复制.md",
-    "name": "MySQL 主从复制",
-    "title": "MySQL 主从复制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL主从复制与高可用.md",
-    "name": "MySQL主从复制与高可用",
-    "title": "MySQL主从复制与高可用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL事务与锁.md",
-    "name": "MySQL事务与锁",
-    "title": "MySQL事务与锁",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL事务与隔离级别.md",
-    "name": "MySQL事务与隔离级别",
-    "title": "MySQL事务与隔离级别",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL事务提交与两阶段提交.md",
-    "name": "MySQL 事务提交与两阶段提交",
-    "title": "MySQL 事务提交与两阶段提交",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL写入流程DML修改.md",
-    "name": "MySQL 写入流程（DML 修改）",
-    "title": "MySQL 写入流程（DML 修改）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL写入流程组件协同.md",
-    "name": "MySQL 写入流程组件协同",
-    "title": "MySQL 写入流程组件协同",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL分库分表.md",
-    "name": "MySQL分库分表",
-    "title": "MySQL分库分表",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL存储引擎.md",
-    "name": "MySQL存储引擎",
-    "title": "MySQL存储引擎",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL性能优化.md",
-    "name": "MySQL性能优化",
-    "title": "MySQL性能优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL架构与存储引擎.md",
-    "name": "MySQL 架构与存储引擎",
-    "title": "MySQL 架构与存储引擎",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL死锁.md",
-    "name": "MySQL 死锁",
-    "title": "MySQL 死锁",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL索引.md",
-    "name": "MySQL索引",
-    "title": "MySQL索引",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL索引优化实用技巧.md",
-    "name": "MySQL索引优化实用技巧",
-    "title": "MySQL索引优化实用技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL读写流程详解.md",
-    "name": "MySQL 读写流程详解",
-    "title": "MySQL 读写流程详解",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL读写流程面试高频问题.md",
-    "name": "MySQL 读写流程面试高频问题",
-    "title": "MySQL 读写流程面试高频问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL连接详解.md",
-    "name": "MySQL 连接详解",
-    "title": "MySQL 连接详解",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL锁机制.md",
-    "name": "MySQL锁机制",
-    "title": "MySQL锁机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL集群与高可用.md",
-    "name": "MySQL 集群与高可用",
-    "title": "MySQL 集群与高可用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL集群性能举例.md",
-    "name": "MySQL 集群性能举例",
-    "title": "MySQL 集群性能举例",
-    "category": "interview"
-  },
-  {
-    "path": "interview/MySQL高并发集群设计.md",
-    "name": "MySQL 高并发集群设计",
-    "title": "MySQL 高并发集群设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/new操作符.md",
-    "name": "new 操作符",
-    "title": "new 操作符",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Nginx配置-WebSocket反向代理.md",
-    "name": "Nginx 配置 - WebSocket 反向代理",
-    "title": "Nginx 配置 - WebSocket 反向代理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/nullptr与NULL对比.md",
-    "name": "nullptr 与 NULL 对比",
-    "title": "nullptr 与 NULL 对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/NUMA优化.md",
-    "name": "NUMA 优化",
-    "title": "NUMA 优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/NUMA架构.md",
-    "name": "NUMA 架构",
-    "title": "NUMA 架构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OBS对象存储.md",
-    "name": "OBS 对象存储",
-    "title": "OBS 对象存储",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP-vs-线程池.md",
-    "name": "OpenMP vs 线程池",
-    "title": "OpenMP vs 线程池",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP.md",
-    "name": "OpenMP",
-    "title": "OpenMP",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP同步机制.md",
-    "name": "OpenMP 同步机制",
-    "title": "OpenMP 同步机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP实战案例分析.md",
-    "name": "OpenMP 实战案例分析",
-    "title": "OpenMP 实战案例分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP工作共享结构.md",
-    "name": "OpenMP 工作共享结构",
-    "title": "OpenMP 工作共享结构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP常见问题与调试.md",
-    "name": "OpenMP 常见问题与调试",
-    "title": "OpenMP 常见问题与调试",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP性能优化技巧.md",
-    "name": "OpenMP 性能优化技巧",
-    "title": "OpenMP 性能优化技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP数据共享属性.md",
-    "name": "OpenMP 数据共享属性",
-    "title": "OpenMP 数据共享属性",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP概述.md",
-    "name": "OpenMP 概述",
-    "title": "OpenMP 概述",
-    "category": "interview"
-  },
-  {
-    "path": "interview/OpenMP调度策略.md",
-    "name": "OpenMP 调度策略",
-    "title": "OpenMP 调度策略",
-    "category": "interview"
-  },
-  {
-    "path": "interview/packaged_task.md",
-    "name": "packaged_task",
-    "title": "packaged_task",
-    "category": "interview"
-  },
-  {
-    "path": "interview/perf_Linux性能分析工具.md",
-    "name": "perf - Linux 性能分析工具",
-    "title": "perf - Linux 性能分析工具",
-    "category": "interview"
-  },
-  {
-    "path": "interview/perf性能指标解读.md",
-    "name": "perf 性能指标解读",
-    "title": "perf 性能指标解读",
-    "category": "interview"
-  },
-  {
-    "path": "interview/perf核心命令详解.md",
-    "name": "perf 核心命令详解",
-    "title": "perf 核心命令详解",
-    "category": "interview"
-  },
-  {
-    "path": "interview/perf核心要点速览.md",
-    "name": "perf性能分析工具大厂考点复习文档",
-    "title": "perf性能分析工具大厂考点复习文档",
-    "category": "interview"
-  },
-  {
-    "path": "interview/pmap.md",
-    "name": "pmap（进程内存映射）",
-    "title": "pmap（进程内存映射）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/poll-select-pselect-ppoll.md",
-    "name": "poll / select / pselect / ppoll",
-    "title": "poll / select / pselect / ppoll",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX信号处理.md",
-    "name": "POSIX 信号处理",
-    "title": "POSIX 信号处理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX信号量.md",
-    "name": "POSIX 信号量",
-    "title": "POSIX 信号量",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX共享内存.md",
-    "name": "POSIX 共享内存",
-    "title": "POSIX 共享内存",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX定时器与时钟.md",
-    "name": "POSIX 定时器与时钟",
-    "title": "POSIX 定时器与时钟",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX消息队列.md",
-    "name": "POSIX 消息队列",
-    "title": "POSIX 消息队列",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX用户组与环境.md",
-    "name": "POSIX 用户/组与环境",
-    "title": "POSIX 用户/组与环境",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX线程管理.md",
-    "name": "POSIX 线程管理 (pthread)",
-    "title": "POSIX 线程管理 (pthread)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX终端IO.md",
-    "name": "POSIX 终端 I/O (termios)",
-    "title": "POSIX 终端 I/O (termios)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX网络编程.md",
-    "name": "POSIX 网络编程 (Socket)",
-    "title": "POSIX 网络编程 (Socket)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX进程控制.md",
-    "name": "POSIX 进程控制",
-    "title": "POSIX 进程控制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/POSIX进程派生.md",
-    "name": "POSIX 进程派生 (posix_spawn)",
-    "title": "POSIX 进程派生 (posix_spawn)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/PREEMPT_RT.md",
-    "name": "PREEMPT_RT",
-    "title": "PREEMPT_RT",
-    "category": "interview"
-  },
-  {
-    "path": "interview/proc_pid_maps.md",
-    "name": "/proc/pid/maps（进程地址空间）",
-    "title": "/proc/pid/maps（进程地址空间）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/proc_pid_statm.md",
-    "name": "/proc/pid/statm（内存页统计）",
-    "title": "/proc/pid/statm（内存页统计）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/proc_pid_status.md",
-    "name": "/proc/pid/status（进程状态）",
-    "title": "/proc/pid/status（进程状态）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Profile-Guided-Optimization-(PGO).md",
-    "name": "Profile-Guided Optimization (PGO)",
-    "title": "Profile-Guided Optimization (PGO)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/QPS上不去（CPU满）.md",
-    "name": "QPS 上不去（CPU 满）",
-    "title": "QPS 上不去（CPU 满）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/QUIC协议.md",
-    "name": "QUIC 协议",
-    "title": "QUIC 协议",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Redis内存问题-面试考点.md",
-    "name": "Redis 内存问题（面试考点）",
-    "title": "Redis 内存问题（面试考点）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Redis内存问题.md",
-    "name": "Redis 内存问题（OOM）",
-    "title": "Redis 内存问题（OOM）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Redis存储型方案性能对比.md",
-    "name": "Redis 存储型方案性能对比",
-    "title": "Redis 存储型方案性能对比",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Redis性能问题.md",
-    "name": "Redis 性能问题（延迟高）",
-    "title": "Redis 性能问题（延迟高）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Redis持久化问题.md",
-    "name": "Redis 持久化问题",
-    "title": "Redis 持久化问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Redis数据不一致.md",
-    "name": "Redis 数据不一致",
-    "title": "Redis 数据不一致",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Redis连接问题.md",
-    "name": "Redis 连接问题",
-    "title": "Redis 连接问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB Compaction.md",
-    "name": "RocksDB Compaction",
-    "title": "RocksDB Compaction",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB Env插件.md",
-    "name": "RocksDB Env 插件",
-    "title": "RocksDB Env 插件",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB FileSystem 继承与路由三后端.md",
-    "name": "RocksDB FileSystem 继承与路由三后端",
-    "title": "RocksDB FileSystem 继承与路由三后端",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB LSM-Tree.md",
-    "name": "RocksDB LSM-Tree",
-    "title": "RocksDB LSM-Tree",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB三大放大.md",
-    "name": "RocksDB 三大放大问题分析",
-    "title": "RocksDB 三大放大问题分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB与LSM树.md",
-    "name": "RocksDB与LSM树",
-    "title": "RocksDB与LSM树",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB基础.md",
-    "name": "RocksDB 基础",
-    "title": "RocksDB 基础",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB存储介质对比测试.md",
-    "name": "RocksDB 存储介质对比测试",
-    "title": "RocksDB 存储介质对比测试",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB官方对串行化瓶颈的优化方案.md",
-    "name": "RocksDB 官方对串行化瓶颈的优化方案",
-    "title": "RocksDB 官方对串行化瓶颈的优化方案",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB概述.md",
-    "name": "RocksDB 概述",
-    "title": "RocksDB 概述",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB版本演进.md",
-    "name": "RocksDB 版本演进",
-    "title": "RocksDB 版本演进",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB长尾延迟优化测试.md",
-    "name": "RocksDB 长尾延迟优化测试",
-    "title": "RocksDB 长尾延迟优化测试",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RocksDB面试高频问题.md",
-    "name": "RocksDB面试高频问题",
-    "title": "RocksDB面试高频问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/RPC与网络延迟速查.md",
-    "name": "RPC 与网络延迟速查",
-    "title": "RPC 与网络延迟速查",
-    "category": "interview"
-  },
-  {
-    "path": "interview/rseq.md",
-    "name": "rseq — 可重启序列",
-    "title": "rseq — 可重启序列",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SACK.md",
-    "name": "SACK (Selective Acknowledgment)",
-    "title": "SACK (Selective Acknowledgment)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Sanitizer工具详解.md",
-    "name": "Sanitizer 工具详解",
-    "title": "Sanitizer 工具详解",
-    "category": "interview"
-  },
-  {
-    "path": "interview/ShmRingQueue.md",
-    "name": "ShmRingQueue",
-    "title": "ShmRingQueue",
-    "category": "interview"
-  },
-  {
-    "path": "interview/ShmRingQueue集成方案.md",
-    "name": "ShmRingQueue 集成方案（实际实现）",
-    "title": "ShmRingQueue 集成方案（实际实现）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/signalfd.md",
-    "name": "signalfd — 信号文件描述符",
-    "title": "signalfd — 信号文件描述符",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SIMD指令优化.md",
-    "name": "SIMD 指令优化",
-    "title": "SIMD 指令优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Slice与Map.md",
-    "name": "Slice与Map",
-    "title": "Slice与Map",
-    "category": "interview"
-  },
-  {
-    "path": "interview/smem.md",
-    "name": "smem（内存使用统计）",
-    "title": "smem（内存使用统计）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SO_REUSEPORT.md",
-    "name": "SO_REUSEPORT",
-    "title": "SO_REUSEPORT",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SPMC无锁队列.md",
-    "name": "SPMC 无锁队列（std::atomic CAS，单生产者多消费者）",
-    "title": "SPMC 无锁队列（std::atomic CAS，单生产者多消费者）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SPSC无锁队列.md",
-    "name": "SPSC 无锁队列（std::atomic，单生产者单消费者）",
-    "title": "SPSC 无锁队列（std::atomic，单生产者单消费者）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SQL基础查询.md",
-    "name": "SQL 基础查询",
-    "title": "SQL 基础查询",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SQL子查询与窗口函数.md",
-    "name": "SQL 子查询与窗口函数",
-    "title": "SQL 子查询与窗口函数",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SQL数据修改与删除.md",
-    "name": "SQL 数据修改与删除",
-    "title": "SQL 数据修改与删除",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SQL聚合查询与面试题.md",
-    "name": "SQL 聚合查询与面试题",
-    "title": "SQL 聚合查询与面试题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SQL连接与集合操作.md",
-    "name": "SQL 连接与集合操作",
-    "title": "SQL 连接与集合操作",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SQL高级DML.md",
-    "name": "SQL 高级 DML",
-    "title": "SQL 高级 DML",
-    "category": "interview"
-  },
-  {
-    "path": "interview/STL容器与算法.md",
-    "name": "STL 容器与算法",
-    "title": "STL 容器与算法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/STL智能指针面试考点.md",
-    "name": "STL 智能指针面试考点",
-    "title": "STL 智能指针面试考点",
-    "category": "interview"
-  },
-  {
-    "path": "interview/STL源码考点.md",
-    "name": "STL源码考点",
-    "title": "STL源码考点",
-    "category": "interview"
-  },
-  {
-    "path": "interview/STL算法高效用法.md",
-    "name": "STL 算法高效用法",
-    "title": "STL 算法高效用法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/STL自定义内存分配器.md",
-    "name": "STL 容器的自定义内存分配器",
-    "title": "STL 容器的自定义内存分配器",
-    "category": "interview"
-  },
-  {
-    "path": "interview/STL高效使用细节与示例-十、其他细节与陷阱.md",
-    "name": "STL 高效使用细节与示例 - 十、其他细节与陷阱",
-    "title": "STL 高效使用细节与示例 - 十、其他细节与陷阱",
-    "category": "interview"
-  },
-  {
-    "path": "interview/strace_系统调用跟踪.md",
-    "name": "strace - 系统调用跟踪",
-    "title": "strace - 系统调用跟踪",
-    "category": "interview"
-  },
-  {
-    "path": "interview/string高效用法.md",
-    "name": "string 高效用法",
-    "title": "string 高效用法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/SystemV_IPC.md",
-    "name": "System V IPC",
-    "title": "System V IPC",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TBB.md",
-    "name": "Intel TBB 库分析",
-    "title": "Intel TBB 库分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TBB实际应用场景.md",
-    "name": "TBB 实际应用场景",
-    "title": "TBB 实际应用场景",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TBB常见问题与解决方案.md",
-    "name": "TBB 常见问题与解决方案",
-    "title": "TBB 常见问题与解决方案",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TBB性能优化技巧.md",
-    "name": "TBB 性能优化技巧",
-    "title": "TBB 性能优化技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TBB最佳实践.md",
-    "name": "TBB 最佳实践",
-    "title": "TBB 最佳实践",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TBB高级特性.md",
-    "name": "TBB 高级特性",
-    "title": "TBB 高级特性",
-    "category": "interview"
-  },
-  {
-    "path": "interview/tcpdump_Wireshark网络分析.md",
-    "name": "tcpdump/Wireshark网络分析",
-    "title": "tcpdump/Wireshark网络分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TCP与UDP速查.md",
-    "name": "TCP 与 UDP 速查",
-    "title": "TCP 与 UDP 速查",
-    "category": "interview"
-  },
-  {
-    "path": "interview/tcp优化-tcp选项.md",
-    "name": "TCP 选项",
-    "title": "TCP 选项",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TCP协议.md",
-    "name": "TCP 协议",
-    "title": "TCP 协议",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TCP协议包头结构.md",
-    "name": "TCP协议包头结构",
-    "title": "TCP协议包头结构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TCP可靠性分析.md",
-    "name": "TCP可靠性分析",
-    "title": "TCP可靠性分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TCP延迟确认机制.md",
-    "name": "TCP延迟确认机制",
-    "title": "TCP延迟确认机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TCP快速重传.md",
-    "name": "TCP 快速重传（Fast Retransmit）",
-    "title": "TCP 快速重传（Fast Retransmit）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/TCP连接队列.md",
-    "name": "TCP 连接队列",
-    "title": "TCP 连接队列",
-    "category": "interview"
-  },
-  {
-    "path": "interview/timerfd.md",
-    "name": "timerfd — 定时器文件描述符",
-    "title": "timerfd — 定时器文件描述符",
-    "category": "interview"
-  },
-  {
-    "path": "interview/top_htop.md",
-    "name": "top/htop（实时监控）",
-    "title": "top/htop（实时监控）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/UDP协议.md",
-    "name": "UDP 协议",
-    "title": "UDP 协议",
-    "category": "interview"
-  },
-  {
-    "path": "interview/userfaultfd.md",
-    "name": "userfaultfd — 用户空间缺页处理",
-    "title": "userfaultfd — 用户空间缺页处理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Valgrind Massif（堆内存分析）.md",
-    "name": "Valgrind Massif（堆内存分析）",
-    "title": "Valgrind Massif（堆内存分析）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Valgrind Memcheck（内存错误检测）.md",
-    "name": "Valgrind Memcheck（内存错误检测）",
-    "title": "Valgrind Memcheck（内存错误检测）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Valgrind其他工具.md",
-    "name": "Valgrind 其他工具",
-    "title": "Valgrind 其他工具",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Valgrind大厂考点总结.md",
-    "name": "Valgrind 大厂考点总结",
-    "title": "Valgrind 大厂考点总结",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Valgrind工具详解.md",
-    "name": "Valgrind（内存和性能分析）",
-    "title": "Valgrind（内存和性能分析）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Valgrind工具速查.md",
-    "name": "Valgrind 工具速查",
-    "title": "Valgrind 工具速查",
-    "category": "interview"
-  },
-  {
-    "path": "interview/valgrind性能分析.md",
-    "name": "valgrind 性能分析",
-    "title": "valgrind 性能分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/vector扩容与noexcept移动构造.md",
-    "name": "vector 扩容与 noexcept 移动构造",
-    "title": "vector 扩容与 noexcept 移动构造",
-    "category": "interview"
-  },
-  {
-    "path": "interview/vector高效用法.md",
-    "name": "vector 高效用法",
-    "title": "vector 高效用法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/VTune简介与使用.md",
-    "name": "VTune 简介与使用",
-    "title": "VTune 简介与使用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Wasm自适应熔断-Z2.md",
-    "name": "Wasm 自适应熔断插件（Z2）",
-    "title": "Wasm 自适应熔断插件（Z2）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Wasm自适应熔断.md",
-    "name": "Wasm自适应熔断",
-    "title": "Wasm自适应熔断",
-    "category": "interview"
-  },
-  {
-    "path": "interview/Wasm自适应熔断算法.md",
-    "name": "Wasm自适应熔断算法",
-    "title": "Wasm自适应熔断算法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/weak_ptr_lock_implementation.md",
-    "name": "weak_ptr::lock() 的实现原理",
-    "title": "weak_ptr::lock() 的实现原理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/WebSocket网关设计.md",
-    "name": "WebSocket网关设计",
-    "title": "WebSocket网关设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/WebSocket网关设计总结-系统架构.md",
-    "name": "WebSocket 网关设计总结",
-    "title": "WebSocket 网关设计总结",
-    "category": "interview"
-  },
-  {
-    "path": "interview/WSS协议转换原理.md",
-    "name": "WSS 协议转换原理",
-    "title": "WSS 协议转换原理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/zg_sdk.md",
-    "name": "Zego 服务网格 SDK (zg_sdk)",
-    "title": "Zego 服务网格 SDK (zg_sdk)",
-    "category": "interview"
-  },
-  {
-    "path": "interview/zg_sdk技巧.md",
-    "name": "zg_sdk技巧",
-    "title": "zg_sdk技巧",
-    "category": "interview"
-  },
-  {
-    "path": "interview/一维数组递推方程.md",
-    "name": "一维数组递推方程",
-    "title": "一维数组递推方程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/上下文切换高.md",
-    "name": "上下文切换高",
-    "title": "上下文切换高",
-    "category": "interview"
-  },
-  {
-    "path": "interview/两两合并处理.md",
-    "name": "两两合并处理",
-    "title": "两两合并处理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/中断线程化与IRQ亲和性.md",
-    "name": "中断线程化与 IRQ 亲和性",
-    "title": "中断线程化与 IRQ 亲和性",
-    "category": "interview"
-  },
-  {
-    "path": "interview/事件驱动架构.md",
-    "name": "事件驱动架构",
-    "title": "事件驱动架构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/云原生与K8s面试高频问题.md",
-    "name": "云原生与K8s面试高频问题",
-    "title": "云原生与K8s面试高频问题",
-    "category": "interview"
-  },
-  {
-    "path": "interview/低延迟C++实时性保障.md",
-    "name": "低延迟 C++ 实时性保障",
-    "title": "低延迟 C++ 实时性保障",
-    "category": "interview"
-  },
-  {
-    "path": "interview/低延迟C++性能测量与监控.md",
-    "name": "低延迟 C++ 性能测量与监控",
-    "title": "低延迟 C++ 性能测量与监控",
-    "category": "interview"
-  },
-  {
-    "path": "interview/低延迟C++系统优化案例与最佳实践.md",
-    "name": "低延迟 C++ 系统优化案例与最佳实践",
-    "title": "低延迟 C++ 系统优化案例与最佳实践",
-    "category": "interview"
-  },
-  {
-    "path": "interview/低延迟C++系统分析-面试要点总结.md",
-    "name": "低延迟C++系统分析-面试要点总结",
-    "title": "低延迟C++系统分析-面试要点总结",
-    "category": "interview"
-  },
-  {
-    "path": "interview/低延迟Linux实时系统调试验证面试要点.md",
-    "name": "低延迟 Linux 实时系统调试、验证与面试要点",
-    "title": "低延迟 Linux 实时系统调试、验证与面试要点",
-    "category": "interview"
-  },
-  {
-    "path": "interview/低延迟高频交易C++核心编程.md",
-    "name": "低延迟高频交易C++核心编程",
-    "title": "低延迟高频交易C++核心编程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/低延迟高频交易系统硬件层优化.md",
-    "name": "低延迟高频交易系统硬件层优化",
-    "title": "低延迟高频交易系统硬件层优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/共享内存IPC.md",
-    "name": "共享内存 IPC",
-    "title": "共享内存 IPC",
-    "category": "interview"
-  },
-  {
-    "path": "interview/关系数据库三大范式.md",
-    "name": "关系数据库三大范式",
-    "title": "关系数据库三大范式",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内存分析工具.md",
-    "name": "内存分析工具",
-    "title": "内存分析工具",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内存分配策略优化.md",
-    "name": "内存分配策略优化",
-    "title": "内存分配策略优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内存带宽分析.md",
-    "name": "内存带宽分析",
-    "title": "内存带宽分析",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内存映射mmap.md",
-    "name": "内存映射（mmap）",
-    "title": "内存映射（mmap）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内存泄漏.md",
-    "name": "内存泄漏",
-    "title": "内存泄漏",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内存涨-碎片.md",
-    "name": "内存涨 / 碎片",
-    "title": "内存涨 / 碎片",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内存管理.md",
-    "name": "内存管理",
-    "title": "内存管理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/内联函数优化.md",
-    "name": "内联函数优化",
-    "title": "内联函数优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/分布式IM消息系统-雷漫-性能数据分析.md",
-    "name": "分布式 IM 消息系统 — 雷漫网络（性能数据分析）",
-    "title": "分布式 IM 消息系统 — 雷漫网络（性能数据分析）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/分布式IM消息系统-雷漫.md",
-    "name": "分布式IM消息系统-雷漫",
-    "title": "分布式IM消息系统-雷漫",
-    "category": "interview"
-  },
-  {
-    "path": "interview/分支预测优化.md",
-    "name": "分支预测优化",
-    "title": "分支预测优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/动态规划.md",
-    "name": "动态规划",
-    "title": "动态规划",
-    "category": "interview"
-  },
-  {
-    "path": "interview/压力测试与稳定性.md",
-    "name": "压力测试与稳定性",
-    "title": "压力测试与稳定性",
-    "category": "interview"
-  },
-  {
-    "path": "interview/原子操作与内存模型.md",
-    "name": "原子操作与内存模型",
-    "title": "原子操作与内存模型",
-    "category": "interview"
-  },
-  {
-    "path": "interview/同步问题与解决方案.md",
-    "name": "同步问题与解决方案",
-    "title": "同步问题与解决方案",
-    "category": "interview"
-  },
-  {
-    "path": "interview/哈希快速记位.md",
-    "name": "哈希快速记位",
-    "title": "哈希快速记位",
-    "category": "interview"
-  },
-  {
-    "path": "interview/图算法.md",
-    "name": "图算法",
-    "title": "图算法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/基础数据结构.md",
-    "name": "基础数据结构",
-    "title": "基础数据结构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/多租户隔离（进程-OBS-路径-cgroup）.md",
-    "name": "多租户隔离（进程 + OBS 路径 + cgroup）",
-    "title": "多租户隔离（进程 + OBS 路径 + cgroup）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/字典树（Trie）.md",
-    "name": "字典树（Trie）",
-    "title": "字典树（Trie）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/存储成本降低70%+.md",
-    "name": "存储成本降低 70%+",
-    "title": "存储成本降低 70%+",
-    "category": "interview"
-  },
-  {
-    "path": "interview/实时安全C++编程实践.md",
-    "name": "实时安全 C++ 编程实践",
-    "title": "实时安全 C++ 编程实践",
-    "category": "interview"
-  },
-  {
-    "path": "interview/实时调度策略与优先级.md",
-    "name": "实时调度策略与优先级",
-    "title": "实时调度策略与优先级",
-    "category": "interview"
-  },
-  {
-    "path": "interview/实时调度策略（SCHED_FIFO---SCHED_RR---SCHED_DEADLINE）.md",
-    "name": "实时调度策略（SCHED_FIFO / SCHED_RR / SCHED_DEADLINE）",
-    "title": "实时调度策略（SCHED_FIFO / SCHED_RR / SCHED_DEADLINE）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/寄存器.md",
-    "name": "寄存器",
-    "title": "寄存器",
-    "category": "interview"
-  },
-  {
-    "path": "interview/布隆过滤器.md",
-    "name": "布隆过滤器",
-    "title": "布隆过滤器",
-    "category": "interview"
-  },
-  {
-    "path": "interview/布隆过滤器预筛（FPR-1%，100万-Key-→-1.2MB）.md",
-    "name": "布隆过滤器预筛（FPR 1%，100万 Key → 1.2MB）",
-    "title": "布隆过滤器预筛（FPR 1%，100万 Key → 1.2MB）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/常见性能问题诊断与解决.md",
-    "name": "常见性能问题诊断与解决",
-    "title": "常见性能问题诊断与解决",
-    "category": "interview"
-  },
-  {
-    "path": "interview/延迟优化实战.md",
-    "name": "延迟优化实战",
-    "title": "延迟优化实战",
-    "category": "interview"
-  },
-  {
-    "path": "interview/延迟来源与测量.md",
-    "name": "延迟来源与测量",
-    "title": "延迟来源与测量",
-    "category": "interview"
-  },
-  {
-    "path": "interview/忙等待与睡眠等待.md",
-    "name": "忙等待 vs 睡眠等待",
-    "title": "忙等待 vs 睡眠等待",
-    "category": "interview"
-  },
-  {
-    "path": "interview/快速判断字符串前缀在不在字典中.md",
-    "name": "快速判断字符串前缀在不在字典中",
-    "title": "快速判断字符串前缀在不在字典中",
-    "category": "interview"
-  },
-  {
-    "path": "interview/性能优化-定位套路（按症状）.md",
-    "name": "性能优化-定位套路（按症状）",
-    "title": "性能优化-定位套路（按症状）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/性能优化-配置与部署.md",
-    "name": "性能优化：配置与部署",
-    "title": "性能优化：配置与部署",
-    "category": "interview"
-  },
-  {
-    "path": "interview/性能优化.md",
-    "name": "性能优化",
-    "title": "性能优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/性能优化清单.md",
-    "name": "性能优化清单（执行顺序建议）",
-    "title": "性能优化清单（执行顺序建议）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/性能分析实战案例.md",
-    "name": "性能分析实战案例",
-    "title": "性能分析实战案例",
-    "category": "interview"
-  },
-  {
-    "path": "interview/性能分析总结速查.md",
-    "name": "性能分析总结速查",
-    "title": "性能分析总结速查",
-    "category": "interview"
-  },
-  {
-    "path": "interview/拥塞控制.md",
-    "name": "拥塞控制",
-    "title": "拥塞控制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/指令级并行优化.md",
-    "name": "指令级并行优化",
-    "title": "指令级并行优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/排序算法.md",
-    "name": "排序算法",
-    "title": "排序算法",
-    "category": "interview"
-  },
-  {
-    "path": "interview/敏感词过滤（Trie与多模式匹配）.md",
-    "name": "敏感词过滤（Trie / 多模式匹配）",
-    "title": "敏感词过滤（Trie / 多模式匹配）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/数据库性能优化要点.md",
-    "name": "数据库性能优化要点",
-    "title": "数据库性能优化要点",
-    "category": "interview"
-  },
-  {
-    "path": "interview/数据库范式.md",
-    "name": "数据库范式",
-    "title": "数据库范式",
-    "category": "interview"
-  },
-  {
-    "path": "interview/数据库语言分类.md",
-    "name": "数据库语言分类（SQL 四大子语言）",
-    "title": "数据库语言分类（SQL 四大子语言）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/无锁编程.md",
-    "name": "无锁编程",
-    "title": "无锁编程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/时间测量（C++11 chrono）.md",
-    "name": "时间测量（C++11 chrono）",
-    "title": "时间测量（C++11 chrono）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/智能指针.md",
-    "name": "智能指针",
-    "title": "智能指针",
-    "category": "interview"
-  },
-  {
-    "path": "interview/智能指针优化.md",
-    "name": "智能指针优化",
-    "title": "智能指针优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/替代在线阻塞式redis-cli-bigkeys.md",
-    "name": "替代在线阻塞式 redis-cli --bigkeys",
-    "title": "替代在线阻塞式 redis-cli --bigkeys",
-    "category": "interview"
-  },
-  {
-    "path": "interview/最小堆和最大堆.md",
-    "name": "最小堆和最大堆",
-    "title": "最小堆和最大堆",
-    "category": "interview"
-  },
-  {
-    "path": "interview/服务网格-Istio架构.md",
-    "name": "服务网格-Istio架构",
-    "title": "服务网格-Istio架构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/服务网格平台-即构.md",
-    "name": "服务网格平台 — 即构科技（K8s + Istio + Envoy）",
-    "title": "服务网格平台 — 即构科技（K8s + Istio + Envoy）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/树状数组.md",
-    "name": "树状数组",
-    "title": "树状数组",
-    "category": "interview"
-  },
-  {
-    "path": "interview/树结构.md",
-    "name": "树结构",
-    "title": "树结构",
-    "category": "interview"
-  },
-  {
-    "path": "interview/核心工具使用方法总结.md",
-    "name": "核心工具使用方法总结",
-    "title": "核心工具使用方法总结",
-    "category": "interview"
-  },
-  {
-    "path": "interview/桶计数快速排序.md",
-    "name": "桶计数快速排序",
-    "title": "桶计数快速排序",
-    "category": "interview"
-  },
-  {
-    "path": "interview/桶计数计算总时长.md",
-    "name": "桶计数计算总时长",
-    "title": "桶计数计算总时长",
-    "category": "interview"
-  },
-  {
-    "path": "interview/流量控制.md",
-    "name": "流量控制",
-    "title": "流量控制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/滑动窗口.md",
-    "name": "滑动窗口",
-    "title": "滑动窗口",
-    "category": "interview"
-  },
-  {
-    "path": "interview/滑动窗口最大值.md",
-    "name": "滑动窗口最大值",
-    "title": "滑动窗口最大值",
-    "category": "interview"
-  },
-  {
-    "path": "interview/火焰图使用.md",
-    "name": "火焰图使用",
-    "title": "火焰图使用",
-    "category": "interview"
-  },
-  {
-    "path": "interview/现代C++特性按版本划分.md",
-    "name": "现代 C++ 特性按版本划分",
-    "title": "现代 C++ 特性按版本划分",
-    "category": "interview"
-  },
-  {
-    "path": "interview/社交IM系统-你我金融-性能数据分析.md",
-    "name": "社交 IM 系统 — 你我金融（千万级用户）",
-    "title": "社交 IM 系统 — 你我金融（千万级用户）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/社交IM系统-你我金融.md",
-    "name": "社交IM系统 — 你我金融",
-    "title": "社交IM系统 — 你我金融",
-    "category": "interview"
-  },
-  {
-    "path": "interview/端到端加密单聊设计.md",
-    "name": "端到端加密单聊设计",
-    "title": "端到端加密单聊设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/端到端加密设计.md",
-    "name": "端到端加密设计",
-    "title": "端到端加密设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/算法与数据结构优化.md",
-    "name": "算法与数据结构优化",
-    "title": "算法与数据结构优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/算法速刷策略.md",
-    "name": "算法速刷策略",
-    "title": "算法速刷策略",
-    "category": "interview"
-  },
-  {
-    "path": "interview/系统内存指标.md",
-    "name": "系统内存指标",
-    "title": "系统内存指标",
-    "category": "interview"
-  },
-  {
-    "path": "interview/系统化排障方法论.md",
-    "name": "系统化排障方法论",
-    "title": "系统化排障方法论",
-    "category": "interview"
-  },
-  {
-    "path": "interview/线程同步.md",
-    "name": "线程同步",
-    "title": "线程同步",
-    "category": "interview"
-  },
-  {
-    "path": "interview/线程同步机制.md",
-    "name": "线程同步机制",
-    "title": "线程同步机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/缓存策略.md",
-    "name": "缓存策略",
-    "title": "缓存策略",
-    "category": "interview"
-  },
-  {
-    "path": "interview/编译优化.md",
-    "name": "编译优化",
-    "title": "编译优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/编译优化最佳实践.md",
-    "name": "编译优化最佳实践",
-    "title": "编译优化最佳实践",
-    "category": "interview"
-  },
-  {
-    "path": "interview/编译器优化.md",
-    "name": "编译器优化",
-    "title": "编译器优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/编译器优化选项.md",
-    "name": "编译器优化选项",
-    "title": "编译器优化选项",
-    "category": "interview"
-  },
-  {
-    "path": "interview/网关与代理限流.md",
-    "name": "网关与代理限流",
-    "title": "网关与代理限流",
-    "category": "interview"
-  },
-  {
-    "path": "interview/网络优化技术.md",
-    "name": "网络优化技术",
-    "title": "网络优化技术",
-    "category": "interview"
-  },
-  {
-    "path": "interview/网络优化最佳实践.md",
-    "name": "网络优化最佳实践",
-    "title": "网络优化最佳实践",
-    "category": "interview"
-  },
-  {
-    "path": "interview/网络层优化.md",
-    "name": "网络层优化",
-    "title": "网络层优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/网络编程.md",
-    "name": "网络编程",
-    "title": "网络编程",
-    "category": "interview"
-  },
-  {
-    "path": "interview/网络编程与协议优化.md",
-    "name": "网络编程与协议优化",
-    "title": "网络编程与协议优化",
-    "category": "interview"
-  },
-  {
-    "path": "interview/群消息扇出聚合.md",
-    "name": "群消息扇出聚合",
-    "title": "群消息扇出聚合",
-    "category": "interview"
-  },
-  {
-    "path": "interview/虚拟地址转换.md",
-    "name": "虚拟地址转换",
-    "title": "虚拟地址转换",
-    "category": "interview"
-  },
-  {
-    "path": "interview/观察者模式详解-4.-解决方案：使用-weak_ptr.md",
-    "name": "4. 解决方案：使用 weak_ptr",
-    "title": "4. 解决方案：使用 weak_ptr",
-    "category": "interview"
-  },
-  {
-    "path": "interview/观察者模式详解-多个被观察者的管理.md",
-    "name": "观察者模式详解 - 多个被观察者的管理",
-    "title": "观察者模式详解 - 多个被观察者的管理",
-    "category": "interview"
-  },
-  {
-    "path": "interview/观察者模式详解.md",
-    "name": "观察者模式详解",
-    "title": "观察者模式详解",
-    "category": "interview"
-  },
-  {
-    "path": "interview/设计模式.md",
-    "name": "设计模式",
-    "title": "设计模式",
-    "category": "interview"
-  },
-  {
-    "path": "interview/超低延迟订单系统.md",
-    "name": "超低延迟订单系统",
-    "title": "超低延迟订单系统",
-    "category": "interview"
-  },
-  {
-    "path": "interview/超时重传.md",
-    "name": "超时重传",
-    "title": "超时重传",
-    "category": "interview"
-  },
-  {
-    "path": "interview/跳表.md",
-    "name": "跳表",
-    "title": "跳表",
-    "category": "interview"
-  },
-  {
-    "path": "interview/进程与线程内存区别.md",
-    "name": "进程与线程内存区别",
-    "title": "进程与线程内存区别",
-    "category": "interview"
-  },
-  {
-    "path": "interview/进程内存分析工具.md",
-    "name": "进程内存分析工具",
-    "title": "进程内存分析工具",
-    "category": "interview"
-  },
-  {
-    "path": "interview/进程内存区域与资源限制.md",
-    "name": "进程内存区域与资源限制",
-    "title": "进程内存区域与资源限制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/进程同步.md",
-    "name": "进程同步",
-    "title": "进程同步",
-    "category": "interview"
-  },
-  {
-    "path": "interview/进程地址空间布局.md",
-    "name": "进程地址空间布局",
-    "title": "进程地址空间布局",
-    "category": "interview"
-  },
-  {
-    "path": "interview/远程调用问题-五层防线.md",
-    "name": "远程调用问题（面试高频 — \"第三方不可控\"怎么处理）",
-    "title": "远程调用问题（面试高频 — \"第三方不可控\"怎么处理）",
-    "category": "interview"
-  },
-  {
-    "path": "interview/连接复用机制.md",
-    "name": "连接复用机制",
-    "title": "连接复用机制",
-    "category": "interview"
-  },
-  {
-    "path": "interview/迭代全排列的规律.md",
-    "name": "迭代全排列的规律",
-    "title": "迭代全排列的规律",
-    "category": "interview"
-  },
-  {
-    "path": "interview/避免CPU频率缩放.md",
-    "name": "避免 CPU 频率缩放",
-    "title": "避免 CPU 频率缩放",
-    "category": "interview"
-  },
-  {
-    "path": "interview/长连接认证和链路加密方案.md",
-    "name": "长连接认证和链路加密方案",
-    "title": "长连接认证和链路加密方案",
-    "category": "interview"
-  },
-  {
-    "path": "interview/零拷贝与异步IO.md",
-    "name": "零拷贝与异步 I/O",
-    "title": "零拷贝与异步 I/O",
-    "category": "interview"
-  },
-  {
-    "path": "interview/静多态与动态多态.md",
-    "name": "静多态与动态多态",
-    "title": "静多态与动态多态",
-    "category": "interview"
-  },
-  {
-    "path": "interview/面试策略与必背数据.md",
-    "name": "面试策略与必背数据",
-    "title": "面试策略与必背数据",
-    "category": "interview"
-  },
-  {
-    "path": "interview/高频交易实时系统调度配置模板.md",
-    "name": "高频交易 / 实时系统的调度配置模板",
-    "title": "高频交易 / 实时系统的调度配置模板",
-    "category": "interview"
-  },
-  {
-    "path": "interview/高频交易系统设计.md",
-    "name": "高频交易系统设计",
-    "title": "高频交易系统设计",
-    "category": "interview"
-  },
-  {
-    "path": "interview/高频面试题.md",
-    "name": "高频面试题",
-    "title": "高频面试题",
-    "category": "interview"
-  },
-  {
-    "path": "ref/C++引用与引用折叠.md",
+    "path": "基础知识/C++/C++引用与引用折叠.md",
     "name": "C++引用与引用折叠",
     "title": "C++引用与引用折叠",
-    "category": "ref"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "ref/rocksdb性能分析-参考资料.md",
-    "name": "RocksDB 性能分析参考资料",
-    "title": "RocksDB 性能分析参考资料",
-    "category": "ref"
+    "path": "基础知识/C++/C++归并排序（两两合并）.md",
+    "name": "C++归并排序（两两合并）",
+    "title": "C++ 归并排序（两两合并）",
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "ref/静态链接.md",
-    "name": "静态链接",
-    "title": "静态链接",
-    "category": "ref"
+    "path": "基础知识/C++/C++性能优化大厂考点-总结优化清单.md",
+    "name": "C++性能优化大厂考点-总结优化清单",
+    "title": "C++ 性能优化大厂考点 - 总结优化清单",
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "work/C++代码层性能调优最佳实践.md",
-    "name": "C++ 代码层性能调优最佳实践",
-    "title": "C++ 代码层性能调优最佳实践",
-    "category": "work"
+    "path": "基础知识/C++/C++性能优化大厂考点.md",
+    "name": "C++性能优化大厂考点",
+    "title": "C++ 性能优化大厂考点",
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "work/C++性能调优关键指标.md",
-    "name": "C++ 性能调优关键指标",
+    "path": "基础知识/C++/C++性能分析常见问题与技巧.md",
+    "name": "C++性能分析常见问题与技巧",
+    "title": "C++ 性能分析常见问题与技巧",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++性能调优关键指标.md",
+    "name": "C++性能调优关键指标",
     "title": "C++ 性能调优关键指标",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "work/C++性能调优流程（闭环）.md",
-    "name": "C++ 性能调优流程（闭环）",
+    "path": "基础知识/C++/C++性能调优流程（闭环）.md",
+    "name": "C++性能调优流程（闭环）",
     "title": "C++ 性能调优流程（闭环）",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "work/C++项目深挖问题.md",
+    "path": "基础知识/C++/C++手写代码模板.md",
+    "name": "C++手写代码模板",
+    "title": "C++手写代码模板",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++指针体系.md",
+    "name": "C++指针体系",
+    "title": "C++ 指针体系",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++排序算法.md",
+    "name": "C++排序算法",
+    "title": "C++ 排序算法",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++数字运算二分.md",
+    "name": "C++数字运算二分",
+    "title": "C++ 数字运算有关的二分",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++数组二分查找.md",
+    "name": "C++数组二分查找",
+    "title": "C++ 数组二分查找",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++数组从两边往中间收拢.md",
+    "name": "C++数组从两边往中间收拢",
+    "title": "C++ 数组从两边往中间收拢",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++最长回文子串.md",
+    "name": "C++最长回文子串",
+    "title": "C++ 最长回文子串",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++条件递归.md",
+    "name": "C++条件递归",
+    "title": "C++ 条件递归",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++构建常见问题与技巧.md",
+    "name": "C++构建常见问题与技巧",
+    "title": "C++ 构建常见问题与技巧",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++标准库同步原语.md",
+    "name": "C++标准库同步原语",
+    "title": "C++标准库同步原语",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++核心必背20题.md",
+    "name": "C++核心必背20题",
+    "title": "C++ 核心必背（20题）",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++游标交换复制.md",
+    "name": "C++游标交换复制",
+    "title": "C++ 游标交换复制",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++特有面向对象特性.md",
+    "name": "C++特有面向对象特性",
+    "title": "C++特有面向对象特性",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++猜数字大小II.md",
+    "name": "C++猜数字大小II",
+    "title": "C++ 猜数字大小 II",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++第三方库手册.md",
+    "name": "C++第三方库手册",
+    "title": "C++ 常用依赖库手册（后台服务器方向）",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++类型转换.md",
+    "name": "C++类型转换",
+    "title": "C++类型转换",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++编程优化.md",
+    "name": "C++编程优化",
+    "title": "C++ 编程优化",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++网络编程.md",
+    "name": "C++网络编程",
+    "title": "C++网络编程",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++语言特性.md",
+    "name": "C++语言特性",
+    "title": "C++语言特性",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++课程表II.md",
+    "name": "C++课程表II",
+    "title": "C++ 课程表 II",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++调试.md",
+    "name": "C++调试",
+    "title": "C++ 调试",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++进程创建与管理.md",
+    "name": "C++进程创建与管理",
+    "title": "C++ 进程创建与管理",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++进阶知识点.md",
+    "name": "C++进阶知识点",
+    "title": "C++进阶知识点",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++链表.md",
+    "name": "C++链表",
+    "title": "C++ 链表",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++链表相交与环形链表.md",
+    "name": "C++链表相交与环形链表",
+    "title": "C++ 链表相交与环形链表",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++面向对象.md",
+    "name": "C++面向对象",
+    "title": "C++面向对象",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C++项目深挖问题.md",
     "name": "C++项目深挖问题",
     "title": "C++项目深挖问题",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "C++"
   },
   {
-    "path": "work/Go项目深挖问题.md",
+    "path": "基础知识/C++/C++高频面试问题.md",
+    "name": "C++高频面试问题",
+    "title": "C++高频面试问题",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/CMake.md",
+    "name": "CMake",
+    "title": "CMake",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/C标准库实现.md",
+    "name": "C标准库实现",
+    "title": "C标准库实现",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/Makefile.md",
+    "name": "Makefile",
+    "title": "Makefile",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/map_set高效用法.md",
+    "name": "map_set高效用法",
+    "title": "map / set 高效用法",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/new操作符.md",
+    "name": "new操作符",
+    "title": "new 操作符",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/nullptr与NULL对比.md",
+    "name": "nullptr与NULL对比",
+    "title": "nullptr 与 NULL 对比",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/STL智能指针面试考点.md",
+    "name": "STL智能指针面试考点",
+    "title": "STL 智能指针面试考点",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/STL源码考点.md",
+    "name": "STL源码考点",
+    "title": "STL源码考点",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/STL高效使用细节与示例-十、其他细节与陷阱.md",
+    "name": "STL高效使用细节与示例-十、其他细节与陷阱",
+    "title": "STL 高效使用细节与示例 - 十、其他细节与陷阱",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/string高效用法.md",
+    "name": "string高效用法",
+    "title": "string 高效用法",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/vector扩容与noexcept移动构造.md",
+    "name": "vector扩容与noexcept移动构造",
+    "title": "vector 扩容与 noexcept 移动构造",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/vector高效用法.md",
+    "name": "vector高效用法",
+    "title": "vector 高效用法",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/weak_ptr_lock_implementation.md",
+    "name": "weak_ptr_lock_implementation",
+    "title": "weak_ptr::lock() 的实现原理",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/上下文切换高.md",
+    "name": "上下文切换高",
+    "title": "上下文切换高",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/内联函数优化.md",
+    "name": "内联函数优化",
+    "title": "内联函数优化",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/实时安全C++编程实践.md",
+    "name": "实时安全C++编程实践",
+    "title": "实时安全 C++ 编程实践",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/常见性能问题诊断与解决.md",
+    "name": "常见性能问题诊断与解决",
+    "title": "常见性能问题诊断与解决",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/智能指针.md",
+    "name": "智能指针",
+    "title": "智能指针",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/智能指针优化.md",
+    "name": "智能指针优化",
+    "title": "智能指针优化",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/核心工具使用方法总结.md",
+    "name": "核心工具使用方法总结",
+    "title": "核心工具使用方法总结",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/现代C++特性按版本划分.md",
+    "name": "现代C++特性按版本划分",
+    "title": "现代 C++ 特性按版本划分",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/静多态与动态多态.md",
+    "name": "静多态与动态多态",
+    "title": "静多态与动态多态",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/静态链接.md",
+    "name": "静态链接",
+    "title": "静态链接",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/高频面试题.md",
+    "name": "高频面试题",
+    "title": "高频面试题",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/Go/Gin Web框架深度分析.md",
+    "name": "Gin Web框架深度分析",
+    "title": "Gin Web 框架深度分析",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go-Zero微服务框架.md",
+    "name": "Go-Zero微服务框架",
+    "title": "Go-Zero 微服务框架",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/GoContext机制.md",
+    "name": "GoContext机制",
+    "title": "Go Context机制",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Goroutine调度.md",
+    "name": "Goroutine调度",
+    "title": "Goroutine 调度",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Atomic.md",
+    "name": "Go_Atomic",
+    "title": "Go Atomic（原子操作）",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Cond.md",
+    "name": "Go_Cond",
+    "title": "Go Cond（条件变量）",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Context.md",
+    "name": "Go_Context",
+    "title": "Go Context（上下文）",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_GLS与libgo_CLS.md",
+    "name": "Go_GLS与libgo_CLS",
+    "title": "Go GLS 与 libgo CLS",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_gRPC_客户端.md",
+    "name": "Go_gRPC_客户端",
+    "title": "Go gRPC 客户端",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_gRPC_拦截器与错误处理.md",
+    "name": "Go_gRPC_拦截器与错误处理",
+    "title": "Go gRPC 拦截器与错误处理",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_gRPC_服务端.md",
+    "name": "Go_gRPC_服务端",
+    "title": "Go gRPC 服务端",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_LeetCode技巧-条件递归.md",
+    "name": "Go_LeetCode技巧-条件递归",
+    "title": "Go LeetCode 技巧：条件递归",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_LeetCode技巧.md",
+    "name": "Go_LeetCode技巧",
+    "title": "Go LeetCode 技巧",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_LeetCode技巧_简单的二分循环.md",
+    "name": "Go_LeetCode技巧_简单的二分循环",
+    "title": "Go LeetCode 技巧：简单的二分循环",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_LeetCode技巧_贪心靠近.md",
+    "name": "Go_LeetCode技巧_贪心靠近",
+    "title": "Go LeetCode 技巧：贪心靠近",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_LeetCode技巧_遍历递归.md",
+    "name": "Go_LeetCode技巧_遍历递归",
+    "title": "Go LeetCode 技巧：遍历递归",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Mutex.md",
+    "name": "Go_Mutex",
+    "title": "Go Mutex（互斥锁）",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Once.md",
+    "name": "Go_Once",
+    "title": "Go Once（只执行一次）",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_RWMutex.md",
+    "name": "Go_RWMutex",
+    "title": "Go RWMutex（读写锁）",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Select.md",
+    "name": "Go_Select",
+    "title": "Go Select 多路复用",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Wasm_SDK_API.md",
+    "name": "Go_Wasm_SDK_API",
+    "title": "Go Wasm SDK API",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go_Wasm_vs_Cpp_Wasm_对比.md",
+    "name": "Go_Wasm_vs_Cpp_Wasm_对比",
+    "title": "Go Wasm vs Cpp Wasm 对比",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go与libgo代码示例对比.md",
+    "name": "Go与libgo代码示例对比",
+    "title": "Go 与 libgo 代码示例对比",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go依赖常见问题.md",
+    "name": "Go依赖常见问题",
+    "title": "Go 依赖常见问题",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go依赖管理最佳实践.md",
+    "name": "Go依赖管理最佳实践",
+    "title": "Go 依赖管理最佳实践",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go依赖管理详解.md",
+    "name": "Go依赖管理详解",
+    "title": "Go 依赖管理详解",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go内存管理.md",
+    "name": "Go内存管理",
+    "title": "Go内存管理",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go包导入和使用.md",
+    "name": "Go包导入和使用",
+    "title": "Go 包导入和使用",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go同步常见问题和陷阱.md",
+    "name": "Go同步常见问题和陷阱",
+    "title": "Go 同步常见问题和陷阱",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go同步性能优化.md",
+    "name": "Go同步性能优化",
+    "title": "Go 同步性能优化",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go同步面试考点总结.md",
+    "name": "Go同步面试考点总结",
+    "title": "Go 同步面试考点总结",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go常用库分类和使用.md",
+    "name": "Go常用库分类和使用",
+    "title": "Go 常用库分类和使用",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go常用数据结构.md",
+    "name": "Go常用数据结构",
+    "title": "Go 常用数据结构",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go并发安全.md",
+    "name": "Go并发安全",
+    "title": "Go并发安全",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go手写代码模板.md",
+    "name": "Go手写代码模板",
+    "title": "Go手写代码模板",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go接口.md",
+    "name": "Go接口",
+    "title": "Go接口",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go方法接收者.md",
+    "name": "Go方法接收者",
+    "title": "Go 方法接收者",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go构建和编译.md",
+    "name": "Go构建和编译",
+    "title": "Go 构建和编译",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go核心必背15题.md",
+    "name": "Go核心必背15题",
+    "title": "Go 核心必背（15题）",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go框架与工具.md",
+    "name": "Go框架与工具",
+    "title": "Go框架与工具",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go第三方库总结.md",
+    "name": "Go第三方库总结",
+    "title": "Go 第三方库总结",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go第三方库手册.md",
+    "name": "Go第三方库手册",
+    "title": "Go 常用开源库手册",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go网络编程.md",
+    "name": "Go网络编程",
+    "title": "Go 网络编程",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go语言基础.md",
+    "name": "Go语言基础",
+    "title": "Go语言基础",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go语言语法快速入门.md",
+    "name": "Go语言语法快速入门",
+    "title": "Go 语言语法快速入门",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Go项目深挖问题.md",
     "name": "Go项目深挖问题",
     "title": "Go项目深挖问题",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "Go"
   },
   {
-    "path": "work/IM项目MongoDB分片集群.md",
-    "name": "IM 项目 MongoDB 分片集群图",
-    "title": "IM 项目 MongoDB 分片集群图",
-    "category": "work"
+    "path": "基础知识/Go/Go高频面试问题.md",
+    "name": "Go高频面试问题",
+    "title": "Go高频面试问题",
+    "category": "基础知识",
+    "subcategory": "Go"
   },
   {
-    "path": "work/InterviewPro-AI面试-整体架构概览.md",
-    "name": "InterviewPro-AI面试 - 整体架构概览",
-    "title": "InterviewPro-AI面试 - 整体架构概览",
-    "category": "work"
+    "path": "基础知识/Go/gRPC_C++_网络过程.md",
+    "name": "gRPC_C++_网络过程",
+    "title": "gRPC C++ 网络过程",
+    "category": "基础知识",
+    "subcategory": "Go"
   },
   {
-    "path": "work/InterviewPro-AI面试-核心类组织关系.md",
-    "name": "InterviewPro-AI面试 核心类组织关系",
-    "title": "InterviewPro-AI面试 核心类组织关系",
-    "category": "work"
+    "path": "基础知识/Go/gRPC_Protocol_Buffers.md",
+    "name": "gRPC_Protocol_Buffers",
+    "title": "gRPC Protocol Buffers",
+    "category": "基础知识",
+    "subcategory": "Go"
   },
   {
-    "path": "work/InterviewPro-AI面试-设计模式详解.md",
-    "name": "InterviewPro-AI面试 设计模式详解",
-    "title": "InterviewPro-AI面试 设计模式详解",
-    "category": "work"
+    "path": "基础知识/Go/gRPC_vs_libev+pb_对比.md",
+    "name": "gRPC_vs_libev+pb_对比",
+    "title": "gRPC vs libev+pb 对比",
+    "category": "基础知识",
+    "subcategory": "Go"
   },
   {
-    "path": "work/InterviewPro-AI面试App.md",
-    "name": "InterviewPro AI 面试 App",
-    "title": "InterviewPro AI 面试 App",
-    "category": "work"
+    "path": "基础知识/Go/gRPC与Gin网关模式.md",
+    "name": "gRPC与Gin网关模式",
+    "title": "gRPC 与 Gin 网关模式",
+    "category": "基础知识",
+    "subcategory": "Go"
   },
   {
-    "path": "work/KeyDB与RocksDB.md",
+    "path": "基础知识/Go/gRPC架构与RPC类型.md",
+    "name": "gRPC架构与RPC类型",
+    "title": "gRPC 架构与 RPC 类型",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/gRPC概述.md",
+    "name": "gRPC概述",
+    "title": "gRPC 概述",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/Go/Slice与Map.md",
+    "name": "Slice与Map",
+    "title": "Slice与Map",
+    "category": "基础知识",
+    "subcategory": "Go"
+  },
+  {
+    "path": "基础知识/KeyDB/KeyDB与RocksDB.md",
     "name": "KeyDB与RocksDB",
     "title": "KeyDB与RocksDB",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/KeyDB多线程架构设计.md",
-    "name": "KeyDB 多线程架构设计",
+    "path": "基础知识/KeyDB/KeyDB多线程架构设计.md",
+    "name": "KeyDB多线程架构设计",
     "title": "KeyDB 多线程架构设计",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/KeyDB存算分离项目.md",
-    "name": "KeyDB 存算分离项目",
+    "path": "基础知识/KeyDB/KeyDB存算分离项目.md",
+    "name": "KeyDB存算分离项目",
     "title": "KeyDB 存算分离项目",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/KeyDB性能优势总结.md",
-    "name": "KeyDB 性能优势总结",
+    "path": "基础知识/KeyDB/KeyDB性能优势总结.md",
+    "name": "KeyDB性能优势总结",
     "title": "KeyDB 性能优势总结",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/KeyDB性能分析.md",
-    "name": "KeyDB 性能分析",
+    "path": "基础知识/KeyDB/KeyDB性能分析.md",
+    "name": "KeyDB性能分析",
     "title": "KeyDB 性能分析",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/KeyDB性能测试数据.md",
-    "name": "KeyDB 性能测试数据",
+    "path": "基础知识/KeyDB/KeyDB性能测试数据.md",
+    "name": "KeyDB性能测试数据",
     "title": "KeyDB 性能测试数据",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/KeyDB源码设计分析.md",
-    "name": "KeyDB 源码层面的关键设计分析",
+    "path": "基础知识/KeyDB/KeyDB源码设计分析.md",
+    "name": "KeyDB源码设计分析",
     "title": "KeyDB 源码层面的关键设计分析",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/Linux系统IO调优.md",
-    "name": "Linux 系统 IO 调优",
-    "title": "Linux 系统 IO 调优",
-    "category": "work"
-  },
-  {
-    "path": "work/OBS对接RocksDB性能分析.md",
-    "name": "OBS 对接 RocksDB 性能分析",
-    "title": "OBS 对接 RocksDB 性能分析",
-    "category": "work"
-  },
-  {
-    "path": "work/Redis可观测性项目.md",
-    "name": "Redis 可观测性项目",
-    "title": "Redis 可观测性项目",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB_WAL写入机制.md",
-    "name": "RocksDB WAL 写入机制",
-    "title": "RocksDB WAL 写入机制",
-    "category": "work"
-  },
-  {
-    "path": "work/RocksDB与KeyDB串行化对比.md",
-    "name": "RocksDB 与 KeyDB 串行化对比",
+    "path": "基础知识/KeyDB/RocksDB与KeyDB串行化对比.md",
+    "name": "RocksDB与KeyDB串行化对比",
     "title": "RocksDB 与 KeyDB 串行化对比",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "KeyDB"
   },
   {
-    "path": "work/RocksDB内存和缓存配置测试.md",
-    "name": "RocksDB 内存和缓存配置测试",
+    "path": "基础知识/MySQL/B+Tree与B-Tree对比.md",
+    "name": "B+Tree与B-Tree对比",
+    "title": "B+Tree 与 B-Tree 对比",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/Checkpoint机制.md",
+    "name": "Checkpoint机制",
+    "title": "Checkpoint 机制",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/ER图.md",
+    "name": "ER图",
+    "title": "ER图",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/IMAWSMySQLMGR高可用架构.md",
+    "name": "IMAWSMySQLMGR高可用架构",
+    "title": "IM AWS MySQL 高可用架构",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/IM数据库与缓存设计.md",
+    "name": "IM数据库与缓存设计",
+    "title": "IM数据库与缓存设计",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MHA集群部署.md",
+    "name": "MHA集群部署",
+    "title": "MHA 集群部署",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MVCC多版本并发控制.md",
+    "name": "MVCC多版本并发控制",
+    "title": "MVCC多版本并发控制",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL SQL优化.md",
+    "name": "MySQL SQL优化",
+    "title": "MySQL SQL 优化",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL主从复制.md",
+    "name": "MySQL主从复制",
+    "title": "MySQL 主从复制",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL主从复制与高可用.md",
+    "name": "MySQL主从复制与高可用",
+    "title": "MySQL主从复制与高可用",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL事务与锁.md",
+    "name": "MySQL事务与锁",
+    "title": "MySQL事务与锁",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL事务与隔离级别.md",
+    "name": "MySQL事务与隔离级别",
+    "title": "MySQL事务与隔离级别",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL事务提交与两阶段提交.md",
+    "name": "MySQL事务提交与两阶段提交",
+    "title": "MySQL 事务提交与两阶段提交",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL写入流程DML修改.md",
+    "name": "MySQL写入流程DML修改",
+    "title": "MySQL 写入流程（DML 修改）",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL写入流程组件协同.md",
+    "name": "MySQL写入流程组件协同",
+    "title": "MySQL 写入流程组件协同",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL分库分表.md",
+    "name": "MySQL分库分表",
+    "title": "MySQL分库分表",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL存储引擎.md",
+    "name": "MySQL存储引擎",
+    "title": "MySQL存储引擎",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL性能优化.md",
+    "name": "MySQL性能优化",
+    "title": "MySQL性能优化",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL架构与存储引擎.md",
+    "name": "MySQL架构与存储引擎",
+    "title": "MySQL 架构与存储引擎",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL死锁.md",
+    "name": "MySQL死锁",
+    "title": "MySQL 死锁",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL索引.md",
+    "name": "MySQL索引",
+    "title": "MySQL索引",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL索引优化实用技巧.md",
+    "name": "MySQL索引优化实用技巧",
+    "title": "MySQL索引优化实用技巧",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL读写流程详解.md",
+    "name": "MySQL读写流程详解",
+    "title": "MySQL 读写流程详解",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL读写流程面试高频问题.md",
+    "name": "MySQL读写流程面试高频问题",
+    "title": "MySQL 读写流程面试高频问题",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL连接详解.md",
+    "name": "MySQL连接详解",
+    "title": "MySQL 连接详解",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL锁机制.md",
+    "name": "MySQL锁机制",
+    "title": "MySQL锁机制",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL集群与高可用.md",
+    "name": "MySQL集群与高可用",
+    "title": "MySQL 集群与高可用",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL集群性能举例.md",
+    "name": "MySQL集群性能举例",
+    "title": "MySQL 集群性能举例",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/MySQL高并发集群设计.md",
+    "name": "MySQL高并发集群设计",
+    "title": "MySQL 高并发集群设计",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/SQL基础查询.md",
+    "name": "SQL基础查询",
+    "title": "SQL 基础查询",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/SQL子查询与窗口函数.md",
+    "name": "SQL子查询与窗口函数",
+    "title": "SQL 子查询与窗口函数",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/SQL数据修改与删除.md",
+    "name": "SQL数据修改与删除",
+    "title": "SQL 数据修改与删除",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/SQL聚合查询与面试题.md",
+    "name": "SQL聚合查询与面试题",
+    "title": "SQL 聚合查询与面试题",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/SQL连接与集合操作.md",
+    "name": "SQL连接与集合操作",
+    "title": "SQL 连接与集合操作",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/SQL高级DML.md",
+    "name": "SQL高级DML",
+    "title": "SQL 高级 DML",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/关系数据库三大范式.md",
+    "name": "关系数据库三大范式",
+    "title": "关系数据库三大范式",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/数据库性能优化要点.md",
+    "name": "数据库性能优化要点",
+    "title": "数据库性能优化要点",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/数据库范式.md",
+    "name": "数据库范式",
+    "title": "数据库范式",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/MySQL/数据库语言分类.md",
+    "name": "数据库语言分类",
+    "title": "数据库语言分类（SQL 四大子语言）",
+    "category": "基础知识",
+    "subcategory": "MySQL"
+  },
+  {
+    "path": "基础知识/Redis/Redis内存问题-面试考点.md",
+    "name": "Redis内存问题-面试考点",
+    "title": "Redis 内存问题（面试考点）",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/Redis内存问题.md",
+    "name": "Redis内存问题",
+    "title": "Redis 内存问题（OOM）",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/Redis可观测性项目.md",
+    "name": "Redis可观测性项目",
+    "title": "Redis 可观测性项目",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/Redis存储型方案性能对比.md",
+    "name": "Redis存储型方案性能对比",
+    "title": "Redis 存储型方案性能对比",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/Redis性能问题.md",
+    "name": "Redis性能问题",
+    "title": "Redis 性能问题（延迟高）",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/Redis持久化问题.md",
+    "name": "Redis持久化问题",
+    "title": "Redis 持久化问题",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/Redis数据不一致.md",
+    "name": "Redis数据不一致",
+    "title": "Redis 数据不一致",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/Redis连接问题.md",
+    "name": "Redis连接问题",
+    "title": "Redis 连接问题",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/Redis/项目深挖-KeyDB-Redis.md",
+    "name": "项目深挖-KeyDB-Redis",
+    "title": "项目深挖：KeyDB/Redis 开发",
+    "category": "基础知识",
+    "subcategory": "Redis"
+  },
+  {
+    "path": "基础知识/RocksDB/Compaction_rate_limiter_WAL_L0_留本地_SSD.md",
+    "name": "Compaction_rate_limiter_WAL_L0_留本地_SSD",
+    "title": "Compaction rate_limiter + WAL/L0 留本地 SSD",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/OBS对接RocksDB性能分析.md",
+    "name": "OBS对接RocksDB性能分析",
+    "title": "OBS 对接 RocksDB 性能分析",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB Compaction.md",
+    "name": "RocksDB Compaction",
+    "title": "RocksDB Compaction",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB Env插件.md",
+    "name": "RocksDB Env插件",
+    "title": "RocksDB Env 插件",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB FileSystem 继承与路由三后端.md",
+    "name": "RocksDB FileSystem 继承与路由三后端",
+    "title": "RocksDB FileSystem 继承与路由三后端",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB LSM-Tree.md",
+    "name": "RocksDB LSM-Tree",
+    "title": "RocksDB LSM-Tree",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB_WAL写入机制.md",
+    "name": "RocksDB_WAL写入机制",
+    "title": "RocksDB WAL 写入机制",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB三大放大.md",
+    "name": "RocksDB三大放大",
+    "title": "RocksDB 三大放大问题分析",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB与LSM树.md",
+    "name": "RocksDB与LSM树",
+    "title": "RocksDB与LSM树",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB内存和缓存配置测试.md",
+    "name": "RocksDB内存和缓存配置测试",
     "title": "RocksDB 内存和缓存配置测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB写入流程.md",
-    "name": "RocksDB 写入流程",
+    "path": "基础知识/RocksDB/RocksDB写入流程.md",
+    "name": "RocksDB写入流程",
     "title": "RocksDB 写入流程",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB写路径串行化瓶颈.md",
-    "name": "RocksDB 写路径串行化瓶颈",
+    "path": "基础知识/RocksDB/RocksDB写路径串行化瓶颈.md",
+    "name": "RocksDB写路径串行化瓶颈",
     "title": "RocksDB 写路径串行化瓶颈",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB前台线程（用户线程）.md",
-    "name": "RocksDB 前台线程（用户线程）",
+    "path": "基础知识/RocksDB/RocksDB前台线程（用户线程）.md",
+    "name": "RocksDB前台线程（用户线程）",
     "title": "RocksDB 前台线程（用户线程）",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB后台线程池.md",
-    "name": "RocksDB 后台线程池",
+    "path": "基础知识/RocksDB/RocksDB后台线程池.md",
+    "name": "RocksDB后台线程池",
     "title": "RocksDB 后台线程池",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB大值存储性能测试.md",
-    "name": "RocksDB 大值存储性能测试",
+    "path": "基础知识/RocksDB/RocksDB基础.md",
+    "name": "RocksDB基础",
+    "title": "RocksDB 基础",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB大值存储性能测试.md",
+    "name": "RocksDB大值存储性能测试",
     "title": "RocksDB 大值存储性能测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB常见问题与调优.md",
-    "name": "RocksDB 常见问题与调优",
+    "path": "基础知识/RocksDB/RocksDB存储介质对比测试.md",
+    "name": "RocksDB存储介质对比测试",
+    "title": "RocksDB 存储介质对比测试",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB官方对串行化瓶颈的优化方案.md",
+    "name": "RocksDB官方对串行化瓶颈的优化方案",
+    "title": "RocksDB 官方对串行化瓶颈的优化方案",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB常见问题与调优.md",
+    "name": "RocksDB常见问题与调优",
     "title": "RocksDB 常见问题与调优",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB性能优化最佳实践.md",
-    "name": "RocksDB 性能优化最佳实践",
+    "path": "基础知识/RocksDB/RocksDB性能优化最佳实践.md",
+    "name": "RocksDB性能优化最佳实践",
     "title": "RocksDB 性能优化最佳实践",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB性能分析-写优化.md",
-    "name": "RocksDB 性能分析 - 写优化",
+    "path": "基础知识/RocksDB/RocksDB性能分析-写优化.md",
+    "name": "RocksDB性能分析-写优化",
     "title": "RocksDB 性能分析 - 写优化",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB性能分析与瓶颈.md",
-    "name": "RocksDB 性能分析与瓶颈",
+    "path": "基础知识/RocksDB/rocksdb性能分析-参考资料.md",
+    "name": "rocksdb性能分析-参考资料",
+    "title": "RocksDB 性能分析参考资料",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB性能分析与瓶颈.md",
+    "name": "RocksDB性能分析与瓶颈",
     "title": "RocksDB 性能分析与瓶颈",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB性能测试数据与硬件配置.md",
-    "name": "RocksDB 性能测试数据与硬件配置",
+    "path": "基础知识/RocksDB/RocksDB性能测试数据与硬件配置.md",
+    "name": "RocksDB性能测试数据与硬件配置",
     "title": "RocksDB 性能测试数据与硬件配置",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB性能调优.md",
-    "name": "RocksDB 性能调优",
+    "path": "基础知识/RocksDB/RocksDB性能调优.md",
+    "name": "RocksDB性能调优",
     "title": "RocksDB 性能调优",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB批量操作性能测试.md",
-    "name": "RocksDB 批量操作性能测试",
+    "path": "基础知识/RocksDB/RocksDB批量操作性能测试.md",
+    "name": "RocksDB批量操作性能测试",
     "title": "RocksDB 批量操作性能测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB故障场景与恢复测试.md",
-    "name": "RocksDB 故障场景与恢复测试",
+    "path": "基础知识/RocksDB/RocksDB故障场景与恢复测试.md",
+    "name": "RocksDB故障场景与恢复测试",
     "title": "RocksDB 故障场景与恢复测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB文件体系.md",
-    "name": "RocksDB 文件体系",
+    "path": "基础知识/RocksDB/RocksDB文件体系.md",
+    "name": "RocksDB文件体系",
     "title": "RocksDB 文件体系",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB线程模型.md",
-    "name": "RocksDB 线程模型",
+    "path": "基础知识/RocksDB/RocksDB概述.md",
+    "name": "RocksDB概述",
+    "title": "RocksDB 概述",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB版本演进.md",
+    "name": "RocksDB版本演进",
+    "title": "RocksDB 版本演进",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB线程模型.md",
+    "name": "RocksDB线程模型",
     "title": "RocksDB 线程模型",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB线程配置最佳实践.md",
-    "name": "RocksDB 线程配置最佳实践",
+    "path": "基础知识/RocksDB/RocksDB线程配置最佳实践.md",
+    "name": "RocksDB线程配置最佳实践",
     "title": "RocksDB 线程配置最佳实践",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB范围查询性能测试.md",
-    "name": "RocksDB 范围查询性能测试",
+    "path": "基础知识/RocksDB/RocksDB范围查询性能测试.md",
+    "name": "RocksDB范围查询性能测试",
     "title": "RocksDB 范围查询性能测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB读取流程.md",
-    "name": "RocksDB 读取流程",
+    "path": "基础知识/RocksDB/RocksDB读取流程.md",
+    "name": "RocksDB读取流程",
     "title": "RocksDB 读取流程",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB配置参数性能测试.md",
-    "name": "RocksDB 配置参数性能测试",
+    "path": "基础知识/RocksDB/RocksDB配置参数性能测试.md",
+    "name": "RocksDB配置参数性能测试",
     "title": "RocksDB 配置参数性能测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB顺序写入性能测试.md",
-    "name": "RocksDB 顺序写入性能测试",
+    "path": "基础知识/RocksDB/RocksDB长尾延迟优化测试.md",
+    "name": "RocksDB长尾延迟优化测试",
+    "title": "RocksDB 长尾延迟优化测试",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB面试高频问题.md",
+    "name": "RocksDB面试高频问题",
+    "title": "RocksDB面试高频问题",
+    "category": "基础知识",
+    "subcategory": "RocksDB"
+  },
+  {
+    "path": "基础知识/RocksDB/RocksDB顺序写入性能测试.md",
+    "name": "RocksDB顺序写入性能测试",
     "title": "RocksDB 顺序写入性能测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/RocksDB高并发写入压力测试.md",
-    "name": "RocksDB 高并发写入压力测试",
+    "path": "基础知识/RocksDB/RocksDB高并发写入压力测试.md",
+    "name": "RocksDB高并发写入压力测试",
     "title": "RocksDB 高并发写入压力测试",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "RocksDB"
   },
   {
-    "path": "work/TCP参数调优详解.md",
-    "name": "TCP参数调优详解",
-    "title": "TCP参数调优详解",
-    "category": "work"
+    "path": "基础知识/云原生/CI-CD最佳实践.md",
+    "name": "CI-CD最佳实践",
+    "title": "CI/CD 最佳实践",
+    "category": "基础知识",
+    "subcategory": "云原生"
   },
   {
-    "path": "work/TCP调优参数.md",
-    "name": "TCP 调优参数",
-    "title": "TCP 调优参数",
-    "category": "work"
+    "path": "基础知识/云原生/Coolify.md",
+    "name": "Coolify",
+    "title": "Coolify",
+    "category": "基础知识",
+    "subcategory": "云原生"
   },
   {
-    "path": "work/Thunder分布式异步集群框架.md",
-    "name": "Thunder 分布式异步集群框架",
-    "title": "Thunder 分布式异步集群框架",
-    "category": "work"
+    "path": "基础知识/云原生/Cpp_Wasm_开发.md",
+    "name": "Cpp_Wasm_开发",
+    "title": "Cpp Wasm 开发",
+    "category": "基础知识",
+    "subcategory": "云原生"
   },
   {
-    "path": "work/单机百万长连接内核调优.md",
-    "name": "单机百万长连接内核调优",
-    "title": "单机百万长连接内核调优",
-    "category": "work"
+    "path": "基础知识/云原生/Docker Compose vs 纯 Shell 脚本管理容器.md",
+    "name": "Docker Compose vs 纯 Shell 脚本管理容器",
+    "title": "Docker Compose vs 纯 Shell 脚本管理容器 —— 全面对比",
+    "category": "基础知识",
+    "subcategory": "云原生"
   },
   {
-    "path": "work/工程项目常规DP.md",
-    "name": "工程项目常规 DP",
-    "title": "工程项目常规 DP",
-    "category": "work"
+    "path": "基础知识/云原生/Docker Compose 单机方案.md",
+    "name": "Docker Compose 单机方案",
+    "title": "Docker Compose 单机方案（1-5人团队）",
+    "category": "基础知识",
+    "subcategory": "云原生"
   },
   {
-    "path": "work/性能测量与调优.md",
+    "path": "基础知识/云原生/Envoy Sidecar性能.md",
+    "name": "Envoy Sidecar性能",
+    "title": "Envoy Sidecar性能",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/Envoy-Wasm插件.md",
+    "name": "Envoy-Wasm插件",
+    "title": "Envoy-Wasm插件",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/Envoy核心概念.md",
+    "name": "Envoy核心概念",
+    "title": "Envoy核心概念",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/Envoy配置.md",
+    "name": "Envoy配置",
+    "title": "Envoy配置",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/HashiCorp Nomad.md",
+    "name": "HashiCorp Nomad",
+    "title": "HashiCorp Nomad",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s典型部署场景.md",
+    "name": "K3s与K8s典型部署场景",
+    "title": "K3s 与 K8s 典型部署场景",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s功能完整性对比.md",
+    "name": "K3s与K8s功能完整性对比",
+    "title": "K3s 与 K8s 功能完整性对比",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s启动速度与性能对比.md",
+    "name": "K3s与K8s启动速度与性能对比",
+    "title": "K3s 与 K8s 启动速度与性能对比",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s多节点扩展能力.md",
+    "name": "K3s与K8s多节点扩展能力",
+    "title": "K3s 与 K8s 多节点扩展能力",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s学习曲线与运维复杂度对比.md",
+    "name": "K3s与K8s学习曲线与运维复杂度对比",
+    "title": "K3s与K8s学习曲线与运维复杂度对比",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s架构对比.md",
+    "name": "K3s与K8s架构对比",
+    "title": "K3s 与 K8s 架构对比",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s组件详细对比.md",
+    "name": "K3s与K8s组件详细对比",
+    "title": "K3s 与 K8s 组件详细对比",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s资源占用对比.md",
+    "name": "K3s与K8s资源占用对比",
+    "title": "K3s 与 K8s 资源占用对比",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/K3s与K8s选型决策指南.md",
+    "name": "K3s与K8s选型决策指南",
+    "title": "K3s与K8s选型决策指南",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/Kubernetes基础.md",
+    "name": "Kubernetes基础",
+    "title": "Kubernetes基础",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/Wasm自适应熔断-Z2.md",
+    "name": "Wasm自适应熔断-Z2",
+    "title": "Wasm 自适应熔断插件（Z2）",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/Wasm自适应熔断.md",
+    "name": "Wasm自适应熔断",
+    "title": "Wasm自适应熔断",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/云原生与K8s面试高频问题.md",
+    "name": "云原生与K8s面试高频问题",
+    "title": "云原生与K8s面试高频问题",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/服务网格-Istio架构.md",
+    "name": "服务网格-Istio架构",
+    "title": "服务网格-Istio架构",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/服务网格平台-即构.md",
+    "name": "服务网格平台-即构",
+    "title": "服务网格平台 — 即构科技（K8s + Istio + Envoy）",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/云原生/项目深挖-服务网格-Istio.md",
+    "name": "项目深挖-服务网格-Istio",
+    "title": "项目深挖：服务网格（Istio）",
+    "category": "基础知识",
+    "subcategory": "云原生"
+  },
+  {
+    "path": "基础知识/并发编程/Asio-Cobalt协程场景示例.md",
+    "name": "Asio-Cobalt协程场景示例",
+    "title": "Asio / Cobalt 协程场景示例",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/Channel.md",
+    "name": "Channel",
+    "title": "Channel",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/Intel_TBB.md",
+    "name": "Intel_TBB",
+    "title": "Intel TBB",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/libgo_Hook.md",
+    "name": "libgo_Hook",
+    "title": "libgo Hook 机制",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/libgo与Go性能对比.md",
+    "name": "libgo与Go性能对比",
+    "title": "libgo 与 Go 性能对比",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/libgo与Go核心特性对比.md",
+    "name": "libgo与Go核心特性对比",
+    "title": "libgo 与 Go 核心特性对比",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP-vs-线程池.md",
+    "name": "OpenMP-vs-线程池",
+    "title": "OpenMP vs 线程池",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP.md",
+    "name": "OpenMP",
+    "title": "OpenMP",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP同步机制.md",
+    "name": "OpenMP同步机制",
+    "title": "OpenMP 同步机制",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP实战案例分析.md",
+    "name": "OpenMP实战案例分析",
+    "title": "OpenMP 实战案例分析",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP工作共享结构.md",
+    "name": "OpenMP工作共享结构",
+    "title": "OpenMP 工作共享结构",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP常见问题与调试.md",
+    "name": "OpenMP常见问题与调试",
+    "title": "OpenMP 常见问题与调试",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP性能优化技巧.md",
+    "name": "OpenMP性能优化技巧",
+    "title": "OpenMP 性能优化技巧",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP数据共享属性.md",
+    "name": "OpenMP数据共享属性",
+    "title": "OpenMP 数据共享属性",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/OpenMP概述.md",
+    "name": "OpenMP概述",
+    "title": "OpenMP 概述",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/packaged_task.md",
+    "name": "packaged_task",
+    "title": "packaged_task",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/TBB.md",
+    "name": "TBB",
+    "title": "Intel TBB 库分析",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/TBB实际应用场景.md",
+    "name": "TBB实际应用场景",
+    "title": "TBB 实际应用场景",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/TBB常见问题与解决方案.md",
+    "name": "TBB常见问题与解决方案",
+    "title": "TBB 常见问题与解决方案",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/TBB性能优化技巧.md",
+    "name": "TBB性能优化技巧",
+    "title": "TBB 性能优化技巧",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/TBB最佳实践.md",
+    "name": "TBB最佳实践",
+    "title": "TBB 最佳实践",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/TBB高级特性.md",
+    "name": "TBB高级特性",
+    "title": "TBB 高级特性",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/原子操作与内存模型.md",
+    "name": "原子操作与内存模型",
+    "title": "原子操作与内存模型",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/同步问题与解决方案.md",
+    "name": "同步问题与解决方案",
+    "title": "同步问题与解决方案",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/指令级并行优化.md",
+    "name": "指令级并行优化",
+    "title": "指令级并行优化",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/无锁编程.md",
+    "name": "无锁编程",
+    "title": "无锁编程",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/线程同步.md",
+    "name": "线程同步",
+    "title": "线程同步",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/并发编程/线程同步机制.md",
+    "name": "线程同步机制",
+    "title": "线程同步机制",
+    "category": "基础知识",
+    "subcategory": "并发编程"
+  },
+  {
+    "path": "基础知识/性能优化/AddressSanitizer.md",
+    "name": "AddressSanitizer",
+    "title": "AddressSanitizer - 内存错误检测",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/CPU亲和性.md",
+    "name": "CPU亲和性",
+    "title": "CPU 亲和性（CPU Affinity）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/CPU亲和性与调度.md",
+    "name": "CPU亲和性与调度",
+    "title": "CPU 亲和性与调度 (sched)",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/CPU优化.md",
+    "name": "CPU优化",
+    "title": "CPU优化",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/CPU性能分析.md",
+    "name": "CPU性能分析",
+    "title": "CPU性能分析",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/CPU高但业务量低.md",
+    "name": "CPU高但业务量低",
+    "title": "CPU 高但业务量低",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/gprof.md",
+    "name": "gprof",
+    "title": "gprof（GNU性能分析器）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/jemalloc内存Profiling.md",
+    "name": "jemalloc内存Profiling",
+    "title": "jemalloc 内存 Profiling",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/jemalloc常见问题与技巧.md",
+    "name": "jemalloc常见问题与技巧",
+    "title": "jemalloc 常见问题与技巧",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/jemalloc统计信息与监控.md",
+    "name": "jemalloc统计信息与监控",
+    "title": "jemalloc 统计信息与监控",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/perf性能指标解读.md",
+    "name": "perf性能指标解读",
+    "title": "perf 性能指标解读",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/perf核心命令详解.md",
+    "name": "perf核心命令详解",
+    "title": "perf 核心命令详解",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/perf核心要点速览.md",
+    "name": "perf核心要点速览",
+    "title": "perf性能分析工具大厂考点复习文档",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/pmap.md",
+    "name": "pmap",
+    "title": "pmap（进程内存映射）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/Profile-Guided-Optimization-(PGO).md",
+    "name": "Profile-Guided-Optimization-(PGO)",
+    "title": "Profile-Guided Optimization (PGO)",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/QPS上不去（CPU满）.md",
+    "name": "QPS上不去（CPU满）",
+    "title": "QPS 上不去（CPU 满）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/RPC与网络延迟速查.md",
+    "name": "RPC与网络延迟速查",
+    "title": "RPC 与网络延迟速查",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/Sanitizer工具详解.md",
+    "name": "Sanitizer工具详解",
+    "title": "Sanitizer 工具详解",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/SIMD指令优化.md",
+    "name": "SIMD指令优化",
+    "title": "SIMD 指令优化",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/smem.md",
+    "name": "smem",
+    "title": "smem（内存使用统计）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/top_htop.md",
+    "name": "top_htop",
+    "title": "top/htop（实时监控）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/Valgrind Memcheck（内存错误检测）.md",
+    "name": "Valgrind Memcheck（内存错误检测）",
+    "title": "Valgrind Memcheck（内存错误检测）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/Valgrind其他工具.md",
+    "name": "Valgrind其他工具",
+    "title": "Valgrind 其他工具",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/Valgrind大厂考点总结.md",
+    "name": "Valgrind大厂考点总结",
+    "title": "Valgrind 大厂考点总结",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/Valgrind工具详解.md",
+    "name": "Valgrind工具详解",
+    "title": "Valgrind（内存和性能分析）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/Valgrind工具速查.md",
+    "name": "Valgrind工具速查",
+    "title": "Valgrind 工具速查",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/valgrind性能分析.md",
+    "name": "valgrind性能分析",
+    "title": "valgrind 性能分析",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/VTune简介与使用.md",
+    "name": "VTune简介与使用",
+    "title": "VTune 简介与使用",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/低延迟C++实时性保障.md",
+    "name": "低延迟C++实时性保障",
+    "title": "低延迟 C++ 实时性保障",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/低延迟C++性能测量与监控.md",
+    "name": "低延迟C++性能测量与监控",
+    "title": "低延迟 C++ 性能测量与监控",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/低延迟C++系统优化案例与最佳实践.md",
+    "name": "低延迟C++系统优化案例与最佳实践",
+    "title": "低延迟 C++ 系统优化案例与最佳实践",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/低延迟C++系统分析-面试要点总结.md",
+    "name": "低延迟C++系统分析-面试要点总结",
+    "title": "低延迟C++系统分析-面试要点总结",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/低延迟高频交易C++核心编程.md",
+    "name": "低延迟高频交易C++核心编程",
+    "title": "低延迟高频交易C++核心编程",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/低延迟高频交易系统硬件层优化.md",
+    "name": "低延迟高频交易系统硬件层优化",
+    "title": "低延迟高频交易系统硬件层优化",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/内存分析工具.md",
+    "name": "内存分析工具",
+    "title": "内存分析工具",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/内存带宽分析.md",
+    "name": "内存带宽分析",
+    "title": "内存带宽分析",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/内存泄漏.md",
+    "name": "内存泄漏",
+    "title": "内存泄漏",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/内存涨-碎片.md",
+    "name": "内存涨-碎片",
+    "title": "内存涨 / 碎片",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/分支预测优化.md",
+    "name": "分支预测优化",
+    "title": "分支预测优化",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/压力测试与稳定性.md",
+    "name": "压力测试与稳定性",
+    "title": "压力测试与稳定性",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/延迟优化实战.md",
+    "name": "延迟优化实战",
+    "title": "延迟优化实战",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/延迟来源与测量.md",
+    "name": "延迟来源与测量",
+    "title": "延迟来源与测量",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/忙等待与睡眠等待.md",
+    "name": "忙等待与睡眠等待",
+    "title": "忙等待 vs 睡眠等待",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/性能优化-定位套路（按症状）.md",
+    "name": "性能优化-定位套路（按症状）",
+    "title": "性能优化-定位套路（按症状）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/性能优化-配置与部署.md",
+    "name": "性能优化-配置与部署",
+    "title": "性能优化：配置与部署",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/性能优化.md",
+    "name": "性能优化",
+    "title": "性能优化",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/性能优化清单.md",
+    "name": "性能优化清单",
+    "title": "性能优化清单（执行顺序建议）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/性能分析实战案例.md",
+    "name": "性能分析实战案例",
+    "title": "性能分析实战案例",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/性能分析总结速查.md",
+    "name": "性能分析总结速查",
+    "title": "性能分析总结速查",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/性能测量与调优.md",
     "name": "性能测量与调优",
     "title": "性能测量与调优",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "性能优化"
   },
   {
-    "path": "work/生产环境故障排查-面试话术模板.md",
-    "name": "生产环境故障排查-面试话术模板",
-    "title": "生产环境故障排查-面试话术模板",
-    "category": "work"
+    "path": "基础知识/性能优化/时间测量（C++11 chrono）.md",
+    "name": "时间测量（C++11 chrono）",
+    "title": "时间测量（C++11 chrono）",
+    "category": "基础知识",
+    "subcategory": "性能优化"
   },
   {
-    "path": "work/生产问题全景分类.md",
-    "name": "生产问题全景分类（面试官问\"你遇到过什么线上问题\"时的展开框架）",
-    "title": "生产问题全景分类（面试官问\"你遇到过什么线上问题\"时的展开框架）",
-    "category": "work"
+    "path": "基础知识/性能优化/替代在线阻塞式redis-cli-bigkeys.md",
+    "name": "替代在线阻塞式redis-cli-bigkeys",
+    "title": "替代在线阻塞式 redis-cli --bigkeys",
+    "category": "基础知识",
+    "subcategory": "性能优化"
   },
   {
-    "path": "work/磁盘问题排查.md",
-    "name": "磁盘问题排查",
-    "title": "磁盘问题排查",
-    "category": "work"
+    "path": "基础知识/性能优化/火焰图使用.md",
+    "name": "火焰图使用",
+    "title": "火焰图使用",
+    "category": "基础知识",
+    "subcategory": "性能优化"
   },
   {
-    "path": "work/简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）.md",
-    "name": "R1：同步记录 Key 访问统计（主线程 <1μs）",
-    "title": "R1：同步记录 Key 访问统计（主线程 <1μs）",
-    "category": "work"
+    "path": "基础知识/性能优化/系统化排障方法论.md",
+    "name": "系统化排障方法论",
+    "title": "系统化排障方法论",
+    "category": "基础知识",
+    "subcategory": "性能优化"
   },
   {
-    "path": "work/简历论证-InterviewPro.md",
-    "name": "简历论证-InterviewPro",
-    "title": "简历论证-InterviewPro",
-    "category": "work"
-  },
-  {
-    "path": "work/简历论证-Thunder.md",
-    "name": "简历论证-Thunder",
-    "title": "简历论证-Thunder",
-    "category": "work"
-  },
-  {
-    "path": "work/系统调优与性能优化.md",
+    "path": "基础知识/性能优化/系统调优与性能优化.md",
     "name": "系统调优与性能优化",
     "title": "系统调优与性能优化",
-    "category": "work"
+    "category": "基础知识",
+    "subcategory": "性能优化"
   },
   {
-    "path": "work/网络问题排查.md",
+    "path": "基础知识/性能优化/缓存策略.md",
+    "name": "缓存策略",
+    "title": "缓存策略",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/编译优化.md",
+    "name": "编译优化",
+    "title": "编译优化",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/编译优化最佳实践.md",
+    "name": "编译优化最佳实践",
+    "title": "编译优化最佳实践",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/编译器优化.md",
+    "name": "编译器优化",
+    "title": "编译器优化",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/编译器优化选项.md",
+    "name": "编译器优化选项",
+    "title": "编译器优化选项",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/超低延迟订单系统.md",
+    "name": "超低延迟订单系统",
+    "title": "超低延迟订单系统",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/避免CPU频率缩放.md",
+    "name": "避免CPU频率缩放",
+    "title": "避免 CPU 频率缩放",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/性能优化/零拷贝与异步IO.md",
+    "name": "零拷贝与异步IO",
+    "title": "零拷贝与异步 I/O",
+    "category": "基础知识",
+    "subcategory": "性能优化"
+  },
+  {
+    "path": "基础知识/操作系统/BPF_eBPF内核追踪.md",
+    "name": "BPF_eBPF内核追踪",
+    "title": "BPF/eBPF内核追踪",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/futex.md",
+    "name": "futex",
+    "title": "futex — 快速用户空间互斥",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/IPC进程间通信.md",
+    "name": "IPC进程间通信",
+    "title": "IPC 进程间通信",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux_IO.md",
+    "name": "Linux_IO",
+    "title": "Linux IO",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux内核与系统调用.md",
+    "name": "Linux内核与系统调用",
+    "title": "Linux 内核与系统调用",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux安全与沙箱.md",
+    "name": "Linux安全与沙箱",
+    "title": "Linux 安全与沙箱",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux文件系统与路径操作.md",
+    "name": "Linux文件系统与路径操作",
+    "title": "Linux 文件系统与路径操作",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux系统IO调优.md",
+    "name": "Linux系统IO调优",
+    "title": "Linux 系统 IO 调优",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux系统调用-内存管理.md",
+    "name": "Linux系统调用-内存管理",
+    "title": "Linux 系统调用 - 内存管理",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux系统调用-文件IO.md",
+    "name": "Linux系统调用-文件IO",
+    "title": "Linux 系统调用 - 文件与 I/O 操作",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux线程调度.md",
+    "name": "Linux线程调度",
+    "title": "Linux 线程调度",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/Linux进程与文件描述符扩展.md",
+    "name": "Linux进程与文件描述符扩展",
+    "title": "Linux 进程与文件描述符扩展",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/membarrier.md",
+    "name": "membarrier",
+    "title": "membarrier — 内存屏障",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/NUMA优化.md",
+    "name": "NUMA优化",
+    "title": "NUMA 优化",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/NUMA架构.md",
+    "name": "NUMA架构",
+    "title": "NUMA 架构",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/OpenMP调度策略.md",
+    "name": "OpenMP调度策略",
+    "title": "OpenMP 调度策略",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/perf_Linux性能分析工具.md",
+    "name": "perf_Linux性能分析工具",
+    "title": "perf - Linux 性能分析工具",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX信号处理.md",
+    "name": "POSIX信号处理",
+    "title": "POSIX 信号处理",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX信号量.md",
+    "name": "POSIX信号量",
+    "title": "POSIX 信号量",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX共享内存.md",
+    "name": "POSIX共享内存",
+    "title": "POSIX 共享内存",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX定时器与时钟.md",
+    "name": "POSIX定时器与时钟",
+    "title": "POSIX 定时器与时钟",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX消息队列.md",
+    "name": "POSIX消息队列",
+    "title": "POSIX 消息队列",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX用户组与环境.md",
+    "name": "POSIX用户组与环境",
+    "title": "POSIX 用户/组与环境",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX线程管理.md",
+    "name": "POSIX线程管理",
+    "title": "POSIX 线程管理 (pthread)",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX终端IO.md",
+    "name": "POSIX终端IO",
+    "title": "POSIX 终端 I/O (termios)",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX进程控制.md",
+    "name": "POSIX进程控制",
+    "title": "POSIX 进程控制",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/POSIX进程派生.md",
+    "name": "POSIX进程派生",
+    "title": "POSIX 进程派生 (posix_spawn)",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/PREEMPT_RT.md",
+    "name": "PREEMPT_RT",
+    "title": "PREEMPT_RT",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/proc_pid_maps.md",
+    "name": "proc_pid_maps",
+    "title": "/proc/pid/maps（进程地址空间）",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/proc_pid_statm.md",
+    "name": "proc_pid_statm",
+    "title": "/proc/pid/statm（内存页统计）",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/proc_pid_status.md",
+    "name": "proc_pid_status",
+    "title": "/proc/pid/status（进程状态）",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/rseq.md",
+    "name": "rseq",
+    "title": "rseq — 可重启序列",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/ShmRingQueue.md",
+    "name": "ShmRingQueue",
+    "title": "ShmRingQueue",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/ShmRingQueue集成方案.md",
+    "name": "ShmRingQueue集成方案",
+    "title": "ShmRingQueue 集成方案（实际实现）",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/signalfd.md",
+    "name": "signalfd",
+    "title": "signalfd — 信号文件描述符",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/STL自定义内存分配器.md",
+    "name": "STL自定义内存分配器",
+    "title": "STL 容器的自定义内存分配器",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/strace_系统调用跟踪.md",
+    "name": "strace_系统调用跟踪",
+    "title": "strace - 系统调用跟踪",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/SystemV_IPC.md",
+    "name": "SystemV_IPC",
+    "title": "System V IPC",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/timerfd.md",
+    "name": "timerfd",
+    "title": "timerfd — 定时器文件描述符",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/userfaultfd.md",
+    "name": "userfaultfd",
+    "title": "userfaultfd — 用户空间缺页处理",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/中断线程化与IRQ亲和性.md",
+    "name": "中断线程化与IRQ亲和性",
+    "title": "中断线程化与 IRQ 亲和性",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/低延迟Linux实时系统调试验证面试要点.md",
+    "name": "低延迟Linux实时系统调试验证面试要点",
+    "title": "低延迟 Linux 实时系统调试、验证与面试要点",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/共享内存IPC.md",
+    "name": "共享内存IPC",
+    "title": "共享内存 IPC",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/内存分配策略优化.md",
+    "name": "内存分配策略优化",
+    "title": "内存分配策略优化",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/内存映射mmap.md",
+    "name": "内存映射mmap",
+    "title": "内存映射（mmap）",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/内存管理.md",
+    "name": "内存管理",
+    "title": "内存管理",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/单机百万长连接内核调优.md",
+    "name": "单机百万长连接内核调优",
+    "title": "单机百万长连接内核调优",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/多租户隔离（进程-OBS-路径-cgroup）.md",
+    "name": "多租户隔离（进程-OBS-路径-cgroup）",
+    "title": "多租户隔离（进程 + OBS 路径 + cgroup）",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/实时调度策略与优先级.md",
+    "name": "实时调度策略与优先级",
+    "title": "实时调度策略与优先级",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/实时调度策略（SCHED_FIFO---SCHED_RR---SCHED_DEADLINE）.md",
+    "name": "实时调度策略（SCHED_FIFO---SCHED_RR---SCHED_DEADLINE）",
+    "title": "实时调度策略（SCHED_FIFO / SCHED_RR / SCHED_DEADLINE）",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/寄存器.md",
+    "name": "寄存器",
+    "title": "寄存器",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/系统内存指标.md",
+    "name": "系统内存指标",
+    "title": "系统内存指标",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/虚拟地址转换.md",
+    "name": "虚拟地址转换",
+    "title": "虚拟地址转换",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/进程与线程内存区别.md",
+    "name": "进程与线程内存区别",
+    "title": "进程与线程内存区别",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/进程内存分析工具.md",
+    "name": "进程内存分析工具",
+    "title": "进程内存分析工具",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/进程内存区域与资源限制.md",
+    "name": "进程内存区域与资源限制",
+    "title": "进程内存区域与资源限制",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/进程同步.md",
+    "name": "进程同步",
+    "title": "进程同步",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/操作系统/进程地址空间布局.md",
+    "name": "进程地址空间布局",
+    "title": "进程地址空间布局",
+    "category": "基础知识",
+    "subcategory": "操作系统"
+  },
+  {
+    "path": "基础知识/架构设计/C++微服务集群-epoll异步网关-业务逻辑层-存储代理层.md",
+    "name": "C++微服务集群-epoll异步网关-业务逻辑层-存储代理层",
+    "title": "C++ 微服务集群（epoll 异步网关 + 业务逻辑层 + 存储代理层）",
+    "category": "基础知识",
+    "subcategory": "架构设计"
+  },
+  {
+    "path": "基础知识/架构设计/Libev异步网络框架.md",
+    "name": "Libev异步网络框架",
+    "title": "Libev C++ 异步网络框架（事件驱动 + 多进程 Worker）",
+    "category": "基础知识",
+    "subcategory": "架构设计"
+  },
+  {
+    "path": "基础知识/架构设计/事件驱动架构.md",
+    "name": "事件驱动架构",
+    "title": "事件驱动架构",
+    "category": "基础知识",
+    "subcategory": "架构设计"
+  },
+  {
+    "path": "基础知识/算法与数据结构/KMP算法.md",
+    "name": "KMP算法",
+    "title": "KMP 算法",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/LRU冷热分层（访问频次×时间衰减）.md",
+    "name": "LRU冷热分层（访问频次×时间衰减）",
+    "title": "LRU 冷热分层（访问频次 × 时间衰减）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/LRU缓存机制.md",
+    "name": "LRU缓存机制",
+    "title": "LRU缓存机制",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/MPMC环形无锁队列-Vyukov.md",
+    "name": "MPMC环形无锁队列-Vyukov",
+    "title": "MPMC 环形无锁队列（Vyukov）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/SPMC无锁队列.md",
+    "name": "SPMC无锁队列",
+    "title": "SPMC 无锁队列（std::atomic CAS，单生产者多消费者）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/SPSC无锁队列.md",
+    "name": "SPSC无锁队列",
+    "title": "SPSC 无锁队列（std::atomic，单生产者单消费者）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/STL容器与算法.md",
+    "name": "STL容器与算法",
+    "title": "STL 容器与算法",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/STL算法高效用法.md",
+    "name": "STL算法高效用法",
+    "title": "STL 算法高效用法",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/Valgrind Massif（堆内存分析）.md",
+    "name": "Valgrind Massif（堆内存分析）",
+    "title": "Valgrind Massif（堆内存分析）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/Wasm自适应熔断算法.md",
+    "name": "Wasm自适应熔断算法",
+    "title": "Wasm自适应熔断算法",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/一维数组递推方程.md",
+    "name": "一维数组递推方程",
+    "title": "一维数组递推方程",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/两两合并处理.md",
+    "name": "两两合并处理",
+    "title": "两两合并处理",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/动态规划.md",
+    "name": "动态规划",
+    "title": "动态规划",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/哈希快速记位.md",
+    "name": "哈希快速记位",
+    "title": "哈希快速记位",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/图算法.md",
+    "name": "图算法",
+    "title": "图算法",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/基础数据结构.md",
+    "name": "基础数据结构",
+    "title": "基础数据结构",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/字典树（Trie）.md",
+    "name": "字典树（Trie）",
+    "title": "字典树（Trie）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/布隆过滤器.md",
+    "name": "布隆过滤器",
+    "title": "布隆过滤器",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/布隆过滤器预筛（FPR-1%，100万-Key-→-1.2MB）.md",
+    "name": "布隆过滤器预筛（FPR-1%，100万-Key-→-1.2MB）",
+    "title": "布隆过滤器预筛（FPR 1%，100万 Key → 1.2MB）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/快速判断字符串前缀在不在字典中.md",
+    "name": "快速判断字符串前缀在不在字典中",
+    "title": "快速判断字符串前缀在不在字典中",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/排序算法.md",
+    "name": "排序算法",
+    "title": "排序算法",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/敏感词过滤（Trie与多模式匹配）.md",
+    "name": "敏感词过滤（Trie与多模式匹配）",
+    "title": "敏感词过滤（Trie / 多模式匹配）",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/最小堆和最大堆.md",
+    "name": "最小堆和最大堆",
+    "title": "最小堆和最大堆",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/树状数组.md",
+    "name": "树状数组",
+    "title": "树状数组",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/树结构.md",
+    "name": "树结构",
+    "title": "树结构",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/桶计数快速排序.md",
+    "name": "桶计数快速排序",
+    "title": "桶计数快速排序",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/桶计数计算总时长.md",
+    "name": "桶计数计算总时长",
+    "title": "桶计数计算总时长",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/滑动窗口.md",
+    "name": "滑动窗口",
+    "title": "滑动窗口",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/滑动窗口最大值.md",
+    "name": "滑动窗口最大值",
+    "title": "滑动窗口最大值",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/算法与数据结构优化.md",
+    "name": "算法与数据结构优化",
+    "title": "算法与数据结构优化",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/算法速刷策略.md",
+    "name": "算法速刷策略",
+    "title": "算法速刷策略",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/跳表.md",
+    "name": "跳表",
+    "title": "跳表",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/迭代全排列的规律.md",
+    "name": "迭代全排列的规律",
+    "title": "迭代全排列的规律",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/网络协议/Asio-epoll-与协程异步模型.md",
+    "name": "Asio-epoll-与协程异步模型",
+    "title": "Asio、epoll 与协程异步模型",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/epoll.md",
+    "name": "epoll",
+    "title": "epoll — 高性能 I/O 多路复用",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/eventfd.md",
+    "name": "eventfd",
+    "title": "eventfd — 事件通知",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/HTTPS_TLS握手与TCP优化.md",
+    "name": "HTTPS_TLS握手与TCP优化",
+    "title": "HTTPS / TLS 握手与 TCP 优化",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/IP头部.md",
+    "name": "IP头部",
+    "title": "IP头部",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/libev.md",
+    "name": "libev",
+    "title": "libev",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/Nginx配置-WebSocket反向代理.md",
+    "name": "Nginx配置-WebSocket反向代理",
+    "title": "Nginx 配置 - WebSocket 反向代理",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/poll-select-pselect-ppoll.md",
+    "name": "poll-select-pselect-ppoll",
+    "title": "poll / select / pselect / ppoll",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/POSIX网络编程.md",
+    "name": "POSIX网络编程",
+    "title": "POSIX 网络编程 (Socket)",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/QUIC协议.md",
+    "name": "QUIC协议",
+    "title": "QUIC 协议",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/SACK.md",
+    "name": "SACK",
+    "title": "SACK (Selective Acknowledgment)",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/SO_REUSEPORT.md",
+    "name": "SO_REUSEPORT",
+    "title": "SO_REUSEPORT",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/tcpdump_Wireshark网络分析.md",
+    "name": "tcpdump_Wireshark网络分析",
+    "title": "tcpdump/Wireshark网络分析",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP与UDP速查.md",
+    "name": "TCP与UDP速查",
+    "title": "TCP 与 UDP 速查",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/tcp优化-tcp选项.md",
+    "name": "tcp优化-tcp选项",
+    "title": "TCP 选项",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP协议.md",
+    "name": "TCP协议",
+    "title": "TCP 协议",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP协议包头结构.md",
+    "name": "TCP协议包头结构",
+    "title": "TCP协议包头结构",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP参数调优详解.md",
+    "name": "TCP参数调优详解",
+    "title": "TCP参数调优详解",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP可靠性分析.md",
+    "name": "TCP可靠性分析",
+    "title": "TCP可靠性分析",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP延迟确认机制.md",
+    "name": "TCP延迟确认机制",
+    "title": "TCP延迟确认机制",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP快速重传.md",
+    "name": "TCP快速重传",
+    "title": "TCP 快速重传（Fast Retransmit）",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP调优参数.md",
+    "name": "TCP调优参数",
+    "title": "TCP 调优参数",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/TCP连接队列.md",
+    "name": "TCP连接队列",
+    "title": "TCP 连接队列",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/UDP协议.md",
+    "name": "UDP协议",
+    "title": "UDP 协议",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/WebSocket网关设计.md",
+    "name": "WebSocket网关设计",
+    "title": "WebSocket网关设计",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/WebSocket网关设计总结-系统架构.md",
+    "name": "WebSocket网关设计总结-系统架构",
+    "title": "WebSocket 网关设计总结",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/WSS协议转换原理.md",
+    "name": "WSS协议转换原理",
+    "title": "WSS 协议转换原理",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/拥塞控制.md",
+    "name": "拥塞控制",
+    "title": "拥塞控制",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/流量控制.md",
+    "name": "流量控制",
+    "title": "流量控制",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/网络优化技术.md",
+    "name": "网络优化技术",
+    "title": "网络优化技术",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/网络优化最佳实践.md",
+    "name": "网络优化最佳实践",
+    "title": "网络优化最佳实践",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/网络层优化.md",
+    "name": "网络层优化",
+    "title": "网络层优化",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/网络编程.md",
+    "name": "网络编程",
+    "title": "网络编程",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/网络编程与协议优化.md",
+    "name": "网络编程与协议优化",
+    "title": "网络编程与协议优化",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/超时重传.md",
+    "name": "超时重传",
+    "title": "超时重传",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/网络协议/连接复用机制.md",
+    "name": "连接复用机制",
+    "title": "连接复用机制",
+    "category": "基础知识",
+    "subcategory": "网络协议"
+  },
+  {
+    "path": "基础知识/设计模式/InterviewPro-AI面试-设计模式详解.md",
+    "name": "InterviewPro-AI面试-设计模式详解",
+    "title": "InterviewPro-AI面试 设计模式详解",
+    "category": "基础知识",
+    "subcategory": "设计模式"
+  },
+  {
+    "path": "基础知识/设计模式/观察者模式详解-4.-解决方案：使用-weak_ptr.md",
+    "name": "观察者模式详解-4.-解决方案：使用-weak_ptr",
+    "title": "4. 解决方案：使用 weak_ptr",
+    "category": "基础知识",
+    "subcategory": "设计模式"
+  },
+  {
+    "path": "基础知识/设计模式/观察者模式详解-多个被观察者的管理.md",
+    "name": "观察者模式详解-多个被观察者的管理",
+    "title": "观察者模式详解 - 多个被观察者的管理",
+    "category": "基础知识",
+    "subcategory": "设计模式"
+  },
+  {
+    "path": "基础知识/设计模式/观察者模式详解.md",
+    "name": "观察者模式详解",
+    "title": "观察者模式详解",
+    "category": "基础知识",
+    "subcategory": "设计模式"
+  },
+  {
+    "path": "基础知识/设计模式/设计模式.md",
+    "name": "设计模式",
+    "title": "设计模式",
+    "category": "基础知识",
+    "subcategory": "设计模式"
+  },
+  {
+    "path": "项目/Thunder/Thunder分布式异步集群框架.md",
+    "name": "Thunder分布式异步集群框架",
+    "title": "Thunder 分布式异步集群框架",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/自研微服务和代理Thunder.md",
+    "name": "自研微服务和代理Thunder",
+    "title": "自研微服务和代理Thunder",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/其他项目/Access网关握手协议.md",
+    "name": "Access网关握手协议",
+    "title": "Access 网关握手协议",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/MongoDB成本对比.md",
+    "name": "MongoDB成本对比",
+    "title": "MongoDB 与 MySQL 成本对比",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/OBS对象存储.md",
+    "name": "OBS对象存储",
+    "title": "OBS 对象存储",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/zg_sdk.md",
+    "name": "zg_sdk",
+    "title": "Zego 服务网格 SDK (zg_sdk)",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/zg_sdk技巧.md",
+    "name": "zg_sdk技巧",
+    "title": "zg_sdk技巧",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/存储成本降低70%+.md",
+    "name": "存储成本降低70%+",
+    "title": "存储成本降低 70%+",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/工程项目常规DP.md",
+    "name": "工程项目常规DP",
+    "title": "工程项目常规 DP",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/生产环境故障排查-面试话术模板.md",
+    "name": "生产环境故障排查-面试话术模板",
+    "title": "生产环境故障排查-面试话术模板",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/生产问题全景分类.md",
+    "name": "生产问题全景分类",
+    "title": "生产问题全景分类（面试官问\"你遇到过什么线上问题\"时的展开框架）",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/磁盘问题排查.md",
+    "name": "磁盘问题排查",
+    "title": "磁盘问题排查",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）.md",
+    "name": "简历知识点论证手册-R1：同步记录-Key-访问统计（主线程--1μs）",
+    "title": "R1：同步记录 Key 访问统计（主线程 <1μs）",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/网关与代理限流.md",
+    "name": "网关与代理限流",
+    "title": "网关与代理限流",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/网络问题排查.md",
     "name": "网络问题排查",
     "title": "网络问题排查",
-    "category": "work"
+    "category": "项目",
+    "subcategory": "其他项目"
   },
   {
-    "path": "work/项目深挖-KeyDB-Redis.md",
-    "name": "项目深挖：KeyDB/Redis 开发",
-    "title": "项目深挖：KeyDB/Redis 开发",
-    "category": "work"
+    "path": "项目/其他项目/远程调用问题-五层防线.md",
+    "name": "远程调用问题-五层防线",
+    "title": "远程调用问题（面试高频 — \"第三方不可控\"怎么处理）",
+    "category": "项目",
+    "subcategory": "其他项目"
   },
   {
-    "path": "work/项目深挖-分布式IM系统.md",
-    "name": "项目深挖：分布式IM系统",
+    "path": "项目/其他项目/面试策略与必背数据.md",
+    "name": "面试策略与必背数据",
+    "title": "面试策略与必背数据",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/高频交易实时系统调度配置模板.md",
+    "name": "高频交易实时系统调度配置模板",
+    "title": "高频交易 / 实时系统的调度配置模板",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/其他项目/高频交易系统设计.md",
+    "name": "高频交易系统设计",
+    "title": "高频交易系统设计",
+    "category": "项目",
+    "subcategory": "其他项目"
+  },
+  {
+    "path": "项目/分布式IM/ECDH登录与通信流程图.md",
+    "name": "ECDH登录与通信流程图",
+    "title": "ECDH 登录与通信流程图",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/FastDFS逻辑架构.md",
+    "name": "FastDFS逻辑架构",
+    "title": "FastDFS 逻辑架构图",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IMAWSCodis架构.md",
+    "name": "IMAWSCodis架构",
+    "title": "IM AWS Codis 架构",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IMAWSMongoDB分片集群.md",
+    "name": "IMAWSMongoDB分片集群",
+    "title": "IM AWS MongoDB 分片集群",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM_MongoDB表设计.md",
+    "name": "IM_MongoDB表设计",
+    "title": "IM MongoDB表设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM单聊消息发送流程.md",
+    "name": "IM单聊消息发送流程",
+    "title": "IM单聊消息发送流程",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM单聊消息流程.md",
+    "name": "IM单聊消息流程",
+    "title": "IM单聊消息流程",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM客户端与微服务通知协议约定.md",
+    "name": "IM客户端与微服务通知协议约定",
+    "title": "客户端与微服务通知协议约定",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM未读数设计方案.md",
+    "name": "IM未读数设计方案",
+    "title": "IM 未读数设计方案",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM消息协议定义.md",
+    "name": "IM消息协议定义",
+    "title": "IM消息协议定义",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM消息推送设计.md",
+    "name": "IM消息推送设计",
+    "title": "IM消息推送设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM用户Login缓存(hash).md",
+    "name": "IM用户Login缓存(hash)",
+    "title": "IM用户Login缓存(hash)",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM用户属性.md",
+    "name": "IM用户属性",
+    "title": "IM用户属性",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM登录与加密通道设计.md",
+    "name": "IM登录与加密通道设计",
+    "title": "IM 登录与加密通道设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM端到端加密与长连接认证.md",
+    "name": "IM端到端加密与长连接认证",
+    "title": "IM端到端加密与长连接认证",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM群消息协议定义.md",
+    "name": "IM群消息协议定义",
+    "title": "IM群消息协议定义",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM通知类型定义.md",
+    "name": "IM通知类型定义",
+    "title": "IM通知类型定义",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM项目MongoDB分片集群.md",
+    "name": "IM项目MongoDB分片集群",
+    "title": "IM 项目 MongoDB 分片集群图",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/Leiman IM系统架构概述.md",
+    "name": "Leiman IM系统架构概述",
+    "title": "Leiman IM系统架构概述",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/MongoDB分片集群通用架构.md",
+    "name": "MongoDB分片集群通用架构",
+    "title": "MongoDB 分片集群分布图（通用）",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/分布式IM消息系统-雷漫-性能数据分析.md",
+    "name": "分布式IM消息系统-雷漫-性能数据分析",
+    "title": "分布式 IM 消息系统 — 雷漫网络（性能数据分析）",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/分布式IM消息系统-雷漫.md",
+    "name": "分布式IM消息系统-雷漫",
+    "title": "分布式IM消息系统-雷漫",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/社交IM系统-你我金融-性能数据分析.md",
+    "name": "社交IM系统-你我金融-性能数据分析",
+    "title": "社交 IM 系统 — 你我金融（千万级用户）",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/社交IM系统-你我金融.md",
+    "name": "社交IM系统-你我金融",
+    "title": "社交IM系统 — 你我金融",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/端到端加密单聊设计.md",
+    "name": "端到端加密单聊设计",
+    "title": "端到端加密单聊设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/端到端加密设计.md",
+    "name": "端到端加密设计",
+    "title": "端到端加密设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/群消息扇出聚合.md",
+    "name": "群消息扇出聚合",
+    "title": "群消息扇出聚合",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/长连接认证和链路加密方案.md",
+    "name": "长连接认证和链路加密方案",
+    "title": "长连接认证和链路加密方案",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/项目深挖-分布式IM系统.md",
+    "name": "项目深挖-分布式IM系统",
     "title": "项目深挖：分布式IM系统",
-    "category": "work"
-  },
-  {
-    "path": "work/项目深挖-服务网格-Istio.md",
-    "name": "项目深挖：服务网格（Istio）",
-    "title": "项目深挖：服务网格（Istio）",
-    "category": "work"
+    "category": "项目",
+    "subcategory": "分布式IM"
   }
 ]

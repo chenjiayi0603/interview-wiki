@@ -262,21 +262,15 @@
   <div class="sidebar">
     <div class="sidebar-header">
       <h1>📚 面试<span>知识库</span></h1>
-      <p id="totalCount">544 个知识点 · 客户端搜索</p>
-      <div class="sub-info">
-        <span><span class="cat-dot" style="background:#e94560;"></span>面试高频</span>
-        <span><span class="cat-dot" style="background:#61afef;"></span>工作深挖</span>
-        <span><span class="cat-dot" style="background:#98c379;"></span>参考资料</span>
+      <p id="totalCount"></p>
+      <div class="sub-info" id="catLegend">
       </div>
     </div>
     <div class="sidebar-search">
       <input type="text" id="searchInput" placeholder="搜索知识点（中文/英文）..." autofocus>
     </div>
-    <div class="category-tabs">
-      <button class="cat-btn active" data-cat="all">全部 <span class="count" id="catAllCount">544</span></button>
-      <button class="cat-btn" data-cat="interview">🎯 面试高频 <span class="count" id="catInterviewCount"></span></button>
-      <button class="cat-btn" data-cat="work">🔧 工作深挖 <span class="count" id="catWorkCount"></span></button>
-      <button class="cat-btn" data-cat="ref">📖 参考资料 <span class="count" id="catRefCount"></span></button>
+    <div class="category-tabs" id="categoryTabs">
+      <button class="cat-btn active" data-cat="all">全部 <span class="count" id="catAllCount"></span></button>
     </div>
     <div class="view-toggle">
       <button id="listViewBtn" class="active" onclick="switchView('list')">📋 列表</button>
@@ -296,14 +290,9 @@
     <div class="markdown welcome" id="welcome">
       <div class="logo">📚</div>
       <h2>面试知识库</h2>
-      <p>544 个知识点 · 零服务器成本 · 全文搜索</p>
+      <p id="welcomeCount">加载中...</p>
       <p style="font-size:13px;color:#aaa;">左侧搜索框输入关键词过滤，点击文件名查看详情</p>
-      <div class="tags">
-        <span>C++</span> <span>Go</span> <span>MySQL</span> <span>Redis</span>
-        <span>RocksDB</span> <span>网络协议</span> <span>性能优化</span>
-        <span>系统设计</span> <span>AI</span> <span>项目经验</span>
-        <span>面试准备</span> <span>简历</span>
-      </div>
+      <div class="tags" id="welcomeTags"></div>
     </div>
   </div>
 
@@ -319,12 +308,77 @@
 
     let currentCategory = 'all';
 
+    // 分类颜色映射
+    const catColors = {
+      '基础知识': '#61afef',
+      '项目': '#98c379',
+      'AI': '#c678dd',
+    };
+
     function updateCategoryCounts() {
-      const cats = { interview: 0, work: 0, ref: 0 };
-      for (const f of files) { if (cats[f.category] !== undefined) cats[f.category]++; }
-      document.getElementById('catInterviewCount').textContent = cats.interview;
-      document.getElementById('catWorkCount').textContent = cats.work;
-      document.getElementById('catRefCount').textContent = cats.ref;
+      const cats = {};
+      for (const f of files) {
+        cats[f.category] = (cats[f.category] || 0) + 1;
+      }
+      // 更新全部计数
+      document.getElementById('catAllCount').textContent = files.length;
+      // 更新各分类按钮计数
+      document.querySelectorAll('.cat-btn[data-cat]').forEach(btn => {
+        const c = btn.getAttribute('data-cat');
+        const el = document.getElementById('cat' + c + 'Count');
+        if (el) el.textContent = cats[c] || 0;
+      });
+    }
+
+    function initCategoryTabs() {
+      const cats = {};
+      for (const f of files) {
+        cats[f.category] = (cats[f.category] || 0) + 1;
+      }
+      const container = document.getElementById('categoryTabs');
+      container.innerHTML = '<button class="cat-btn active" data-cat="all">全部 <span class="count" id="catAllCount">' + files.length + '</span></button>';
+      const ordered = ['基础知识', '项目', 'AI'];
+      const icons = { '基础知识': '📖', '项目': '🔧', 'AI': '🤖' };
+      for (const cat of ordered) {
+        if (cats[cat]) {
+          container.innerHTML += '<button class="cat-btn" data-cat="' + cat + '">' + (icons[cat] || '📄') + ' ' + cat + ' <span class="count" id="cat' + cat + 'Count">' + cats[cat] + '</span></button>';
+        }
+      }
+      // 重新绑定事件
+      document.querySelectorAll('.cat-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          currentCategory = btn.getAttribute('data-cat');
+          renderFiles(getFilteredFiles());
+        });
+      });
+    }
+
+    function updateWelcome() {
+      const counts = {};
+      const subCounts = {};
+      for (const f of files) {
+        counts[f.category] = (counts[f.category] || 0) + 1;
+        if (f.subcategory) {
+          const key = f.category + '/' + f.subcategory;
+          subCounts[key] = (subCounts[key] || 0) + 1;
+        }
+      }
+      document.getElementById('totalCount').textContent = files.length + ' 个知识点 · 客户端搜索';
+      document.getElementById('welcomeCount').textContent = files.length + ' 个知识点 · 零服务器成本 · 全文搜索';
+
+      // 图例
+      const legend = document.getElementById('catLegend');
+      legend.innerHTML = Object.entries(counts).map(([cat, n]) =>
+        '<span><span class="cat-dot" style="background:' + (catColors[cat] || '#636d83') + ';"></span>' + cat + ' (' + n + ')</span>'
+      ).join('');
+
+      // 欢迎页标签
+      const tags = document.getElementById('welcomeTags');
+      tags.innerHTML = Object.entries(subCounts).sort((a, b) => b[1] - a[1]).slice(0, 15).map(([k, n]) =>
+        '<span>' + k + ' (' + n + ')</span>'
+      ).join('');
     }
 
     function getFilteredFiles() {
@@ -363,33 +417,17 @@
     async function initGraph() {
       graphInitialized = true;
       const gc = document.getElementById('graphContainer');
-      gc.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#8892b0;font-size:16px;flex-direction:column;gap:12px;"><div style="width:32px;height:32px;border:3px solid rgba(255,255,255,0.1);border-top-color:#e94560;border-radius:50%;animation:spin 0.6s linear infinite;"></div><span>加载中 (544个节点, 1083条连接)</span></div>';
+      gc.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#8892b0;font-size:16px;flex-direction:column;gap:12px;"><div style="width:32px;height:32px;border:3px solid rgba(255,255,255,0.1);border-top-color:#e94560;border-radius:50%;animation:spin 0.6s linear infinite;"></div><span>加载知识图谱...</span></div>';
       try {
         const resp = await fetch('concepts/graph.json');
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const gd = await resp.json();
 
-        function getGroup(name) {
-          const n = name.toLowerCase();
-          if (n.startsWith('c++') || n.includes('c++')) return 'cpp';
-          if (n.startsWith('go') || n.includes('go')) return 'go';
-          if (n.startsWith('mysql')) return 'mysql';
-          if (n.startsWith('redis')) return 'redis';
-          if (n.includes('rocksdb')) return 'rocksdb';
-          if (n.includes('tcp') || n.includes('http') || n.includes('网络') || n.includes('websocket')) return 'network';
-          if (n.includes('cpu') || n.includes('内存') || n.includes('性能') || n.includes('优化')) return 'perf';
-          if (n.includes('设计') || n.includes('架构') || n.includes('系统')) return 'design';
-          if (n.includes('ai') || n.includes('模型')) return 'ai';
-          if (n.includes('面试') || n.includes('简历') || n.includes('话术')) return 'interview';
-          if (n.includes('thunder') || n.includes('keydb') || n.includes('项目')) return 'project';
-          return 'other';
-        }
-
-        const colors = {
-          cpp:'#e06c75', go:'#61afef', mysql:'#98c379', redis:'#d19a66',
-          rocksdb:'#c678dd', network:'#56b6c2', perf:'#e5c07b',
-          design:'#7ec8e3', ai:'#f4a261', interview:'#a29bfe',
-          project:'#ff6b6b', other:'#636d83'
+        // 图谱分组使用实际分类
+        const graphColors = {
+          '基础知识': '#61afef',
+          '项目': '#98c379',
+          'AI': '#c678dd',
         };
 
         const conn = {};
@@ -400,13 +438,13 @@
         const maxC = Math.max(1, ...Object.values(conn));
 
         const nodes = gd.nodes.map(n => {
-          const g = getGroup(n.name);
+          const g = n.group || 'other';
           const c = conn[n.id] || 0;
           return {
             id: n.id,
             label: n.title.length > 15 ? n.title.substr(0,15) + '...' : n.title,
             title: '<b>' + n.title + '</b><br>' + n.path + '<br>连接: ' + c,
-            color: { background: colors[g] || colors.other, border: '#fff' },
+            color: { background: graphColors[g] || '#636d83', border: '#fff' },
             size: Math.max(12, Math.min(12 + (c / maxC) * 18, 32)),
             font: { color: '#fff', size: 12, strokeWidth: 0 },
             path: n.path,
@@ -453,7 +491,8 @@
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const list = await resp.json();
         files.push(...list);
-        updateCategoryCounts();
+        initCategoryTabs();
+        updateWelcome();
         renderFiles(files);
       } catch(e) {
         el.innerHTML = '<div class="file-item empty">加载失败，请刷新重试</div>';
