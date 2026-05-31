@@ -125,6 +125,32 @@
       padding: 24px 16px; text-align: center;
     }
 
+    /* 子类分组头 */
+    .subcat-header {
+      padding: 8px 16px; cursor: pointer;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center; gap: 6px;
+      user-select: none;
+    }
+    .subcat-header:hover { background: rgba(255,255,255,0.07); }
+    .subcat-arrow {
+      font-size: 10px; color: var(--text-dim);
+      width: 14px; text-align: center;
+      transition: transform 0.15s;
+    }
+    .subcat-name {
+      font-size: 12px; color: var(--text-light);
+      font-weight: 600; flex: 1;
+    }
+    .subcat-count {
+      font-size: 11px; color: var(--text-dim);
+      background: rgba(255,255,255,0.08);
+      padding: 1px 8px; border-radius: 10px;
+    }
+    .subcat-items .file-item { padding-left: 28px; }
+    .subcat-items .file-item .path { padding-left: 0; }
+
     /* ===== 主内容区 ===== */
     .main {
       flex: 1; overflow-y: auto;
@@ -499,7 +525,7 @@
       }
     }
 
-    // ===== 渲染文件列表 =====
+    // ===== 渲染文件列表（支持子类分组） =====
     function renderFiles(list) {
       const el = document.getElementById('fileList');
       if (list.length === 0) {
@@ -507,17 +533,63 @@
         document.getElementById('resultNumber').textContent = '0 / ' + files.length;
         return;
       }
-      el.innerHTML = list.map(f => {
-        const active = f.path === currentPath ? ' active' : '';
-        return `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
-          <div class="title">${f.title || f.name}</div>
-          <div class="path">${f.path}</div>
-        </div>`;
-      }).join('');
+
+      // 是否按子类分组（当选中某个大类时）
+      const groupBySub = currentCategory !== 'all' && currentCategory !== '';
+      let html = '';
+
+      if (groupBySub) {
+        // 按 subcategory 分组
+        const groups = {};
+        for (const f of list) {
+          const sub = f.subcategory || '其他';
+          if (!groups[sub]) groups[sub] = [];
+          groups[sub].push(f);
+        }
+        const sortedSubs = Object.keys(groups).sort();
+        for (const sub of sortedSubs) {
+          const items = groups[sub];
+          html += `<div class="subcat-header" onclick="toggleSubcat(this)">
+            <span class="subcat-arrow">▼</span>
+            <span class="subcat-name">${sub}</span>
+            <span class="subcat-count">${items.length}</span>
+          </div>`;
+          html += `<div class="subcat-items">`;
+          for (const f of items) {
+            const active = f.path === currentPath ? ' active' : '';
+            html += `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
+              <div class="title">${f.title || f.name}</div>
+              <div class="path">${f.path}</div>
+            </div>`;
+          }
+          html += `</div>`;
+        }
+      } else {
+        // 全部 / 搜索模式 — 平铺列表
+        html = list.map(f => {
+          const active = f.path === currentPath ? ' active' : '';
+          return `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
+            <div class="title">${f.title || f.name}</div>
+            <div class="path">${f.path}</div>
+          </div>`;
+        }).join('');
+      }
+
+      el.innerHTML = html;
       document.getElementById('resultCount').textContent =
         list.length === files.length ? '全部' : '筛选';
       document.getElementById('resultNumber').textContent =
         list.length + ' / ' + files.length;
+    }
+
+    // 展开/折叠子类
+    function toggleSubcat(header) {
+      const items = header.nextElementSibling;
+      if (items && items.classList.contains('subcat-items')) {
+        const isOpen = items.style.display !== 'none';
+        items.style.display = isOpen ? 'none' : '';
+        header.querySelector('.subcat-arrow').textContent = isOpen ? '▶' : '▼';
+      }
     }
 
     // ===== 加载文件内容 =====
