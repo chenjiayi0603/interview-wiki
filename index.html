@@ -226,17 +226,18 @@
 
     /* 行内代码 */
     .markdown code:not(pre code) {
-      background: #eef0f5; color: #e94560;
+      background: #2d2d2d; color: #ce9178;
       padding: 2px 7px; border-radius: 4px;
       font-size: 13px; font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
     }
-    /* 代码块 - 暗色主题 */
+    /* 代码块 - VS Code 暗色主题 */
     .markdown pre {
-      background: #1e1e2e; color: #cdd6f4;
+      background: #1e1e1e; color: #d4d4d4;
       padding: 18px 20px; border-radius: 10px;
       overflow-x: auto; margin: 16px 0;
       font-size: 13.5px; line-height: 1.6;
       font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      border: 1px solid #333;
     }
     .markdown pre code {
       background: none; color: inherit;
@@ -276,7 +277,7 @@
       .markdown { padding: 24px 20px 40px; }
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/dist/vis-network.min.css">
   <style>
     #graphContainer { position: fixed; top: 0; left: 340px; right: 0; bottom: 0; visibility: hidden; z-index: 10; background: #1a1a2e; }
