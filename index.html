@@ -633,21 +633,14 @@
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const text = await resp.text();
 
-        // 配置 marked
-        marked.setOptions({
-          breaks: true,
-          gfm: true,
-          highlight: function(code, lang) {
-            if (lang && hljs.getLanguage(lang)) {
-              try { return hljs.highlight(code, { language: lang }).value; } catch(e) {}
-            }
-            try { return hljs.highlightAuto(code).value; } catch(e) {}
-            return code;
-          }
-        });
+        marked.setOptions({ breaks: true, gfm: true });
 
         const html = marked.parse(text);
         main.innerHTML = '<div class="markdown">' + html + '</div>';
+        // 高亮所有代码块（highlight 回调在新版 marked 中已移除）
+        main.querySelectorAll('pre code').forEach(function(block) {
+          hljs.highlightElement(block);
+        });
         main.scrollTop = 0;
       } catch(e) {
         main.innerHTML = '<div class="markdown"><p style="color:#e94560;padding:40px;">❌ 加载失败: ' + e.message + '</p></div>';
