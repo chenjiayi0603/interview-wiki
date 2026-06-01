@@ -200,6 +200,46 @@
     }
     .subcat-items .file-item { padding-left: 28px; }
     .subcat-items .file-item .path { padding-left: 0; }
+    /* 子类导航项（左侧直接显示） */
+    .subcat-nav-item {
+      padding: 10px 16px; cursor: pointer;
+      border-left: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .subcat-nav-item:hover {
+      background: rgba(255,255,255,0.05);
+      border-left-color: var(--accent2);
+    }
+    .subcat-nav-item .nav-title {
+      font-size: 13px; color: var(--text-light);
+    }
+    .subcat-nav-item .nav-desc {
+      font-size: 11px; color: var(--text-dim);
+      margin-top: 1px;
+    }
+    .cat-header-nav {
+      padding: 8px 16px; cursor: default;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .cat-header-nav .cat-name {
+      font-size: 13px; color: var(--text-light); font-weight: 600; flex: 1;
+    }
+    .cat-header-nav .cat-count {
+      font-size: 11px; color: var(--text-dim);
+      background: rgba(255,255,255,0.08);
+      padding: 1px 8px; border-radius: 10px;
+    }
+    /* 子类文件列表头部的返回按钮 */
+    .subcat-back {
+      padding: 8px 16px; cursor: pointer;
+      display: flex; align-items: center; gap: 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      color: var(--text-dim); font-size: 12px;
+      transition: all 0.15s;
+    }
+    .subcat-back:hover { color: var(--text-light); background: rgba(255,255,255,0.03); }
 
     /* ===== 主内容区 ===== */
     .main {
@@ -733,32 +773,27 @@
     // ===== 渲染文件列表（支持子类分组） =====
     function renderFiles(list) {
       const el = document.getElementById('fileList');
-      if (list.length === 0) {
-        el.innerHTML = '<div class="file-item empty">无匹配结果</div>';
-        document.getElementById('resultNumber').textContent = '0 / ' + files.length;
-        updateSubcatBar([]);
-        return;
-      }
 
-      // 始终按子类分组
-      const groups = {};
-      for (const f of list) {
-        const sub = f.subcategory || '其他';
-        if (!groups[sub]) groups[sub] = [];
-        groups[sub].push(f);
-      }
-      const sortedSubs = Object.keys(groups).sort();
-      let html = '';
-      for (const sub of sortedSubs) {
-        const items = groups[sub];
-        const isExpanded = !currentSubcategory || currentSubcategory === sub;
-        html += `<div class="subcat-header" onclick="toggleSubcat(this)">
-          <span class="subcat-arrow">${isExpanded ? '▼' : '▶'}</span>
-          <span class="subcat-name">${sub}</span>
-          <span class="subcat-count">${items.length}</span>
+      // 如果已选中某个子类，显示该子类的文件列表
+      if (currentSubcategory) {
+        const filtered = currentCategory !== 'all'
+          ? list.filter(f => f.subcategory === currentSubcategory)
+          : list.filter(f => f.subcategory === currentSubcategory);
+
+        if (filtered.length === 0) {
+          el.innerHTML = '<div class="file-item empty">无匹配结果</div>';
+          document.getElementById('resultNumber').textContent = '0 / ' + files.length;
+          updateSubcatBar([]);
+          return;
+        }
+
+        let html = `<div class="subcat-back" onclick="clickSubcatBack()">← 返回子类列表</div>
+        <div class="subcat-header" style="cursor:default;background:rgba(233,69,96,0.08);border-left:3px solid var(--accent);margin:0;">
+          <span class="subcat-name" style="color:var(--accent);font-weight:600;">📁 ${currentSubcategory}</span>
+          <span class="subcat-count">${filtered.length}</span>
         </div>`;
-        html += `<div class="subcat-items"${isExpanded ? '' : ' style="display:none"'}>`;
-        for (const f of items) {
+        html += `<div class="subcat-items">`;
+        for (const f of filtered) {
           const active = f.path === currentPath ? ' active' : '';
           html += `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
             <div class="title">${f.title || f.name}</div>
@@ -766,19 +801,78 @@
           </div>`;
         }
         html += `</div>`;
+        el.innerHTML = html;
+        document.getElementById('resultCount').textContent = '子类';
+        document.getElementById('resultNumber').textContent = filtered.length + ' / ' + files.length;
+        updateSubcatBar(filtered);
+        return;
+      }
+
+      // 未选子类：显示子类导航列表（按大类分组）
+      // 收集所有子类
+      const subcats = {};
+      for (const f of list) {
+        const sub = f.subcategory || '其他';
+        if (!subcats[sub]) subcats[sub] = { count: 0, category: f.category };
+        subcats[sub].count++;
+      }
+      const sortedSubs = Object.keys(subcats).sort();
+
+      if (sortedSubs.length === 0) {
+        el.innerHTML = '<div class="file-item empty">无匹配结果</div>';
+        document.getElementById('resultNumber').textContent = '0 / ' + files.length;
+        updateSubcatBar([]);
+        return;
+      }
+
+      let html = '';
+      // 如果是在"全部"视图，按大类分组显示子类
+      if (currentCategory === 'all') {
+        const catOrder = ['AI', '基础知识', '项目'];
+        const catIcons = { 'AI': '🤖', '基础知识': '📖', '项目': '🔧' };
+        for (const cat of catOrder) {
+          const subs = Object.entries(subcats)
+            .filter(([_, v]) => v.category === cat)
+            .sort((a, b) => a[0].localeCompare(b[0]));
+          if (subs.length === 0) continue;
+          html += `<div class="cat-header-nav">
+            <span class="cat-name">${catIcons[cat] || '📄'} ${cat}</span>
+            <span class="cat-count">${subs.reduce((s, [_, v]) => s + v.count, 0)}</span>
+          </div>`;
+          for (const [sub, info] of subs) {
+            html += `<div class="subcat-nav-item" onclick="clickSubcat('${sub.replace(/'/g,"\\'")}')">
+              <div class="nav-title">📂 ${sub}</div>
+              <div class="nav-desc">${info.count} 个知识点</div>
+            </div>`;
+          }
+        }
+      } else {
+        // 特定大类下，直接显示子类列表
+        for (const sub of sortedSubs) {
+          const info = subcats[sub];
+          html += `<div class="subcat-nav-item" onclick="clickSubcat('${sub.replace(/'/g,"\\'")}')">
+            <div class="nav-title">📂 ${sub}</div>
+            <div class="nav-desc">${info.count} 个知识点</div>
+          </div>`;
+        }
       }
 
       el.innerHTML = html;
       document.getElementById('resultCount').textContent =
-        list.length === files.length ? '全部' : '筛选';
+        currentCategory === 'all' ? '全部' : '大类';
       document.getElementById('resultNumber').textContent =
         list.length + ' / ' + files.length;
 
-      // 更新子类筛选条
       updateSubcatBar(list);
     }
 
-    // 子类筛选条
+    // 点击子类：显示该子类的文件列表
+    function clickSubcat(sub) {
+      currentSubcategory = sub;
+      renderFiles(getFilteredFiles());
+    }
+
+    // 子类筛选条（小标签，快速切换）
     function updateSubcatBar(list) {
       const bar = document.getElementById('subcatBar');
       const subcats = {};
@@ -793,7 +887,7 @@
       let html = `<button class="subcat-btn${!currentSubcategory ? ' active' : ''}" onclick="filterSubcat('')">全部</button>`;
       for (const sub of keys) {
         const active = currentSubcategory === sub ? ' active' : '';
-        html += `<button class="subcat-btn${active}" onclick="filterSubcat('${sub.replace(/'/g,"\\'")}')">${sub} ${subcats[sub]}</button>`;
+        html += `<button class="subcat-btn${active}" onclick="filterSubcat('${sub.replace(/'/g,"\\'")}')">${sub}</button>`;
       }
       bar.innerHTML = html;
     }
@@ -803,14 +897,14 @@
       renderFiles(getFilteredFiles());
     }
 
-    // 展开/折叠子类
-    function toggleSubcat(header) {
-      const items = header.nextElementSibling;
-      if (items && items.classList.contains('subcat-items')) {
-        const isOpen = items.style.display !== 'none';
-        items.style.display = isOpen ? 'none' : '';
-        header.querySelector('.subcat-arrow').textContent = isOpen ? '▶' : '▼';
+    // 返回子类列表
+    function clickSubcatBack() {
+      currentSubcategory = '';
+      if (currentCategory === 'all') {
+        // 回到欢迎页
+        document.getElementById('content').innerHTML = document.getElementById('welcome').outerHTML;
       }
+      renderFiles(getFilteredFiles());
     }
 
     // ===== 加载文件内容 =====
