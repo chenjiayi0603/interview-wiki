@@ -87,11 +87,61 @@
       font-size: 10px; opacity: 0.7;
     }
     .cat-btn.active .count { opacity: 0.9; }
+    /* 子类筛选条 */
+    .subcat-bar {
+      padding: 6px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex; flex-wrap: wrap; gap: 4px;
+      min-height: 0;
+      max-height: 80px;
+      overflow-y: auto;
+    }
+    .subcat-bar:empty { display: none; }
+    .subcat-bar::-webkit-scrollbar { width: 3px; }
+    .subcat-bar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 2px; }
+    .subcat-btn {
+      padding: 2px 9px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .subcat-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-light);
+    }
+    .subcat-btn.active {
+      background: var(--accent2);
+      color: #fff;
+      border-color: var(--accent2);
+    }
+
     .sidebar-stats {
       display: flex; justify-content: space-between;
       padding: 8px 16px;
       font-size: 12px; color: var(--text-dim);
       border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .view-toggle {
+      display: flex; padding: 6px 16px; gap: 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .view-toggle button {
+      flex: 1; padding: 5px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px; background: transparent;
+      color: var(--text-dim); font-size: 12px; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .view-toggle button:hover {
+      border-color: var(--accent); color: var(--text-light);
+    }
+    .view-toggle button.active {
+      background: var(--accent); color: #fff; border-color: var(--accent);
     }
     .file-list {
       flex: 1; overflow-y: auto;
@@ -300,6 +350,136 @@
     .hljs-subst { color: #d4d4d4; }
     #graphContainer { position: fixed; top: 0; left: 340px; right: 0; bottom: 0; visibility: hidden; z-index: 10; background: #1a1a2e; }
     #graphContainer.active { visibility: visible; }
+
+    /* ===== 流程图 / 架构图 增强样式 ===== */
+    .markdown pre.diagram {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 20px 16px;
+      overflow-x: auto;
+      margin: 20px 0;
+      position: relative;
+    }
+    .markdown pre.diagram code {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+      font-size: 13px;
+      line-height: 1.3;
+      letter-spacing: 0;
+      color: #e6edf3;
+      white-space: pre;
+      display: block;
+    }
+    .markdown pre.diagram .diagram-badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #21262d;
+      color: #8b949e;
+      font-size: 10px;
+      padding: 3px 12px 3px 10px;
+      border-radius: 0 10px 0 10px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      letter-spacing: 0.3px;
+      user-select: none;
+      pointer-events: none;
+      border-left: 1px solid #30363d;
+      border-bottom: 1px solid #30363d;
+    }
+    .markdown pre.diagram .diagram-zoom {
+      position: absolute;
+      bottom: 8px;
+      right: 12px;
+      background: rgba(33,38,45,0.8);
+      color: #8b949e;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 11px;
+      cursor: pointer;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      opacity: 0;
+      transition: opacity 0.2s;
+      z-index: 2;
+    }
+    .markdown pre.diagram:hover .diagram-zoom {
+      opacity: 1;
+    }
+    .markdown pre.diagram .diagram-zoom:hover {
+      background: rgba(48,54,61,0.9);
+      color: #e6edf3;
+    }
+
+    /* 大图全屏遮罩 */
+    .diagram-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      cursor: zoom-out;
+    }
+    .diagram-overlay pre {
+      background: #0d1117 !important;
+      border: 1px solid #30363d !important;
+      border-radius: 12px !important;
+      padding: 30px !important;
+      max-width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      cursor: default;
+    }
+    .diagram-overlay pre code {
+      font-size: 14px !important;
+      line-height: 1.4 !important;
+    }
+    .diagram-overlay .diagram-badge,
+    .diagram-overlay .diagram-zoom {
+      display: none !important;
+    }
+    .diagram-overlay .diagram-close-hint {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: rgba(0,0,0,0.5);
+      padding: 6px 18px;
+      border-radius: 20px;
+      pointer-events: none;
+    }
+
+    /* 小屏适配 */
+    @media (max-width: 768px) {
+      .markdown pre.diagram { padding: 14px 10px; }
+      .markdown pre.diagram code { font-size: 11px; }
+      .diagram-overlay { padding: 16px; }
+      .diagram-overlay pre { padding: 16px !important; }
+      .diagram-overlay pre code { font-size: 12px !important; }
+    }
+
+    /* ===== Mermaid 流程图支持 ===== */
+    .mermaid-container {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+      overflow-x: auto;
+      text-align: center;
+    }
+    .mermaid-container svg {
+      max-width: 100%;
+      height: auto;
+    }
+    .markdown pre.mermaid-pre {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -321,6 +501,7 @@
       <button id="listViewBtn" class="active" onclick="switchView('list')">📋 列表</button>
       <button id="graphViewBtn" onclick="switchView('graph')">🕸️ 图谱</button>
     </div>
+    <div class="subcat-bar" id="subcatBar"></div>
     <div class="sidebar-stats">
       <span id="resultCount">全部</span>
       <span id="resultNumber"></span>
@@ -352,6 +533,7 @@
     let network = null;
 
     let currentCategory = 'all';
+    let currentSubcategory = '';
 
     // 分类颜色映射
     const catColors = {
@@ -395,6 +577,7 @@
           document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
           btn.classList.add('active');
           currentCategory = btn.getAttribute('data-cat');
+          currentSubcategory = '';
           renderFiles(getFilteredFiles());
         });
       });
@@ -432,6 +615,9 @@
       if (currentCategory !== 'all') {
         result = result.filter(f => f.category === currentCategory);
       }
+      if (currentSubcategory) {
+        result = result.filter(f => f.subcategory === currentSubcategory);
+      }
       if (q) {
         result = result.filter(f =>
           (f.name && f.name.toLowerCase().includes(q)) ||
@@ -464,7 +650,7 @@
       const gc = document.getElementById('graphContainer');
       gc.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#8892b0;font-size:16px;flex-direction:column;gap:12px;"><div style="width:32px;height:32px;border:3px solid rgba(255,255,255,0.1);border-top-color:#e94560;border-radius:50%;animation:spin 0.6s linear infinite;"></div><span>加载知识图谱...</span></div>';
       try {
-        const resp = await fetch('concepts/graph.json');
+        const resp = await fetch('concepts/graph.json?_=' + Date.now());
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const gd = await resp.json();
 
@@ -532,7 +718,7 @@
     async function loadFileList() {
       const el = document.getElementById('fileList');
       try {
-        const resp = await fetch('concepts/index.json');
+        const resp = await fetch('concepts/index.json?_=' + Date.now());
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const list = await resp.json();
         files.push(...list);
@@ -550,48 +736,36 @@
       if (list.length === 0) {
         el.innerHTML = '<div class="file-item empty">无匹配结果</div>';
         document.getElementById('resultNumber').textContent = '0 / ' + files.length;
+        updateSubcatBar([]);
         return;
       }
 
-      // 是否按子类分组（当选中某个大类时）
-      const groupBySub = currentCategory !== 'all' && currentCategory !== '';
+      // 始终按子类分组
+      const groups = {};
+      for (const f of list) {
+        const sub = f.subcategory || '其他';
+        if (!groups[sub]) groups[sub] = [];
+        groups[sub].push(f);
+      }
+      const sortedSubs = Object.keys(groups).sort();
       let html = '';
-
-      if (groupBySub) {
-        // 按 subcategory 分组
-        const groups = {};
-        for (const f of list) {
-          const sub = f.subcategory || '其他';
-          if (!groups[sub]) groups[sub] = [];
-          groups[sub].push(f);
-        }
-        const sortedSubs = Object.keys(groups).sort();
-        for (const sub of sortedSubs) {
-          const items = groups[sub];
-          html += `<div class="subcat-header" onclick="toggleSubcat(this)">
-            <span class="subcat-arrow">▼</span>
-            <span class="subcat-name">${sub}</span>
-            <span class="subcat-count">${items.length}</span>
-          </div>`;
-          html += `<div class="subcat-items">`;
-          for (const f of items) {
-            const active = f.path === currentPath ? ' active' : '';
-            html += `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
-              <div class="title">${f.title || f.name}</div>
-              <div class="path">${f.path}</div>
-            </div>`;
-          }
-          html += `</div>`;
-        }
-      } else {
-        // 全部 / 搜索模式 — 平铺列表
-        html = list.map(f => {
+      for (const sub of sortedSubs) {
+        const items = groups[sub];
+        const isExpanded = !currentSubcategory || currentSubcategory === sub;
+        html += `<div class="subcat-header" onclick="toggleSubcat(this)">
+          <span class="subcat-arrow">${isExpanded ? '▼' : '▶'}</span>
+          <span class="subcat-name">${sub}</span>
+          <span class="subcat-count">${items.length}</span>
+        </div>`;
+        html += `<div class="subcat-items"${isExpanded ? '' : ' style="display:none"'}>`;
+        for (const f of items) {
           const active = f.path === currentPath ? ' active' : '';
-          return `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
+          html += `<div class="file-item${active}" onclick="loadFile('${f.path.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
             <div class="title">${f.title || f.name}</div>
             <div class="path">${f.path}</div>
           </div>`;
-        }).join('');
+        }
+        html += `</div>`;
       }
 
       el.innerHTML = html;
@@ -599,6 +773,34 @@
         list.length === files.length ? '全部' : '筛选';
       document.getElementById('resultNumber').textContent =
         list.length + ' / ' + files.length;
+
+      // 更新子类筛选条
+      updateSubcatBar(list);
+    }
+
+    // 子类筛选条
+    function updateSubcatBar(list) {
+      const bar = document.getElementById('subcatBar');
+      const subcats = {};
+      for (const f of list) {
+        const sub = f.subcategory || '其他';
+        if (subcats[sub]) subcats[sub]++;
+        else subcats[sub] = 1;
+      }
+      const keys = Object.keys(subcats).sort();
+      if (keys.length <= 1) { bar.innerHTML = ''; return; }
+
+      let html = `<button class="subcat-btn${!currentSubcategory ? ' active' : ''}" onclick="filterSubcat('')">全部</button>`;
+      for (const sub of keys) {
+        const active = currentSubcategory === sub ? ' active' : '';
+        html += `<button class="subcat-btn${active}" onclick="filterSubcat('${sub.replace(/'/g,"\\'")}')">${sub} ${subcats[sub]}</button>`;
+      }
+      bar.innerHTML = html;
+    }
+
+    function filterSubcat(sub) {
+      currentSubcategory = sub;
+      renderFiles(getFilteredFiles());
     }
 
     // 展开/折叠子类
@@ -657,6 +859,7 @@
         document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         currentCategory = btn.getAttribute('data-cat');
+        currentSubcategory = '';
         renderFiles(getFilteredFiles());
       });
     });
@@ -680,6 +883,148 @@
     });
 
     loadFileList();
+
+    // ===== 流程图增强：检测 ASCII 图表并优化展示 =====
+    function enhanceDiagrams() {
+      document.querySelectorAll('.markdown pre code').forEach(function(codeBlock) {
+        const text = codeBlock.textContent || '';
+        // 检测是否有盒式绘图字符（ASCII 架构图/流程图）
+        if (/[┌└┐┘├┤┬┴┼─│╔╗╚╝║╠╣╦╩╬═║╒╓╕╖╘╙╛╜╞╟╡╢╤╥╧╨╪╫]/.test(text)) {
+          let pre = codeBlock.parentElement;
+          // 避免重复处理
+          if (pre.classList.contains('diagram')) return;
+
+          // 自动判断图表类型：如果包含多层表格结构算架构图，否则算流程图
+          const hasTitle = /┌.*┐\s*\n\s*│/.test(text);
+          const badgeText = hasTitle ? '📐 架构图' : '📊 流程图';
+
+          pre.classList.add('diagram');
+
+          // 添加徽章
+          const badge = document.createElement('span');
+          badge.className = 'diagram-badge';
+          badge.textContent = badgeText;
+          pre.appendChild(badge);
+
+          // 添加缩放按钮
+          const zoomBtn = document.createElement('button');
+          zoomBtn.className = 'diagram-zoom';
+          zoomBtn.textContent = '🔍 放大查看';
+          zoomBtn.title = '点击放大查看完整图表';
+          zoomBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            showDiagramOverlay(pre);
+          });
+          pre.appendChild(zoomBtn);
+
+          // 双击放大
+          pre.addEventListener('dblclick', function(e) {
+            showDiagramOverlay(pre);
+          });
+        }
+      });
+    }
+
+    // 图表全屏遮罩
+    function showDiagramOverlay(preElement) {
+      var overlay = document.createElement('div');
+      overlay.className = 'diagram-overlay';
+
+      var clone = preElement.cloneNode(true);
+      // 移除旧按钮
+      var oldBadge = clone.querySelector('.diagram-badge');
+      if (oldBadge) oldBadge.remove();
+      var oldZoom = clone.querySelector('.diagram-zoom');
+      if (oldZoom) oldZoom.remove();
+
+      overlay.appendChild(clone);
+
+      var hint = document.createElement('div');
+      hint.className = 'diagram-close-hint';
+      hint.textContent = '点击任意位置关闭 · 滚轮缩放';
+      overlay.appendChild(hint);
+
+      overlay.addEventListener('click', function() {
+        overlay.remove();
+        document.body.style.overflow = '';
+      });
+
+      // ESC 关闭
+      function escHandler(e) {
+        if (e.key === 'Escape' || e.key === 'Esc') {
+          overlay.remove();
+          document.body.style.overflow = '';
+          document.removeEventListener('keydown', escHandler);
+        }
+      }
+      document.addEventListener('keydown', escHandler);
+
+      document.body.style.overflow = 'hidden';
+      document.body.appendChild(overlay);
+    }
+
+    // ===== Mermaid 渲染支持 =====
+    let mermaidLoaded = false;
+    async function renderMermaidDiagrams() {
+      const mermaidBlocks = document.querySelectorAll('.markdown pre code.language-mermaid');
+      if (mermaidBlocks.length === 0) return;
+
+      // 动态加载 mermaid
+      if (!mermaidLoaded) {
+        try {
+          await new Promise(function(resolve, reject) {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+          });
+          mermaidLoaded = true;
+        } catch(e) {
+          console.warn('Mermaid 加载失败:', e);
+          return;
+        }
+      }
+
+      mermaidBlocks.forEach(function(block) {
+        const pre = block.parentElement;
+        if (pre.classList.contains('mermaid-processed')) return;
+        pre.classList.add('mermaid-processed');
+
+        const code = block.textContent.trim();
+        const container = document.createElement('div');
+        container.className = 'mermaid-container';
+        container.textContent = code;
+
+        // 替换 pre 为 mermaid 容器
+        pre.parentNode.replaceChild(container, pre);
+
+        // 渲染
+        try {
+          window.mermaid.run({ nodes: [container] });
+        } catch(e) {
+          console.warn('Mermaid 渲染失败:', e);
+          container.innerHTML = '<pre style="background:#1e1e1e;color:#d4d4d4;padding:16px;border-radius:8px;text-align:left;">' + escapeHtml(code) + '</pre>';
+        }
+      });
+    }
+
+    function escapeHtml(text) {
+      var div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // 重写 loadFile 以在内容加载后执行图表增强
+    const _origLoadFile = loadFile;
+    loadFile = async function(path) {
+      await _origLoadFile(path);
+      // 内容渲染后增强图表
+      setTimeout(function() {
+        enhanceDiagrams();
+        renderMermaidDiagrams();
+      }, 50);
+    };
   </script>
 </body>
 </html>
