@@ -903,11 +903,12 @@
     }
 
     // 返回子类列表
+    let welcomeHtml = ''; // 缓存欢迎页 HTML
     function clickSubcatBack() {
       currentSubcategory = '';
       if (currentCategory === 'all') {
-        // 回到欢迎页
-        document.getElementById('content').innerHTML = document.getElementById('welcome').outerHTML;
+        // 回到欢迎页（用缓存的 HTML，因为 welcome 元素可能已被 loadFile 移除）
+        document.getElementById('content').innerHTML = welcomeHtml;
       }
       renderFiles(getFilteredFiles());
     }
@@ -981,6 +982,8 @@
       }
     });
 
+    // 缓存欢迎页 HTML（之后 loadFile 会移除 #welcome 元素）
+    welcomeHtml = document.getElementById('content').innerHTML;
     loadFileList();
 
     // ===== 流程图增强：检测 ASCII 图表并优化展示 =====
