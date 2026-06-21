@@ -1,10 +1,255 @@
 [
   {
-    "path": "基础知识/基础知识-链接.md",
-    "name": "基础知识-链接",
-    "title": "基础知识-链接",
+    "path": "基础知识/AI/00-4AI学习-总览.md",
+    "name": "00-4AI学习-总览",
+    "title": "4AI学习 总览",
     "category": "基础知识",
-    "subcategory": "基础知识"
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-Agent-总览.md",
+    "name": "00-Agent-总览",
+    "title": "4-Agent架构与实践 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-AI基础-总览.md",
+    "name": "00-AI基础-总览",
+    "title": "1-AI基础知识 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-AI推理-总览.md",
+    "name": "00-AI推理-总览",
+    "title": "3-AI推理与部署 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-AI框架-总览.md",
+    "name": "00-AI框架-总览",
+    "title": "2-AI框架与工具 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-AI路线-总览.md",
+    "name": "00-AI路线-总览",
+    "title": "6-AI学习路线与转型 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-Go-总览.md",
+    "name": "00-Go-总览",
+    "title": "10-Go后端与面试 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-产品-总览.md",
+    "name": "00-产品-总览",
+    "title": "7-产品与案例分析 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/00-面试题-总览.md",
+    "name": "00-面试题-总览",
+    "title": "5-面试真题与题解 总览",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-Agent-Multi-Agent面试学习系统.md",
+    "name": "01-Agent-Multi-Agent面试学习系统",
+    "title": "Multi-Agent 面试学习系统",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-AI基础-底层技术名词拆解.md",
+    "name": "01-AI基础-底层技术名词拆解",
+    "title": "AI 底层技术名词拆解手册",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴.md",
+    "name": "01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴",
+    "title": "ds4.c 专用推理引擎技术详解",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-AI框架-Eino框架技术文档.md",
+    "name": "01-AI框架-Eino框架技术文档",
+    "title": "Eino 框架技术文档",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-AI路线-工程师学习大纲.md",
+    "name": "01-AI路线-工程师学习大纲",
+    "title": "AI工程师学习大纲 —— 从14年后端老兵到AI Agent工程师的实战路线图",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-Go-微服务架构_学习资料.md",
+    "name": "01-Go-微服务架构_学习资料",
+    "title": "Go 微服务架构学习资料",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析.md",
+    "name": "01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析",
+    "title": "Vibe Coding AI心理治疗系统（CBT-Discover.skill）深度解析",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/01-面试题-字节AI应用开发二面（偏工程）面试实录.md",
+    "name": "01-面试题-字节AI应用开发二面（偏工程）面试实录",
+    "title": "字节AI应用开发二面（偏工程）面试实录",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/02-Agent-AI_Agent面试题精选.md",
+    "name": "02-Agent-AI_Agent面试题精选",
+    "title": "AI大模型Agent面试精选：15道高频题助你轻松通关",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/02-AI基础-技术栈分层与C++系统层定位.md",
+    "name": "02-AI基础-技术栈分层与C++系统层定位",
+    "title": "AI技术栈分层与C++系统层定位",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/02-AI框架-Eino调研与LangGraph对比分析.md",
+    "name": "02-AI框架-Eino调研与LangGraph对比分析",
+    "title": "Eino 深度调研与 LangGraph 对比分析",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/02-AI路线-程序员AI大模型转型指南.md",
+    "name": "02-AI路线-程序员AI大模型转型指南",
+    "title": "程序员AI大模型转型指南",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/02-Go-OpenIM技术栈与架构设计.md",
+    "name": "02-Go-OpenIM技术栈与架构设计",
+    "title": "OpenIM 技术栈与架构设计文档",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/02-产品-雅思陪跑团队Skill3.0可视化学习系统分析.md",
+    "name": "02-产品-雅思陪跑团队Skill3.0可视化学习系统分析",
+    "title": "雅思陪跑团队 Skill 3.0 可视化学习系统分析",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/02-面试题-字节二面-推送系统设计题解.md",
+    "name": "02-面试题-字节二面-推送系统设计题解",
+    "title": "字节二面系统设计题：周杰伦发新歌，如何秒级通知2000万粉丝？",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/03-Agent-开发岗简历高分写法.md",
+    "name": "03-Agent-开发岗简历高分写法",
+    "title": "Agent 开发岗简历高分写法",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/03-AI基础-LLM_Token全面解析.md",
+    "name": "03-AI基础-LLM_Token全面解析",
+    "title": "LLM Token 全面解析",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/03-AI框架-Harness_Engineering详解.md",
+    "name": "03-AI框架-Harness_Engineering详解",
+    "title": "Harness Engineering 详解",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/03-Go-Shopify后端Golang面试实录.md",
+    "name": "03-Go-Shopify后端Golang面试实录",
+    "title": "Shopify后端Golang面试实录",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/03-面试题-腾讯CSIG-AI应用开发一面-题解.md",
+    "name": "03-面试题-腾讯CSIG-AI应用开发一面-题解",
+    "title": "腾讯CSIG（元宝）AI应用开发一面 - 题解",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/04-Agent-企业级AI_Agent编排平台AgentFlow项目详解.md",
+    "name": "04-Agent-企业级AI_Agent编排平台AgentFlow项目详解",
+    "title": "企业级AI Agent编排平台 AgentFlow 项目详解",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/04-AI框架-LangGraph框架技术文档.md",
+    "name": "04-AI框架-LangGraph框架技术文档",
+    "title": "LangGraph 框架技术文档",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/04-Go-InterviewPro后端架构分析.md",
+    "name": "04-Go-InterviewPro后端架构分析",
+    "title": "04-Go-InterviewPro后端架构分析",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/05-Agent-企业级AI_Agent编排平台架构指南.md",
+    "name": "05-Agent-企业级AI_Agent编排平台架构指南",
+    "title": "企业级 AI Agent 编排平台架构指南",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/05-AI框架-RAG召回优化_学习资料.md",
+    "name": "05-AI框架-RAG召回优化_学习资料",
+    "title": "RAG 召回优化学习资料",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/06-AI框架-RAG检索排序技术详解.md",
+    "name": "06-AI框架-RAG检索排序技术详解",
+    "title": "RAG 检索排序技术详解",
+    "category": "基础知识",
+    "subcategory": "AI"
+  },
+  {
+    "path": "基础知识/AI/07-AI框架-Skill-Refiner与Agent-Skills治理详解.md",
+    "name": "07-AI框架-Skill-Refiner与Agent-Skills治理详解",
+    "title": "Skill Refiner 与 Agent Skills 治理体系：技术深度解析",
+    "category": "基础知识",
+    "subcategory": "AI"
   },
   {
     "path": "基础知识/cpp/00-cpp-总览.md",
@@ -602,6 +847,13 @@
     "subcategory": "内存"
   },
   {
+    "path": "基础知识/基础知识-链接.md",
+    "name": "基础知识-链接",
+    "title": "基础知识-链接",
+    "category": "基础知识",
+    "subcategory": "基础知识"
+  },
+  {
     "path": "基础知识/性能优化/00-性能优化-总览.md",
     "name": "00-性能优化-总览",
     "title": "C++ 性能优化知识库 — 总领",
@@ -929,257 +1181,5 @@
     "title": "面试考点与选型指南",
     "category": "基础知识",
     "subcategory": "设计模式"
-  },
-  {
-    "path": "AI/00-4AI学习-总览.md",
-    "name": "00-4AI学习-总览",
-    "title": "4AI学习 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-Agent-总览.md",
-    "name": "00-Agent-总览",
-    "title": "4-Agent架构与实践 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-AI基础-总览.md",
-    "name": "00-AI基础-总览",
-    "title": "1-AI基础知识 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-AI推理-总览.md",
-    "name": "00-AI推理-总览",
-    "title": "3-AI推理与部署 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-AI框架-总览.md",
-    "name": "00-AI框架-总览",
-    "title": "2-AI框架与工具 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-AI路线-总览.md",
-    "name": "00-AI路线-总览",
-    "title": "6-AI学习路线与转型 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-Go-总览.md",
-    "name": "00-Go-总览",
-    "title": "10-Go后端与面试 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-产品-总览.md",
-    "name": "00-产品-总览",
-    "title": "7-产品与案例分析 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/00-面试题-总览.md",
-    "name": "00-面试题-总览",
-    "title": "5-面试真题与题解 总览",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-Agent-Multi-Agent面试学习系统.md",
-    "name": "01-Agent-Multi-Agent面试学习系统",
-    "title": "Multi-Agent 面试学习系统",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-AI基础-底层技术名词拆解.md",
-    "name": "01-AI基础-底层技术名词拆解",
-    "title": "AI 底层技术名词拆解手册",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴.md",
-    "name": "01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴",
-    "title": "ds4.c 专用推理引擎技术详解",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-AI框架-Eino框架技术文档.md",
-    "name": "01-AI框架-Eino框架技术文档",
-    "title": "Eino 框架技术文档",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-AI路线-工程师学习大纲.md",
-    "name": "01-AI路线-工程师学习大纲",
-    "title": "AI工程师学习大纲 —— 从14年后端老兵到AI Agent工程师的实战路线图",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-Go-微服务架构_学习资料.md",
-    "name": "01-Go-微服务架构_学习资料",
-    "title": "Go 微服务架构学习资料",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析.md",
-    "name": "01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析",
-    "title": "Vibe Coding AI心理治疗系统（CBT-Discover.skill）深度解析",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/01-面试题-字节AI应用开发二面（偏工程）面试实录.md",
-    "name": "01-面试题-字节AI应用开发二面（偏工程）面试实录",
-    "title": "字节AI应用开发二面（偏工程）面试实录",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/02-Agent-AI_Agent面试题精选.md",
-    "name": "02-Agent-AI_Agent面试题精选",
-    "title": "AI大模型Agent面试精选：15道高频题助你轻松通关",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/02-AI基础-技术栈分层与C++系统层定位.md",
-    "name": "02-AI基础-技术栈分层与C++系统层定位",
-    "title": "AI技术栈分层与C++系统层定位",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/02-AI框架-Eino调研与LangGraph对比分析.md",
-    "name": "02-AI框架-Eino调研与LangGraph对比分析",
-    "title": "Eino 深度调研与 LangGraph 对比分析",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/02-AI路线-程序员AI大模型转型指南.md",
-    "name": "02-AI路线-程序员AI大模型转型指南",
-    "title": "程序员AI大模型转型指南",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/02-Go-OpenIM技术栈与架构设计.md",
-    "name": "02-Go-OpenIM技术栈与架构设计",
-    "title": "OpenIM 技术栈与架构设计文档",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/02-产品-雅思陪跑团队Skill3.0可视化学习系统分析.md",
-    "name": "02-产品-雅思陪跑团队Skill3.0可视化学习系统分析",
-    "title": "雅思陪跑团队 Skill 3.0 可视化学习系统分析",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/02-面试题-字节二面-推送系统设计题解.md",
-    "name": "02-面试题-字节二面-推送系统设计题解",
-    "title": "字节二面系统设计题：周杰伦发新歌，如何秒级通知2000万粉丝？",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/03-Agent-开发岗简历高分写法.md",
-    "name": "03-Agent-开发岗简历高分写法",
-    "title": "Agent 开发岗简历高分写法",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/03-AI基础-LLM_Token全面解析.md",
-    "name": "03-AI基础-LLM_Token全面解析",
-    "title": "LLM Token 全面解析",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/03-AI框架-Harness_Engineering详解.md",
-    "name": "03-AI框架-Harness_Engineering详解",
-    "title": "Harness Engineering 详解",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/03-Go-Shopify后端Golang面试实录.md",
-    "name": "03-Go-Shopify后端Golang面试实录",
-    "title": "Shopify后端Golang面试实录",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/03-面试题-腾讯CSIG-AI应用开发一面-题解.md",
-    "name": "03-面试题-腾讯CSIG-AI应用开发一面-题解",
-    "title": "腾讯CSIG（元宝）AI应用开发一面 - 题解",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/04-Agent-企业级AI_Agent编排平台AgentFlow项目详解.md",
-    "name": "04-Agent-企业级AI_Agent编排平台AgentFlow项目详解",
-    "title": "企业级AI Agent编排平台 AgentFlow 项目详解",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/04-AI框架-LangGraph框架技术文档.md",
-    "name": "04-AI框架-LangGraph框架技术文档",
-    "title": "LangGraph 框架技术文档",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/04-Go-InterviewPro后端架构分析.md",
-    "name": "04-Go-InterviewPro后端架构分析",
-    "title": "04-Go-InterviewPro后端架构分析",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/05-Agent-企业级AI_Agent编排平台架构指南.md",
-    "name": "05-Agent-企业级AI_Agent编排平台架构指南",
-    "title": "企业级 AI Agent 编排平台架构指南",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/05-AI框架-RAG召回优化_学习资料.md",
-    "name": "05-AI框架-RAG召回优化_学习资料",
-    "title": "RAG 召回优化学习资料",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/06-AI框架-RAG检索排序技术详解.md",
-    "name": "06-AI框架-RAG检索排序技术详解",
-    "title": "RAG 检索排序技术详解",
-    "category": "AI",
-    "subcategory": "AI"
-  },
-  {
-    "path": "AI/07-AI框架-Skill-Refiner与Agent-Skills治理详解.md",
-    "name": "07-AI框架-Skill-Refiner与Agent-Skills治理详解",
-    "title": "Skill Refiner 与 Agent Skills 治理体系：技术深度解析",
-    "category": "AI",
-    "subcategory": "AI"
   }
 ]
