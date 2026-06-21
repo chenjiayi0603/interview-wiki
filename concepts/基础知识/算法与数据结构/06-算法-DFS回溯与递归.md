@@ -10,46 +10,41 @@
 
 > LeetCode 46: https://leetcode.cn/problems/permutations
 
-**思路**：回溯模板——用 used 数组标记已选元素。每一层递归选择一个未使用的数加入 path，递归到 depth == n 时收集结果。**时间复杂度 O(n!)**，n 最大通常 ≤ 10。
+**思路**：**交换法**——将每个元素交换到当前位置 start，递归处理后续位置。不需要额外 used 数组和 path，直接在原数组上操作，空间更省。**时间复杂度 O(n!)**，n 最大通常 ≤ 10。
 
 ```cpp
 vector<vector<int>> permute(vector<int>& nums) {
     vector<vector<int>> res;
-    vector<int> path;
-    vector<bool> used(nums.size(), false);
-
-    function<void()> dfs = [&]() {
-        if (path.size() == nums.size()) {
-            res.push_back(path);
+    function<void(int)> dfs = [&](int start) {
+        if (start == nums.size()) {
+            res.push_back(nums);          // 当前排列已确定，收集结果
             return;
         }
-        for (int i = 0; i < nums.size(); i++) {
-            if (used[i]) continue;
-            used[i] = true;
-            path.push_back(nums[i]);
-            dfs();
-            path.pop_back();      // 撤销选择
-            used[i] = false;      // 恢复状态
+        for (int i = start; i < nums.size(); i++) {
+            swap(nums[start], nums[i]);   // 将 nums[i] 固定到当前位置
+            dfs(start + 1);               // 递归处理下一个位置
+            swap(nums[start], nums[i]);   // 撤销交换
         }
     };
-    dfs();
+    dfs(0);
     return res;
 }
 ```
-- **复杂度**：时间 O(n!)，空间 O(n)（递归深度 + path）
-- **变体**：排列包含重复元素（见 1.2）→ 排序 + 剪枝 `!used[i-1]`
+- **复杂度**：时间 O(n!)，空间 O(n)（递归深度），无额外 path/used 开销
+- **变体**：排列包含重复元素（见 1.2）→ 同层用 set 去重
 
 ### 1.2 全排列 II（有重复）
 
 > LeetCode 47: https://leetcode.cn/problems/permutations-ii
 
+**思路**：交换法 + `used[]` 判重。先排序让相同元素相邻，同层递归时如果当前元素和前一个相同且前一个没被用过，说明是重复分支，跳过。相比每层建 set，排序 + used 的方式空间更省。
+
 ```cpp
 vector<vector<int>> permuteUnique(vector<int>& nums) {
     vector<vector<int>> res;
+    sort(nums.begin(), nums.end());
     vector<int> path;
     vector<bool> used(nums.size(), false);
-    sort(nums.begin(), nums.end());
-
     function<void()> dfs = [&]() {
         if (path.size() == nums.size()) {
             res.push_back(path);
@@ -69,6 +64,8 @@ vector<vector<int>> permuteUnique(vector<int>& nums) {
     return res;
 }
 ```
+- **复杂度**：时间 O(n!)，空间 O(n)（递归深度 + path + used）
+- **对比**：无重复用交换法（原地操作，无需额外标记），有重复用排序 + used 去重
 
 ---
 

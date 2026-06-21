@@ -40,22 +40,85 @@ decltype(auto) get_ref(T& t) { return t; }  // 保持引用性
 
 ### 1.2 右值引用与移动语义
 
-**解决的问题**：临时对象拷贝性能浪费。移动语义将资源"偷"过来，避免深拷贝。
+**解决的问题**：临时对象拷贝造成性能浪费，移动语义将资源"偷"过来避免深拷贝；完美转发解决参数值类别丢失的问题。
+
+---
+
+#### 1.2.1 右值引用 (`&&`) — 区分值类别
+
+**解决的问题**：C++98 无法区分左值和右值，导致临时对象也发生深拷贝。右值引用 `&&` 绑定到即将销毁的临时对象，允许"偷取"资源。
+
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+
+// 重载区分左值/右值
+void process(const std::string& s) {
+    std::cout << "左值版本: " << s << "\n";
+}
+
+void process(std::string&& s) {
+    std::cout << "右值版本: " << s << "\n";
+}
+
+int main() {
+    std::string name = "hello";
+    process(name);              // 调用左值版本（const&）
+    process("world");           // 调用右值版本（&&）—— 临时对象
+    process(std::move(name));   // 调用右值版本（&&）—— static_cast<string&&>
+    // std::move 本质：不做任何移动，只是将参数转为右值引用类型
+}
+// 输出：
+//   左值版本: hello
+//   右值版本: world
+//   右值版本: hello
+
+// 右值引用变量本身是左值（有名字、可取地址）
+std::string&& ref = std::string("temp");
+// ref 是左值（尽管类型是右值引用），可以 &ref 取地址
+process(ref);                   // ❌ 调用左值版本！不会触发移动
+process(std::move(ref));        // ✅ 显式转回右值
+```
+
+**关键理解**：`std::move` 不移动任何东西，只是 `static_cast<T&&>()`。移动发生在移动构造函数/赋值运算符中。
+
+---
+
+#### 1.2.2 移动语义 — 移动构造/赋值
+
+**解决的问题**：深拷贝临时对象浪费 CPU 和内存。移动语义将堆上资源指针"偷"过来，源对象置空，性能从 O(n) 降到 O(1)。
 
 ```cpp
 #include <string>
 #include <vector>
 
-// 移动构造函数示例
+// 自定义 Buffer 实现移动语义
 class Buffer {
     char* data_;
     size_t size_;
 public:
-    // 移动构造：偷取资源，将源对象置空
-    Buffer(Buffer&& other) noexcept 
+    // 构造函数
+    Buffer(size_t size) : data_(new char[size]), size_(size) {
+        std::cout << "构造 " << size_ << "\n";
+    }
+    
+    // 析构函数
+    ~Buffer() { delete[] data_; std::cout << "析构\n"; }
+    
+    // 拷贝构造 —— 深拷贝 O(n)
+    Buffer(const Buffer& other)
+        : data_(new char[other.size_]), size_(other.size_) {
+        std::memcpy(data_, other.data_, size_);
+        std::cout << "拷贝构造 O(n)\n";
+    }
+    
+    // 移动构造 —— 偷指针 O(1)
+    Buffer(Buffer&& other) noexcept
         : data_(other.data_), size_(other.size_) {
         other.data_ = nullptr;    // 源对象不再持有资源
         other.size_ = 0;
+        std::cout << "移动构造 O(1)\n";
     }
     
     // 移动赋值
@@ -71,21 +134,26 @@ public:
     }
 };
 
-// 使用场景
-std::vector<int> v1 = {1,2,3,4,5};
-std::vector<int> v2 = std::move(v1);   // v1 变为空，v2 获得数据
+// 标准库容器自动利用移动语义
+std::vector<int> v1 = {1, 2, 3, 4, 5};
+std::vector<int> v2 = std::move(v1);   // v1 变为空，v2 获得数据 O(1)
+std::cout << v1.size() << "\n";         // 0（合法但未指定状态）
+std::cout << v2.size() << "\n";         // 5
 
-// 完美转发 —— 保持参数的左/右值性传递给下层函数
-template<typename T, typename... Args>
-std::unique_ptr<T> make_unique(Args&&... args) {
-    return std::unique_ptr<T>(new T(std::forward<Args>(args)...));
-    // std::forward 保持 args 的原始值类别（左值→左值引用，右值→右值引用）
-}
+// push_back 移动版本 —— 类内插入避免拷贝
+std::vector<std::string> words;
+std::string s = "hello";
+words.push_back(s);                     // 拷贝（保留 s）
+words.push_back(std::move(s));          // 移动（s 变空）
+// 移动后 s 处于合法但未指定状态，s = "new" 可以，但 s[0] 未定义
 
-// push_back vs emplace_back：emplace 直接在容器内构造，少一次移动
-std::vector<std::pair<int, std::string>> v;
-v.push_back(std::make_pair(1, "hello"));  // 构造 pair + 移动
-v.emplace_back(1, "hello");               // 直接在 vector 内构造，零拷贝
+// noexcept 的重要性
+std::vector<Buffer> bufs;
+bufs.reserve(1);                        // 预分配 1 个元素空间
+Buffer b(100);
+bufs.push_back(std::move(b));           // 移动构造 —— noexcept 保证
+// 如果移动构造没有 noexcept，vector 扩容时会选拷贝（保证强异常安全）
+// 因为拷贝失败可以回滚，移动失败无法撤销
 ```
 
 **性能对比**：
@@ -93,10 +161,77 @@ v.emplace_back(1, "hello");               // 直接在 vector 内构造，零拷
 | 操作 | 拷贝 | 移动 |
 |:----:|:----:|:----:|
 | `std::string` | O(n) 内存分配+拷贝 | O(1) 指针交换 |
-| `std::vector<int>(1000)` | O(n) 复制 | O(1) 指针交换 |
-| `std::array<int,1000>` | O(n) 复制 | O(n) 复制（没有移动优势） |
+| `std::vector<int>(1000)` | O(n) 复制 | O(1) 指针交换（控制块） |
+| `std::array<int,1000>` | O(n) 复制 | O(n) 复制（无动态资源） |
 
-**注意**：移动后源对象处于"合法但未指定"状态，只能赋值或析构，不能假设其值。
+**注意**：移动后源对象处于"合法但未指定"状态，只能赋值或析构，不能假设其值。对于基本类型（int、double 等），`std::move` 退化为拷贝。
+
+---
+
+#### 1.2.3 完美转发 — `std::forward`
+
+**解决的问题**：模板参数推导会丢失值类别信息（引用折叠导致左值/右值不分）。`std::forward` 根据模板参数类型条件式转发为左值或右值。
+
+```cpp
+#include <iostream>
+#include <memory>
+#include <utility>
+
+// 引用折叠规则（模板参数 T 推导时）：
+//   T& + &  → T&        T& + && → T&
+//   T&& + & → T&        T&& + && → T&&
+// 简记：只要出现左值引用，结果就是左值引用
+
+// 完美转发函数
+template<typename T>
+void wrapper(T&& arg) {
+    // arg 是左值（有名字），直接传递永远走左值版本
+    // process(arg);               // ❌ 始终调用左值版本
+    
+    // std::forward 根据 T 推导结果决定转发方式
+    process(std::forward<T>(arg));  // ✅ 保持原始值类别
+}
+
+void process(int& i)  { std::cout << "左值\n"; }
+void process(int&& i) { std::cout << "右值\n"; }
+
+int main() {
+    int x = 42;
+    wrapper(x);                     // T = int&  → forward<int&>  → 左值引用
+    wrapper(42);                    // T = int   → forward<int>   → 右值引用
+    wrapper(std::move(x));          // T = int   → forward<int>   → 右值引用
+}
+// 输出：
+//   左值
+//   右值
+//   右值
+
+// 实用案例：make_unique 的完美转发实现
+template<typename T, typename... Args>
+std::unique_ptr<T> make_unique(Args&&... args) {
+    return std::unique_ptr<T>(
+        new T(std::forward<Args>(args)...)  // 保持每个参数的原始值类别
+    );
+}
+
+struct Person {
+    Person(std::string name, int age) 
+        : name_(std::move(name)), age_(age) {}
+private:
+    std::string name_;
+    int age_;
+};
+
+auto p = make_unique<Person>("Alice", 30);
+// "Alice" 是 const char[6] → 右值 → 转发为右值引用
+// 30 是 int → 按值传递
+
+// emplace_back 内部完美转发 —— 直接在容器内构造，减少一次移动
+std::vector<std::pair<int, std::string>> v;
+v.push_back(std::make_pair(1, "hello"));  // 构造 pair + 移动进 vector
+v.emplace_back(1, "hello");               // ✅ 直接在 vector 内构造，零拷贝
+// emplace_back 将参数完美转发给 pair 的构造函数
+```
 
 ### 1.3 Lambda 表达式
 
@@ -148,35 +283,149 @@ print("hi");    // const char*
 
 **解决的问题**：手动 `new`/`delete` 容易泄漏，智能指针将资源管理绑定到对象生命周期（RAII）。
 
+---
+
+#### 1.4.1 std::unique_ptr — 独占所有权
+
+**解决的问题**：裸指针需手动释放，`unique_ptr` 保证同一时间只有一个所有者，离开作用域自动释放。
+
 ```cpp
-// unique_ptr —— 独占所有权，零开销
+#include <memory>
+#include <cstdio>
+
+// 基本用法：独占所有权，零开销
 std::unique_ptr<int> p1 = std::make_unique<int>(42);
-// auto p2 = p1;                  // ❌ 禁止拷贝
+// auto p2 = p1;                  // ❌ 禁止拷贝（编译错误）
 auto p2 = std::move(p1);          // ✅ 移动转移所有权，p1 变空
+// p1 此刻为 nullptr，再次解引用是 UB
 
-// 自定义删除器 —— 管理非内存资源（文件、socket）
-auto file_deleter = [](FILE* fp) { if (fp) fclose(fp); };
+// 自定义删除器 —— 管理非内存资源（文件、socket 等）
+auto file_deleter = [](FILE* fp) {
+    if (fp) {
+        std::cout << "Closing file\n";
+        fclose(fp);
+    }
+};
 std::unique_ptr<FILE, decltype(file_deleter)> fp(fopen("a.txt", "r"), file_deleter);
+// 离开作用域时自动 fclose，无需手动调用
 
-// shared_ptr —— 引用计数共享所有权
-auto sp1 = std::make_shared<int>(42);  // 1 次分配（控制块+对象一起）
-std::shared_ptr<int> sp2(new int(42)); // 2 次分配（控制块和对象分开）
+// 数组特化 —— 自动调用 delete[]
+std::unique_ptr<int[]> arr = std::make_unique<int[]>(10);
+arr[0] = 42;                     // operator[] 可用，普通 unique_ptr 不行
+
+// 工厂模式返回值 —— 最常用场景
+std::unique_ptr<Base> create() {
+    return std::make_unique<Derived>();  // 多态：返回派生类指针
+}
+// auto p = create();  // 使用者不需要手动 delete
+```
+
+**性能**：零开销抽象，与裸指针大小相同（无自定义删除器时），无运行时额外成本。
+
+---
+
+#### 1.4.2 std::shared_ptr — 引用计数共享所有权
+
+**解决的问题**：多个对象需要共享同一资源的所有权，最后一个使用者负责释放。
+
+```cpp
+#include <memory>
+
+// 优先用 make_shared：一次分配（控制块+对象合并），异常安全更好
+auto sp1 = std::make_shared<int>(42);     // ✅ 1 次堆分配
+std::shared_ptr<int> sp2(new int(42));    // ❌ 2 次堆分配（对象 + 控制块分开）
 // ↑ 优先用 make_shared，节省一次分配，异常安全更好
 
-// 循环引用 —— 必须用 weak_ptr 打破
-struct Node {
-    std::shared_ptr<Node> next;         // ❌ 导致循环引用
-    std::weak_ptr<Node> weak_next;      // ✅ 不增加引用计数
-};
+// 引用计数工作原理
+auto sp3 = sp1;                           // use_count == 2
+std::cout << sp1.use_count() << "\n";     // 2
+{
+    auto sp4 = sp1;                       // use_count == 3
+}                                         // sp4 析构，use_count == 2
+sp3.reset();                              // use_count == 1
+// sp1 离开作用域 → use_count == 0 → 自动 delete 对象
 
-// weak_ptr —— 观察者，不影响生命周期
+// 自定义删除器（类型擦除，unique_ptr 不支持）
+std::shared_ptr<FILE> sp_fp(fopen("b.txt", "r"), [](FILE* fp) {
+    if (fp) { fclose(fp); }
+});
+// 注意：shared_ptr 删除器不是模板参数（类型擦除），比 unique_ptr 灵活
+
+// enable_shared_from_this —— 类内安全获取自身 shared_ptr
+struct Task : std::enable_shared_from_this<Task> {
+    void doWork() {
+        auto self = shared_from_this();  // ✅ 安全获取当前对象的 shared_ptr
+        // 不允许从普通指针（this）构造 shared_ptr（会重复释放）
+    }
+};
+auto task = std::make_shared<Task>();
+task->doWork();
+
+// 循环引用警告 —— 导致内存泄漏！
+struct Node {
+    std::shared_ptr<Node> next;     // ❌ 环形引用，无法释放
+};
+// 解决方案：使用 weak_ptr（见 1.4.3）
+```
+
+**性能**：`shared_ptr` 大小是裸指针的 2 倍（指向对象的指针 + 指向控制块的指针），引用计数原子操作有同步开销。
+
+---
+
+#### 1.4.3 std::weak_ptr — 观察者，打破循环
+
+**解决的问题**：`shared_ptr` 循环引用导致内存泄漏；需要"观察"资源是否存活而不延长生命周期。
+
+```cpp
+#include <memory>
+
+// 基本行为：从 shared_ptr 构造，不增加引用计数
 std::weak_ptr<int> wp;
 {
     auto sp = std::make_shared<int>(42);
-    wp = sp;                            // weak_count+1，use_count 不变
+    wp = sp;                             // weak_count+1，use_count 不变（仍为 1）
+    std::cout << wp.use_count() << "\n"; // 1
+}                                        // sp 析构，对象被释放
+// 对象已释放，weak_ptr 自动感知
+
+// expired() + lock() —— 线程安全的访问模式
+if (auto sp = wp.lock()) {               // ✅ lock() 返回 shared_ptr 或 nullptr
+    std::cout << "Still alive: " << *sp << "\n";
+} else {
+    std::cout << "Object destroyed\n";
 }
-auto locked = wp.lock();                // 返回空 shared_ptr（对象已销毁）
+// lock() 是原子操作：检查 + 增加引用计数，线程安全
+
+// 打破循环引用 —— 树形结构
+struct TreeNode {
+    int value;
+    std::shared_ptr<TreeNode> children[10];
+    std::weak_ptr<TreeNode> parent;      // ✅ 父节点用 weak_ptr，避免循环
+    ~TreeNode() { std::cout << "~" << value << "\n"; }
+};
+{
+    auto root = std::make_shared<TreeNode>(1);
+    auto child = std::make_shared<TreeNode>(2);
+    root->children[0] = child;
+    child->parent = root;                // weak_ptr，不增加引用计数
+}                                        // ✅ 两个节点都正确释放
+
+// 缓存模式 —— 不持有资源，资源释放时缓存自动失效
+std::map<int, std::weak_ptr<ExpensiveObj>> cache;
+auto getOrCreate(int key) -> std::shared_ptr<ExpensiveObj> {
+    if (auto obj = cache[key].lock()) {
+        return obj;                      // 缓存命中
+    }
+    auto obj = std::make_shared<ExpensiveObj>(key);
+    cache[key] = obj;
+    return obj;                          // 缓存未命中，创建
+}
+// 当外部所有 shared_ptr 释放后，缓存弱引用自动失效，不造成泄漏
 ```
+
+**性能**：`weak_ptr` 大小与 `shared_ptr` 相同（2 倍指针），`lock()` 涉及原子操作但开销小。
+
+---
 
 **选型原则**：
 
@@ -185,7 +434,7 @@ auto locked = wp.lock();                // 返回空 shared_ptr（对象已销�
 | 明确独占所有权 | `unique_ptr`（零开销优先） |
 | 多个拥有者 | `shared_ptr`（需共享） |
 | 观察/打破循环 | `weak_ptr` |
-| 自定义删除器 | `unique_ptr` 删除器是类型一部分，`shared_ptr` 类型擦除 |
+| 自定义删除器 | `unique_ptr` 删除器是类型一部分（有额外空间），`shared_ptr` 类型擦除（灵活） |
 
 ### 1.5 类型安全与枚举增强
 
@@ -528,32 +777,98 @@ std::unique_ptr<int> p2(new int(42));  // ❌ 不推荐（异常安全略差）
 
 ```cpp
 #include <utility>
+#include <atomic>
+#include <vector>
+#include <iostream>
 
-// 传统写法（三行，需临时变量）
-auto old = value;
-value = new_value;
-
-// C++14 std::exchange（一行，语义清晰）
-auto old = std::exchange(value, new_value);
-// 等价于：{ old = value; value = new_value; }
-
-// 典型应用：移动赋值（自实现）
+// ─── 典型应用1：移动赋值/移动构造（最常用） ───
+// 传统写法需要临时变量 + 手动置空，容易漏掉
 class Buffer {
     int* data_;
+    size_t size_;
 public:
+    // 用 std::exchange 一行搞定：交换指针 + 源对象置空
+    Buffer(Buffer&& other) noexcept
+        : data_(std::exchange(other.data_, nullptr))
+        , size_(std::exchange(other.size_, 0)) {}
+
     Buffer& operator=(Buffer&& other) noexcept {
-        // 先把自己持有的指针交换出去（让 other 析构时释放）
-        data_ = std::exchange(other.data_, nullptr);
+        if (this != &other) {
+            delete[] data_;                         // 释放旧资源
+            data_ = std::exchange(other.data_, nullptr);
+            size_ = std::exchange(other.size_, 0);
+        }
         return *this;
     }
 };
+// 对比手写：std::exchange 确保不会遗漏置空操作，且语义更清晰
 
-// 对比 C++11 的 std::atomic::exchange
+// ─── 典型应用2：自旋锁的 try_lock ───
+class SpinLock {
+    std::atomic<bool> locked_{false};
+public:
+    bool try_lock() {
+        // 尝试把 locked_ 从 false 改为 true，返回旧值
+        // 如果旧值是 false → 获取锁成功
+        return !std::exchange(locked_, true);
+        // 等价于 atomic 的 CAS：
+        // bool expected = false;
+        // return locked_.compare_exchange_strong(expected, true);
+    }
+    void unlock() {
+        locked_.store(false, std::memory_order_release);
+    }
+};
+
+SpinLock spin;
+if (spin.try_lock()) {
+    // 临界区
+    spin.unlock();
+}
+
+// ─── 典型应用3：工作窃取队列的 pop ───
+// 任务队列中，线程从自己的队列尾部取任务
+// 使用 std::exchange 安全地取出任务并清空槽位
+template<typename T>
+class WorkStealQueue {
+    std::vector<T> items_;
+public:
+    // 尝试从队列尾部取一个任务
+    bool try_pop(T& result) {
+        if (items_.empty()) return false;
+        // 取出最后一个元素，同时将其置为默认值（避免重复释放）
+        result = std::exchange(items_.back(), T{});
+        items_.pop_back();
+        return true;
+    }
+};
+
+// ─── 典型应用4：状态机转移 ───
+enum class State { IDLE, RUNNING, STOPPED };
+
+class Machine {
+    State state_ = State::IDLE;
+public:
+    State transition(State new_state) {
+        // 原子地：记录旧状态 → 设置新状态
+        State old = std::exchange(state_, new_state);
+        std::cout << "State: " << static_cast<int>(old)
+                  << " → " << static_cast<int>(new_state) << "\n";
+        return old;  // 返回旧状态，调用者可决定后续逻辑
+    }
+};
+
+Machine m;
+State prev = m.transition(State::RUNNING);  // 返回 IDLE
+
+// ─── 对比 std::atomic::exchange（线程安全版本） ───
 std::atomic<int> atomic_val{10};
-int old = atomic_val.exchange(20);  // 原子操作（线程安全）
+int old_atomic = atomic_val.exchange(20);   // 原子操作（线程安全）
+// std::exchange 是普通函数，atomic::exchange 是原子操作
+// 非原子场景用 std::exchange，多线程场景用 atomic::exchange
 ```
 
-**性能**：对于基本类型，`std::exchange` 编译后就是一条 `xchg` 指令，零开销。
+**性能**：对于基本类型，`std::exchange` 编译后就是一条 `xchg` 指令（或等效的 mov+mov），零开销。相比手写三行赋值，编译器可能无法优化掉临时变量，`std::exchange` 明确表达了语义，编译器更容易生成最优代码。
 
 ---
 
@@ -562,11 +877,16 @@ int old = atomic_val.exchange(20);  // 原子操作（线程安全）
 **解决的问题**：需要为不同类型定义不同的常量值，传统方法用函数模板或类模板特化比较繁琐。
 
 ```cpp
-// 传统方式：用函数模板
+#include <limits>
+#include <iostream>
+#include <type_traits>
+
+// ─── 基础用法：数学常量 ───
+// 传统方式：用函数模板（每次调用生成函数，无法直接当常量用）
 template<typename T>
 constexpr T pi_func() { return T(3.1415926535897932385); }
 
-// C++14 变量模板：直接定义模板化变量（语法更自然）
+// C++14 变量模板：直接定义模板化变量（语法更自然，是真正的变量）
 template<typename T>
 constexpr T pi = T(3.1415926535897932385);
 
@@ -574,26 +894,89 @@ constexpr T pi = T(3.1415926535897932385);
 auto f = pi<float>;      // 3.1415927（float 精度）
 auto d = pi<double>;     // 3.14159265358979（double 精度）
 auto i = pi<int>;        // 3（整数截断！注意精度丢失）
+static_assert(pi<double> > 3.14);  // 编译期比较
 
-// 实际应用：物理常量、数学常量、单位转换
+// ─── 典型应用1：物理/数学常量库 ───
 template<typename T>
 constexpr T speed_of_light = T(299792458);        // m/s
 
 template<typename T>
-constexpr T inch_to_mm = T(25.4);                 // 毫米
+constexpr T gravitational_constant = T(6.67430e-11);  // N⋅m²/kg²
 
-// 变量模板 + 特化
+template<typename T>
+constexpr T planck_constant = T(6.62607015e-34);      // J⋅Hz⁻¹
+
+// 单位转换常量
+template<typename T>
+constexpr T inch_to_mm = T(25.4);                     // 1 英寸 = 25.4 毫米
+
+template<typename T>
+constexpr T celsius_to_kelvin = T(273.15);            // 0°C = 273.15K
+
+// 使用：自动匹配精度
+double dist_inch = 10.0;
+double dist_mm = dist_inch * inch_to_mm<double>;      // 254.0 mm
+
+// ─── 典型应用2：类型萃取别名（简化 traits 使用） ───
+template<typename T>
+constexpr bool is_integral_v = std::is_integral<T>::value;
+// C++17 标准库直接用 std::is_integral_v<T>
+// 这就是变量模板的典型标准化应用
+
+// 自定义 trait 变量模板
+template<typename T>
+constexpr bool is_string_like = std::is_same_v<T, std::string>
+                              || std::is_same_v<T, std::string_view>
+                              || std::is_same_v<T, const char*>;
+
+static_assert(is_string_like<std::string>);            // ✅
+static_assert(!is_string_like<int>);                    // ❌
+
+// ─── 典型应用3：变量模板 + 特化 ───
 template<typename T>
 constexpr T max_value = std::numeric_limits<T>::max();
 
+// 特化：为特定类型自定义值
 template<>
 constexpr int max_value<int> = 2147483647;
 
 template<>
 constexpr char max_value<char> = 127;
+
+// 使用特化
+std::cout << max_value<unsigned long long> << "\n";    // 18446744073709551615
+std::cout << max_value<int> << "\n";                    // 2147483647
+
+// ─── 典型应用4：编译期单位转换表 ───
+template<typename T>
+struct UnitTraits {
+    // 角度转弧度
+    static constexpr T deg_to_rad = pi<T> / T(180);
+    // 弧度转角度
+    static constexpr T rad_to_deg = T(180) / pi<T>;
+};
+
+double angle_rad = 45.0 * UnitTraits<double>::deg_to_rad;  // π/4
+
+// ─── 变量模板 vs 函数模板对比 ───
+// 函数模板：每次调用有函数调用语义（哪怕被内联）
+template<typename T>
+constexpr T square_func(T x) { return x * x; }
+int arr1[square_func(5)];           // 需要 constexpr 函数，OK
+
+// 变量模板：直接是变量，不生成调用
+template<typename T>
+constexpr T square_v = T(25);       // 固定值，不是表达式
+int arr2[square_v<int>];            // 常量值，直接可用
+// 注意：变量模板适合常量定义，函数模板适合计算表达式
 ```
 
-**优势**：相比函数模板，变量模板可以直接当做常量使用（不生成函数调用），适合数学/物理常量库。
+**优势**：
+- 相比函数模板：变量模板是真正的变量，可直接当常量使用，不生成函数调用
+- 相比类模板 traits：变量模板语法更简洁（`pi<float>` vs `pi<float>::value`）
+- C++17 标准库大量采用此模式（`_v` 后缀 traits）
+
+**适用场景**：数学/物理常量库、类型 trait 别名、编译期配置参数。
 
 ---
 
@@ -902,6 +1285,10 @@ static_assert(!all_same<int, double>);    // ❌
 **解决的问题**：C++17 之前，在头文件中定义全局变量会导致多重定义链接错误，只能用 `extern` 声明 + 在某个 .cpp 中定义，非常不便。
 
 ```cpp
+#include <string>
+#include <map>
+
+// ─── 典型应用1：头文件库中的全局配置 ───
 // C++17 之前：必须在头文件声明，在 .cpp 定义
 // header.h
 extern int global_counter;
@@ -911,30 +1298,84 @@ int global_counter = 0;
 const std::string version = "1.0.0";
 
 // C++17 内联变量：直接在头文件中定义，链接器自动合并
-// header.h
+// header.h（多份包含也只生成一份实例）
 inline int global_counter = 0;                  // 多个编译单元共享一个变量
 inline const std::string version = "1.0.0";     // const 变量默认 inline
 inline constexpr double pi = 3.14159;           // constexpr 变量默认 inline
 
-// 类的静态成员 inline（C++17 之前需要类外定义）
+// ─── 典型应用2：类的静态成员 inline 定义 ───
 struct Config {
-    static inline std::string cache_dir = "/tmp/cache";  // ✅ 不需类外定义
-    static inline int timeout_ms = 5000;
+    // C++17 之前：需要类外定义（在某个 .cpp 文件中）
+    // static std::string cache_dir;
+    // static int timeout_ms;
+    
+    // C++17：直接在类内定义，不需额外 .cpp
+    static inline std::string cache_dir = "/tmp/cache";  // ✅
+    static inline int timeout_ms = 5000;                  // ✅
+    static inline bool debug_mode = false;
+    
+    // 静态 constexpr 成员默认 inline（C++17 之前就是 inline 行为）
+    static constexpr int max_connections = 100;
 };
-// C++17 之前：
-// struct Config { static std::string cache_dir; };
+// C++17 之前需要：
 // // config.cpp
 // std::string Config::cache_dir = "/tmp/cache";
+// int Config::timeout_ms = 5000;
 
-// 适用场景
-// 1. 头文件库（header-only library）中的全局配置
-// 2. 模板类中的静态成员
-// 3. const 常量定义
+// ─── 典型应用3：模板类中的静态成员 ───
+// 模板类静态成员在 C++17 前需要在头文件中小心处理
+template<typename T>
+struct Registry {
+    static inline std::map<std::string, T> items;  // ✅ 每个特化独立实例
+    static inline int count = 0;
+};
+// 使用
+Registry<int>::items["answer"] = 42;
+Registry<double>::items["pi"] = 3.14;
+// int Registry<int>::count = 0;     // C++17 前需要这行，现在不需要
 
-// 注意：inline 变量必须是相同的定义（ODR 规则），否则 UB
+// ─── 典型应用4：头文件唯一标识符（防止 ODR 违反） ───
+// 内联函数中的静态局部变量在多编译单元中只有一份
+inline int get_unique_id() {
+    static int counter = 0;           // 所有编译单元共享同一个 counter
+    return counter++;
+}
+// 如果不用 inline 函数，而是直接在多个 .cpp 中定义非内联变量，会链接错误
+
+// ─── 典型应用5：编译期注册（magic static + inline） ───
+struct Plugin {
+    const char* name;
+    void (*init)();
+};
+
+inline auto& get_plugins() {
+    static std::vector<Plugin> plugins;  // 所有 TU 共享同一个 vector
+    return plugins;
+}
+
+// 宏辅助：各 .cpp 文件中自动注册
+#define REGISTER_PLUGIN(name, init_fn)                        \
+    inline int register_##name() {                             \
+        get_plugins().push_back({#name, init_fn});             \
+        return 0;                                              \
+    }                                                          \
+    static int plugin_registered_##name = register_##name();
+
+// config_plugin.cpp
+// REGISTER_PLUGIN(config, load_config);
+// network_plugin.cpp
+// REGISTER_PLUGIN(network, init_network);
+// 程序启动时自动注册，无需手动调用初始化函数
+
+// ─── 注意事项 ───
+// 1. inline 变量必须在所有编译单元中是相同的定义（否则 UB）
+// 2. inline 变量可以有不同的地址吗？不可以——链接器保证唯一实例
+// 3. const 全局变量默认内部链接（static），除非用 extern
+// 4. constexpr 全局变量默认 inline（C++17 起）
+// 5. 不要滥用：真正需要跨编译单元共享时才用 inline
 ```
 
-**性能**：内联变量在最终可执行文件中只有一份实例，没有运行时开销。
+**性能**：内联变量在最终可执行文件中只有一份实例，链接器负责合并重复定义，没有运行时开销。对比 `extern + .cpp` 定义，唯一的区别是编译期链接器做了更多工作。
 
 ---
 
@@ -1181,6 +1622,107 @@ Thread 3: ███████████████████████�
 
 **性能影响**：work-stealing 的调度开销约 **每任务 ~50-100ns**（纯用户态，无系统调用），远低于线程上下文切换的 ~1-10μs。
 
+**代码示例①：模拟负载不均 → work-stealing 自动平衡**
+
+```cpp
+#include <tbb/parallel_for.h>
+#include <tbb/task_arena.h>
+#include <iostream>
+#include <chrono>
+
+void demo_auto_balance() {
+    constexpr int N = 32;
+    volatile int dummy[N];
+    tbb::parallel_for(0, N, [&](int i) {
+        // 故意让后半部分任务更重（模拟负载不均）
+        int heavy = (i >= N / 2) ? (i - N / 2 + 1) * 100'000 : 100;
+        for (int j = 0; j < heavy; j++) dummy[i] += j;
+    });
+    // 如果没有 work-stealing，前 16 个轻任务先做完的线程只能空闲
+    // TBB work-stealing → 空闲线程自动偷取重任务，所有线程几乎同时完成
+}
+// 对比：注掉 tbb::parallel_for，用 std::for_each(seq) 执行，耗时差数倍
+```
+
+**代码示例②：无 stealing vs 有 stealing 实测对比**
+
+```cpp
+#include <tbb/parallel_for.h>
+#include <thread>
+#include <vector>
+#include <chrono>
+#include <iostream>
+
+void compare_steal_vs_nosteal() {
+    const int N = 8;         // 任务数 = 线程数
+    const int HEAVY = 50;    // 只有后半部分任务重
+    std::vector<long long> workload(N, 1000);
+    for (int i = N/2; i < N; i++) workload[i] = HEAVY * 1000;
+
+    // ---- 无 work-stealing：静态划分，每人一个任务 ----
+    std::atomic<int> done{0};
+    auto t1 = std::chrono::steady_clock::now();
+    std::vector<std::thread> threads;
+    for (int i = 0; i < N; i++)
+        threads.emplace_back([i, &workload, &done] {
+            volatile long long s = 0;
+            for (long long j = 0; j < workload[i]; j++) s += j;
+            done++;
+        });
+    for (auto& t : threads) t.join();                   // 重任务的线程拖慢整体
+    auto t2 = std::chrono::steady_clock::now();
+    auto ms_nosteal = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
+    std::cout << "no-steal: " << ms_nosteal << "ms\n";  // ≈ HEAVY × 1000 耗时
+
+    // ---- TBB work-stealing：空闲线程偷取重任务 ----
+    t1 = std::chrono::steady_clock::now();
+    tbb::parallel_for(0, N, [&](int i) {
+        volatile long long s = 0;
+        for (long long j = 0; j < workload[i]; j++) s += j;
+    });
+    t2 = std::chrono::steady_clock::now();
+    auto ms_steal = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
+    std::cout << "TBB-steal: " << ms_steal << "ms\n";   // 快几倍，重任务被分摊
+    // 输出: no-steal: ~500ms, TBB-steal: ~80ms（8 核）
+}
+```
+
+**代码示例③：任务执行跟踪 → 可视化偷取过程**
+
+```cpp
+#include <tbb/task_arena.h>
+#include <tbb/parallel_for.h>
+#include <iostream>
+#include <thread>
+#include <vector>
+
+void trace_stealing() {
+    tbb::task_arena arena(4);  // 限制 4 线程便于观察
+    std::vector<int> who_does_what(16, -1);
+    arena.execute([&] {
+        tbb::parallel_for(0, 16, [&](int i) {
+            who_does_what[i] = tbb::this_task_arena::current_thread_index();
+            // 模拟负载不均：任务 8-15 比 0-7 重 10 倍
+            volatile long long s = 0;
+            int heavy = (i >= 8) ? 500'000 : 50'000;
+            for (int j = 0; j < heavy; j++) s += j;
+        });
+    });
+    for (int t = 0; t < 4; t++) {
+        std::cout << "Thread " << t << ": ";
+        for (int i = 0; i < 16; i++)
+            if (who_does_what[i] == t) std::cout << i << " ";
+        std::cout << "\n";
+    }
+    // 输出示例（每次可能不同，取决于调度时机）：
+    // Thread 0: 0 1 2 3 8               ← 空闲后偷了重任务 8
+    // Thread 1: 4 5 6 9 10              ← 偷了 9 10
+    // Thread 2: 7 11 12                 ← 偷了 11 12
+    // Thread 3: 13 14 15                ← 初始分配少，偷了 3 个重任务
+    // 总效果：重任务 8-15 被分摊到所有线程，而非集中在后 4 个线程
+}
+```
+
 ##### 三、完整示例与性能对比
 
 ```cpp
@@ -1298,23 +1840,28 @@ constexpr bool has_parallel =
 
 #### 3.6.4 数值工具增强 — gcd / lcm / clamp / midpoint
 
-**解决的问题**：常用数学运算之前需自己实现或依赖 Boost。
+**解决的问题**：常用数学运算之前需自己实现（手写欧几里得算法）或依赖 Boost，标准库补齐了这些基础工具。
 
 ```cpp
 #include <numeric>
+#include <algorithm>
+#include <vector>
+#include <iostream>
+#include <cassert>
 
-// std::gcd / std::lcm —— 最大公约数 / 最小公倍数
+// ─── 典型应用1：std::gcd / std::lcm 基础 ───
+// 最大公约数 / 最小公倍数
 int g = std::gcd(12, 18);        // 6
 int l = std::lcm(12, 18);        // 36（12 * 18 / 6）
 
-// 可用作编译期计算
+// 编译期计算
 static_assert(std::gcd(12, 18) == 6);
 static_assert(std::lcm(12, 18) == 36);
 
-// 模板参数：支持任意整数类型
+// 支持任意整数类型
 long long g2 = std::gcd(10000000000LL, 5000000000LL);  // 5000000000
 
-// 实践：简化分数
+// ─── 典型应用2：简化分数 + 分数运算 ───
 struct Fraction {
     int num, den;
     void simplify() {
@@ -1322,21 +1869,107 @@ struct Fraction {
         num /= g;
         den /= g;
     }
+    Fraction operator+(const Fraction& other) const {
+        Fraction result{
+            num * other.den + other.num * den,
+            den * other.den
+        };
+        result.simplify();
+        return result;
+    }
 };
 
-// C++20 补充的 clamp 和 midpoint
-#include <algorithm>   // std::clamp
+Fraction f1{1, 6}, f2{1, 3};
+Fraction sum = f1 + f2;           // {3, 6} → simplify → {1, 2}
+assert(sum.num == 1 && sum.den == 2);
 
-int clamped = std::clamp(value, min_val, max_val);  // 将 value 限制在 [min, max]
+// ─── 典型应用3：std::clamp 约束值范围 ───
+// 将值限制在 [min, max] 区间内
+int clamped = std::clamp(value, min_val, max_val);
 // 等价于：value < min ? min : (value > max ? max : value)
 
-int mid = std::midpoint(10, 20);    // 15（不溢出：(a+b)/2 可能溢出）
-long long big = std::midpoint(1LL, 10000000000LL);  // 安全计算中点
+// 实际应用：进度条、音量控制
+float volume = 1.5f;
+float safe_volume = std::clamp(volume, 0.0f, 1.0f);    // 1.0（截断到合法范围）
 
-// std::clamp 和 std::midpoint 是 C++20 补充的，放在一起对比
+int brightness = -10;
+int valid = std::clamp(brightness, 0, 255);             // 0（截断到 0-255）
+
+// clamp 与 std::min/max 组合的对比
+int v = 5;
+// 传统写法：std::max(min_val, std::min(v, max_val))  ← 难读
+// C++17： std::clamp(v, min_val, max_val)              ← 直观
+
+// ─── 典型应用4：std::midpoint 安全中点计算 ───
+// (a+b)/2 可能溢出（如 a=20亿, b=20亿, a+b 超出 int 范围）
+int mid = std::midpoint(10, 20);               // 15（安全计算）
+
+// 大数安全
+long long big = std::midpoint(1LL, 10000000000LL);  // 5000000005
+// 如果手写 (a+b)/2 会溢出，midpoint 用 a + (b-a)/2 避免溢出
+
+// 指针/迭代器的中点（C++20）
+std::vector<int> vec = {1, 2, 3, 4, 5, 6, 7, 8};
+auto mid_it = std::midpoint(vec.begin(), vec.end());  // 指向第 4 个元素
+std::cout << *mid_it << "\n";   // 4（vec[3]）
+
+// ─── 典型应用5：综合——日期计算 ───
+// 计算两个日期之间有多少个完整的周期
+struct Date { int year, month, day; };
+
+// 辅助：判断闰年
+constexpr bool is_leap(int year) {
+    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+}
+
+// 计算两个年份之间的闰年个数
+int count_leap_years(int y1, int y2) {
+    if (y1 > y2) std::swap(y1, y2);
+    int leaps = 0;
+    for (int y = y1; y <= y2; ++y) {
+        if (is_leap(y)) ++leaps;
+    }
+    return leaps;
+}
+
+// 两个日期的天数差（简化版）
+int days_between(Date d1, Date d2) {
+    int days_per_month[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    int total = 0;
+    // 年份差的天数
+    for (int y = d1.year; y < d2.year; ++y) {
+        total += is_leap(y) ? 366 : 365;
+    }
+    // 减去 d1 已过的天数
+    for (int m = 1; m < d1.month; ++m) {
+        total -= days_per_month[m-1] + (m == 2 && is_leap(d1.year) ? 1 : 0);
+    }
+    total -= d1.day;
+    // 加上 d2 已过的天数
+    for (int m = 1; m < d2.month; ++m) {
+        total += days_per_month[m-1] + (m == 2 && is_leap(d2.year) ? 1 : 0);
+    }
+    total += d2.day;
+    return total;
+}
+// 使用 std::gcd 简化周期计算
+int whole_cycles(Date d1, Date d2, int cycle_days) {
+    int total = days_between(d1, d2);
+    int g = std::gcd(total, cycle_days);
+    return total / cycle_days;
+    // 如果 total 和 cycle_days 有公约数，简化后更精确
+}
 ```
 
-**注意**：`std::gcd`/`std::lcm` 是 C++17，`std::clamp`/`std::midpoint` 是 C++20。
+**版本注意**：
+- `std::gcd` / `std::lcm`：C++17 (`<numeric>`)
+- `std::clamp`：C++17 (`<algorithm>`)
+- `std::midpoint`：C++20 (`<numeric>`)
+
+**性能**：
+- gcd/lcm 使用辗转相除法（欧几里得算法），O(log min(a,b))，编译期可计算
+- clamp 编译为两条 cmp + cmov 指令，零开销抽象
+- midpoint 使用 `a + (b - a) / 2` 避免溢出，对整数和指针都安全
 
 ---
 

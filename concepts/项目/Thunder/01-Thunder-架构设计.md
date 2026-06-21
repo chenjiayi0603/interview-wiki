@@ -176,6 +176,64 @@ Manager（父进程）                    Worker（子进程）
 | Unix Domain Socket | 500,000 | 0.3ms | SOCK_SEQPACKET |
 | TCP 回环 | 300,000 | 0.5ms | 需协议栈开销 |
 
-## 五、动态插件系统
+## 五、IO 模型
+
+### 5.1 三引擎架构
+
+Thunder 通过统一 `IoBackend` 接口抽象，支持三种 I/O 后端，编译时通过宏切换，运行时通过配置文件选择：
+
+| 后端 | 类名 | 宏开关 | 说明 |
+|------|------|--------|------|
+| libev (epoll) | `EvIoBackend` | 默认 | 每个 fd 一个 `ev_io` watcher |
+| 原生 io_uring | `UringIoBackend` | `THUNDER_IO_URING` | 直接 liburing 操作 SQ/CQ |
+| Asio io_uring | `AsioUringIoBackend` | `THUNDER_IO_ASIO_URING` | 基于 `asio::posix::stream_descriptor` |
+
+```cpp
+// 配置项（Hello.json）
+{
+    "io_backend": "asio_uring",   // "ev" | "uring" | "asio_uring"
+    "cpu_affinity": true,
+    "worker_count": 8
+}
+```
+
+### 5.2 架构设计
+
+**关键原则：io_uring 嵌入 libev，而非替代 libev。**
+
+```
+libev 主循环（以 asio_uring 为例）:
+  ┌─ ev_prepare  → io_context.poll()   [排尽已有 CQE]
+  ├─ epoll_wait   … [ring_fd + 其他 fd]
+  ├─ ev_io(ring_fd) → io_context.poll() [ring_fd 唤醒，处理新完成]
+  └─ ev_check    → io_context.poll()   [epoll 返回期间到达的 CQE]
+  
+  零锁、零线程跳、零跨线程 syscall
+```
+
+三种后端的集成方式：
+
+| 后端 | 集成方式 | 读操作 | 写操作 |
+|------|---------|--------|--------|
+| EvIoBackend | 每个 fd 注册 `ev_io` watcher | epoll 通知可读 → `read()` | epoll 通知可写 → `write()` |
+| UringIoBackend | `ring_fd` 注册一个 `ev_io` watcher | 填 SQE → `io_uring_submit` → CQE 回调 | 同步 `WriteFD()` |
+| AsioUringIoBackend | `ev_prepare/ev_check/ev_io(ring_fd)` 三路驱动 | `sock.async_read_some()` → Asio 完成回调 | 同步 `WriteFD()` |
+
+### 5.3 为什么写操作用同步？
+
+实际测量表明，小包（< 8KB）同步写的延迟和异步写几乎一样，但异步写需要额外的 SQE/CQE 管理开销和回调状态机。Thunder 的写缓冲区通过 `Compact()` 整理，`WriteFD()` 内部用 `writev` 合并小包，同步效率足够。
+
+### 5.4 实测性能
+
+| 场景 | ev (epoll) | asio_uring | 差异 |
+|------|-----------|------------|------|
+| 小包 37B, c100 | 160,674 RPS / 705μs | 164,358 RPS / 2.49ms | RPS ≈持平 |
+| 4KB, c100 | 73,137 RPS / 1.51ms | 68,677 RPS / 0.99ms | 延迟低 **34%** |
+| 64KB, c100 | 6,207 RPS / 16.78ms | 6,675 RPS / 2.32ms | 延迟低 **86%** |
+| 64KB, c500 Stdev | 83.51ms | **1.63ms** | 尾延迟 1/50 |
+
+完整报告见 `deploy/tests/benchmark/results/asio_uring_benchmark.md`，集成示例见 [09-Thunder-io_uring集成示例.md](09-Thunder-io_uring集成示例.md)。
+
+## 六、动态插件系统
 
 支持 `.so` 动态库热加载，运行时注册路由和处理器。插件无需修改主程序代码，实现功能扩展。

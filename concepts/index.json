@@ -1,5 +1,12 @@
 [
   {
+    "path": "基础知识/基础知识-链接.md",
+    "name": "基础知识-链接",
+    "title": "基础知识-链接",
+    "category": "基础知识",
+    "subcategory": "基础知识"
+  },
+  {
     "path": "基础知识/C++/00-cpp-总览.md",
     "name": "00-cpp-总览",
     "title": "C++ 技术总览",
@@ -80,6 +87,27 @@
     "path": "基础知识/C++/11-cpp-面试考点速查.md",
     "name": "11-cpp-面试考点速查",
     "title": "面试考点速查",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/12-cpp-分配器与并行性能对比.md",
+    "name": "12-cpp-分配器与并行性能对比",
+    "title": "分配器与线程池性能对比",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/13-cpp-分配器与并行性能对比-测试过程.md",
+    "name": "13-cpp-分配器与并行性能对比-测试过程",
+    "title": "分配器与并行性能对比 · 测试过程",
+    "category": "基础知识",
+    "subcategory": "C++"
+  },
+  {
+    "path": "基础知识/C++/14-cpp-项目总结与面试问答.md",
+    "name": "14-cpp-项目总结与面试问答",
+    "title": "14-cpp-项目总结与面试问答",
     "category": "基础知识",
     "subcategory": "C++"
   },
@@ -422,7 +450,28 @@
   {
     "path": "基础知识/算法与数据结构/08-算法-其他算法与面试题.md",
     "name": "08-算法-其他算法与面试题",
-    "title": "其他算法与面试题",
+    "title": "高频面试题速记",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/09-算法-位运算.md",
+    "name": "09-算法-位运算",
+    "title": "位运算",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/10-算法-数学运算.md",
+    "name": "10-算法-数学运算",
+    "title": "数学运算",
+    "category": "基础知识",
+    "subcategory": "算法与数据结构"
+  },
+  {
+    "path": "基础知识/算法与数据结构/11-算法-二分搜索.md",
+    "name": "11-算法-二分搜索",
+    "title": "二分搜索",
     "category": "基础知识",
     "subcategory": "算法与数据结构"
   },
@@ -616,9 +665,296 @@
     "subcategory": "云原生"
   },
   {
+    "path": "基础知识/公司盘点/todo.md",
+    "name": "todo",
+    "title": "todo",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/架构问答模版.md",
+    "name": "架构问答模版",
+    "title": "架构问答模版",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/README.md",
+    "name": "README",
+    "title": "面试突击 · 使用指南",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/01-阿里巴巴（电商+高并发）.md",
+    "name": "01-阿里巴巴（电商+高并发）",
+    "title": "阿里巴巴 · 电商 + 高并发方向",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/02-字节跳动（高并发+网络）.md",
+    "name": "02-字节跳动（高并发+网络）",
+    "title": "字节跳动 · 高并发 + 网络方向",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/03-腾讯华为云（存储+基础架构）.md",
+    "name": "03-腾讯华为云（存储+基础架构）",
+    "title": "腾讯云 / 华为云 · 存储 + 基础架构方向",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/04-美团百度（搜索+推荐+LBS）.md",
+    "name": "04-美团百度（搜索+推荐+LBS）",
+    "title": "美团 / 百度 · 搜索 + 推荐 + LBS 方向",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/05-外企（全栈+AI）.md",
+    "name": "05-外企（全栈+AI）",
+    "title": "外企 · 全栈 + AI 方向",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/06-中小公司（广度+全栈）.md",
+    "name": "06-中小公司（广度+全栈）",
+    "title": "中小互联网公司 · 广度 + 全栈方向",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/01-必刷题清单.md",
+    "name": "01-必刷题清单",
+    "title": "算法必刷题清单",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/02-高频手写模板.md",
+    "name": "02-高频手写模板",
+    "title": "高频手写代码模板",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/01-秒杀系统.md",
+    "name": "01-秒杀系统",
+    "title": "系统设计 · 秒杀系统",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/02-IM系统.md",
+    "name": "02-IM系统",
+    "title": "系统设计 · IM 系统",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/03-分布式KV存储.md",
+    "name": "03-分布式KV存储",
+    "title": "系统设计 · 分布式 KV 存储",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/04-短URL服务.md",
+    "name": "04-短URL服务",
+    "title": "系统设计 · 短 URL 服务",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/05-实时AI语音对话.md",
+    "name": "05-实时AI语音对话",
+    "title": "系统设计 · 实时 AI 语音对话",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/01-C++高频考点.md",
+    "name": "01-C++高频考点",
+    "title": "C++ 高频考点速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/02-Go高频考点.md",
+    "name": "02-Go高频考点",
+    "title": "Go 高频考点速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/03-计算机网络.md",
+    "name": "03-计算机网络",
+    "title": "计算机网络速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/04-操作系统.md",
+    "name": "04-操作系统",
+    "title": "操作系统速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/05-MySQL数据库.md",
+    "name": "05-MySQL数据库",
+    "title": "MySQL 速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/06-Redis缓存.md",
+    "name": "06-Redis缓存",
+    "title": "Redis 速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/07-分布式系统.md",
+    "name": "07-分布式系统",
+    "title": "分布式系统速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/08-设计模式.md",
+    "name": "08-设计模式",
+    "title": "设计模式速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/09-python高频考点.md",
+    "name": "09-python高频考点",
+    "title": "Python 高频考点速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/10-k8s高频考点.md",
+    "name": "10-k8s高频考点",
+    "title": "Kubernetes (K8s) 高频考点速查",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/11-C++精通.md",
+    "name": "11-C++精通",
+    "title": "C++ 精通级面试题",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/12-Go精通.md",
+    "name": "12-Go精通",
+    "title": "Go 精通级面试题",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/01-IM消息推送流程.md",
+    "name": "01-IM消息推送流程",
+    "title": "流程图 · IM 消息推送流程",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/02-秒杀系统流程.md",
+    "name": "02-秒杀系统流程",
+    "title": "流程图 · 秒杀系统",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/03-存算分离流程.md",
+    "name": "03-存算分离流程",
+    "title": "流程图 · 存算分离架构",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/00-面试准备-总览.md",
+    "name": "00-面试准备-总览",
+    "title": "面试准备总览",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/01-面试准备-项目性能数据.md",
+    "name": "01-面试准备-项目性能数据",
+    "title": "面试项目性能数据分析",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/02-面试准备-简历知识点论证.md",
+    "name": "02-面试准备-简历知识点论证",
+    "title": "简历知识点论证手册（面试备用，仅供自看）",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/03-面试准备-基础考点.md",
+    "name": "03-面试准备-基础考点",
+    "title": "面试快速复习攻略（14年经验+1年gap版）",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/04-面试准备-故障排查.md",
+    "name": "04-面试准备-故障排查",
+    "title": "生产环境故障排查与处理 — 面试考点文档",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/05-面试准备-算法模板.md",
+    "name": "05-面试准备-算法模板",
+    "title": "05-面试准备-算法模板",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "基础知识/公司盘点/06-面试准备-面试策略.md",
+    "name": "06-面试准备-面试策略",
+    "title": "面试策略与必背数据汇总",
+    "category": "基础知识",
+    "subcategory": "公司盘点"
+  },
+  {
+    "path": "项目/项目技术面试-链接.md",
+    "name": "项目技术面试-链接",
+    "title": "项目技术面试 — 链接索引与关键数据速查",
+    "category": "项目",
+    "subcategory": "项目"
+  },
+  {
     "path": "项目/分布式IM/00-雷漫IM-总览.md",
     "name": "00-雷漫IM-总览",
     "title": "雷漫 IM 总览",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/00-雷漫IM-项目性能分析.md",
+    "name": "00-雷漫IM-项目性能分析",
+    "title": "雷漫 IM · 项目性能分析",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/000-雷曼IM-架构问答模版.md",
+    "name": "000-雷曼IM-架构问答模版",
+    "title": "000-雷曼IM-架构问答模版",
     "category": "项目",
     "subcategory": "分布式IM"
   },
@@ -654,6 +990,62 @@
     "path": "项目/分布式IM/05-雷漫IM-面试考点速查.md",
     "name": "05-雷漫IM-面试考点速查",
     "title": "雷漫 IM 面试考点速查",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM Redis数据结构设计.md",
+    "name": "IM Redis数据结构设计",
+    "title": "IM Redis数据结构设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/IM--Mysql-mongodb数据库设计.md",
+    "name": "IM--Mysql-mongodb数据库设计",
+    "title": "IM--Mysql-mongodb数据库设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/Login设计.md",
+    "name": "Login设计",
+    "title": "Login设计",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/seq优化方案.md",
+    "name": "seq优化方案",
+    "title": "seq优化方案",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/websocket网关.md",
+    "name": "websocket网关",
+    "title": "websocket网关",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/web客户端登录.md",
+    "name": "web客户端登录",
+    "title": "web客户端登录",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/客户端---消息服务通加密.md",
+    "name": "客户端---消息服务通加密",
+    "title": "客户端---消息服务通加密",
+    "category": "项目",
+    "subcategory": "分布式IM"
+  },
+  {
+    "path": "项目/分布式IM/客户端---消息服务通讯协议1.md",
+    "name": "客户端---消息服务通讯协议1",
+    "title": "客户端---消息服务通讯协议1",
     "category": "项目",
     "subcategory": "分布式IM"
   },
@@ -700,58 +1092,23 @@
     "subcategory": "服务网格"
   },
   {
-    "path": "项目/面试准备/00-面试准备-总览.md",
-    "name": "00-面试准备-总览",
-    "title": "面试准备总览",
+    "path": "项目/服务网格/架构问答模版.md",
+    "name": "架构问答模版",
+    "title": "架构问答模版",
     "category": "项目",
-    "subcategory": "面试准备"
-  },
-  {
-    "path": "项目/面试准备/01-面试准备-项目性能数据.md",
-    "name": "01-面试准备-项目性能数据",
-    "title": "面试项目性能数据分析",
-    "category": "项目",
-    "subcategory": "面试准备"
-  },
-  {
-    "path": "项目/面试准备/02-面试准备-简历知识点论证.md",
-    "name": "02-面试准备-简历知识点论证",
-    "title": "简历知识点论证手册（面试备用，仅供自看）",
-    "category": "项目",
-    "subcategory": "面试准备"
-  },
-  {
-    "path": "项目/面试准备/03-面试准备-基础考点.md",
-    "name": "03-面试准备-基础考点",
-    "title": "面试快速复习攻略（14年经验+1年gap版）",
-    "category": "项目",
-    "subcategory": "面试准备"
-  },
-  {
-    "path": "项目/面试准备/04-面试准备-故障排查.md",
-    "name": "04-面试准备-故障排查",
-    "title": "生产环境故障排查与处理 — 面试考点文档",
-    "category": "项目",
-    "subcategory": "面试准备"
-  },
-  {
-    "path": "项目/面试准备/05-面试准备-算法模板.md",
-    "name": "05-面试准备-算法模板",
-    "title": "05-面试准备-算法模板",
-    "category": "项目",
-    "subcategory": "面试准备"
-  },
-  {
-    "path": "项目/面试准备/06-面试准备-面试策略.md",
-    "name": "06-面试准备-面试策略",
-    "title": "面试策略与必背数据汇总",
-    "category": "项目",
-    "subcategory": "面试准备"
+    "subcategory": "服务网格"
   },
   {
     "path": "项目/社交IM/00-社交IM-总览.md",
     "name": "00-社交IM-总览",
     "title": "社交 IM（你我金融）总览",
+    "category": "项目",
+    "subcategory": "社交IM"
+  },
+  {
+    "path": "项目/社交IM/000-社交IM-架构问答模版.md",
+    "name": "000-社交IM-架构问答模版",
+    "title": "🏗️ 架构问答 — 社交金融 IM（你我金融）面试复盘",
     "category": "项目",
     "subcategory": "社交IM"
   },
@@ -777,23 +1134,177 @@
     "subcategory": "社交IM"
   },
   {
-    "path": "项目/InterviewPro/00-InterviewPro-总览.md",
-    "name": "00-InterviewPro-总览",
-    "title": "InterviewPro AI 面试 App 总览",
+    "path": "项目/社交IM/IM 3.0数据库表结构设计说明书.md",
+    "name": "IM 3.0数据库表结构设计说明书",
+    "title": "IM 3.0数据库表结构设计说明书",
+    "category": "项目",
+    "subcategory": "社交IM"
+  },
+  {
+    "path": "项目/社交IM/IM3.0 Redis数据结构设计说明书.md",
+    "name": "IM3.0 Redis数据结构设计说明书",
+    "title": "IM3.0 Redis数据结构设计说明书",
+    "category": "项目",
+    "subcategory": "社交IM"
+  },
+  {
+    "path": "项目/InterviewPro/00-InterviewPro-项目性能分析.md",
+    "name": "00-InterviewPro-项目性能分析",
+    "title": "InterviewPro · 项目性能分析",
     "category": "项目",
     "subcategory": "InterviewPro"
   },
   {
-    "path": "项目/InterviewPro/01-InterviewPro-架构设计.md",
-    "name": "01-InterviewPro-架构设计",
+    "path": "项目/InterviewPro/000-InterviewPro架构问答模版.md",
+    "name": "000-InterviewPro架构问答模版",
+    "title": "000-InterviewPro架构问答模版",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/01-InterviewPro-爬虫系统设计.md",
+    "name": "01-InterviewPro-爬虫系统设计",
+    "title": "InterviewPro 爬虫系统设计",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/02-InterviewPro-爬虫技术栈与教学.md",
+    "name": "02-InterviewPro-爬虫技术栈与教学",
+    "title": "02-InterviewPro-爬虫技术栈与教学",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/01-InterviewPro前端架构分析.md",
+    "name": "01-InterviewPro前端架构分析",
+    "title": "01-InterviewPro前端架构分析",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/00-InterviewPro-总览.md",
+    "name": "00-InterviewPro-总览",
+    "title": "InterviewPro 项目总览",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/01-InterviewPro-代码分析.md",
+    "name": "01-InterviewPro-代码分析",
+    "title": "01-InterviewPro-代码分析",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/02-InterviewPro-四Agent提示词系统设计.md",
+    "name": "02-InterviewPro-四Agent提示词系统设计",
+    "title": "02-InterviewPro-四Agent提示词系统设计",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/03-InterviewPro-技术栈详解.md",
+    "name": "03-InterviewPro-技术栈详解",
+    "title": "03-InterviewPro-技术栈详解",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/04-InterviewPro-核心技术选型与落地.md",
+    "name": "04-InterviewPro-核心技术选型与落地",
+    "title": "04-InterviewPro-核心技术选型与落地",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/05-InterviewPro-英语面试分层反馈技术实现方案.md",
+    "name": "05-InterviewPro-英语面试分层反馈技术实现方案",
+    "title": "05-InterviewPro-英语面试分层反馈技术实现方案",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/06-InterviewPro-架构设计.md",
+    "name": "06-InterviewPro-架构设计",
     "title": "InterviewPro 架构设计",
     "category": "项目",
     "subcategory": "InterviewPro"
   },
   {
-    "path": "项目/InterviewPro/02-InterviewPro-面试考点速查.md",
-    "name": "02-InterviewPro-面试考点速查",
+    "path": "项目/InterviewPro/07-InterviewPro-面试考点速查.md",
+    "name": "07-InterviewPro-面试考点速查",
     "title": "InterviewPro 面试考点速查",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/08-InterviewPro-前后端协议.md",
+    "name": "08-InterviewPro-前后端协议",
+    "title": "前后端协议（REST + WebSocket）",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/09-InterviewPro-登录认证流程.md",
+    "name": "09-InterviewPro-登录认证流程",
+    "title": "详细登录流程分析",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/10-InterviewPro-前端架构详解.md",
+    "name": "10-InterviewPro-前端架构详解",
+    "title": "前端功能设计与代码架构文档",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/11-InterviewPro-语音录制系统设计.md",
+    "name": "11-InterviewPro-语音录制系统设计",
+    "title": "语音录制系统设计与测试",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/12-InterviewPro-评分模型选型分析.md",
+    "name": "12-InterviewPro-评分模型选型分析",
+    "title": "评分模型选型分析：为什么 Qwen3-4B-Instruct-2507 准确率最高",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/13-InterviewPro-LLM服务参数配置.md",
+    "name": "13-InterviewPro-LLM服务参数配置",
+    "title": "llama.cpp 服务参数说明",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/14-InterviewPro-Ollama模型生命周期.md",
+    "name": "14-InterviewPro-Ollama模型生命周期",
+    "title": "Ollama 模型生命周期",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/15-InterviewPro-出题流程优化.md",
+    "name": "15-InterviewPro-出题流程优化",
+    "title": "出题流程与优化",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/16-InterviewPro-QA测试结果记录.md",
+    "name": "16-InterviewPro-QA测试结果记录",
+    "title": "QA 测试结果记录",
+    "category": "项目",
+    "subcategory": "InterviewPro"
+  },
+  {
+    "path": "项目/InterviewPro/17-InterviewPro-并发模型分析.md",
+    "name": "17-InterviewPro-并发模型分析",
+    "title": "Frontend & Backend Threading/Concurrency Model",
     "category": "项目",
     "subcategory": "InterviewPro"
   },
@@ -801,6 +1312,20 @@
     "path": "项目/KeyDB/00-KeyDB-总览.md",
     "name": "00-KeyDB-总览",
     "title": "KeyDB 存算分离 — 华为云 总览",
+    "category": "项目",
+    "subcategory": "KeyDB"
+  },
+  {
+    "path": "项目/KeyDB/00-KeyDB-项目性能分析.md",
+    "name": "00-KeyDB-项目性能分析",
+    "title": "项目深挖 · KeyDB 存算分离",
+    "category": "项目",
+    "subcategory": "KeyDB"
+  },
+  {
+    "path": "项目/KeyDB/000-KeyDB-架构问答模版.md",
+    "name": "000-KeyDB-架构问答模版",
+    "title": "000-KeyDB-架构问答模版",
     "category": "项目",
     "subcategory": "KeyDB"
   },
@@ -826,6 +1351,20 @@
     "subcategory": "Thunder"
   },
   {
+    "path": "项目/Thunder/00-Thunder-项目性能分析.md",
+    "name": "00-Thunder-项目性能分析",
+    "title": "Thunder · 项目性能分析",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/000-Thunder-架构问答模版.md",
+    "name": "000-Thunder-架构问答模版",
+    "title": "000-Thunder-架构问答模版",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
     "path": "项目/Thunder/01-Thunder-架构设计.md",
     "name": "01-Thunder-架构设计",
     "title": "Thunder 架构设计",
@@ -847,11 +1386,67 @@
     "subcategory": "Thunder"
   },
   {
-    "path": "AI/00-4AI学习-总览.md",
+    "path": "项目/Thunder/04-Thunder-RPC协议设计.md",
+    "name": "04-Thunder-RPC协议设计",
+    "title": "Thunder RPC 协议设计",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/05-Thunder-协程调度器设计.md",
+    "name": "05-Thunder-协程调度器设计",
+    "title": "05-Thunder-协程调度器设计",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/06-Thunder-Raft实现详解.md",
+    "name": "06-Thunder-Raft实现详解",
+    "title": "06-Thunder-Raft实现详解",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/07-Thunder-部署与配置.md",
+    "name": "07-Thunder-部署与配置",
+    "title": "07-Thunder-部署与配置",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/08-Thunder-设计决策记录.md",
+    "name": "08-Thunder-设计决策记录",
+    "title": "08-Thunder-设计决策记录",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/09-Thunder-io_uring集成示例.md",
+    "name": "09-Thunder-io_uring集成示例",
+    "title": "09-Thunder-io_uring集成示例",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "项目/Thunder/10-Thunder-K8s部署.md",
+    "name": "10-Thunder-K8s部署",
+    "title": "10-Thunder-K8s部署",
+    "category": "项目",
+    "subcategory": "Thunder"
+  },
+  {
+    "path": "AI/总览/00-4AI学习-总览.md",
     "name": "00-4AI学习-总览",
     "title": "4AI学习 总览",
     "category": "AI",
-    "subcategory": "AI"
+    "subcategory": "总览"
+  },
+  {
+    "path": "AI/Agent架构与实践/00-Agent-总览.md",
+    "name": "00-Agent-总览",
+    "title": "4-Agent架构与实践 总览",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
   },
   {
     "path": "AI/基础知识/00-AI基础-总览.md",
@@ -861,25 +1456,11 @@
     "subcategory": "基础知识"
   },
   {
-    "path": "AI/基础知识/01-AI基础-底层技术名词拆解.md",
-    "name": "01-AI基础-底层技术名词拆解",
-    "title": "AI 底层技术名词拆解手册",
+    "path": "AI/推理与部署/00-AI推理-总览.md",
+    "name": "00-AI推理-总览",
+    "title": "3-AI推理与部署 总览",
     "category": "AI",
-    "subcategory": "基础知识"
-  },
-  {
-    "path": "AI/基础知识/02-AI基础-技术栈分层与C++系统层定位.md",
-    "name": "02-AI基础-技术栈分层与C++系统层定位",
-    "title": "AI技术栈分层与C++系统层定位",
-    "category": "AI",
-    "subcategory": "基础知识"
-  },
-  {
-    "path": "AI/基础知识/03-AI基础-LLM_Token全面解析.md",
-    "name": "03-AI基础-LLM_Token全面解析",
-    "title": "LLM Token 全面解析",
-    "category": "AI",
-    "subcategory": "基础知识"
+    "subcategory": "推理与部署"
   },
   {
     "path": "AI/框架与工具/00-AI框架-总览.md",
@@ -889,11 +1470,102 @@
     "subcategory": "框架与工具"
   },
   {
+    "path": "AI/学习路线/00-AI路线-总览.md",
+    "name": "00-AI路线-总览",
+    "title": "6-AI学习路线与转型 总览",
+    "category": "AI",
+    "subcategory": "学习路线"
+  },
+  {
+    "path": "AI/Go+AI/00-Go-总览.md",
+    "name": "00-Go-总览",
+    "title": "10-Go后端与面试 总览",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/产品案例/00-产品-总览.md",
+    "name": "00-产品-总览",
+    "title": "7-产品与案例分析 总览",
+    "category": "AI",
+    "subcategory": "产品案例"
+  },
+  {
+    "path": "AI/面试真题/00-面试题-总览.md",
+    "name": "00-面试题-总览",
+    "title": "5-面试真题与题解 总览",
+    "category": "AI",
+    "subcategory": "面试真题"
+  },
+  {
+    "path": "AI/Agent架构与实践/01-Agent-Multi-Agent面试学习系统.md",
+    "name": "01-Agent-Multi-Agent面试学习系统",
+    "title": "Multi-Agent 面试学习系统",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
+  },
+  {
+    "path": "AI/基础知识/01-AI基础-底层技术名词拆解.md",
+    "name": "01-AI基础-底层技术名词拆解",
+    "title": "AI 底层技术名词拆解手册",
+    "category": "AI",
+    "subcategory": "基础知识"
+  },
+  {
+    "path": "AI/推理与部署/01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴.md",
+    "name": "01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴",
+    "title": "ds4.c 专用推理引擎技术详解",
+    "category": "AI",
+    "subcategory": "推理与部署"
+  },
+  {
     "path": "AI/框架与工具/01-AI框架-Eino框架技术文档.md",
     "name": "01-AI框架-Eino框架技术文档",
     "title": "Eino 框架技术文档",
     "category": "AI",
     "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/学习路线/01-AI路线-工程师学习大纲.md",
+    "name": "01-AI路线-工程师学习大纲",
+    "title": "AI工程师学习大纲 —— 从14年后端老兵到AI Agent工程师的实战路线图",
+    "category": "AI",
+    "subcategory": "学习路线"
+  },
+  {
+    "path": "AI/Go+AI/01-Go-微服务架构_学习资料.md",
+    "name": "01-Go-微服务架构_学习资料",
+    "title": "Go 微服务架构学习资料",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/产品案例/01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析.md",
+    "name": "01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析",
+    "title": "Vibe Coding AI心理治疗系统（CBT-Discover.skill）深度解析",
+    "category": "AI",
+    "subcategory": "产品案例"
+  },
+  {
+    "path": "AI/面试真题/01-面试题-字节AI应用开发二面（偏工程）面试实录.md",
+    "name": "01-面试题-字节AI应用开发二面（偏工程）面试实录",
+    "title": "字节AI应用开发二面（偏工程）面试实录",
+    "category": "AI",
+    "subcategory": "面试真题"
+  },
+  {
+    "path": "AI/Agent架构与实践/02-Agent-AI_Agent面试题精选.md",
+    "name": "02-Agent-AI_Agent面试题精选",
+    "title": "AI大模型Agent面试精选：15道高频题助你轻松通关",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
+  },
+  {
+    "path": "AI/基础知识/02-AI基础-技术栈分层与C++系统层定位.md",
+    "name": "02-AI基础-技术栈分层与C++系统层定位",
+    "title": "AI技术栈分层与C++系统层定位",
+    "category": "AI",
+    "subcategory": "基础知识"
   },
   {
     "path": "AI/框架与工具/02-AI框架-Eino调研与LangGraph对比分析.md",
@@ -903,6 +1575,48 @@
     "subcategory": "框架与工具"
   },
   {
+    "path": "AI/学习路线/02-AI路线-程序员AI大模型转型指南.md",
+    "name": "02-AI路线-程序员AI大模型转型指南",
+    "title": "程序员AI大模型转型指南",
+    "category": "AI",
+    "subcategory": "学习路线"
+  },
+  {
+    "path": "AI/Go+AI/02-Go-OpenIM技术栈与架构设计.md",
+    "name": "02-Go-OpenIM技术栈与架构设计",
+    "title": "OpenIM 技术栈与架构设计文档",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/产品案例/02-产品-雅思陪跑团队Skill3.0可视化学习系统分析.md",
+    "name": "02-产品-雅思陪跑团队Skill3.0可视化学习系统分析",
+    "title": "雅思陪跑团队 Skill 3.0 可视化学习系统分析",
+    "category": "AI",
+    "subcategory": "产品案例"
+  },
+  {
+    "path": "AI/面试真题/02-面试题-字节二面-推送系统设计题解.md",
+    "name": "02-面试题-字节二面-推送系统设计题解",
+    "title": "字节二面系统设计题：周杰伦发新歌，如何秒级通知2000万粉丝？",
+    "category": "AI",
+    "subcategory": "面试真题"
+  },
+  {
+    "path": "AI/Agent架构与实践/03-Agent-开发岗简历高分写法.md",
+    "name": "03-Agent-开发岗简历高分写法",
+    "title": "Agent 开发岗简历高分写法",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
+  },
+  {
+    "path": "AI/基础知识/03-AI基础-LLM_Token全面解析.md",
+    "name": "03-AI基础-LLM_Token全面解析",
+    "title": "LLM Token 全面解析",
+    "category": "AI",
+    "subcategory": "基础知识"
+  },
+  {
     "path": "AI/框架与工具/03-AI框架-Harness_Engineering详解.md",
     "name": "03-AI框架-Harness_Engineering详解",
     "title": "Harness Engineering 详解",
@@ -910,11 +1624,46 @@
     "subcategory": "框架与工具"
   },
   {
+    "path": "AI/Go+AI/03-Go-Shopify后端Golang面试实录.md",
+    "name": "03-Go-Shopify后端Golang面试实录",
+    "title": "Shopify后端Golang面试实录",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/面试真题/03-面试题-腾讯CSIG-AI应用开发一面-题解.md",
+    "name": "03-面试题-腾讯CSIG-AI应用开发一面-题解",
+    "title": "腾讯CSIG（元宝）AI应用开发一面 - 题解",
+    "category": "AI",
+    "subcategory": "面试真题"
+  },
+  {
+    "path": "AI/Agent架构与实践/04-Agent-企业级AI_Agent编排平台AgentFlow项目详解.md",
+    "name": "04-Agent-企业级AI_Agent编排平台AgentFlow项目详解",
+    "title": "企业级AI Agent编排平台 AgentFlow 项目详解",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
+  },
+  {
     "path": "AI/框架与工具/04-AI框架-LangGraph框架技术文档.md",
     "name": "04-AI框架-LangGraph框架技术文档",
     "title": "LangGraph 框架技术文档",
     "category": "AI",
     "subcategory": "框架与工具"
+  },
+  {
+    "path": "AI/Go+AI/04-Go-InterviewPro后端架构分析.md",
+    "name": "04-Go-InterviewPro后端架构分析",
+    "title": "04-Go-InterviewPro后端架构分析",
+    "category": "AI",
+    "subcategory": "Go+AI"
+  },
+  {
+    "path": "AI/Agent架构与实践/05-Agent-企业级AI_Agent编排平台架构指南.md",
+    "name": "05-Agent-企业级AI_Agent编排平台架构指南",
+    "title": "企业级 AI Agent 编排平台架构指南",
+    "category": "AI",
+    "subcategory": "Agent架构与实践"
   },
   {
     "path": "AI/框架与工具/05-AI框架-RAG召回优化_学习资料.md",
@@ -936,201 +1685,5 @@
     "title": "Skill Refiner 与 Agent Skills 治理体系：技术深度解析",
     "category": "AI",
     "subcategory": "框架与工具"
-  },
-  {
-    "path": "AI/推理与部署/00-AI推理-总览.md",
-    "name": "00-AI推理-总览",
-    "title": "3-AI推理与部署 总览",
-    "category": "AI",
-    "subcategory": "推理与部署"
-  },
-  {
-    "path": "AI/推理与部署/01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴.md",
-    "name": "01-AI推理-ds4.c推理引擎深度解析与InterviewPro借鉴",
-    "title": "ds4.c 专用推理引擎技术详解",
-    "category": "AI",
-    "subcategory": "推理与部署"
-  },
-  {
-    "path": "AI/Agent架构与实践/00-Agent-总览.md",
-    "name": "00-Agent-总览",
-    "title": "4-Agent架构与实践 总览",
-    "category": "AI",
-    "subcategory": "Agent架构与实践"
-  },
-  {
-    "path": "AI/Agent架构与实践/01-Agent-Multi-Agent面试学习系统.md",
-    "name": "01-Agent-Multi-Agent面试学习系统",
-    "title": "Multi-Agent 面试学习系统",
-    "category": "AI",
-    "subcategory": "Agent架构与实践"
-  },
-  {
-    "path": "AI/Agent架构与实践/02-Agent-AI_Agent面试题精选.md",
-    "name": "02-Agent-AI_Agent面试题精选",
-    "title": "AI大模型Agent面试精选：15道高频题助你轻松通关",
-    "category": "AI",
-    "subcategory": "Agent架构与实践"
-  },
-  {
-    "path": "AI/Agent架构与实践/03-Agent-开发岗简历高分写法.md",
-    "name": "03-Agent-开发岗简历高分写法",
-    "title": "Agent 开发岗简历高分写法",
-    "category": "AI",
-    "subcategory": "Agent架构与实践"
-  },
-  {
-    "path": "AI/Agent架构与实践/04-Agent-企业级AI_Agent编排平台AgentFlow项目详解.md",
-    "name": "04-Agent-企业级AI_Agent编排平台AgentFlow项目详解",
-    "title": "企业级AI Agent编排平台 AgentFlow 项目详解",
-    "category": "AI",
-    "subcategory": "Agent架构与实践"
-  },
-  {
-    "path": "AI/Agent架构与实践/05-Agent-企业级AI_Agent编排平台架构指南.md",
-    "name": "05-Agent-企业级AI_Agent编排平台架构指南",
-    "title": "企业级 AI Agent 编排平台架构指南",
-    "category": "AI",
-    "subcategory": "Agent架构与实践"
-  },
-  {
-    "path": "AI/面试真题/00-面试题-总览.md",
-    "name": "00-面试题-总览",
-    "title": "5-面试真题与题解 总览",
-    "category": "AI",
-    "subcategory": "面试真题"
-  },
-  {
-    "path": "AI/面试真题/01-面试题-字节AI应用开发二面（偏工程）面试实录.md",
-    "name": "01-面试题-字节AI应用开发二面（偏工程）面试实录",
-    "title": "字节AI应用开发二面（偏工程）面试实录",
-    "category": "AI",
-    "subcategory": "面试真题"
-  },
-  {
-    "path": "AI/面试真题/02-面试题-字节二面-推送系统设计题解.md",
-    "name": "02-面试题-字节二面-推送系统设计题解",
-    "title": "字节二面系统设计题：周杰伦发新歌，如何秒级通知2000万粉丝？",
-    "category": "AI",
-    "subcategory": "面试真题"
-  },
-  {
-    "path": "AI/面试真题/03-面试题-腾讯CSIG-AI应用开发一面-题解.md",
-    "name": "03-面试题-腾讯CSIG-AI应用开发一面-题解",
-    "title": "腾讯CSIG（元宝）AI应用开发一面 - 题解",
-    "category": "AI",
-    "subcategory": "面试真题"
-  },
-  {
-    "path": "AI/学习路线/00-AI路线-总览.md",
-    "name": "00-AI路线-总览",
-    "title": "6-AI学习路线与转型 总览",
-    "category": "AI",
-    "subcategory": "学习路线"
-  },
-  {
-    "path": "AI/学习路线/01-AI路线-工程师学习大纲.md",
-    "name": "01-AI路线-工程师学习大纲",
-    "title": "AI工程师学习大纲 —— 从14年后端老兵到AI Agent工程师的实战路线图",
-    "category": "AI",
-    "subcategory": "学习路线"
-  },
-  {
-    "path": "AI/学习路线/02-AI路线-程序员AI大模型转型指南.md",
-    "name": "02-AI路线-程序员AI大模型转型指南",
-    "title": "程序员AI大模型转型指南",
-    "category": "AI",
-    "subcategory": "学习路线"
-  },
-  {
-    "path": "AI/产品案例/00-产品-总览.md",
-    "name": "00-产品-总览",
-    "title": "7-产品与案例分析 总览",
-    "category": "AI",
-    "subcategory": "产品案例"
-  },
-  {
-    "path": "AI/产品案例/01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析.md",
-    "name": "01-产品-Vibe_Coding_AI心理治疗系统_CBT_Discover解析",
-    "title": "Vibe Coding AI心理治疗系统（CBT-Discover.skill）深度解析",
-    "category": "AI",
-    "subcategory": "产品案例"
-  },
-  {
-    "path": "AI/产品案例/02-产品-雅思陪跑团队Skill3.0可视化学习系统分析.md",
-    "name": "02-产品-雅思陪跑团队Skill3.0可视化学习系统分析",
-    "title": "雅思陪跑团队 Skill 3.0 可视化学习系统分析",
-    "category": "AI",
-    "subcategory": "产品案例"
-  },
-  {
-    "path": "AI/AI智能系统/00-InterviewPro-总览.md",
-    "name": "00-InterviewPro-总览",
-    "title": "8-InterviewPro项目 总览",
-    "category": "AI",
-    "subcategory": "AI智能系统"
-  },
-  {
-    "path": "AI/AI智能系统/01-InterviewPro-代码分析.md",
-    "name": "01-InterviewPro-代码分析",
-    "title": "InterviewPro 改用 Eino 编排 Agent",
-    "category": "AI",
-    "subcategory": "AI智能系统"
-  },
-  {
-    "path": "AI/AI智能系统/02-InterviewPro-四Agent提示词系统设计.md",
-    "name": "02-InterviewPro-四Agent提示词系统设计",
-    "title": "Interview Pro 四Agent提示词系统设计",
-    "category": "AI",
-    "subcategory": "AI智能系统"
-  },
-  {
-    "path": "AI/AI智能系统/03-InterviewPro-技术栈详解.md",
-    "name": "03-InterviewPro-技术栈详解",
-    "title": "InterviewPro 技术栈详解",
-    "category": "AI",
-    "subcategory": "AI智能系统"
-  },
-  {
-    "path": "AI/AI智能系统/04-InterviewPro-核心技术选型与落地.md",
-    "name": "04-InterviewPro-核心技术选型与落地",
-    "title": "Interview Pro 核心技术选型与落地",
-    "category": "AI",
-    "subcategory": "AI智能系统"
-  },
-  {
-    "path": "AI/AI智能系统/05-InterviewPro-英语面试分层反馈技术实现方案.md",
-    "name": "05-InterviewPro-英语面试分层反馈技术实现方案",
-    "title": "Interview Pro 英语面试分层反馈技术实现方案",
-    "category": "AI",
-    "subcategory": "AI智能系统"
-  },
-  {
-    "path": "AI/Go+AI/00-Go-总览.md",
-    "name": "00-Go-总览",
-    "title": "10-Go后端与面试 总览",
-    "category": "AI",
-    "subcategory": "Go+AI"
-  },
-  {
-    "path": "AI/Go+AI/01-Go-微服务架构_学习资料.md",
-    "name": "01-Go-微服务架构_学习资料",
-    "title": "Go 微服务架构学习资料",
-    "category": "AI",
-    "subcategory": "Go+AI"
-  },
-  {
-    "path": "AI/Go+AI/02-Go-OpenIM技术栈与架构设计.md",
-    "name": "02-Go-OpenIM技术栈与架构设计",
-    "title": "OpenIM 技术栈与架构设计文档",
-    "category": "AI",
-    "subcategory": "Go+AI"
-  },
-  {
-    "path": "AI/Go+AI/03-Go-Shopify后端Golang面试实录.md",
-    "name": "03-Go-Shopify后端Golang面试实录",
-    "title": "Shopify后端Golang面试实录",
-    "category": "AI",
-    "subcategory": "Go+AI"
   }
 ]

@@ -37,26 +37,6 @@ Cross-Encoder（精排模型）需要将 query 和每篇文档拼接后过一次
   └── RRF 融合  → 合并去重 → 候选集C（千级）
         │
         └── Cross-Encoder 精排 → 最终结果（十级）
-```
-
----
-
-## 二、BM25 详细分析
-
-### 2.1 BM25 是什么
-
-- **全称**：Best Matching 25（Okapi BM25），1994年由 Robertson & Walker 提出
-- **本质**：TF-IDF 的改进版，基于**概率检索模型**（从二值独立模型概率论推导而来，不是经验公式拍脑袋）
-- **工业标准**：Elasticsearch 默认排序算法、Lucene 内置，几乎所有搜索引擎都在用
-
-### 2.2 完整公式推导
-
-核心公式：
-
-```
-BM25(D, Q) = Σ IDF(qi) × (tf(qi, D) × (k1 + 1)) / (tf(qi, D) + k1 × (1 - b + b × |D|/avgdl))
-```
-
 逐参数解释：
 
 | 参数 | 含义 | 典型值 |
@@ -1160,7 +1140,7 @@ TF-IDF/BM25不是每次现算的，是**预建倒排索引**，查询时直接�
 
 查询"Redis 缓存"→ 倒排索引直接拿到 [doc1,doc3,doc7] ∩ [doc2,doc3,doc6] = [doc3] → 再算BM25得分
 
-### 9.2 C++ 数据结构设计
+### 9.2 倒排索引 C++ 数据结构设计
 
 ```cpp
 #include <string>
@@ -1326,6 +1306,247 @@ private:
     }
 };
 ```
+
+---
+### 🎨 9.2 设计图：数据结构与关系（字符画版）
+
+#### 图1：全景架构 ─ 数据从写入到查询的完整流转
+
+```
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                         InvertedIndex 倒排索引                          │
+  │                                                                         │
+  │  ┌───────────── index_ ───────────────────────────────────────────┐     │
+  │  │  unordered_map<string, InvertedList>   ← 词 → 倒排列表 哈希表  │     │
+  │  │                                                               │     │
+  │  │  ┌────────┐  ┌────────────────────────────────────────────┐   │     │
+  │  │  │ search │→│  InvertedList { df:3, idf:4.82             │   │     │
+  │  │  │        │  │    postings[ {doc_id:1, tf:2}             │   │     │
+  │  │  │ index  │→│               {doc_id:3, tf:1}             │   │     │
+  │  │  │        │  │               {doc_id:7, tf:3} ]          │   │     │
+  │  │  │ engine │→│  InvertedList { df:2, idf:3.14             │   │     │
+  │  │  │        │  │    postings[ {doc_id:1, tf:1}             │   │     │
+  │  │  │ query  │→│               {doc_id:3, tf:1} ]          │   │     │
+  │  │  │  ...   │  │    ...                                    │   │     │
+  │  │  └────────┘  └────────────────────────────────────────────┘   │     │
+  │  └───────────────────────────────────────────────────────────────┘     │
+  │                                                                         │
+  │  ┌───────────── docs_ ────────────────────────────────────────────┐    │
+  │  │  unordered_map<uint32_t, DocumentInfo>   ← doc_id → 文档元信息 │    │
+  │  │                                                                 │    │
+  │  │  doc_id:1 → DocumentInfo{ text:"search engine index", len:120 } │    │
+  │  │  doc_id:3 → DocumentInfo{ text:"inverted index query", len:200 } │    │
+  │  │  doc_id:7 → DocumentInfo{ text:"search query result", len:85  } │    │
+  │  └─────────────────────────────────────────────────────────────────┘    │
+  │                                                                         │
+  │  total_docs_: 7    avg_doc_length_: 135.2    k1_: 1.2    b_: 0.75      │
+  └─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### 图2：核心数据结构详图 + 公式
+
+```
+PostingEntry (倒排条目)           InvertedList (倒排列表)
+┌──────────────────────┐          ┌──────────────────────────────────────┐
+│ doc_id : uint32_t    │  ← 文档ID │ df      : uint32_t  ← 文档频率      │
+│ tf     : uint32_t    │  ← 词频（建索引时统计）│ idf : double ← 预计算 IDF   │
+│ positions : vector   │  ← 位置   │ postings: vector   ← PostingEntry[] │
+│   (可选，用于短语查询) │          └──────────────────────────────────────┘
+└──────────────────────┘                         ↑
+        ↑                                        │
+        │  vector<PostingEntry>                  │  引用(指针)
+        │  ──── 连续内存, cache友好              │
+        │                                        │
+┌───────┴────────────────────────────────────────┴──────────────────────┐
+│                    InvertedIndex 核心字段                                │
+│                                                                        │
+│  index_  : unordered_map<string, InvertedList>  词→倒排列表  O(1)查找  │
+│  docs_   : unordered_map<uint32_t, DocumentInfo> doc_id→文档元信息     │
+│  total_docs_ : uint32_t        总文档数 N                               │
+│  avg_doc_length_ : double      平均文档长度 avgdl                       │
+│  k1_, b_ : double              BM25 参数                               │
+└────────────────────────────────────────────────────────────────────────┘
+
+DocumentInfo (文档元信息)
+┌──────────────────────────────────────┐
+│ doc_id      : uint32_t               │
+│ text        : string      ← 原始文本 │
+│ doc_length  : uint32_t    ← 文档词数 │
+│ category    : string      ← 业务分类 │
+│ (可扩展更多 payload 字段)             │
+└──────────────────────────────────────┘
+````
+   ┌─────────────────────────────────────────────────────┐
+   │                TF-IDF 核心公式                       │
+   │                                                     │
+   │  ▸ IDF（逆文档频率）—— computeIDF(df)                │
+   │                                                     │
+   │                 total_docs_ - df + 0.5              │
+   │    idf = ln( ────────────────────── )               │
+   │                     df + 0.5                        │
+   │                                                     │
+   │    total_docs_ : InvertedIndex 成员  ← 总文档数     │
+   │    df          : InvertedList::df    ← 该词的文档频率│
+   │    idf         : InvertedList::idf   ← 结果预计算存储│
+   │                                                     │
+   │    例: "search"                                       │
+   │      idf = ln((total_docs_ - df + 0.5) / (df + 0.5))│
+   │                                                     │
+   │  ▸ TF-IDF 得分（每个词对每个文档）                  │
+   │                                                     │
+   │    score = tf × idf                                 │
+   │                                                     │
+   │    tf  : PostingEntry::tf  ← 词在文档中的词频       │
+   │    idf : InvertedList::idf ← 上面算好的值           │
+   │                                                     │
+   │                                                     │
+   │  ▸ 文档最终得分 —— search() 聚合                     │
+   │                                                     │
+   │    doc_scores[doc_id] = Σ   tf × idf                │
+   │                          t∈query                    │
+   │                                                     │
+   │    （遍历每个查询词的倒排列表，累加到对应文档）      │
+   │                                                     │
+   │                                                     │
+   │  ▸ 哪些预计算                                       │
+   │                                                     │
+   │    idf  → buildIndex() 预计算（存 InvertedList::idf）│
+   │    tf   → addDocument() 时统计（存 PostingEntry::tf）│
+   │                                                     │
+   │  ▸ 注：完整 BM25 公式见 9.2 代码 computeBM25TF()    │
+   │    这里只列 core TF-IDF                             │
+   └─────────────────────────────────────────────────────┘
+```
+
+#### 图3：内存布局与指针关系
+
+```
+                                 栈(Stack)                          堆(Heap)
+                         ┌─────────────────┐                ┌─────────────────────────┐
+                         │ InvertedIndex    │                │ index_ 哈希表            │
+                         │  this 指针       │ ── index_ ──▶ │  ┌──────┬────────────┐ │
+                         │                 │                │  │search│ InvertedList│ │
+                         │                 │                │  ├──────┼────────────┤ │
+                         │  total_docs_=7  │                │  │index │ InvertedList│ │
+                         │  avgdl_=135.2   │   内联存储     │  ├──────┼────────────┤ │
+                         │  k1_=1.2, b_=0.75│              │  │engine│ InvertedList│ │
+                         │                 │                │  └──────┴────────────┘ │
+                         │                 │ ── docs_ ────▶│  ┌──────┬────────────┐ │
+                         │                 │                │  │  1   │DocumentInfo│ │
+                         └─────────────────┘                │  ├──────┼────────────┤ │
+                                                            │  │  3   │DocumentInfo│ │
+         PostingEntry[0] {doc_id:1, tf:2}    ◀── vector     │  ├──────┼────────────┤ │
+         PostingEntry[1] {doc_id:3, tf:1}    ◀── 连续内存    │  │  7   │DocumentInfo│ │
+         PostingEntry[2] {doc_id:7, tf:3}    ◀── cache友好   └──┴──────┴────────────┘
+                                                                  ↑
+                                             PostingEntry.doc_id ──┘ (外键关联)
+```
+
+#### 图4：查询全流程 ─ "search engine" 一次请求的生命周期
+
+```
+   Client                         InvertedIndex
+     │                                 │
+     │  1. search("search engine", 10) │
+     │────────────────────────────────▶│
+     │                                 │
+     │  2. tokenize("search engine")   │
+     │      → ["search", "engine"]     │
+     │                                 │
+     │  3. index_.find("search") ──O(1)│
+     │   ← InvertedList{df:3,idf:4.82} │
+     │  4. index_.find("engine") ──O(1)│
+     │   ← InvertedList{df:2,idf:3.14} │
+     │                                 │
+     │  5. 遍历 "search" 的 postings   │
+     │     for each PostingEntry:      │
+     │       doc_id=1, tf=2            │
+     │       → docs_[1].doc_length=120 │
+     │       → score += 4.82 * BM25_TF │
+     │       doc_id=3, tf=1            │
+     │       → docs_[3].doc_length=200 │
+     │       → score += 4.82 * BM25_TF │
+     │       doc_id=7, tf=3            │
+     │       → docs_[7].doc_length=85  │
+     │       → score += 4.82 * BM25_TF │
+     │                                 │
+     │  6. 遍历 "engine" 的 postings   │
+     │     doc_id=1, tf=1 → score +=.. │
+     │     doc_id=3, tf=1 → score +=.. │  ← doc3 同时命中两个词，得分最高
+     │                                 │
+     │  7. partial_sort 取 Top-K       │
+     │                                 │
+     │  8. 返回 [{doc3,7.96},          │
+     │          {doc1,6.28},           │
+     │          {doc7,5.12}, ...]      │
+     │◀────────────────────────────────│
+```
+
+#### 图5：分层架构
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                        应用层 (Application Layer)                      │
+│                                                                       │
+│    search(query, top_k)         addDocument(doc_id, text)             │
+│    searchStream(query, cb)       removeDocument(doc_id)              │
+└──────────────────────────────────────────────────────────────────────┘
+                          │                        │
+                          ▼                        ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                    索引层 (Index Layer)                                │
+│                                                                       │
+│  ┌─────────────────────────────────┐  ┌────────────────────────────┐ │
+│  │  index_                          │  │  docs_                     │ │
+│  │  unordered_map<string, InvertedL.│  │  unordered_map<uint32_t,  │ │
+│  │  词 → 倒排列表                    │  │  DocumentInfo>             │ │
+│  │  key 哈希 → O(1) 查找            │  │  doc_id → 文档元信息       │ │
+│  └─────────────────────────────────┘  └────────────────────────────┘ │
+│                          │                        │                   │
+└──────────────────────────┼────────────────────────┼───────────────────┘
+                           │                        │
+                           ▼                        ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                    数据层 (Data Layer)                                 │
+│                                                                       │
+│  InvertedList{df, idf}  ── 包含 ──▶  PostingEntry[]{doc_id, tf}      │
+│                                                                       │
+│  DocumentInfo{doc_length, category}  ◀── 关联 ──  PostingEntry.doc_id│
+└──────────────────────────────────────────────────────────────────────┘
+                           │                        │
+                           ▼                        ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                    算法层 (Scoring Layer)                              │
+│                                                                       │
+│  BM25(k₁, b)                                                         │
+│    score(q,d) = Σ IDF(qᵢ) × [tf(qᵢ,d) × (k₁+1)] / [tf + k₁×(1-b+  │
+│                                           b×doc_len/avgdl)]          │
+│                                                                       │
+│  partial_sort  → Top-K 选取     O(n log k)  比 全排序 O(n log n) 快  │
+└──────────────────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                    存储层 (Storage Layer)                              │
+│                                                                       │
+│  内存 (primary)  ── 全索引驻留内存，毫秒级响应                          │
+│    │                                                                  │
+│  mmap 文件 (持久化)  ── 进程重启后从文件映射，无需重索引                │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+**关键设计决策说明：**
+
+| 维度 | 选择 | 原因 |
+|------|------|------|
+| 索引容器 | `unordered_map` | O(1) 查找，适合内存索引 |
+| 倒排列表 | `vector<PostingEntry>` | 连续内存，遍历友好，CPU cache 命中率高 |
+| IDF 预计算 | `buildIndex()` 阶段 | 避免每次查询重复计算 |
+| 文档长度 | 建索引时记录 | BM25 需要，避免重复扫描 |
+| Top-K | `partial_sort` | O(n log k)，比全排序 O(n log n) 快 |
+| 位置信息 | 可选扩展 | 默认关闭，短语查询/高亮时启用 |
+
+---
 
 ### 9.3 内存布局
 
